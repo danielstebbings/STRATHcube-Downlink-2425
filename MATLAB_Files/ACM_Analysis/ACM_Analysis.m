@@ -97,7 +97,7 @@ for cnr_it = 1:length(CNR_col)
     modcod_row = mdvals(find(mdvals.CNR_min < (CNR_col(cnr_it) - Margin_Requirement),1,"last"),:);
     opt_modcod_col(cnr_it) = strcat(string(modcod_row.Modulation)," ", string(modcod_row.CodingRate));
     opt_bitrate(cnr_it) = modcod_row.dataratebps;
-    [CNR_col(cnr_it),modcod_row.CNR_min]
+    %[CNR_col(cnr_it),modcod_row.CNR_min] % Debug
 end
 
 % Change type for plotting
@@ -113,8 +113,9 @@ opt_modcod_tab = table( ...
 %% Analysing MODCOD Benefit with ISS orbit over 1 month
 
 % Setup Satellite Scenario with iss
+simlength = 30; % days
 sc_start = datetime(2024,11,12,12,0,0); % 12:00, 12/11/2024
-sc_stop  = sc_start + hours(24*30);     % 
+sc_stop  = sc_start + hours(24*simlength);     % 
 sc_coarse_sample = 120; % seconds / sample
 sc_fine_sample   = 1;   % seconds / sample
 sc_coarse   = satelliteScenario(sc_start,sc_stop,sc_coarse_sample);
@@ -148,6 +149,7 @@ for pass_it = 1:height(passes_coarse)
     end
 end
 
+%%
 % Bin into 5 degree angle bins
 elevation_times = histcounts(pass_elevations(:),[lowest_elevation:5:95]);
 
@@ -155,8 +157,10 @@ elevation_times = histcounts(pass_elevations(:),[lowest_elevation:5:95]);
 
 time_modcod_tab = opt_modcod_tab(opt_modcod_tab.Altitude == altitude_sat(end),:)
 time_modcod_tab.("Elevation_Time") = elevation_times'
+time_modcod_tab.("Bits_Sent") = time_modcod_tab.Optimal_Bitrate_bps .* time_modcod_tab.Elevation_Time
 
-
+bits_sent_ACM = sum(time_modcod_tab.Bits_Sent);
+bits_sent_fixed = time_modcod_tab(time_modcod_tab.Elevation == lowest_elevation,"Optimal_Bitrate_bps").Optimal_Bitrate_bps .* sum(time_modcod_tab.Elevation_Time);
 
 %% Plot Elevation vs MODCOD by Altitude
 figure
@@ -182,8 +186,46 @@ ylabel("Maximum Bitrate (kilobits/sec)")
 title("Elevation vs Optimal MODCOD by Altitude")
 hold off
 
-%% Next need to look at time in each elevation bin
+%% ACM vs Single Coding / Modulation Rate
+% Plotting Time at each elevation
+% Also plot Datathroughput of each strategy
+figure
+hold on
+title("Adaptive vs Fixed Coding and Modulation")
 
-%% Finally, datarate -> amount of FECFRAMES / elevation bin
+% Elevation to MODCOD and bitrate
+subplot(2,2,[1,3])
+for alt_it = 1:length(altitude_sat)
+    CNR_vals = opt_modcod_tab(opt_modcod_tab.Altitude == altitude_sat(alt_it),:);
+
+    yyaxis left
+    plot(CNR_vals.Elevation,CNR_vals.Optimal_MODCOD, ...
+        "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
+
+    yyaxis right
+    plot(CNR_vals.Elevation,CNR_vals.Optimal_Bitrate_bps/10e3, ...
+        "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
+end
+
+xlabel("Elevation Angle (Degrees)")
+yyaxis left
+ylabel("Modulation and Coding Rate")
+yyaxis right
+ylabel("Maximum Bitrate (kilobits/sec)")
+title("Elevation vs Optimal MODCOD")
 
 
+subplot(2,2,2)
+bar(time_modcod_tab.Elevation',time_modcod_tab.Elevation_Time')
+title("Elevation vs Time Spent at Elevation")
+xlabel("Elevation (degrees)")
+ylabel("Time spent at Elevation (s)")
+
+subplot(2,2,4)
+bar(["Adaptive","Fixed"],[bits_sent_ACM,bits_sent_fixed])
+title("Adaptive vs Fixed Throughput")
+xlabel("Strategy")
+ylabel("Throughput (bits)")
+
+
+hold off
