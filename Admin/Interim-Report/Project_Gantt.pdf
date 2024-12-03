@@ -1,0 +1,6375 @@
+%PDF-1.4
+%‚„œ”
+%
+%wPDF by WPCubed GmbH V3.53[134217760]
+%
+%
+1 0 obj<</Type/Metadata/Subtype/XML/Length 1424 >>
+stream
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="3.1-701">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about=""
+ xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+ <xmp:CreatorTool>wPDF - http://www.wptools.de</xmp:CreatorTool>
+ <xmp:CreateDate>2024-12-03T03:24:03Z</xmp:CreateDate>
+ <xmp:ModifyDate>2024-12-03T03:24:03Z</xmp:ModifyDate>
+ <xmp:MetadataDate>2024-12-03T03:24:03Z</xmp:MetadataDate>
+</rdf:Description>
+<rdf:Description rdf:about=""
+ xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <dc:format>application/pdf</dc:format>
+ <dc:title><rdf:Alt>
+  <rdf:li xml:lang="x-default"/>
+</rdf:Alt></dc:title>
+ <dc:description><rdf:Alt>
+  <rdf:li xml:lang="x-default"/>
+</rdf:Alt></dc:description>
+ <dc:subject>
+ <rdf:Bag>
+  <rdf:li/>
+ </rdf:Bag>
+</dc:subject>
+ <dc:creator><rdf:Seq>
+  <rdf:li xml:lang="x-default"/>
+</rdf:Seq></dc:creator>
+</rdf:Description>
+<rdf:Description rdf:about=""
+ xmlns:xapMM="http://ns.adobe.com/xap/1.0/mm/">
+ <xapMM:VersionID>1</xapMM:VersionID>
+ <xapMM:DocumentID>2c9602a4f208fc419fe58028991e0ebd</xapMM:DocumentID>
+ <xapMM:InstanceID>2c9602a4f208fc419fe58028991e0ebd</xapMM:InstanceID>
+</rdf:Description>
+<rdf:Description rdf:about=""
+ xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+ <pdf:Keywords/>
+ <pdf:Producer>wPDF3 by WPCubed GmbH</pdf:Producer>
+</rdf:Description>
+</rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="w"?>
+endstream
+endobj
+2 0 obj<<
+/Creator(wPDF - http://www.wptools.de)
+/Author()
+/Title()
+/Subject()
+/Keywords()
+/CreationDate(D:20241203032403Z)
+/ModDate(D:20241203032403Z)
+/Producer(wPDF3 by WPCubed GmbH)
+>> endobj
+4 0 obj<</Length 11438 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm q 0.859 0.898 0.945 rg 783 -600 474 -135 re f Q 0.859 0.898 0.945 rg 783 -600 474 -135 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 117 Tf 0 Ts  0 g 783 -706 Td(Downlink)Tj
+ET q 0.859 0.898 0.945 rg 1257 -600 396 -135 re f Q 0.859 0.898 0.945 rg 1257 -600 396 -135 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 117 Tf 0 Ts  0 g 1257 -706 Td( )Tj
+ET 0.859 0.898 0.945 rg 1289 -600 364 -135 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 117 Tf 0 Ts  0 g 1289 -706 Td(Project)Tj
+/F2 92 Tf -506 -112 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Milestone)Tj
+/F2 92 Tf 425 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(07/04/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(196.00)Tj
+281 0 Td( )Tj
+-3503 -106 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(33)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1441 -106 Td( )Tj
+/F3 92 Tf 0 -106 Td(Resources)Tj
+/F2 92 Tf 469 0 Td(:)Tj
+-469 -106 Td(Daniel)Tj
+259 0 Td( )Tj
+26 0 Td(Stebbings)Tj
+-285 -106 Td( )Tj
+ET q 0.859 0.898 0.945 rg 783 -1583 84 -115 re f Q 0.859 0.898 0.945 rg 783 -1583 84 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 783 -1674 Td(1:)Tj
+ET q 0.859 0.898 0.945 rg 867 -1583 579 -115 re f Q 0.859 0.898 0.945 rg 867 -1583 579 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 867 -1674 Td( )Tj
+ET 0.859 0.898 0.945 rg 895 -1583 551 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 895 -1674 Td(Deliverables)Tj
+/F2 92 Tf -112 -107 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(31/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(189.96)Tj
+281 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3298 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -2228 138 -96 re f Q 0.922 0.945 0.867 rg 783 -2228 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -2303 Td(1.1:)Tj
+ET q 0.922 0.945 0.867 rg 921 -2228 400 -96 re f Q 0.922 0.945 0.867 rg 921 -2228 400 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -2303 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -2228 377 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -2303 Td(Statement)Tj
+ET q 0.922 0.945 0.867 rg 1321 -2228 92 -96 re f Q 0.922 0.945 0.867 rg 1321 -2228 92 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1321 -2303 Td( )Tj
+ET 0.922 0.945 0.867 rg 1344 -2228 69 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1344 -2303 Td(of)Tj
+ET q 0.922 0.945 0.867 rg 1413 -2228 230 -96 re f Q 0.922 0.945 0.867 rg 1413 -2228 230 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1413 -2303 Td( )Tj
+ET 0.922 0.945 0.867 rg 1436 -2228 207 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1436 -2303 Td(Intent)Tj
+/F2 92 Tf -653 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(07/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -2854 138 -96 re f Q 0.922 0.945 0.867 rg 783 -2854 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -2929 Td(1.2:)Tj
+ET q 0.922 0.945 0.867 rg 921 -2854 276 -96 re f Q 0.922 0.945 0.867 rg 921 -2854 276 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -2929 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -2854 253 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -2929 Td(Interim)Tj
+ET q 0.922 0.945 0.867 rg 1197 -2854 272 -96 re f Q 0.922 0.945 0.867 rg 1197 -2854 272 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1197 -2929 Td( )Tj
+ET 0.922 0.945 0.867 rg 1220 -2854 249 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1220 -2929 Td(Report)Tj
+/F2 92 Tf -437 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(25/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(20/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(56.96)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(41)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3480 189 -86 re f Q 1 1 1 rg 783 -3480 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3548 Td(1.2.1:)Tj
+ET q 1 1 1 rg 972 -3480 184 -86 re f Q 1 1 1 rg 972 -3480 184 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -3548 Td( )Tj
+ET 1 1 1 rg 993 -3480 163 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -3548 Td(Draft)Tj
+ET q 1 1 1 rg 1156 -3480 319 -86 re f Q 1 1 1 rg 1156 -3480 319 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1156 -3548 Td( )Tj
+ET 1 1 1 rg 1177 -3480 298 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1177 -3548 Td(Deadline)Tj
+/F2 92 Tf  0 g -394 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Milestone)Tj
+/F2 92 Tf 425 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(06/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(06/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23.00)Tj
+230 0 Td( )Tj
+-3452 -106 Td(hours)Tj
+230 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-810 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4096 189 -86 re f Q 1 1 1 rg 783 -4096 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4164 Td(1.2.2:)Tj
+ET q 1 1 1 rg 972 -4096 185 -86 re f Q 1 1 1 rg 972 -4096 185 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4164 Td( )Tj
+ET 1 1 1 rg 993 -4096 164 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4164 Td(Final)Tj
+ET q 1 1 1 rg 1157 -4096 319 -86 re f Q 1 1 1 rg 1157 -4096 319 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1157 -4164 Td( )Tj
+ET 1 1 1 rg 1178 -4096 298 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1178 -4164 Td(Deadline)Tj
+/F2 92 Tf  0 g -395 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Milestone)Tj
+/F2 92 Tf 425 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23.00)Tj
+230 0 Td( )Tj
+-3452 -106 Td(hours)Tj
+230 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-810 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4712 189 -86 re f Q 1 1 1 rg 783 -4712 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4780 Td(1.2.3:)Tj
+ET q 1 1 1 rg 972 -4712 306 -86 re f Q 1 1 1 rg 972 -4712 306 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4780 Td( )Tj
+ET 1 1 1 rg 993 -4712 285 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4780 Td(Creation)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(25/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(18.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(50)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5328 189 -86 re f Q 1 1 1 rg 783 -5328 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5396 Td(1.2.4:)Tj
+ET q 1 1 1 rg 972 -5328 380 -86 re f Q 1 1 1 rg 972 -5328 380 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -5396 Td( )Tj
+ET 1 1 1 rg 993 -5328 359 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -5396 Td(Supervisor)Tj
+ET q 1 1 1 rg 1352 -5328 351 -86 re f Q 1 1 1 rg 1352 -5328 351 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1352 -5396 Td( )Tj
+ET 1 1 1 rg 1373 -5328 330 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1373 -5396 Td(Feedback)Tj
+/F2 92 Tf  0 g -590 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23.00)Tj
+230 0 Td( )Tj
+26 0 Td(hours)Tj
+230 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3283 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET Q Q 
+endstream
+endobj
+5 0 obj<</Length 9982 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm 
+BT 1 0 0 1 0 0 Tm
+/F3 92 Tf 0 Ts  0 g 783 -683 Td(Resources)Tj
+/F2 92 Tf 469 0 Td(:)Tj
+-469 -106 Td(Supervisor)Tj
+0 -106 Td( )Tj
+ET q 1 1 1 rg 783 -918 189 -86 re f Q 1 1 1 rg 783 -918 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -986 Td(1.2.5:)Tj
+ET q 1 1 1 rg 972 -918 163 -86 re f Q 1 1 1 rg 972 -918 163 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -986 Td( )Tj
+ET 1 1 1 rg 993 -918 142 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -986 Td(Oral)Tj
+ET q 1 1 1 rg 1135 -918 267 -86 re f Q 1 1 1 rg 1135 -918 267 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1135 -986 Td( )Tj
+ET 1 1 1 rg 1156 -918 246 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1156 -986 Td(Review)Tj
+/F2 92 Tf  0 g -373 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Milestone)Tj
+/F2 92 Tf 425 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(20/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(20/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23.00)Tj
+230 0 Td( )Tj
+-3452 -106 Td(hours)Tj
+230 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-810 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -1534 138 -96 re f Q 0.922 0.945 0.867 rg 783 -1534 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -1609 Td(1.3:)Tj
+ET q 0.922 0.945 0.867 rg 921 -1534 262 -96 re f Q 0.922 0.945 0.867 rg 921 -1534 262 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -1609 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -1534 239 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -1609 Td(Poster)Tj
+/F2 92 Tf -161 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(31/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(62.96)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2160 189 -86 re f Q 1 1 1 rg 783 -2160 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2228 Td(1.3.1:)Tj
+ET q 1 1 1 rg 972 -2160 306 -86 re f Q 1 1 1 rg 972 -2160 306 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -2228 Td( )Tj
+ET 1 1 1 rg 993 -2160 285 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -2228 Td(Creation)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(16/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(02/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2776 189 -86 re f Q 1 1 1 rg 783 -2776 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2844 Td(1.3.2:)Tj
+ET q 1 1 1 rg 972 -2776 409 -86 re f Q 1 1 1 rg 972 -2776 409 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -2844 Td( )Tj
+ET 1 1 1 rg 993 -2776 388 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -2844 Td(Submission)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Milestone)Tj
+/F2 92 Tf 425 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(02/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(02/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(12.00)Tj
+230 0 Td( )Tj
+-3452 -106 Td(hours)Tj
+230 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-810 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3392 189 -86 re f Q 1 1 1 rg 783 -3392 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3460 Td(1.3.3:)Tj
+ET q 1 1 1 rg 972 -3392 380 -86 re f Q 1 1 1 rg 972 -3392 380 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -3460 Td( )Tj
+ET 1 1 1 rg 993 -3392 359 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -3460 Td(Supervisor)Tj
+ET q 1 1 1 rg 1352 -3392 351 -86 re f Q 1 1 1 rg 1352 -3392 351 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1352 -3460 Td( )Tj
+ET 1 1 1 rg 1373 -3392 330 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1373 -3460 Td(Feedback)Tj
+/F2 92 Tf  0 g -590 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23.00)Tj
+230 0 Td( )Tj
+26 0 Td(hours)Tj
+230 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3283 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+/F3 92 Tf 0 -106 Td(Resources)Tj
+/F2 92 Tf 469 0 Td(:)Tj
+-469 -106 Td(Supervisor)Tj
+0 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4326 189 -86 re f Q 1 1 1 rg 783 -4326 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4394 Td(1.3.4:)Tj
+ET q 1 1 1 rg 972 -4326 444 -86 re f Q 1 1 1 rg 972 -4326 444 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4394 Td( )Tj
+ET 1 1 1 rg 993 -4326 423 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4394 Td(Presentation)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Milestone)Tj
+/F2 92 Tf 425 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(31/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(31/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(12.00)Tj
+230 0 Td( )Tj
+-3452 -106 Td(hours)Tj
+230 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-810 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -4942 138 -96 re f Q 0.922 0.945 0.867 rg 783 -4942 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -5017 Td(1.4:)Tj
+ET q 0.922 0.945 0.867 rg 921 -4942 202 -96 re f Q 0.922 0.945 0.867 rg 921 -4942 202 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -5017 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -4942 179 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -5017 Td(Final)Tj
+ET q 0.922 0.945 0.867 rg 1123 -4942 272 -96 re f Q 0.922 0.945 0.867 rg 1123 -4942 272 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1123 -5017 Td( )Tj
+ET 0.922 0.945 0.867 rg 1146 -4942 249 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1146 -5017 Td(Report)Tj
+/F2 92 Tf -363 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(31/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5568 189 -86 re f Q 1 1 1 rg 783 -5568 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5636 Td(1.4.1:)Tj
+ET q 1 1 1 rg 972 -5568 306 -86 re f Q 1 1 1 rg 972 -5568 306 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -5636 Td( )Tj
+ET 1 1 1 rg 993 -5568 285 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -5636 Td(Creation)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(31/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+ET Q Q 
+endstream
+endobj
+6 0 obj<</Length 10866 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm 
+BT 1 0 0 1 0 0 Tm
+/F3 92 Tf 0 Ts  0 g 783 -683 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -812 189 -86 re f Q 1 1 1 rg 783 -812 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -880 Td(1.4.2:)Tj
+ET q 1 1 1 rg 972 -812 380 -86 re f Q 1 1 1 rg 972 -812 380 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -880 Td( )Tj
+ET 1 1 1 rg 993 -812 359 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -880 Td(Supervisor)Tj
+ET q 1 1 1 rg 1352 -812 351 -86 re f Q 1 1 1 rg 1352 -812 351 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1352 -880 Td( )Tj
+ET 1 1 1 rg 1373 -812 330 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1373 -880 Td(Feedback)Tj
+/F2 92 Tf  0 g -590 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(1.00)Tj
+179 0 Td( )Tj
+26 0 Td(day)Tj
+148 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3483 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+/F3 92 Tf 0 -106 Td(Resources)Tj
+/F2 92 Tf 469 0 Td(:)Tj
+-469 -106 Td(Supervisor)Tj
+0 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1746 189 -86 re f Q 1 1 1 rg 783 -1746 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1814 Td(1.4.3:)Tj
+ET q 1 1 1 rg 972 -1746 409 -86 re f Q 1 1 1 rg 972 -1746 409 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -1814 Td( )Tj
+ET 1 1 1 rg 993 -1746 388 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -1814 Td(Submission)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Milestone)Tj
+/F2 92 Tf 425 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(31/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(31/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23.00)Tj
+230 0 Td( )Tj
+-3452 -106 Td(hours)Tj
+230 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-810 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2362 189 -86 re f Q 1 1 1 rg 783 -2362 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2430 Td(1.4.4:)Tj
+ET q 1 1 1 rg 972 -2362 255 -86 re f Q 1 1 1 rg 972 -2362 255 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -2430 Td( )Tj
+ET 1 1 1 rg 993 -2362 234 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -2430 Td(Design)Tj
+ET q 1 1 1 rg 1227 -2362 255 -86 re f Q 1 1 1 rg 1227 -2362 255 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1227 -2430 Td( )Tj
+ET 1 1 1 rg 1248 -2362 234 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1248 -2430 Td(Freeze)Tj
+/F2 92 Tf  0 g -465 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Milestone)Tj
+/F2 92 Tf 425 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(25/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(1.00)Tj
+179 0 Td( )Tj
+-3401 -106 Td(day)Tj
+148 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-728 -106 Td( )Tj
+ET q 0.859 0.898 0.945 rg 783 -2978 84 -115 re f Q 0.859 0.898 0.945 rg 783 -2978 84 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 783 -3069 Td(2:)Tj
+ET q 0.859 0.898 0.945 rg 867 -2978 457 -115 re f Q 0.859 0.898 0.945 rg 867 -2978 457 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 867 -3069 Td( )Tj
+ET 0.859 0.898 0.945 rg 895 -2978 429 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 895 -3069 Td(Research)Tj
+/F2 92 Tf -112 -107 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(25/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(06/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(103.00)Tj
+281 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3298 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(88)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -3623 138 -96 re f Q 0.922 0.945 0.867 rg 783 -3623 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -3698 Td(2.1:)Tj
+ET q 0.922 0.945 0.867 rg 921 -3623 322 -96 re f Q 0.922 0.945 0.867 rg 921 -3623 322 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -3698 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -3623 299 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -3698 Td(DVB-S2)Tj
+/F2 92 Tf -161 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(25/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(26/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(92.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(85)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4249 189 -86 re f Q 1 1 1 rg 783 -4249 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4317 Td(2.1.1:)Tj
+ET q 1 1 1 rg 972 -4249 187 -86 re f Q 1 1 1 rg 972 -4249 187 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4317 Td( )Tj
+ET 1 1 1 rg 993 -4249 166 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4317 Td(ACM)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(04/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(19/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(45.04)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4865 252 -86 re f Q 1 1 1 rg 783 -4865 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4933 Td(2.1.1.1:)Tj
+ET q 1 1 1 rg 1035 -4865 159 -86 re f Q 1 1 1 rg 1035 -4865 159 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -4933 Td( )Tj
+ET 1 1 1 rg 1056 -4865 138 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -4933 Td(Link)Tj
+ET q 1 1 1 rg 1194 -4865 260 -86 re f Q 1 1 1 rg 1194 -4865 260 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1194 -4933 Td( )Tj
+ET 1 1 1 rg 1215 -4865 239 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1215 -4933 Td(Budget)Tj
+/F2 92 Tf  0 g -432 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(04/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(11/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(38.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5481 252 -86 re f Q 1 1 1 rg 783 -5481 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5549 Td(2.1.1.2:)Tj
+ET q 1 1 1 rg 1035 -5481 184 -86 re f Q 1 1 1 rg 1035 -5481 184 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -5549 Td( )Tj
+ET 1 1 1 rg 1056 -5481 163 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -5549 Td(Orbit)Tj
+ET q 1 1 1 rg 1219 -5481 300 -86 re f Q 1 1 1 rg 1219 -5481 300 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1219 -5549 Td( )Tj
+ET 1 1 1 rg 1240 -5481 279 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1240 -5549 Td(Analysis)Tj
+/F2 92 Tf  0 g -457 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(12/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(19/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+ET Q Q 
+endstream
+endobj
+7 0 obj<</Length 12200 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm 
+BT 1 0 0 1 0 0 Tm
+/F2 92 Tf 0 Ts  0 g 783 -683 Td( )Tj
+ET q 1 1 1 rg 783 -706 189 -86 re f Q 1 1 1 rg 783 -706 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -774 Td(2.1.2:)Tj
+ET q 1 1 1 rg 972 -706 327 -86 re f Q 1 1 1 rg 972 -706 327 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -774 Td( )Tj
+ET 1 1 1 rg 993 -706 306 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -774 Td(Standard)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(18/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1322 252 -86 re f Q 1 1 1 rg 783 -1322 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1390 Td(2.1.2.1:)Tj
+ET q 1 1 1 rg 1035 -1322 507 -86 re f Q 1 1 1 rg 1035 -1322 507 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -1390 Td( )Tj
+ET 1 1 1 rg 1056 -1322 486 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -1390 Td(Read-Through)Tj
+/F2 92 Tf  0 g -273 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(18/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1938 189 -86 re f Q 1 1 1 rg 783 -1938 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2006 Td(2.1.3:)Tj
+ET q 1 1 1 rg 972 -1938 284 -86 re f Q 1 1 1 rg 972 -1938 284 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -2006 Td( )Tj
+ET 1 1 1 rg 993 -1938 263 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -2006 Td(Existing)Tj
+ET q 1 1 1 rg 1256 -1938 573 -86 re f Q 1 1 1 rg 1256 -1938 573 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1256 -2006 Td( )Tj
+ET 1 1 1 rg 1277 -1938 552 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1277 -2006 Td(Implementations)Tj
+/F2 92 Tf  0 g -494 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(25/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(26/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(92.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(75)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2554 252 -86 re f Q 1 1 1 rg 783 -2554 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2622 Td(2.1.3.1:)Tj
+ET q 1 1 1 rg 1035 -2554 187 -86 re f Q 1 1 1 rg 1035 -2554 187 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -2622 Td( )Tj
+ET 1 1 1 rg 1056 -2554 166 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -2622 Td(GNU)Tj
+ET q 1 1 1 rg 1222 -2554 218 -86 re f Q 1 1 1 rg 1222 -2554 218 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1222 -2622 Td( )Tj
+ET 1 1 1 rg 1243 -2554 197 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1243 -2622 Td(Radio)Tj
+/F2 92 Tf  0 g -460 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(25/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(90.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(70)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3170 252 -86 re f Q 1 1 1 rg 783 -3170 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3238 Td(2.1.3.2:)Tj
+ET q 1 1 1 rg 1035 -3170 321 -86 re f Q 1 1 1 rg 1035 -3170 321 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -3238 Td( )Tj
+ET 1 1 1 rg 1056 -3170 300 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -3238 Td(MATLAB)Tj
+ET q 1 1 1 rg 1356 -3170 42 -86 re f Q 1 1 1 rg 1356 -3170 42 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1356 -3238 Td( )Tj
+ET 1 1 1 rg 1377 -3170 21 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1377 -3238 Td(/)Tj
+ET q 1 1 1 rg 1398 -3170 171 -86 re f Q 1 1 1 rg 1398 -3170 171 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1398 -3238 Td( )Tj
+ET 1 1 1 rg 1419 -3170 150 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1419 -3238 Td(HDL)Tj
+ET q 1 1 1 rg 1569 -3170 226 -86 re f Q 1 1 1 rg 1569 -3170 226 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1569 -3238 Td( )Tj
+ET 1 1 1 rg 1590 -3170 205 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1590 -3238 Td(Coder)Tj
+/F2 92 Tf  0 g -807 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(26/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(90.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(80)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -3786 138 -96 re f Q 0.922 0.945 0.867 rg 783 -3786 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -3861 Td(2.2:)Tj
+ET q 0.922 0.945 0.867 rg 921 -3786 316 -96 re f Q 0.922 0.945 0.867 rg 921 -3786 316 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -3861 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -3786 293 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -3861 Td(Packets)Tj
+/F2 92 Tf -161 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(08/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(06/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(90.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(83)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4412 189 -86 re f Q 1 1 1 rg 783 -4412 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4480 Td(2.2.1:)Tj
+ET q 1 1 1 rg 972 -4412 221 -86 re f Q 1 1 1 rg 972 -4412 221 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4480 Td( )Tj
+ET 1 1 1 rg 993 -4412 200 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4480 Td(XTCE)Tj
+ET q 1 1 1 rg 1193 -4412 327 -86 re f Q 1 1 1 rg 1193 -4412 327 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1193 -4480 Td( )Tj
+ET 1 1 1 rg 1214 -4412 306 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1214 -4480 Td(Standard)Tj
+/F2 92 Tf  0 g -431 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(08/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(06/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(90.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(70)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5028 189 -86 re f Q 1 1 1 rg 783 -5028 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5096 Td(2.2.2:)Tj
+ET q 1 1 1 rg 972 -5028 238 -86 re f Q 1 1 1 rg 972 -5028 238 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -5096 Td( )Tj
+ET 1 1 1 rg 993 -5028 217 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -5096 Td(Niamh)Tj
+ET q 1 1 1 rg 1210 -5028 418 -86 re f Q 1 1 1 rg 1210 -5028 418 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1210 -5096 Td( )Tj
+ET 1 1 1 rg 1231 -5028 397 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1231 -5096 Td(Dissertation)Tj
+/F2 92 Tf  0 g -448 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(01/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(34.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5644 189 -86 re f Q 1 1 1 rg 783 -5644 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5712 Td(2.2.3:)Tj
+ET q 1 1 1 rg 972 -5644 310 -86 re f Q 1 1 1 rg 972 -5644 310 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -5712 Td( )Tj
+ET 1 1 1 rg 993 -5644 289 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -5712 Td(Libraries)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+ET Q Q 
+endstream
+endobj
+8 0 obj<</Length 11898 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm 
+BT 1 0 0 1 0 0 Tm
+/F3 92 Tf 0 Ts  0 g 783 -683 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(01/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(34.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -926 138 -96 re f Q 0.922 0.945 0.867 rg 783 -926 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -1001 Td(2.3:)Tj
+ET q 0.922 0.945 0.867 rg 921 -926 534 -96 re f Q 0.922 0.945 0.867 rg 921 -926 534 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -1001 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -926 511 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -1001 Td(STRATHcube)Tj
+/F2 92 Tf 511 0 Td( )Tj
+-672 -106 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(04/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(60.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1554 189 -86 re f Q 1 1 1 rg 783 -1554 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1622 Td(2.3.1:)Tj
+ET q 1 1 1 rg 972 -1554 275 -86 re f Q 1 1 1 rg 972 -1554 275 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -1622 Td( )Tj
+ET 1 1 1 rg 993 -1554 254 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -1622 Td(Mission)Tj
+ET q 1 1 1 rg 1247 -1554 489 -86 re f Q 1 1 1 rg 1247 -1554 489 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1247 -1622 Td( )Tj
+ET 1 1 1 rg 1268 -1554 468 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1268 -1622 Td(Requirements)Tj
+/F2 92 Tf  0 g -485 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(08/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(25.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2170 189 -86 re f Q 1 1 1 rg 783 -2170 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2238 Td(2.3.2:)Tj
+ET q 1 1 1 rg 972 -2170 180 -86 re f Q 1 1 1 rg 972 -2170 180 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -2238 Td( )Tj
+ET 1 1 1 rg 993 -2170 159 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -2238 Td(Data)Tj
+ET q 1 1 1 rg 1152 -2170 319 -86 re f Q 1 1 1 rg 1152 -2170 319 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1152 -2238 Td( )Tj
+ET 1 1 1 rg 1173 -2170 298 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1173 -2238 Td(Handling)Tj
+/F2 92 Tf  0 g -390 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(01/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(34.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2786 189 -86 re f Q 1 1 1 rg 783 -2786 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2854 Td(2.3.3:)Tj
+ET q 1 1 1 rg 972 -2786 284 -86 re f Q 1 1 1 rg 972 -2786 284 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -2854 Td( )Tj
+ET 1 1 1 rg 993 -2786 263 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -2854 Td(Existing)Tj
+ET q 1 1 1 rg 1256 -2786 159 -86 re f Q 1 1 1 rg 1256 -2786 159 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1256 -2854 Td( )Tj
+ET 1 1 1 rg 1277 -2786 138 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1277 -2854 Td(Link)Tj
+ET q 1 1 1 rg 1415 -2786 260 -86 re f Q 1 1 1 rg 1415 -2786 260 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1415 -2854 Td( )Tj
+ET 1 1 1 rg 1436 -2786 239 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1436 -2854 Td(Budget)Tj
+/F2 92 Tf  0 g -653 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(04/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(11/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 0.859 0.898 0.945 rg 783 -3402 84 -115 re f Q 0.859 0.898 0.945 rg 783 -3402 84 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 783 -3493 Td(3:)Tj
+ET q 0.859 0.898 0.945 rg 867 -3402 412 -115 re f Q 0.859 0.898 0.945 rg 867 -3402 412 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 867 -3493 Td( )Tj
+ET 0.859 0.898 0.945 rg 895 -3402 384 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 895 -3493 Td(Systems)Tj
+ET q 0.859 0.898 0.945 rg 1279 -3402 564 -115 re f Q 0.859 0.898 0.945 rg 1279 -3402 564 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 1279 -3493 Td( )Tj
+ET 0.859 0.898 0.945 rg 1307 -3402 536 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 1307 -3493 Td(Engineering)Tj
+/F2 92 Tf -524 -107 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(15/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(09/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(55.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(60)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -4047 138 -96 re f Q 0.922 0.945 0.867 rg 783 -4047 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -4122 Td(3.1:)Tj
+ET q 0.922 0.945 0.867 rg 921 -4047 538 -96 re f Q 0.922 0.945 0.867 rg 921 -4047 538 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -4122 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -4047 515 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -4122 Td(Requirements)Tj
+/F2 92 Tf -161 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(15/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(09/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(55.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(60)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 0.859 0.898 0.945 rg 783 -4673 84 -115 re f Q 0.859 0.898 0.945 rg 783 -4673 84 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 783 -4764 Td(4:)Tj
+ET q 0.859 0.898 0.945 rg 867 -4673 714 -115 re f Q 0.859 0.898 0.945 rg 867 -4673 714 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 867 -4764 Td( )Tj
+ET 0.859 0.898 0.945 rg 895 -4673 686 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 895 -4764 Td(Implementation)Tj
+/F2 92 Tf -112 -107 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(154.96)Tj
+281 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3298 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -5318 138 -96 re f Q 0.922 0.945 0.867 rg 783 -5318 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -5393 Td(4.1:)Tj
+ET q 0.922 0.945 0.867 rg 921 -5318 442 -96 re f Q 0.922 0.945 0.867 rg 921 -5318 442 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -5393 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -5318 419 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -5393 Td(Transmitter)Tj
+/F2 92 Tf -161 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(154.96)Tj
+281 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3298 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET Q Q 
+endstream
+endobj
+9 0 obj<</Length 13267 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm q 1 1 1 rg 783 -600 189 -86 re f Q 1 1 1 rg 783 -600 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -668 Td(4.1.1:)Tj
+ET q 1 1 1 rg 972 -600 321 -86 re f Q 1 1 1 rg 972 -600 321 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -668 Td( )Tj
+ET 1 1 1 rg 993 -600 300 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -668 Td(MATLAB)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(154.96)Tj
+281 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3298 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(26)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1216 252 -86 re f Q 1 1 1 rg 783 -1216 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1284 Td(4.1.1.1:)Tj
+ET q 1 1 1 rg 1035 -1216 342 -86 re f Q 1 1 1 rg 1035 -1216 342 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -1284 Td( )Tj
+ET 1 1 1 rg 1056 -1216 321 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -1284 Td(Resource)Tj
+ET q 1 1 1 rg 1377 -1216 238 -86 re f Q 1 1 1 rg 1377 -1216 238 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1377 -1284 Td( )Tj
+ET 1 1 1 rg 1398 -1216 217 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1398 -1284 Td(Usage)Tj
+ET q 1 1 1 rg 1615 -1216 300 -86 re f Q 1 1 1 rg 1615 -1216 300 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1615 -1284 Td( )Tj
+ET 1 1 1 rg 1636 -1216 279 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1636 -1284 Td(Analysis)Tj
+/F2 92 Tf  0 g -853 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(11/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1832 252 -86 re f Q 1 1 1 rg 783 -1832 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1900 Td(4.1.1.2:)Tj
+ET q 1 1 1 rg 1035 -1832 413 -86 re f Q 1 1 1 rg 1035 -1832 413 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -1900 Td( )Tj
+ET 1 1 1 rg 1056 -1832 392 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -1900 Td(Transceiver)Tj
+ET q 1 1 1 rg 1448 -1832 378 -86 re f Q 1 1 1 rg 1448 -1832 378 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1448 -1900 Td( )Tj
+ET 1 1 1 rg 1469 -1832 357 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1469 -1900 Td(Integration)Tj
+/F2 92 Tf  0 g -686 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(45.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2448 252 -86 re f Q 1 1 1 rg 783 -2448 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2516 Td(4.1.1.3:)Tj
+ET q 1 1 1 rg 1035 -2448 342 -86 re f Q 1 1 1 rg 1035 -2448 342 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -2516 Td( )Tj
+ET 1 1 1 rg 1056 -2448 321 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -2516 Td(Resource)Tj
+ET q 1 1 1 rg 1377 -2448 238 -86 re f Q 1 1 1 rg 1377 -2448 238 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1377 -2516 Td( )Tj
+ET 1 1 1 rg 1398 -2448 217 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1398 -2516 Td(Usage)Tj
+ET q 1 1 1 rg 1615 -2448 439 -86 re f Q 1 1 1 rg 1615 -2448 439 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1615 -2516 Td( )Tj
+ET 1 1 1 rg 1636 -2448 418 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1636 -2516 Td(Optimisation)Tj
+/F2 92 Tf  0 g -853 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3064 189 -86 re f Q 1 1 1 rg 783 -3064 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3132 Td(4.1.2:)Tj
+ET q 1 1 1 rg 972 -3064 198 -86 re f Q 1 1 1 rg 972 -3064 198 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -3132 Td( )Tj
+ET 1 1 1 rg 993 -3064 177 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -3132 Td(Libiio)Tj
+ET q 1 1 1 rg 1170 -3064 221 -86 re f Q 1 1 1 rg 1170 -3064 221 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1170 -3132 Td( )Tj
+ET 1 1 1 rg 1191 -3064 200 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1191 -3132 Td(Driver)Tj
+/F2 92 Tf  0 g -408 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3680 189 -86 re f Q 1 1 1 rg 783 -3680 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3748 Td(4.1.3:)Tj
+ET q 1 1 1 rg 972 -3680 187 -86 re f Q 1 1 1 rg 972 -3680 187 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -3748 Td( )Tj
+ET 1 1 1 rg 993 -3680 166 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -3748 Td(GNU)Tj
+ET q 1 1 1 rg 1159 -3680 218 -86 re f Q 1 1 1 rg 1159 -3680 218 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1159 -3748 Td( )Tj
+ET 1 1 1 rg 1180 -3680 197 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1180 -3748 Td(Radio)Tj
+ET q 1 1 1 rg 1377 -3680 314 -86 re f Q 1 1 1 rg 1377 -3680 314 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1377 -3748 Td( )Tj
+ET 1 1 1 rg 1398 -3680 293 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1398 -3748 Td(Interface)Tj
+/F2 92 Tf  0 g -615 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -4296 138 -96 re f Q 0.922 0.945 0.867 rg 783 -4296 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -4371 Td(4.2:)Tj
+ET q 0.922 0.945 0.867 rg 921 -4296 275 -96 re f Q 0.922 0.945 0.867 rg 921 -4296 275 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -4371 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -4296 252 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -4371 Td(Packet)Tj
+ET q 0.922 0.945 0.867 rg 1196 -4296 349 -96 re f Q 0.922 0.945 0.867 rg 1196 -4296 349 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1196 -4371 Td( )Tj
+ET 0.922 0.945 0.867 rg 1219 -4296 326 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1219 -4371 Td(Handling)Tj
+/F2 92 Tf -436 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(16/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(77.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4922 189 -86 re f Q 1 1 1 rg 783 -4922 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4990 Td(4.2.1:)Tj
+ET q 1 1 1 rg 972 -4922 270 -86 re f Q 1 1 1 rg 972 -4922 270 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4990 Td( )Tj
+ET 1 1 1 rg 993 -4922 249 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4990 Td(System)Tj
+ET q 1 1 1 rg 1242 -4922 373 -86 re f Q 1 1 1 rg 1242 -4922 373 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1242 -4990 Td( )Tj
+ET 1 1 1 rg 1263 -4922 352 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1263 -4990 Td(Interfacing)Tj
+/F2 92 Tf  0 g -480 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(16/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(15/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(30.96)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5538 252 -86 re f Q 1 1 1 rg 783 -5538 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5606 Td(4.2.1.1:)Tj
+ET q 1 1 1 rg 1035 -5538 250 -86 re f Q 1 1 1 rg 1035 -5538 250 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -5606 Td( )Tj
+ET 1 1 1 rg 1056 -5538 229 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -5606 Td(Packet)Tj
+ET q 1 1 1 rg 1285 -5538 259 -86 re f Q 1 1 1 rg 1285 -5538 259 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1285 -5606 Td( )Tj
+ET 1 1 1 rg 1306 -5538 238 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1306 -5606 Td(Source)Tj
+ET q 1 1 1 rg 1544 -5538 373 -86 re f Q 1 1 1 rg 1544 -5538 373 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1544 -5606 Td( )Tj
+ET 1 1 1 rg 1565 -5538 352 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1565 -5606 Td(Simulation)Tj
+/F2 92 Tf  0 g -782 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(16/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(15/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(30.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+ET Q Q 
+endstream
+endobj
+10 0 obj<</Length 12674 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm 
+BT 1 0 0 1 0 0 Tm
+/F3 92 Tf 0 Ts  0 g 783 -683 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -812 252 -86 re f Q 1 1 1 rg 783 -812 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -880 Td(4.2.1.2:)Tj
+ET q 1 1 1 rg 1035 -812 442 -86 re f Q 1 1 1 rg 1035 -812 442 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -880 Td( )Tj
+ET 1 1 1 rg 1056 -812 421 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -880 Td(InterProcess)Tj
+ET q 1 1 1 rg 1477 -812 543 -86 re f Q 1 1 1 rg 1477 -812 543 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1477 -880 Td( )Tj
+ET 1 1 1 rg 1498 -812 522 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1498 -880 Td(Communication)Tj
+ET q 1 1 1 rg 2020 -812 196 -86 re f Q 1 1 1 rg 2020 -812 196 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 2020 -880 Td( )Tj
+ET 1 1 1 rg 2041 -812 175 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 2041 -880 Td(\(IPC\))Tj
+/F2 92 Tf  0 g -1258 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(08/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(15/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1428 189 -86 re f Q 1 1 1 rg 783 -1428 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1496 Td(4.2.2:)Tj
+ET q 1 1 1 rg 972 -1428 221 -86 re f Q 1 1 1 rg 972 -1428 221 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -1496 Td( )Tj
+ET 1 1 1 rg 993 -1428 200 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -1496 Td(XTCE)Tj
+ET q 1 1 1 rg 1193 -1428 319 -86 re f Q 1 1 1 rg 1193 -1428 319 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1193 -1496 Td( )Tj
+ET 1 1 1 rg 1214 -1428 298 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1214 -1496 Td(Handling)Tj
+/F2 92 Tf  0 g -431 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(16/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(77.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2044 252 -86 re f Q 1 1 1 rg 783 -2044 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2112 Td(4.2.2.1:)Tj
+ET q 1 1 1 rg 1035 -2044 394 -86 re f Q 1 1 1 rg 1035 -2044 394 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -2112 Td( )Tj
+ET 1 1 1 rg 1056 -2044 373 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -2112 Td(Verification)Tj
+ET q 1 1 1 rg 1429 -2044 296 -86 re f Q 1 1 1 rg 1429 -2044 296 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1429 -2112 Td( )Tj
+ET 1 1 1 rg 1450 -2044 275 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1450 -2112 Td(Schema)Tj
+ET q 1 1 1 rg 1725 -2044 306 -86 re f Q 1 1 1 rg 1725 -2044 306 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1725 -2112 Td( )Tj
+ET 1 1 1 rg 1746 -2044 285 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1746 -2112 Td(Creation)Tj
+/F2 92 Tf  0 g -963 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(16/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2660 252 -86 re f Q 1 1 1 rg 783 -2660 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2728 Td(4.2.2.2:)Tj
+ET q 1 1 1 rg 1035 -2660 250 -86 re f Q 1 1 1 rg 1035 -2660 250 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -2728 Td( )Tj
+ET 1 1 1 rg 1056 -2660 229 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -2728 Td(Packet)Tj
+ET q 1 1 1 rg 1285 -2660 319 -86 re f Q 1 1 1 rg 1285 -2660 319 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1285 -2728 Td( )Tj
+ET 1 1 1 rg 1306 -2660 298 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1306 -2728 Td(Handling)Tj
+/F2 92 Tf  0 g -523 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(17/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3276 189 -86 re f Q 1 1 1 rg 783 -3276 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3344 Td(4.2.3:)Tj
+ET q 1 1 1 rg 972 -3276 394 -86 re f Q 1 1 1 rg 972 -3276 394 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -3344 Td( )Tj
+ET 1 1 1 rg 993 -3276 373 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -3344 Td(Scheduling)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(17/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3892 252 -86 re f Q 1 1 1 rg 783 -3892 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3960 Td(4.2.3.1:)Tj
+ET q 1 1 1 rg 1035 -3892 222 -86 re f Q 1 1 1 rg 1035 -3892 222 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -3960 Td( )Tj
+ET 1 1 1 rg 1056 -3892 201 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -3960 Td(Buffer)Tj
+ET q 1 1 1 rg 1257 -3892 460 -86 re f Q 1 1 1 rg 1257 -3892 460 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1257 -3960 Td( )Tj
+ET 1 1 1 rg 1278 -3892 439 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1278 -3960 Td(Management)Tj
+/F2 92 Tf  0 g -495 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(17/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4508 252 -86 re f Q 1 1 1 rg 783 -4508 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4576 Td(4.2.3.2:)Tj
+ET q 1 1 1 rg 1035 -4508 339 -86 re f Q 1 1 1 rg 1035 -4508 339 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -4576 Td( )Tj
+ET 1 1 1 rg 1056 -4508 318 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -4576 Td(Algorithm)Tj
+/F2 92 Tf  0 g -273 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(17/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5124 189 -86 re f Q 1 1 1 rg 783 -5124 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5192 Td(4.2.4:)Tj
+ET q 1 1 1 rg 972 -5124 113 -86 re f Q 1 1 1 rg 972 -5124 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -5192 Td( )Tj
+ET 1 1 1 rg 993 -5124 92 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -5192 Td(PL)Tj
+ET q 1 1 1 rg 1085 -5124 314 -86 re f Q 1 1 1 rg 1085 -5124 314 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1085 -5192 Td( )Tj
+ET 1 1 1 rg 1106 -5124 293 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1106 -5192 Td(Interface)Tj
+/F2 92 Tf  0 g -323 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5740 252 -86 re f Q 1 1 1 rg 783 -5740 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5808 Td(4.2.4.1:)Tj
+ET q 1 1 1 rg 1035 -5740 187 -86 re f Q 1 1 1 rg 1035 -5740 187 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -5808 Td( )Tj
+ET 1 1 1 rg 1056 -5740 166 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -5808 Td(GNU)Tj
+ET q 1 1 1 rg 1222 -5740 218 -86 re f Q 1 1 1 rg 1222 -5740 218 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1222 -5808 Td( )Tj
+ET 1 1 1 rg 1243 -5740 197 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1243 -5808 Td(Radio)Tj
+ET q 1 1 1 rg 1440 -5740 65 -86 re f Q 1 1 1 rg 1440 -5740 65 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1440 -5808 Td( )Tj
+ET 1 1 1 rg 1461 -5740 44 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1461 -5808 Td(+)Tj
+ET q 1 1 1 rg 1505 -5740 198 -86 re f Q 1 1 1 rg 1505 -5740 198 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1505 -5808 Td( )Tj
+ET 1 1 1 rg 1526 -5740 177 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1526 -5808 Td(Libiio)Tj
+ET q 1 1 1 rg 1703 -5740 378 -86 re f Q 1 1 1 rg 1703 -5740 378 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1703 -5808 Td( )Tj
+ET 1 1 1 rg 1724 -5740 357 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1724 -5808 Td(Integration)Tj
+/F2 92 Tf  0 g -941 -101 Td( )Tj
+ET Q Q 
+endstream
+endobj
+11 0 obj<</Length 12575 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm 
+BT 1 0 0 1 0 0 Tm
+/F3 92 Tf 0 Ts  0 g 783 -683 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1024 252 -86 re f Q 1 1 1 rg 783 -1024 252 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1092 Td(4.2.4.2:)Tj
+ET q 1 1 1 rg 1035 -1024 187 -86 re f Q 1 1 1 rg 1035 -1024 187 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -1092 Td( )Tj
+ET 1 1 1 rg 1056 -1024 166 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1056 -1092 Td(ACM)Tj
+ET q 1 1 1 rg 1222 -1024 367 -86 re f Q 1 1 1 rg 1222 -1024 367 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1222 -1092 Td( )Tj
+ET 1 1 1 rg 1243 -1024 346 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1243 -1092 Td(Command)Tj
+ET q 1 1 1 rg 1589 -1024 307 -86 re f Q 1 1 1 rg 1589 -1024 307 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1589 -1092 Td( )Tj
+ET 1 1 1 rg 1610 -1024 286 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1610 -1092 Td(handling)Tj
+/F2 92 Tf  0 g -827 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -1640 138 -96 re f Q 0.922 0.945 0.867 rg 783 -1640 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -1715 Td(4.3:)Tj
+ET q 0.922 0.945 0.867 rg 921 -1640 298 -96 re f Q 0.922 0.945 0.867 rg 921 -1640 298 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -1715 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -1640 275 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -1715 Td(System)Tj
+ET q 0.922 0.945 0.867 rg 1219 -1640 377 -96 re f Q 0.922 0.945 0.867 rg 1219 -1640 377 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1219 -1715 Td( )Tj
+ET 0.922 0.945 0.867 rg 1242 -1640 354 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1242 -1715 Td(Prototype)Tj
+ET q 0.922 0.945 0.867 rg 1596 -1640 336 -96 re f Q 0.922 0.945 0.867 rg 1596 -1640 336 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1596 -1715 Td( )Tj
+ET 0.922 0.945 0.867 rg 1619 -1640 313 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1619 -1715 Td(Creation)Tj
+/F2 92 Tf -836 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Milestone)Tj
+/F2 92 Tf 425 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(04/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(1.00)Tj
+179 0 Td( )Tj
+-3401 -106 Td(day)Tj
+148 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-728 -106 Td( )Tj
+ET q 0.859 0.898 0.945 rg 783 -2266 84 -115 re f Q 0.859 0.898 0.945 rg 783 -2266 84 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 783 -2357 Td(5:)Tj
+ET q 0.859 0.898 0.945 rg 867 -2266 524 -115 re f Q 0.859 0.898 0.945 rg 867 -2266 524 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 867 -2357 Td( )Tj
+ET 0.859 0.898 0.945 rg 895 -2266 496 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 895 -2357 Td(Verification)Tj
+/F2 92 Tf -112 -107 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(70.96)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -2911 138 -96 re f Q 0.922 0.945 0.867 rg 783 -2911 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -2986 Td(5.1:)Tj
+ET q 0.922 0.945 0.867 rg 921 -2911 359 -96 re f Q 0.922 0.945 0.867 rg 921 -2911 359 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -2986 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -2911 336 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -2986 Td(Required)Tj
+/F2 92 Tf -161 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(70.96)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3537 189 -86 re f Q 1 1 1 rg 783 -3537 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3605 Td(5.1.1:)Tj
+ET q 1 1 1 rg 972 -3537 247 -86 re f Q 1 1 1 rg 972 -3537 247 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -3605 Td( )Tj
+ET 1 1 1 rg 993 -3537 226 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -3605 Td(Timing)Tj
+ET q 1 1 1 rg 1219 -3537 280 -86 re f Q 1 1 1 rg 1219 -3537 280 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1219 -3605 Td( )Tj
+ET 1 1 1 rg 1240 -3537 259 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1240 -3605 Td(Closure)Tj
+/F2 92 Tf  0 g -457 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(20/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4153 189 -86 re f Q 1 1 1 rg 783 -4153 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4221 Td(5.1.2:)Tj
+ET q 1 1 1 rg 972 -4153 340 -86 re f Q 1 1 1 rg 972 -4153 340 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4221 Td( )Tj
+ET 1 1 1 rg 993 -4153 319 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4221 Td(Individual)Tj
+ET q 1 1 1 rg 1312 -4153 410 -86 re f Q 1 1 1 rg 1312 -4153 410 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1312 -4221 Td( )Tj
+ET 1 1 1 rg 1333 -4153 389 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1333 -4221 Td(Component)Tj
+ET q 1 1 1 rg 1722 -4153 268 -86 re f Q 1 1 1 rg 1722 -4153 268 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1722 -4221 Td( )Tj
+ET 1 1 1 rg 1743 -4153 247 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1743 -4221 Td(Testing)Tj
+/F2 92 Tf  0 g -960 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(45.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4769 189 -86 re f Q 1 1 1 rg 783 -4769 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4837 Td(5.1.3:)Tj
+ET q 1 1 1 rg 972 -4769 268 -86 re f Q 1 1 1 rg 972 -4769 268 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4837 Td( )Tj
+ET 1 1 1 rg 993 -4769 247 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4837 Td(Testing)Tj
+ET q 1 1 1 rg 1240 -4769 264 -86 re f Q 1 1 1 rg 1240 -4769 264 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1240 -4837 Td( )Tj
+ET 1 1 1 rg 1261 -4769 243 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1261 -4837 Td(against)Tj
+ET q 1 1 1 rg 1504 -4769 97 -86 re f Q 1 1 1 rg 1504 -4769 97 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1504 -4837 Td( )Tj
+ET 1 1 1 rg 1525 -4769 76 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1525 -4837 Td(all)Tj
+ET q 1 1 1 rg 1601 -4769 443 -86 re f Q 1 1 1 rg 1601 -4769 443 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1601 -4837 Td( )Tj
+ET 1 1 1 rg 1622 -4769 422 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1622 -4837 Td(performance)Tj
+ET q 1 1 1 rg 2044 -4769 460 -86 re f Q 1 1 1 rg 2044 -4769 460 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 2044 -4837 Td( )Tj
+ET 1 1 1 rg 2065 -4769 439 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 2065 -4837 Td(requirements)Tj
+/F2 92 Tf  0 g -1282 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -5385 138 -96 re f Q 0.922 0.945 0.867 rg 783 -5385 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -5460 Td(5.2:)Tj
+ET q 0.922 0.945 0.867 rg 921 -5385 330 -96 re f Q 0.922 0.945 0.867 rg 921 -5385 330 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -5460 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -5385 307 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -5460 Td(Optional)Tj
+/F2 92 Tf -161 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+ET Q Q 
+endstream
+endobj
+12 0 obj<</Length 11596 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm 
+BT 1 0 0 1 0 0 Tm
+/F2 92 Tf 0 Ts  0 g 783 -683 Td( )Tj
+ET q 1 1 1 rg 783 -706 189 -86 re f Q 1 1 1 rg 783 -706 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -774 Td(5.2.1:)Tj
+ET q 1 1 1 rg 972 -706 155 -86 re f Q 1 1 1 rg 972 -706 155 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -774 Td( )Tj
+ET 1 1 1 rg 993 -706 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -774 Td(End)Tj
+ET q 1 1 1 rg 1127 -706 109 -86 re f Q 1 1 1 rg 1127 -706 109 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1127 -774 Td( )Tj
+ET 1 1 1 rg 1148 -706 88 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1148 -774 Td(To)Tj
+ET q 1 1 1 rg 1236 -706 155 -86 re f Q 1 1 1 rg 1236 -706 155 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1236 -774 Td( )Tj
+ET 1 1 1 rg 1257 -706 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1257 -774 Td(End)Tj
+ET q 1 1 1 rg 1391 -706 347 -86 re f Q 1 1 1 rg 1391 -706 347 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1391 -774 Td( )Tj
+ET 1 1 1 rg 1412 -706 326 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1412 -774 Td(Hardware)Tj
+ET q 1 1 1 rg 1738 -706 268 -86 re f Q 1 1 1 rg 1738 -706 268 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1738 -774 Td( )Tj
+ET 1 1 1 rg 1759 -706 247 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1759 -774 Td(Testing)Tj
+/F2 92 Tf  0 g -976 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1322 189 -86 re f Q 1 1 1 rg 783 -1322 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1390 Td(5.2.2:)Tj
+ET q 1 1 1 rg 972 -1322 291 -86 re f Q 1 1 1 rg 972 -1322 291 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -1390 Td( )Tj
+ET 1 1 1 rg 993 -1322 270 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -1390 Td(Memory)Tj
+ET q 1 1 1 rg 1263 -1322 373 -86 re f Q 1 1 1 rg 1263 -1322 373 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1263 -1390 Td( )Tj
+ET 1 1 1 rg 1284 -1322 352 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1284 -1390 Td(Corruption)Tj
+/F2 92 Tf  0 g -501 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 0.859 0.898 0.945 rg 783 -1938 84 -115 re f Q 0.859 0.898 0.945 rg 783 -1938 84 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 783 -2029 Td(6:)Tj
+ET q 0.859 0.898 0.945 rg 867 -1938 378 -115 re f Q 0.859 0.898 0.945 rg 867 -1938 378 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 867 -2029 Td( )Tj
+ET 0.859 0.898 0.945 rg 895 -1938 350 -115 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 100 Tf 0 Ts  0 g 895 -2029 Td(Timings)Tj
+/F2 92 Tf -112 -107 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(07/04/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(196.00)Tj
+281 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3298 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(37)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -2583 138 -96 re f Q 0.922 0.945 0.867 rg 783 -2583 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -2658 Td(6.1:)Tj
+ET q 0.922 0.945 0.867 rg 921 -2583 377 -96 re f Q 0.922 0.945 0.867 rg 921 -2583 377 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -2658 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -2583 354 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -2658 Td(Semester)Tj
+ET q 0.922 0.945 0.867 rg 1298 -2583 69 -96 re f Q 0.922 0.945 0.867 rg 1298 -2583 69 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1298 -2658 Td( )Tj
+ET 0.922 0.945 0.867 rg 1321 -2583 46 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1321 -2658 Td(1)Tj
+/F2 92 Tf -538 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(112.00)Tj
+281 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3298 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(64)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3209 189 -86 re f Q 1 1 1 rg 783 -3209 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3277 Td(6.1.1:)Tj
+ET q 1 1 1 rg 972 -3209 134 -86 re f Q 1 1 1 rg 972 -3209 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -3277 Td( )Tj
+ET 1 1 1 rg 993 -3209 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -3277 Td(W1)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(30/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3825 189 -86 re f Q 1 1 1 rg 783 -3825 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3893 Td(6.1.2:)Tj
+ET q 1 1 1 rg 972 -3825 134 -86 re f Q 1 1 1 rg 972 -3825 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -3893 Td( )Tj
+ET 1 1 1 rg 993 -3825 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -3893 Td(W2)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(30/09/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(07/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4441 189 -86 re f Q 1 1 1 rg 783 -4441 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4509 Td(6.1.3:)Tj
+ET q 1 1 1 rg 972 -4441 134 -86 re f Q 1 1 1 rg 972 -4441 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4509 Td( )Tj
+ET 1 1 1 rg 993 -4441 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4509 Td(W3)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(07/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5057 189 -86 re f Q 1 1 1 rg 783 -5057 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5125 Td(6.1.4:)Tj
+ET q 1 1 1 rg 972 -5057 134 -86 re f Q 1 1 1 rg 972 -5057 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -5125 Td( )Tj
+ET 1 1 1 rg 993 -5057 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -5125 Td(W4)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(14/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5673 189 -86 re f Q 1 1 1 rg 783 -5673 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5741 Td(6.1.5:)Tj
+ET q 1 1 1 rg 972 -5673 134 -86 re f Q 1 1 1 rg 972 -5673 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -5741 Td( )Tj
+ET 1 1 1 rg 993 -5673 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -5741 Td(W5)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+ET Q Q 
+endstream
+endobj
+13 0 obj<</Length 11913 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm 
+BT 1 0 0 1 0 0 Tm
+/F3 92 Tf 0 Ts  0 g 783 -683 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(21/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -918 189 -86 re f Q 1 1 1 rg 783 -918 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -986 Td(6.1.6:)Tj
+ET q 1 1 1 rg 972 -918 134 -86 re f Q 1 1 1 rg 972 -918 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -986 Td( )Tj
+ET 1 1 1 rg 993 -918 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -986 Td(W6)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(28/10/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(04/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1534 189 -86 re f Q 1 1 1 rg 783 -1534 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1602 Td(6.1.7:)Tj
+ET q 1 1 1 rg 972 -1534 134 -86 re f Q 1 1 1 rg 972 -1534 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -1602 Td( )Tj
+ET 1 1 1 rg 993 -1534 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -1602 Td(W7)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(04/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(11/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2150 189 -86 re f Q 1 1 1 rg 783 -2150 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2218 Td(6.1.8:)Tj
+ET q 1 1 1 rg 972 -2150 134 -86 re f Q 1 1 1 rg 972 -2150 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -2218 Td( )Tj
+ET 1 1 1 rg 993 -2150 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -2218 Td(W8)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(11/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(18/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2766 189 -86 re f Q 1 1 1 rg 783 -2766 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2834 Td(6.1.9:)Tj
+ET q 1 1 1 rg 972 -2766 134 -86 re f Q 1 1 1 rg 972 -2766 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -2834 Td( )Tj
+ET 1 1 1 rg 993 -2766 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -2834 Td(W9)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(18/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(25/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3382 231 -86 re f Q 1 1 1 rg 783 -3382 231 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3450 Td(6.1.10:)Tj
+ET q 1 1 1 rg 1014 -3382 176 -86 re f Q 1 1 1 rg 1014 -3382 176 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1014 -3450 Td( )Tj
+ET 1 1 1 rg 1035 -3382 155 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -3450 Td(W10)Tj
+/F2 92 Tf  0 g -252 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(25/11/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(02/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(100)Tj
+153 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Completed)Tj
+-1117 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3998 231 -86 re f Q 1 1 1 rg 783 -3998 231 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4066 Td(6.1.11:)Tj
+ET q 1 1 1 rg 1014 -3998 176 -86 re f Q 1 1 1 rg 1014 -3998 176 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1014 -4066 Td( )Tj
+ET 1 1 1 rg 1035 -3998 155 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -4066 Td(W11)Tj
+/F2 92 Tf  0 g -252 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(02/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(09/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3196 -106 Td(Complete)Tj
+/F2 92 Tf 419 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(20)Tj
+102 0 Td( )Tj
+26 0 Td(%,)Tj
+108 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(In)Tj
+77 0 Td( )Tj
+26 0 Td(Progress)Tj
+-1169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4614 231 -86 re f Q 1 1 1 rg 783 -4614 231 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4682 Td(6.1.12:)Tj
+ET q 1 1 1 rg 1014 -4614 176 -86 re f Q 1 1 1 rg 1014 -4614 176 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1014 -4682 Td( )Tj
+ET 1 1 1 rg 1035 -4614 155 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -4682 Td(W12)Tj
+ET q 1 1 1 rg 1190 -4614 237 -86 re f Q 1 1 1 rg 1190 -4614 237 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1190 -4682 Td( )Tj
+ET 1 1 1 rg 1211 -4614 216 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1211 -4682 Td(\(Exam)Tj
+ET q 1 1 1 rg 1427 -4614 88 -86 re f Q 1 1 1 rg 1427 -4614 88 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1427 -4682 Td( )Tj
+ET 1 1 1 rg 1448 -4614 67 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1448 -4682 Td(1\))Tj
+/F2 92 Tf  0 g -665 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(09/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(16/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5230 231 -86 re f Q 1 1 1 rg 783 -5230 231 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5298 Td(6.1.13:)Tj
+ET q 1 1 1 rg 1014 -5230 176 -86 re f Q 1 1 1 rg 1014 -5230 176 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1014 -5298 Td( )Tj
+ET 1 1 1 rg 1035 -5230 155 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -5298 Td(W13)Tj
+ET q 1 1 1 rg 1190 -5230 237 -86 re f Q 1 1 1 rg 1190 -5230 237 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1190 -5298 Td( )Tj
+ET 1 1 1 rg 1211 -5230 216 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1211 -5298 Td(\(Exam)Tj
+ET q 1 1 1 rg 1427 -5230 88 -86 re f Q 1 1 1 rg 1427 -5230 88 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1427 -5298 Td( )Tj
+ET 1 1 1 rg 1448 -5230 67 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1448 -5298 Td(2\))Tj
+/F2 92 Tf  0 g -665 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(16/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5846 231 -86 re f Q 1 1 1 rg 783 -5846 231 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5914 Td(6.1.14:)Tj
+ET q 1 1 1 rg 1014 -5846 358 -86 re f Q 1 1 1 rg 1014 -5846 358 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1014 -5914 Td( )Tj
+ET 1 1 1 rg 1035 -5846 337 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -5914 Td(Christmas)Tj
+ET q 1 1 1 rg 1372 -5846 63 -86 re f Q 1 1 1 rg 1372 -5846 63 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1372 -5914 Td( )Tj
+ET 1 1 1 rg 1393 -5846 42 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1393 -5914 Td(1)Tj
+ET Q Q 
+endstream
+endobj
+14 0 obj<</Length 10356 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm 
+BT 1 0 0 1 0 0 Tm
+/F2 92 Tf 0 Ts  0 g 783 -683 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(23/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(30/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1130 231 -86 re f Q 1 1 1 rg 783 -1130 231 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1198 Td(6.1.15:)Tj
+ET q 1 1 1 rg 1014 -1130 358 -86 re f Q 1 1 1 rg 1014 -1130 358 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1014 -1198 Td( )Tj
+ET 1 1 1 rg 1035 -1130 337 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -1198 Td(Christmas)Tj
+ET q 1 1 1 rg 1372 -1130 63 -86 re f Q 1 1 1 rg 1372 -1130 63 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1372 -1198 Td( )Tj
+ET 1 1 1 rg 1393 -1130 42 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1393 -1198 Td(2)Tj
+/F2 92 Tf  0 g -610 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(30/12/2024)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(06/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1746 231 -86 re f Q 1 1 1 rg 783 -1746 231 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1814 Td(6.1.16:)Tj
+ET q 1 1 1 rg 1014 -1746 358 -86 re f Q 1 1 1 rg 1014 -1746 358 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1014 -1814 Td( )Tj
+ET 1 1 1 rg 1035 -1746 337 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -1814 Td(Christmas)Tj
+ET q 1 1 1 rg 1372 -1746 63 -86 re f Q 1 1 1 rg 1372 -1746 63 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1372 -1814 Td( )Tj
+ET 1 1 1 rg 1393 -1746 42 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1393 -1814 Td(3)Tj
+/F2 92 Tf  0 g -610 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(06/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 0.922 0.945 0.867 rg 783 -2362 138 -96 re f Q 0.922 0.945 0.867 rg 783 -2362 138 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 783 -2437 Td(6.2:)Tj
+ET q 0.922 0.945 0.867 rg 921 -2362 377 -96 re f Q 0.922 0.945 0.867 rg 921 -2362 377 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 921 -2437 Td( )Tj
+ET 0.922 0.945 0.867 rg 944 -2362 354 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 944 -2437 Td(Semester)Tj
+ET q 0.922 0.945 0.867 rg 1298 -2362 69 -96 re f Q 0.922 0.945 0.867 rg 1298 -2362 69 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1298 -2437 Td( )Tj
+ET 0.922 0.945 0.867 rg 1321 -2362 46 -96 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 83 Tf 0 Ts  0 g 1321 -2437 Td(2)Tj
+/F2 92 Tf -538 -104 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(07/04/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(84.00)Tj
+230 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf -3247 -106 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-502 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2988 189 -86 re f Q 1 1 1 rg 783 -2988 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3056 Td(6.2.1:)Tj
+ET q 1 1 1 rg 972 -2988 478 -86 re f Q 1 1 1 rg 972 -2988 478 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -3056 Td( )Tj
+ET 1 1 1 rg 993 -2988 457 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -3056 Td(Consolidation)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(13/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(20/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3604 189 -86 re f Q 1 1 1 rg 783 -3604 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3672 Td(6.2.2:)Tj
+ET q 1 1 1 rg 972 -3604 134 -86 re f Q 1 1 1 rg 972 -3604 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -3672 Td( )Tj
+ET 1 1 1 rg 993 -3604 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -3672 Td(W1)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(20/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4220 189 -86 re f Q 1 1 1 rg 783 -4220 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4288 Td(6.2.3:)Tj
+ET q 1 1 1 rg 972 -4220 134 -86 re f Q 1 1 1 rg 972 -4220 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4288 Td( )Tj
+ET 1 1 1 rg 993 -4220 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4288 Td(W2)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(27/01/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4836 189 -86 re f Q 1 1 1 rg 783 -4836 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4904 Td(6.2.4:)Tj
+ET q 1 1 1 rg 972 -4836 134 -86 re f Q 1 1 1 rg 972 -4836 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -4904 Td( )Tj
+ET 1 1 1 rg 993 -4836 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -4904 Td(W3)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -5452 189 -86 re f Q 1 1 1 rg 783 -5452 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -5520 Td(6.2.5:)Tj
+ET q 1 1 1 rg 972 -5452 134 -86 re f Q 1 1 1 rg 972 -5452 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -5520 Td( )Tj
+ET 1 1 1 rg 993 -5452 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -5520 Td(W4)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(17/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+ET Q Q 
+endstream
+endobj
+15 0 obj<</Length 7806 >>
+stream
+q q Q q 0.12 0 0 0.12 0 792 cm 
+BT 1 0 0 1 0 0 Tm
+/F2 92 Tf 0 Ts  0 g 783 -683 Td( )Tj
+ET q 1 1 1 rg 783 -706 189 -86 re f Q 1 1 1 rg 783 -706 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -774 Td(6.2.6:)Tj
+ET q 1 1 1 rg 972 -706 134 -86 re f Q 1 1 1 rg 972 -706 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -774 Td( )Tj
+ET 1 1 1 rg 993 -706 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -774 Td(W5)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(17/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1322 189 -86 re f Q 1 1 1 rg 783 -1322 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -1390 Td(6.2.7:)Tj
+ET q 1 1 1 rg 972 -1322 134 -86 re f Q 1 1 1 rg 972 -1322 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -1390 Td( )Tj
+ET 1 1 1 rg 993 -1322 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -1390 Td(W6)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/02/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -1938 189 -86 re f Q 1 1 1 rg 783 -1938 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2006 Td(6.2.8:)Tj
+ET q 1 1 1 rg 972 -1938 134 -86 re f Q 1 1 1 rg 972 -1938 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -2006 Td( )Tj
+ET 1 1 1 rg 993 -1938 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -2006 Td(W7)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(03/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -2554 189 -86 re f Q 1 1 1 rg 783 -2554 189 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -2622 Td(6.2.9:)Tj
+ET q 1 1 1 rg 972 -2554 134 -86 re f Q 1 1 1 rg 972 -2554 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 972 -2622 Td( )Tj
+ET 1 1 1 rg 993 -2554 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 993 -2622 Td(W8)Tj
+/F2 92 Tf  0 g -210 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(10/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(17/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3170 231 -86 re f Q 1 1 1 rg 783 -3170 231 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3238 Td(6.2.10:)Tj
+ET q 1 1 1 rg 1014 -3170 134 -86 re f Q 1 1 1 rg 1014 -3170 134 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1014 -3238 Td( )Tj
+ET 1 1 1 rg 1035 -3170 113 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -3238 Td(W9)Tj
+/F2 92 Tf  0 g -252 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(17/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -3786 231 -86 re f Q 1 1 1 rg 783 -3786 231 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -3854 Td(6.2.11:)Tj
+ET q 1 1 1 rg 1014 -3786 176 -86 re f Q 1 1 1 rg 1014 -3786 176 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1014 -3854 Td( )Tj
+ET 1 1 1 rg 1035 -3786 155 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -3854 Td(W10)Tj
+/F2 92 Tf  0 g -252 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(24/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(31/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET q 1 1 1 rg 783 -4402 231 -86 re f Q 1 1 1 rg 783 -4402 231 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 783 -4470 Td(6.2.12:)Tj
+ET q 1 1 1 rg 1014 -4402 176 -86 re f Q 1 1 1 rg 1014 -4402 176 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1014 -4470 Td( )Tj
+ET 1 1 1 rg 1035 -4402 155 -86 re f 
+BT 1 0 0 1 0 0 Tm
+/F1 75 Tf 0 Ts 0.149 0.149 0.149 rg 1035 -4470 Td(W11)Tj
+/F2 92 Tf  0 g -252 -101 Td( )Tj
+/F3 92 Tf 0 -106 Td(Action)Tj
+/F2 92 Tf 286 0 Td(:)Tj
+/F3 92 Tf -286 -106 Td(Start)Tj
+210 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(31/03/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Completed)Tj
+475 0 Td( )Tj
+26 0 Td(Date)Tj
+/F2 92 Tf 199 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(07/04/2025)Tj
+460 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Duration)Tj
+/F2 92 Tf 378 0 Td(:)Tj
+26 0 Td( )Tj
+26 0 Td(7.00)Tj
+179 0 Td( )Tj
+26 0 Td(days)Tj
+194 0 Td( )Tj
+26 0 Td(,)Tj
+26 0 Td( )Tj
+/F3 92 Tf 26 0 Td(Status)Tj
+/F2 92 Tf 281 0 Td(:)Tj
+26 0 Td( )Tj
+-3529 -106 Td(Not)Tj
+143 0 Td( )Tj
+26 0 Td(Started)Tj
+-169 -106 Td( )Tj
+ET Q Q 
+endstream
+endobj
+3 0 obj<<
+/Type/Encoding/Differences
+[128 /Euro]/BaseEncoding/WinAnsiEncoding
+>> endobj
+16 0 obj
+[ 750 750 278 278 355 556 556 889 667 191 333 333 389 584 278 333 278 278 556
+556 556 556 556 556 556 556 556 556 278 278 584 584 584 556 1015 667 667 722
+722 667 611 778 722 278 500 667 556 833 722 778 667 778 722 667 611 722 667
+944 667 667 611 278 278 278 469 556 333 556 556 500 556 556 278 556 556 222
+222 500 222 833 556 556 556 556 333 500 278 556 500 722 500 500 500 334 260
+334 584 750 556 750 222 556 333 1000 556 556 333 1000 667 333 1000 750 611 750
+750 222 222 333 333 350 556 1000 333 1000 500 333 944 750 500 667 278 333 556
+556 556 556 260 556 333 737 370 556 584 333 737 552 400 549 333 333 333 576
+537 333 333 333 365 556 834 834 834 611 667 667 667 667 667 667 1000 722 667
+667 667 667 278 278 278 278 722 722 778 778 778 778 778 584 778 722 722 722
+722 667 667 611 556 556 556 556 556 556 889 500 556 556 556 556 278 278 278
+278 556 556 556 556 556 556 556 549 611 556 556 556 556 500 556 500 ]
+endobj
+17 0 obj<<
+/Type/FontDescriptor
+/FontName/LiberationSans
+/Ascent 728
+/CapHeight 688
+/Descent -210
+/Flags 32
+/FontMatrix [0.001 0 0 0.001 0 0]
+/FontBBox [-544 -303 1302 980]
+/ItalicAngle 0
+/StemV 0
+/AvgWidth 580
+/Leading 150
+/MaxWidth 0
+/XHeight 528
+>> endobj
+18 0 obj<<
+/Type/Font
+/Subtype/TrueType
+/BaseFont/LiberationSans
+/Encoding 3 0 R
+/FirstChar 30
+/LastChar 255
+/Widths 16 0 R
+/FontDescriptor 17 0 R
+>> endobj
+19 0 obj
+[ 750 750 278 278 355 556 556 889 667 191 333 333 389 584 278 333 278 278 556
+556 556 556 556 556 556 556 556 556 278 278 584 584 584 556 1015 667 667 722
+722 667 611 778 722 278 500 667 556 833 722 778 667 778 722 667 611 722 667
+944 667 667 611 278 278 278 469 556 333 556 556 500 556 556 278 556 556 222
+222 500 222 833 556 556 556 556 333 500 278 556 500 722 500 500 500 334 260
+334 584 750 556 750 222 556 333 1000 556 556 333 1000 667 333 1000 750 611 750
+750 222 222 333 333 350 556 1000 333 1000 500 333 944 750 500 667 278 333 556
+556 556 556 260 556 333 737 370 556 584 333 737 552 400 549 333 333 333 576
+537 333 333 333 365 556 834 834 834 611 667 667 667 667 667 667 1000 722 667
+667 667 667 278 278 278 278 722 722 778 778 778 778 778 584 778 722 722 722
+722 667 667 611 556 556 556 556 556 556 889 500 556 556 556 556 278 278 278
+278 556 556 556 556 556 556 556 549 611 556 556 556 556 500 556 500 ]
+endobj
+20 0 obj<<
+/Type/FontDescriptor
+/FontName/LiberationSans
+/Ascent 728
+/CapHeight 688
+/Descent -210
+/Flags 32
+/FontMatrix [0.001 0 0 0.001 0 0]
+/FontBBox [-544 -303 1302 980]
+/ItalicAngle 0
+/StemV 0
+/AvgWidth 580
+/Leading 150
+/MaxWidth 0
+/XHeight 528
+>> endobj
+21 0 obj<<
+/Type/Font
+/Subtype/TrueType
+/BaseFont/LiberationSans
+/Encoding 3 0 R
+/FirstChar 30
+/LastChar 255
+/Widths 19 0 R
+/FontDescriptor 20 0 R
+>> endobj
+22 0 obj
+[ 750 750 278 333 474 556 556 889 722 238 333 333 389 584 278 333 278 278 556
+556 556 556 556 556 556 556 556 556 333 333 584 584 584 611 975 722 722 722
+722 667 611 778 722 278 556 722 611 833 722 778 667 778 722 667 611 722 667
+944 667 667 611 333 278 333 584 556 333 556 611 556 611 556 333 611 611 278
+278 556 278 889 611 611 611 611 389 556 333 611 556 778 556 556 500 389 280
+389 584 750 556 750 278 556 500 1000 556 556 333 1000 667 333 1000 750 611 750
+750 278 278 500 500 350 556 1000 333 1000 556 333 944 750 500 667 278 333 556
+556 556 556 280 556 333 737 370 556 584 333 737 552 400 549 333 333 333 576
+556 333 333 333 365 556 834 834 834 611 722 722 722 722 722 722 1000 722 667
+667 667 667 278 278 278 278 722 722 778 778 778 778 778 584 778 722 722 722
+722 667 667 611 556 556 556 556 556 556 889 556 556 556 556 556 278 278 278
+278 611 611 611 611 611 611 611 549 611 611 611 611 611 556 611 556 ]
+endobj
+23 0 obj<<
+/Type/FontDescriptor
+/FontName/LiberationSans,Bold
+/Ascent 728
+/CapHeight 688
+/Descent -210
+/Flags 32
+/FontMatrix [0.001 0 0 0.001 0 0]
+/FontBBox [-482 -376 1304 1033]
+/ItalicAngle 0
+/StemV 0
+/AvgWidth 609
+/Leading 150
+/MaxWidth 0
+/XHeight 528
+>> endobj
+24 0 obj<<
+/Type/Font
+/Subtype/TrueType
+/BaseFont/LiberationSans,Bold
+/Encoding 3 0 R
+/FirstChar 30
+/LastChar 255
+/Widths 22 0 R
+/FontDescriptor 23 0 R
+>> endobj
+25 0 obj<<
+/ProcSet [/PDF/Text/ImageC]
+/Font << /F1 18 0 R
+/F2 21 0 R
+/F3 24 0 R >>
+>> endobj
+26 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 4 0 R
+>> endobj
+28 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 5 0 R
+>> endobj
+29 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 6 0 R
+>> endobj
+30 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 7 0 R
+>> endobj
+31 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 8 0 R
+>> endobj
+32 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 9 0 R
+>> endobj
+33 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 10 0 R
+>> endobj
+34 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 11 0 R
+>> endobj
+35 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 12 0 R
+>> endobj
+36 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 13 0 R
+>> endobj
+37 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 14 0 R
+>> endobj
+38 0 obj<<
+/Type/Page
+/Parent 27 0 R
+/Resources 25 0 R
+/MediaBox [0 0 612.000 792.000]
+/Contents 15 0 R
+>> endobj
+27 0 obj<<
+/Type/Pages
+/Kids [ 26 0 R
+28 0 R
+29 0 R
+30 0 R
+31 0 R
+32 0 R
+33 0 R
+34 0 R
+35 0 R
+36 0 R
+37 0 R
+38 0 R ]
+/Count 12
+>> endobj
+39 0 obj<<
+/Title(\376\377\000D\000o\000w\000n\000l\000i\000n\000k\000 \000P\000r\000o\000j\000e\000c\000t)
+/Dest [ 26 0 R /XYZ 24 783 0]
+/Parent 40 0 R /First 41 0 R /Last 42 0 R /Count -99
+>> endobj
+41 0 obj<<
+/Title(\376\377\0001\000D\000e\000l\000i\000v\000e\000r\000a\000b\000l\000e\000s)
+
+/Parent 39 0 R /Next 43 0 R /First 44 0 R /Last 45 0 R /Count -17
+>> endobj
+44 0 obj<<
+/Title(\376\377\0001\000.\0001\000S\000t\000a\000t\000e\000m\000e\000n\000t\000 \000o\000f\000 \000I\000n\000t\000e\000n\000t)
+
+/Parent 41 0 R /Next 46 0 R
+>> endobj
+46 0 obj<<
+/Title(\376\377\0001\000.\0002\000I\000n\000t\000e\000r\000i\000m\000 \000R\000e\000p\000o\000r\000t)
+
+/Parent 41 0 R /Next 47 0 R /First 48 0 R /Prev 44 0 R /Last 49 0 R /Count -5
+>> endobj
+48 0 obj<<
+/Title(\376\377\0001\000.\0002\000.\0001\000D\000r\000a\000f\000t\000 \000D\000e\000a\000d\000l\000i\000n\000e)
+
+/Parent 46 0 R /Next 50 0 R
+>> endobj
+50 0 obj<<
+/Title(\376\377\0001\000.\0002\000.\0002\000F\000i\000n\000a\000l\000 \000D\000e\000a\000d\000l\000i\000n\000e)
+
+/Parent 46 0 R /Next 51 0 R /Prev 48 0 R
+>> endobj
+51 0 obj<<
+/Title(\376\377\0001\000.\0002\000.\0003\000C\000r\000e\000a\000t\000i\000o\000n)
+
+/Parent 46 0 R /Next 52 0 R /Prev 50 0 R
+>> endobj
+52 0 obj<<
+/Title(\376\377\0001\000.\0002\000.\0004\000S\000u\000p\000e\000r\000v\000i\000s\000o\000r\000 \000F\000e\000e\000d\000b\000a\000c\000k)
+
+/Parent 46 0 R /Next 49 0 R /Prev 51 0 R
+>> endobj
+49 0 obj<<
+/Title(\376\377\0001\000.\0002\000.\0005\000O\000r\000a\000l\000 \000R\000e\000v\000i\000e\000w)
+
+/Parent 46 0 R /Prev 52 0 R
+>> endobj
+47 0 obj<<
+/Title(\376\377\0001\000.\0003\000P\000o\000s\000t\000e\000r)
+
+/Parent 41 0 R /Next 45 0 R /First 53 0 R /Prev 46 0 R /Last 54 0 R /Count -4
+>> endobj
+53 0 obj<<
+/Title(\376\377\0001\000.\0003\000.\0001\000C\000r\000e\000a\000t\000i\000o\000n)
+
+/Parent 47 0 R /Next 55 0 R
+>> endobj
+55 0 obj<<
+/Title(\376\377\0001\000.\0003\000.\0002\000S\000u\000b\000m\000i\000s\000s\000i\000o\000n)
+
+/Parent 47 0 R /Next 56 0 R /Prev 53 0 R
+>> endobj
+56 0 obj<<
+/Title(\376\377\0001\000.\0003\000.\0003\000S\000u\000p\000e\000r\000v\000i\000s\000o\000r\000 \000F\000e\000e\000d\000b\000a\000c\000k)
+
+/Parent 47 0 R /Next 54 0 R /Prev 55 0 R
+>> endobj
+54 0 obj<<
+/Title(\376\377\0001\000.\0003\000.\0004\000P\000r\000e\000s\000e\000n\000t\000a\000t\000i\000o\000n)
+
+/Parent 47 0 R /Prev 56 0 R
+>> endobj
+45 0 obj<<
+/Title(\376\377\0001\000.\0004\000F\000i\000n\000a\000l\000 \000R\000e\000p\000o\000r\000t)
+
+/Parent 41 0 R /First 57 0 R /Prev 47 0 R /Last 58 0 R /Count -4
+>> endobj
+57 0 obj<<
+/Title(\376\377\0001\000.\0004\000.\0001\000C\000r\000e\000a\000t\000i\000o\000n)
+
+/Parent 45 0 R /Next 59 0 R
+>> endobj
+59 0 obj<<
+/Title(\376\377\0001\000.\0004\000.\0002\000S\000u\000p\000e\000r\000v\000i\000s\000o\000r\000 \000F\000e\000e\000d\000b\000a\000c\000k)
+
+/Parent 45 0 R /Next 60 0 R /Prev 57 0 R
+>> endobj
+60 0 obj<<
+/Title(\376\377\0001\000.\0004\000.\0003\000S\000u\000b\000m\000i\000s\000s\000i\000o\000n)
+
+/Parent 45 0 R /Next 58 0 R /Prev 59 0 R
+>> endobj
+58 0 obj<<
+/Title(\376\377\0001\000.\0004\000.\0004\000D\000e\000s\000i\000g\000n\000 \000F\000r\000e\000e\000z\000e)
+
+/Parent 45 0 R /Prev 60 0 R
+>> endobj
+43 0 obj<<
+/Title(\376\377\0002\000R\000e\000s\000e\000a\000r\000c\000h)
+
+/Parent 39 0 R /Next 61 0 R /First 62 0 R /Prev 41 0 R /Last 63 0 R /Count -17
+>> endobj
+62 0 obj<<
+/Title(\376\377\0002\000.\0001\000D\000V\000B\000-\000S\0002)
+
+/Parent 43 0 R /Next 64 0 R /First 65 0 R /Last 66 0 R /Count -8
+>> endobj
+65 0 obj<<
+/Title(\376\377\0002\000.\0001\000.\0001\000A\000C\000M)
+
+/Parent 62 0 R /Next 67 0 R /First 68 0 R /Last 69 0 R /Count -2
+>> endobj
+68 0 obj<<
+/Title(\376\377\0002\000.\0001\000.\0001\000.\0001\000L\000i\000n\000k\000 \000B\000u\000d\000g\000e\000t)
+
+/Parent 65 0 R /Next 69 0 R
+>> endobj
+69 0 obj<<
+/Title(\376\377\0002\000.\0001\000.\0001\000.\0002\000O\000r\000b\000i\000t\000 \000A\000n\000a\000l\000y\000s\000i\000s)
+
+/Parent 65 0 R /Prev 68 0 R
+>> endobj
+67 0 obj<<
+/Title(\376\377\0002\000.\0001\000.\0002\000S\000t\000a\000n\000d\000a\000r\000d)
+
+/Parent 62 0 R /Next 66 0 R /First 70 0 R /Prev 65 0 R /Last 70 0 R /Count -1
+>> endobj
+70 0 obj<<
+/Title(\376\377\0002\000.\0001\000.\0002\000.\0001\000R\000e\000a\000d\000-\000T\000h\000r\000o\000u\000g\000h)
+
+/Parent 67 0 R
+>> endobj
+66 0 obj<<
+/Title(\376\377\0002\000.\0001\000.\0003\000E\000x\000i\000s\000t\000i\000n\000g\000 \000I\000m\000p\000l\000e\000m\000e\000n\000t\000a\000t\000i\000o\000n\000s)
+
+/Parent 62 0 R /First 71 0 R /Prev 67 0 R /Last 72 0 R /Count -2
+>> endobj
+71 0 obj<<
+/Title(\376\377\0002\000.\0001\000.\0003\000.\0001\000G\000N\000U\000 \000R\000a\000d\000i\000o)
+
+/Parent 66 0 R /Next 72 0 R
+>> endobj
+72 0 obj<<
+/Title(\376\377\0002\000.\0001\000.\0003\000.\0002\000M\000A\000T\000L\000A\000B\000 \000/\000 \000H\000D\000L\000 \000C\000o\000d\000e\000r)
+
+/Parent 66 0 R /Prev 71 0 R
+>> endobj
+64 0 obj<<
+/Title(\376\377\0002\000.\0002\000P\000a\000c\000k\000e\000t\000s)
+
+/Parent 43 0 R /Next 63 0 R /First 73 0 R /Prev 62 0 R /Last 74 0 R /Count -3
+>> endobj
+73 0 obj<<
+/Title(\376\377\0002\000.\0002\000.\0001\000X\000T\000C\000E\000 \000S\000t\000a\000n\000d\000a\000r\000d)
+
+/Parent 64 0 R /Next 75 0 R
+>> endobj
+75 0 obj<<
+/Title(\376\377\0002\000.\0002\000.\0002\000N\000i\000a\000m\000h\000 \000D\000i\000s\000s\000e\000r\000t\000a\000t\000i\000o\000n)
+
+/Parent 64 0 R /Next 74 0 R /Prev 73 0 R
+>> endobj
+74 0 obj<<
+/Title(\376\377\0002\000.\0002\000.\0003\000L\000i\000b\000r\000a\000r\000i\000e\000s)
+
+/Parent 64 0 R /Prev 75 0 R
+>> endobj
+63 0 obj<<
+/Title(\376\377\0002\000.\0003\000S\000T\000R\000A\000T\000H\000c\000u\000b\000e\000 )
+
+/Parent 43 0 R /First 76 0 R /Prev 64 0 R /Last 77 0 R /Count -3
+>> endobj
+76 0 obj<<
+/Title(\376\377\0002\000.\0003\000.\0001\000M\000i\000s\000s\000i\000o\000n\000 \000R\000e\000q\000u\000i\000r\000e\000m\000e\000n\000t\000s)
+
+/Parent 63 0 R /Next 78 0 R
+>> endobj
+78 0 obj<<
+/Title(\376\377\0002\000.\0003\000.\0002\000D\000a\000t\000a\000 \000H\000a\000n\000d\000l\000i\000n\000g)
+
+/Parent 63 0 R /Next 77 0 R /Prev 76 0 R
+>> endobj
+77 0 obj<<
+/Title(\376\377\0002\000.\0003\000.\0003\000E\000x\000i\000s\000t\000i\000n\000g\000 \000L\000i\000n\000k\000 \000B\000u\000d\000g\000e\000t)
+
+/Parent 63 0 R /Prev 78 0 R
+>> endobj
+61 0 obj<<
+/Title(\376\377\0003\000S\000y\000s\000t\000e\000m\000s\000 \000E\000n\000g\000i\000n\000e\000e\000r\000i\000n\000g)
+
+/Parent 39 0 R /Next 79 0 R /First 80 0 R /Prev 43 0 R /Last 80 0 R /Count -1
+>> endobj
+80 0 obj<<
+/Title(\376\377\0003\000.\0001\000R\000e\000q\000u\000i\000r\000e\000m\000e\000n\000t\000s)
+
+/Parent 61 0 R
+>> endobj
+79 0 obj<<
+/Title(\376\377\0004\000I\000m\000p\000l\000e\000m\000e\000n\000t\000a\000t\000i\000o\000n)
+
+/Parent 39 0 R /Next 81 0 R /First 82 0 R /Prev 61 0 R /Last 83 0 R /Count -21
+>> endobj
+82 0 obj<<
+/Title(\376\377\0004\000.\0001\000T\000r\000a\000n\000s\000m\000i\000t\000t\000e\000r)
+
+/Parent 79 0 R /Next 84 0 R /First 85 0 R /Last 86 0 R /Count -6
+>> endobj
+85 0 obj<<
+/Title(\376\377\0004\000.\0001\000.\0001\000M\000A\000T\000L\000A\000B)
+
+/Parent 82 0 R /Next 87 0 R /First 88 0 R /Last 89 0 R /Count -3
+>> endobj
+88 0 obj<<
+/Title(\376\377\0004\000.\0001\000.\0001\000.\0001\000R\000e\000s\000o\000u\000r\000c\000e\000 \000U\000s\000a\000g\000e\000 \000A\000n\000a\000l\000y\000s\000i\000s)
+
+/Parent 85 0 R /Next 90 0 R
+>> endobj
+90 0 obj<<
+/Title(\376\377\0004\000.\0001\000.\0001\000.\0002\000T\000r\000a\000n\000s\000c\000e\000i\000v\000e\000r\000 \000I\000n\000t\000e\000g\000r\000a\000t\000i\000o\000n)
+
+/Parent 85 0 R /Next 89 0 R /Prev 88 0 R
+>> endobj
+89 0 obj<<
+/Title(\376\377\0004\000.\0001\000.\0001\000.\0003\000R\000e\000s\000o\000u\000r\000c\000e\000 \000U\000s\000a\000g\000e\000 \000O\000p\000t\000i\000m\000i\000s\000a\000t\000i\000o\000n)
+
+/Parent 85 0 R /Prev 90 0 R
+>> endobj
+87 0 obj<<
+/Title(\376\377\0004\000.\0001\000.\0002\000L\000i\000b\000i\000i\000o\000 \000D\000r\000i\000v\000e\000r)
+
+/Parent 82 0 R /Next 86 0 R /Prev 85 0 R
+>> endobj
+86 0 obj<<
+/Title(\376\377\0004\000.\0001\000.\0003\000G\000N\000U\000 \000R\000a\000d\000i\000o\000 \000I\000n\000t\000e\000r\000f\000a\000c\000e)
+
+/Parent 82 0 R /Prev 87 0 R
+>> endobj
+84 0 obj<<
+/Title(\376\377\0004\000.\0002\000P\000a\000c\000k\000e\000t\000 \000H\000a\000n\000d\000l\000i\000n\000g)
+
+/Parent 79 0 R /Next 83 0 R /First 91 0 R /Prev 82 0 R /Last 92 0 R /Count -12
+>> endobj
+91 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0001\000S\000y\000s\000t\000e\000m\000 \000I\000n\000t\000e\000r\000f\000a\000c\000i\000n\000g)
+
+/Parent 84 0 R /Next 93 0 R /First 94 0 R /Last 95 0 R /Count -2
+>> endobj
+94 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0001\000.\0001\000P\000a\000c\000k\000e\000t\000 \000S\000o\000u\000r\000c\000e\000 \000S\000i\000m\000u\000l\000a\000t\000i\000o\000n)
+
+/Parent 91 0 R /Next 95 0 R
+>> endobj
+95 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0001\000.\0002\000I\000n\000t\000e\000r\000P\000r\000o\000c\000e\000s\000s\000 \000C\000o\000m\000m\000u\000n\000i\000c\000a\000t\000i\000o\000n\000 \000\(\000I\000P\000C\000\))
+
+/Parent 91 0 R /Prev 94 0 R
+>> endobj
+93 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0002\000X\000T\000C\000E\000 \000H\000a\000n\000d\000l\000i\000n\000g)
+
+/Parent 84 0 R /Next 96 0 R /First 97 0 R /Prev 91 0 R /Last 98 0 R /Count -2
+>> endobj
+97 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0002\000.\0001\000V\000e\000r\000i\000f\000i\000c\000a\000t\000i\000o\000n\000 \000S\000c\000h\000e\000m\000a\000 \000C\000r\000e\000a\000t\000i\000o\000n)
+
+/Parent 93 0 R /Next 98 0 R
+>> endobj
+98 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0002\000.\0002\000P\000a\000c\000k\000e\000t\000 \000H\000a\000n\000d\000l\000i\000n\000g)
+
+/Parent 93 0 R /Prev 97 0 R
+>> endobj
+96 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0003\000S\000c\000h\000e\000d\000u\000l\000i\000n\000g)
+
+/Parent 84 0 R /Next 92 0 R /First 99 0 R /Prev 93 0 R /Last 100 0 R /Count -2
+>> endobj
+99 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0003\000.\0001\000B\000u\000f\000f\000e\000r\000 \000M\000a\000n\000a\000g\000e\000m\000e\000n\000t)
+
+/Parent 96 0 R /Next 100 0 R
+>> endobj
+100 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0003\000.\0002\000A\000l\000g\000o\000r\000i\000t\000h\000m)
+
+/Parent 96 0 R /Prev 99 0 R
+>> endobj
+92 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0004\000P\000L\000 \000I\000n\000t\000e\000r\000f\000a\000c\000e)
+
+/Parent 84 0 R /First 101 0 R /Prev 96 0 R /Last 102 0 R /Count -2
+>> endobj
+101 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0004\000.\0001\000G\000N\000U\000 \000R\000a\000d\000i\000o\000 \000+\000 \000L\000i\000b\000i\000i\000o\000 \000I\000n\000t\000e\000g\000r\000a\000t\000i\000o\000n)
+
+/Parent 92 0 R /Next 102 0 R
+>> endobj
+102 0 obj<<
+/Title(\376\377\0004\000.\0002\000.\0004\000.\0002\000A\000C\000M\000 \000C\000o\000m\000m\000a\000n\000d\000 \000h\000a\000n\000d\000l\000i\000n\000g)
+
+/Parent 92 0 R /Prev 101 0 R
+>> endobj
+83 0 obj<<
+/Title(\376\377\0004\000.\0003\000S\000y\000s\000t\000e\000m\000 \000P\000r\000o\000t\000o\000t\000y\000p\000e\000 \000C\000r\000e\000a\000t\000i\000o\000n)
+
+/Parent 79 0 R /Prev 84 0 R
+>> endobj
+81 0 obj<<
+/Title(\376\377\0005\000V\000e\000r\000i\000f\000i\000c\000a\000t\000i\000o\000n)
+
+/Parent 39 0 R /Next 42 0 R /First 103 0 R /Prev 79 0 R /Last 104 0 R /Count -7
+>> endobj
+103 0 obj<<
+/Title(\376\377\0005\000.\0001\000R\000e\000q\000u\000i\000r\000e\000d)
+
+/Parent 81 0 R /Next 104 0 R /First 105 0 R /Last 106 0 R /Count -3
+>> endobj
+105 0 obj<<
+/Title(\376\377\0005\000.\0001\000.\0001\000T\000i\000m\000i\000n\000g\000 \000C\000l\000o\000s\000u\000r\000e)
+
+/Parent 103 0 R /Next 107 0 R
+>> endobj
+107 0 obj<<
+/Title(\376\377\0005\000.\0001\000.\0002\000I\000n\000d\000i\000v\000i\000d\000u\000a\000l\000 \000C\000o\000m\000p\000o\000n\000e\000n\000t\000 \000T\000e\000s\000t\000i\000n\000g)
+
+/Parent 103 0 R /Next 106 0 R /Prev 105 0 R
+>> endobj
+106 0 obj<<
+/Title(\376\377\0005\000.\0001\000.\0003\000T\000e\000s\000t\000i\000n\000g\000 \000a\000g\000a\000i\000n\000s\000t\000 \000a\000l\000l\000 \000p\000e\000r\000f\000o\000r\000m\000a\000n\000c\000e\000 \000r\000e\000q\000u\000i\000r\000e\000m\000e\000n\000t\000s)
+
+/Parent 103 0 R /Prev 107 0 R
+>> endobj
+104 0 obj<<
+/Title(\376\377\0005\000.\0002\000O\000p\000t\000i\000o\000n\000a\000l)
+
+/Parent 81 0 R /First 108 0 R /Prev 103 0 R /Last 109 0 R /Count -2
+>> endobj
+108 0 obj<<
+/Title(\376\377\0005\000.\0002\000.\0001\000E\000n\000d\000 \000T\000o\000 \000E\000n\000d\000 \000H\000a\000r\000d\000w\000a\000r\000e\000 \000T\000e\000s\000t\000i\000n\000g)
+
+/Parent 104 0 R /Next 109 0 R
+>> endobj
+109 0 obj<<
+/Title(\376\377\0005\000.\0002\000.\0002\000M\000e\000m\000o\000r\000y\000 \000C\000o\000r\000r\000u\000p\000t\000i\000o\000n)
+
+/Parent 104 0 R /Prev 108 0 R
+>> endobj
+42 0 obj<<
+/Title(\376\377\0006\000T\000i\000m\000i\000n\000g\000s)
+
+/Parent 39 0 R /First 110 0 R /Prev 81 0 R /Last 111 0 R /Count -30
+>> endobj
+110 0 obj<<
+/Title(\376\377\0006\000.\0001\000S\000e\000m\000e\000s\000t\000e\000r\000 \0001)
+
+/Parent 42 0 R /Next 111 0 R /First 112 0 R /Last 113 0 R /Count -16
+>> endobj
+112 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0001\000W\0001)
+
+/Parent 110 0 R /Next 114 0 R
+>> endobj
+114 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0002\000W\0002)
+
+/Parent 110 0 R /Next 115 0 R /Prev 112 0 R
+>> endobj
+115 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0003\000W\0003)
+
+/Parent 110 0 R /Next 116 0 R /Prev 114 0 R
+>> endobj
+116 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0004\000W\0004)
+
+/Parent 110 0 R /Next 117 0 R /Prev 115 0 R
+>> endobj
+117 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0005\000W\0005)
+
+/Parent 110 0 R /Next 118 0 R /Prev 116 0 R
+>> endobj
+118 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0006\000W\0006)
+
+/Parent 110 0 R /Next 119 0 R /Prev 117 0 R
+>> endobj
+119 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0007\000W\0007)
+
+/Parent 110 0 R /Next 120 0 R /Prev 118 0 R
+>> endobj
+120 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0008\000W\0008)
+
+/Parent 110 0 R /Next 121 0 R /Prev 119 0 R
+>> endobj
+121 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0009\000W\0009)
+
+/Parent 110 0 R /Next 122 0 R /Prev 120 0 R
+>> endobj
+122 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0001\0000\000W\0001\0000)
+
+/Parent 110 0 R /Next 123 0 R /Prev 121 0 R
+>> endobj
+123 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0001\0001\000W\0001\0001)
+
+/Parent 110 0 R /Next 124 0 R /Prev 122 0 R
+>> endobj
+124 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0001\0002\000W\0001\0002\000 \000\(\000E\000x\000a\000m\000 \0001\000\))
+
+/Parent 110 0 R /Next 125 0 R /Prev 123 0 R
+>> endobj
+125 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0001\0003\000W\0001\0003\000 \000\(\000E\000x\000a\000m\000 \0002\000\))
+
+/Parent 110 0 R /Next 126 0 R /Prev 124 0 R
+>> endobj
+126 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0001\0004\000C\000h\000r\000i\000s\000t\000m\000a\000s\000 \0001)
+
+/Parent 110 0 R /Next 127 0 R /Prev 125 0 R
+>> endobj
+127 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0001\0005\000C\000h\000r\000i\000s\000t\000m\000a\000s\000 \0002)
+
+/Parent 110 0 R /Next 113 0 R /Prev 126 0 R
+>> endobj
+113 0 obj<<
+/Title(\376\377\0006\000.\0001\000.\0001\0006\000C\000h\000r\000i\000s\000t\000m\000a\000s\000 \0003)
+
+/Parent 110 0 R /Prev 127 0 R
+>> endobj
+111 0 obj<<
+/Title(\376\377\0006\000.\0002\000S\000e\000m\000e\000s\000t\000e\000r\000 \0002)
+
+/Parent 42 0 R /First 128 0 R /Prev 110 0 R /Last 129 0 R /Count -12
+>> endobj
+128 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0001\000C\000o\000n\000s\000o\000l\000i\000d\000a\000t\000i\000o\000n)
+
+/Parent 111 0 R /Next 130 0 R
+>> endobj
+130 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0002\000W\0001)
+
+/Parent 111 0 R /Next 131 0 R /Prev 128 0 R
+>> endobj
+131 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0003\000W\0002)
+
+/Parent 111 0 R /Next 132 0 R /Prev 130 0 R
+>> endobj
+132 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0004\000W\0003)
+
+/Parent 111 0 R /Next 133 0 R /Prev 131 0 R
+>> endobj
+133 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0005\000W\0004)
+
+/Parent 111 0 R /Next 134 0 R /Prev 132 0 R
+>> endobj
+134 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0006\000W\0005)
+
+/Parent 111 0 R /Next 135 0 R /Prev 133 0 R
+>> endobj
+135 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0007\000W\0006)
+
+/Parent 111 0 R /Next 136 0 R /Prev 134 0 R
+>> endobj
+136 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0008\000W\0007)
+
+/Parent 111 0 R /Next 137 0 R /Prev 135 0 R
+>> endobj
+137 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0009\000W\0008)
+
+/Parent 111 0 R /Next 138 0 R /Prev 136 0 R
+>> endobj
+138 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0001\0000\000W\0009)
+
+/Parent 111 0 R /Next 139 0 R /Prev 137 0 R
+>> endobj
+139 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0001\0001\000W\0001\0000)
+
+/Parent 111 0 R /Next 129 0 R /Prev 138 0 R
+>> endobj
+129 0 obj<<
+/Title(\376\377\0006\000.\0002\000.\0001\0002\000W\0001\0001)
+
+/Parent 111 0 R /Prev 139 0 R
+>> endobj
+40 0 obj<<
+/Count 100
+/First 39 0 R
+/Last 39 0 R
+>> endobj
+140 0 obj<<
+/Type/Catalog
+/Pages 27 0 R
+/Outlines 40 0 R
+/Metadata 1 0 R
+/PageMode/UseNone
+>> endobj
+xref
+0 141
+0000000000 65535 f
+0000000066 00000 n
+0000001569 00000 n
+0000138992 00000 n
+0000001769 00000 n
+0000013261 00000 n
+0000023296 00000 n
+0000034216 00000 n
+0000046470 00000 n
+0000058422 00000 n
+0000071743 00000 n
+0000084472 00000 n
+0000097102 00000 n
+0000108753 00000 n
+0000120721 00000 n
+0000131132 00000 n
+0000139085 00000 n
+0000140019 00000 n
+0000140283 00000 n
+0000140448 00000 n
+0000141382 00000 n
+0000141646 00000 n
+0000141811 00000 n
+0000142744 00000 n
+0000143014 00000 n
+0000143184 00000 n
+0000143286 00000 n
+0000144756 00000 n
+0000143408 00000 n
+0000143530 00000 n
+0000143652 00000 n
+0000143774 00000 n
+0000143896 00000 n
+0000144018 00000 n
+0000144141 00000 n
+0000144264 00000 n
+0000144387 00000 n
+0000144510 00000 n
+0000144633 00000 n
+0000144911 00000 n
+0000162423 00000 n
+0000145118 00000 n
+0000158102 00000 n
+0000148228 00000 n
+0000145294 00000 n
+0000147375 00000 n
+0000145477 00000 n
+0000146544 00000 n
+0000145685 00000 n
+0000146391 00000 n
+0000145853 00000 n
+0000146034 00000 n
+0000146185 00000 n
+0000146712 00000 n
+0000147217 00000 n
+0000146850 00000 n
+0000147011 00000 n
+0000147560 00000 n
+0000148065 00000 n
+0000147698 00000 n
+0000147904 00000 n
+0000151424 00000 n
+0000148397 00000 n
+0000150672 00000 n
+0000149992 00000 n
+0000148552 00000 n
+0000149386 00000 n
+0000149043 00000 n
+0000148702 00000 n
+0000148865 00000 n
+0000149231 00000 n
+0000149641 00000 n
+0000149794 00000 n
+0000150165 00000 n
+0000150529 00000 n
+0000150328 00000 n
+0000150852 00000 n
+0000151226 00000 n
+0000151050 00000 n
+0000151782 00000 n
+0000151647 00000 n
+0000156405 00000 n
+0000151981 00000 n
+0000156192 00000 n
+0000153397 00000 n
+0000152161 00000 n
+0000153204 00000 n
+0000153028 00000 n
+0000152326 00000 n
+0000152785 00000 n
+0000152549 00000 n
+0000153611 00000 n
+0000155525 00000 n
+0000154334 00000 n
+0000153836 00000 n
+0000154064 00000 n
+0000154978 00000 n
+0000154547 00000 n
+0000154795 00000 n
+0000155177 00000 n
+0000155371 00000 n
+0000155722 00000 n
+0000155982 00000 n
+0000156595 00000 n
+0000157511 00000 n
+0000156764 00000 n
+0000157190 00000 n
+0000156935 00000 n
+0000157680 00000 n
+0000157916 00000 n
+0000158255 00000 n
+0000160691 00000 n
+0000158435 00000 n
+0000160530 00000 n
+0000158546 00000 n
+0000158671 00000 n
+0000158796 00000 n
+0000158921 00000 n
+0000159046 00000 n
+0000159171 00000 n
+0000159296 00000 n
+0000159421 00000 n
+0000159546 00000 n
+0000159681 00000 n
+0000159816 00000 n
+0000159998 00000 n
+0000160180 00000 n
+0000160355 00000 n
+0000160871 00000 n
+0000162302 00000 n
+0000161037 00000 n
+0000161162 00000 n
+0000161287 00000 n
+0000161412 00000 n
+0000161537 00000 n
+0000161662 00000 n
+0000161787 00000 n
+0000161912 00000 n
+0000162037 00000 n
+0000162167 00000 n
+0000162487 00000 n
+trailer
+<<
+/Size 141
+/Root 140 0 R
+/ID[<2c9602a4f208fc419fe58028991e0ebd><2c9602a4f208fc419fe58028991e0ebd>]
+/Info 2 0 R
+>>
+startxref
+162597
+%%EOF

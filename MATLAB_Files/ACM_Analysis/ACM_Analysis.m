@@ -60,7 +60,7 @@ elevation_angles = lowest_elevation:5:90; % deg
 % direct distance between GS and satellite
 slant_ranges = zeros(1,length(altitude_sat));
 for alt_it = 1:length(altitude_sat)
-    for elev_it = 1:length(elevation_angles)
+    for elev_it = 1:length(elevation_angles)￼
         slant_ranges(alt_it,elev_it) = slantRangeCircularOrbit(elevation_angles(elev_it), altitude_sat(alt_it), altitude_gs);
     end
 end
