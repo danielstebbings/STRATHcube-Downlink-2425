@@ -22,28 +22,95 @@
 // pl - plural uses 
 // Acrostiche
 #init-acronyms((
-  "la": (
-short: "LATATW",
-long: "Long And Tedious Acronym To Write",
-short-pl: "LATAsTW",
-long-pl: "Long And Tedious Acronyms To Write"),
+  "DVB-S2": "Digital Video Broadcasting - Satellite - Second Generation",                          
+  "ACM": "Adaptive Coding and Modulation",
+  "TS": "Transport Stream",
+  "XTCE": "XML Telemetric and Command Exchange",
+  "SDR": "Software Defined Radio",
+  "UPL": "User Packet Length",
+  "DFL": "Data Field Length",
+  "BBFRAME": "Baseband Frame",
+  "PBR": "Passive Bistatic Radar",
+  "ISS": "International Space Station",
+  "COTS": "Commercial Off-The-Shelf",
+  "BCH": "Bose-Chaudhuri-Hocquenghem",
+  "LDPC": "Low-Density Parity-Check",
+  "FECFRAME": "Forward Error Correction Frame",
+  "FEC": "Forward Error Correction",
+  "SNR": "Signal to Noise Ratio",
+  "ITU": "International Telecommunication Union",
+  "OFCOM": "Office of Communications",
+  
 ))
 
 
-= Hello
-== 
+= Project Context
 
-This is a test of the timeliney preview.
+== STRATHcube
+STRATHcube is a student led satellite project at the University of Strathclyde that will be launched from the #acr("ISS") with the aim of demonstrating the use of a #acr("PBR") for in-orbit detection of space debris. This project aims to create an engineering model of the downlink communication system for the satellite using #acr("COTS") development boards.
+
+A research project this summer investigated the configuration of the downlink communication system for the satellite, creating a link budget and selecting #acr("DVB-S2") as the modulation scheme. The scheme has multiple key advantages, as it has robust #acr("FEC") capabilities that allow it to operate extremely close to the shannon limit for a given #acr("SNR"). Additionally, the #acr("ACM") capabilities of the system allow it to adapt to changing channel conditions, improving the efficiency of the system.
+
+== DVB-S2 Modulation
+=== Overview
+The #acr("DVB-S2") standard defines a modulation scheme specifically designed for satellite 
+communications. To improve the efficiency of the system, the modulation constellation and coding 
+rate can be adapted based on channel conditions using #acr("ACM"). Despite what the name may 
+imply, the standard is not limited to video broadcasting and can be used for transmission of any 
+packetised data, the data carried by the system is referred to as a stream. There are three main types of data stream: Transport, Generic Packetised and Generic Continuous. Each of these are defined by their #acr("UPL"), being the number of bytes in a packet. @DVBS2Full shows the full possible system diagram for a DVB-S2 system, while @DVBS2 shows the condensed version for a Generic Packetised stream.
+
+A Generic Packetised stream may have a #acr("UPL") between 1 and 65535 Bytes. Variable #acr("UPL"), or sizes greater than 65535 Bytes are treated as a Generic Continuous Stream. The data stream is then sliced into Data Fields of size #acr("DFL"). After a header is inserted, this comprises a #acr("BBFRAME"). 
+
+The #acr("BBFRAME") is then padded to align with the requirements of the #acr("BCH") and #acr("LDPC") encoders. This length, referred to in the standard as k#sub("BCH"), is dependent on the modulation, coding rate and #acr("FECFRAME") size. As such, the efficiency of the system can be improved by optimising the #acr("UPL") and #acr("DFL") to minimise the padding required. Additionally the #acr("FECFRAME") size can be chosen between short (16200 bits) and normal (64800 bits) to balance the responsiveness of the system with the overhead of the error correction. This is the responsibility of the ACM router.
+
+The #acr("FECFRAME") is then mapped to a constellation, pilots inserted, scrambled and modulated to the carrier frequency.
+
+
+== Configuration Decisions
+
+
+
+#figure(
+    image("Figures/DVB-S2-Sliciing.png"),
+    caption: "DVB-S2 Slicing Diagram"+ ref(<dvbs2_standard>)
+    ) <DVBS2Slice>
+)
+
+#figure(
+    image("Figures/DVB-S2_Full.png"),
+    caption: "DVB-S2 System Diagram"+ ref(<dvbs2_standard>)
+    ) <DVBS2Full>
+
+#figure(
+   image("Figures/DVB-S2.png"),
+    caption: "DVB-S2 System Diagram"
+    ) <DVBS2>
+
+== Packet Handling
+=== XTCE Standard
+=== System Architecture
+// Alignment of packets to frames
+// System diagram
+// Throughput requirements?
+
+#figure( 
+    image("Figures/System_Diagram.drawio.png"),
+    caption: "System Diagram"
+  ) <SystemDiagram>
+
+
 
 #pagebreak()
 #set page( 
 flipped: true,
   paper: "a4",
-  margin: (x: 0.15cm, y: 0.15cm)
+  margin: (x: 0.5cm, y: 0.5cm)
 )
 
+= Project Timeline
+
 #set text(
-  size: 5pt,
+  size: 8pt,
 )
 // Define some styles
 #let tl_deliverables   = (stroke:2pt + color.rgb("#f75757"))
@@ -61,11 +128,13 @@ flipped: true,
 
 #timeliney.timeline(
   show-grid: true,
-  spacing: 5pt,
+  spacing: 3pt,
   milestone-layout: "in-place",
   {
     import timeliney: *
-      
+    //headerline(
+    //  group(([*Project Timeline*], 13+3+12)),
+    //)
     headerline(
                 group(([*Semester 1*], 13)),
                 group(([*Break*],       3)), 
@@ -216,3 +285,26 @@ flipped: false,
   paper: "a4"
 )
 #pagebreak()
+
+= Project Review
+
+== Project Plan
+
+== Technical Risks
+
+== Sustainability
+
+STRATHcube's primary mission to demonstrate the use of a #acr("PBR") is also combined with the secondary mission to collect telemetry data during re-entry to tackle some of the most important issues in the space industry today. The increasing number of satellites in orbit is leading to a large amount of space debris which poses a significant risk to operational satellites in congested areas such as sun synchronous orbits. This field is referred to as space situational awareness. The ability to detect and track space debris is crucial to ensure the safety of future missions however there are resolution issues with ground based solutions that can be solved by using a #acr("PBR") in orbit.
+
+The main solution today for space debris is to de-orbit satellites at the end of their operational life. This process is difficult to model at present, as there are complex interactions between the satellite and the atmosphere at hypersonic speeds. The data collected during the re-entry of STRATHcube will be used to validate TITAN, a tool developed by the University of Strathclyde and overall improve the process of "Design for Demise" which is an increasingly important requirement for satellite design.
+
+== Ethical Considerations
+
+The main ethical considerations for this project lie in compliance to relevant telecommunications regulations from the #acr("ITU") and #acr("OFCOM"). During development, all transmissions will be conducted using certified equipment and through cables to ensure that no harmful interference is caused. 
+
+= References
+#bibliography(
+  title:none,
+    full: true, "Bibliography/Dissertation.bib", style:"institute-of-electrical-and-electronics-engineers",
+
+    )
