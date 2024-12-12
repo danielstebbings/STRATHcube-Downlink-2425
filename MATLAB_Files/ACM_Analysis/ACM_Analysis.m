@@ -60,7 +60,7 @@ elevation_angles = lowest_elevation:5:90; % deg
 % direct distance between GS and satellite
 slant_ranges = zeros(1,length(altitude_sat));
 for alt_it = 1:length(altitude_sat)
-    for elev_it = 1:length(elevation_angles)￼
+    for elev_it = 1:length(elevation_angles)
         slant_ranges(alt_it,elev_it) = slantRangeCircularOrbit(elevation_angles(elev_it), altitude_sat(alt_it), altitude_gs);
     end
 end
@@ -80,7 +80,7 @@ path_loss = ionospheric_space_loss + atmospheric_space_loss + rain_space_loss + 
 
 %% System Performance
 CNR   = EIRP - free_space_path_loss - path_loss + gain_antenna_rx + 228.6 - 10*log10(temperature_system_noise_rx) - 10*log10(bandwidth);
-Margin_Requirement = 10; %dB
+Margin_Requirement = 3; %dB
 
 %% Optimal MODCOD from CNR by Elevation and Altitude
 
