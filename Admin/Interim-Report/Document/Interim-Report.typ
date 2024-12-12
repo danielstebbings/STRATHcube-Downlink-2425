@@ -1,17 +1,17 @@
 
 #import "@preview/timeliney:0.1.0"
 #import "@preview/subpar:0.2.0"
-#import "@preview/acrostiche:0.4.1": *
+#import "@preview/acrostiche:0.5.0": *
 
 // Set up page, paragraphs, text size
 #set page(
-  margin: (top: 1.25cm, bottom: 1cm, left: 1.5cm, right: 2.5cm),
+  margin: (top: 1cm, bottom: 1cm, left: 1cm, right:1cm),
   numbering: "1",
   number-align: right
   )
 #set par(
-  spacing: 1em,
-  first-line-indent: 1em,
+  spacing: 0.8em,
+  first-line-indent: 0.8em,
   justify: true,
 )
 #set text(
@@ -55,32 +55,32 @@
   "CCDD": "Core Flight System (CFS) Command and Data Dictionary",
   "IPC": "Inter-Process Communication",
   "SoC": "System on Chip",
-  "CRC-8": "Cyclic Redundancy Check 8",
+  "CRC-8": "Cyclic Redundancy Check - 8 bits",
   "GSE": "Generic Stream Encapsulation",
   "FIFO": "First In First Out",
   "I2C": "Inter-Integrated Circuit",
   "CAN": "Controller Area Network",
   "IP": "Internet Protocol",
+  "PDR": "Preliminary Design Review",
+  "BER": "Bit Error Rate",
 ))
 
 
-= Project Context <Project_Context>
+= Project Context & Background <Project_Context>
 
 == STRATHcube
-STRATHcube is a student led satellite project at the University of Strathclyde that will be launched from the #acr("ISS") with the aim of demonstrating the use of a #acr("PBR") for in-orbit detection of space debris. This project aims to create an engineering model of the downlink communication system for the satellite using #acr("COTS") development boards in compliance with relevant standards.
+STRATHcube is a student led satellite project at the University of Strathclyde that will be launched from the International Space Station with the aim of demonstrating the use of a #acr("PBR") for in-orbit detection of space debris. This project aims to create an engineering model of the downlink communication system for the satellite using commercially available development boards in compliance with relevant standards, a key step towards the preliminary design review with the #acr("ESA") Fly Your Satellite program.
 
-STRATHcube is being launched as part of the #acr("ESA") #acr("FYS") program. This imposes several requirements on the project such as transmit power limits, control and passivation. The team is also currently working on their application to the #acr("FYS") Design Booster program, which will provide additional support for the project. 
- 
-STRATHcube will include a TOTEM #acr("SDR") that will handle both the communication and primary payload systems. The TOTEM consists of a Zynq 7020 #acr("SoC") connected to an Analog Devices AD9364 RF transceiver with full duplex capabilities. Due to the extremely high cost of space qualified hardware, development boards will be used for the project. A Digilent Zedboard will be used for processing as it has the same Zynq 7020 #acr("SoC") as the TOTEM, albeit with less memory. The RF transceiver will be modelled using an FMCOMMS1 development board connected via the FMC connector on the Zedboard. This has an AD9361 RF transceiver, which is identical to the AD9364 but with an extra channel that will be disabled.
+The satellite will include an Alén Space TOTEM #acr("SDR") to handle both communication and #acr("PBR") systems, which consists of an AMD Zynq 7020 #acr("SoC") connected to an Analog Devices AD9364 RF transceiver. Due to the high cost of space qualified hardware, it will be modelled by a Digilent Zedboard connected to an FMCOMMS1 AD9361 development board. This has an identical Zynq #acr("SoC") with less external memory and a similar RF transceiver.
 
-A research project this summer investigated the configuration of the downlink communication system for the satellite, creating a link budget and selecting #acr("DVB-S2") as the modulation scheme. The scheme has multiple key advantages, as it has robust #acr("FEC") capabilities that allow it to operate extremely close to the Shannon limit for a given #acr("CNR")@eroz_dvb-s2_2004. Additionally, the #acr("ACM") capabilities of the system allow it to adapt to changing channel conditions, improving spectral efficiency.
+A summer research project investigated the downlink configuration, selecting a frequency range of 430-440MHz, creating a link budget and selecting DVB-S2 (Digital Video Broadcasting - Satellite - Second Generation)#mark-acr-used("DVB-S2") as the modulation scheme. This has extremely strong #acr("FEC") capabilities and can adapt based on channel conditions to maximise spectral efficiency.
 
-== DVB-S2 Modulation
+== DVB-S2
 === Overview
-The #acr("DVB-S2") standard@noauthor_dvb-s2_nodate defines the operation of the system, with several optional subsystems depending on the application. The standard defines two types of generic data stream, packetised and continuous. Packetised streams have a fixed size, #acr("UPL"), and have #acr("CRC-8") error detection inserted into the beginning of each. Continuous streams include those with variable #acr("UPL") and do not have #acr("CRC-8") inserted. 
+The #acr("DVB-S2") standard@noauthor_dvb-s2_nodate is modular with several optional blocks depending on the application. It  two types of generic data stream, packetised and continuous. Packetised streams have a fixed size, #acr("UPL"), and have #acr("CRC-8") error detection inserted into the beginning of each. Continuous streams include those with variable #acr("UPL") and do not have #acr("CRC-8") inserted. 
 
 The data stream is sliced into #acr("DFL") sized chunks and a #acr("BBFRAME") header is inserted. The #acr("BBFRAME") is then padded for coding with #acr("BCH") and #acr("LDPC"), becoming a #acr("FECFRAME"). This is then mapped to a constellation, pilots inserted and scrambled to become a #acr("PLFRAME"), before finally being filtered and modulated to the carrier frequency.
-
+/*
 #figure(
     image("Figures/DVB-S2-Sliciing.png"),
     caption: "DVB-S2 Slicing Diagram"+ ref(<noauthor_dvb-s2_nodate>)
@@ -96,23 +96,23 @@ The data stream is sliced into #acr("DFL") sized chunks and a #acr("BBFRAME") he
    image("Figures/DVB-S2.png"),
     caption: "DVB-S2 System Diagram"
     ) <DVBS2>    
+*/
 
+#acr("DVB-S2") uses four modulation schemes from QPSK to 32PSK, coding rates from 1/4 to 9/10 and two #acr("FECFRAME") lengths, 64800 and 16200 bits, referred to as long and short respectively. All of these parameters can be changed from one #acr("BBFRAME") to the next, allowing for quick adaptation to channel conditions. However, this also introduces an issue with the alignment of packets to frames to minimise padding. This can be tackled using #acr("GSE"), a link layer protocol that handles the fragmentation of packets based on the current optimal #acr("DFL")@noauthor_ts_nodate. However, this includes several features designed for #acr("IP") that may not be necessary for the system.
 
-#acr("DVB-S2") uses four modulation schemes, QPSK, 8PSK, 16PSK and 32PSK, coding rates from 1/4 to 9/10 and two #acr("FECFRAME") lengths, 64800 and 16200 bits, long and short respectively. All of these parameters can be changed from one #acr("BBFRAME") to the next, allowing for quick adaptation to channel conditions. However, this also introduces an issue with the alignment of packets to frames as a different #acr("DFL") will be required to minimise padding. This is tackled using #acr("GSE")@noauthor_ts_nodate, a link layer protocol that handles the fragmentation of packets based on the current optimal #acr("FECFRAME") size and #acr("DFL"). However, this includes several features designed for #acr("IP") that may not be necessary for the system.
+=== Implementation
+One of the key challenges of this project is managing #acr("PL") resource usage. The flight hardware must handle uplink and downlink communications, #acr("PBR") processing and existing code included by the manufacturer. A target of no more than 50% usage on any one resource was implemented to ensure feasibility.
 
-=== Configuration
-As one of the key challenges of this project is managing resource usage, the system configuration will be chosen to minimise the requirements of the PL system. This means that packet scheduling, #acr("ACM"), #acr("GSE") and header configuration will be managed by software on the #acr("PS"), alllowing quick reconfiguration of the system in order to optimise for expected channel conditions.
-
-#acr("GSE") implementation will be investigated, but a simpler system may be used to reduce complexity. This will be decided based on the availability of open-source implementations and time availability.
+The other key challenge is reliability, verification and adherence to the modulation standard. To ensure this, a MATLAB example DVB-S2 implementation using HDL Coder will be modified to minimise resource requirements and integrate with the rest of the system. Packet handling will be managed on the #acr("PS"), including #acr("ACM"), scheduling, any #acr("GSE") implementation and header configuration.
 
 === ACM Analysis
 
-Due to the complexity of implementing #acr("ACM") in the system, an investigation into the benefits over a fixed configuration that maximised availability was conducted. The satellite was simulated for the full mission duration at its initial altitude of 400km using the MATLAB Satellite Communications Toolbox. The elevation of the satellite during each pass over the ground station was binned into 5#symbol("°") increments. An existing link budget was used to calculate the #acr("CNR") for each elevation bin and cross-referenced to the optimimum modulation and coding rate using the #acr("DVB-S2") standard. The maximum possible throughput was calculated for each elevation bin and multiplied by the time spent at each elevation to find the total throughput for each strategy. The results are shown in @Elevation2Capacity and show a significant increase in throughput, proving that the complexity of implementing #acr("ACM") is worth the benefits even despite the simplicity of the simulation.
+Due to the complexity of implementing #acr("ACM") in the system, an investigation into the benefits over a fixed configuration that maximised availability was conducted. The satellite was simulated for the full mission duration at its initial altitude of 400km using the MATLAB Satellite Communications Toolbox. The elevation of the satellite during each pass over the ground station was binned into 5#symbol("°") increments. An existing link budget was used to calculate the #acr("CNR") for each elevation bin and cross-referenced to the optimimum modulation and coding rate using the #acr("DVB-S2") standard with a 10dB margin and #acr("BER") of 10#super("-7"). The maximum possible throughput was calculated for each elevation bin and multiplied by the time spent at each elevation to find the total throughput for each strategy. The results are shown in @Elevation2Capacity and show a significant increase in throughput, proving that the complexity of implementing #acr("ACM") is worth the benefits.
 
 #figure(
     image("Figures/Elevation2Capacity.png"),
-    caption: "Left: Elevation vs Modulation and Coding Rate (Blue), Modulation and Coding rate to throughput (red).
-     Top Right: Time spent in each elevation bin. Bottom Right: Throughput vs strategy."
+    caption: "Left - Elevation vs Modulation and Coding Rate (Blue), Modulation and Coding rate to throughput (red).
+     Top Right - Time spent in each elevation bin. Bottom Right - Throughput vs strategy."
     ) <Elevation2Capacity>
 
 
@@ -130,10 +130,8 @@ The onboard data handling has been analysed in a previous dissertation project. 
 
 This project also identified the need for compression of the data to reduce the amount to be transmitted, with the lossless POCKET algorithm being selected for this purpose. A C++ implementation of the newer POCKET+ algorithm is available that has been created based on the #acr("CCSDS") standard and will be used on the #acr("PS").
 
-=== ACM Router
-The #acr("ACM") router is responsible for managing the configuration of the #acr("DVB-S2") system. This includes selection of modulation, coding rates, #acr("FECFRAME") length and #acr("DFL"). In the final system these decisions will be made based on information received from the ground station, however for this project they will be made based on a pre-defined schedule. This will allow for the system to be tested under a variety of conditions and for the system to be optimised for expected channel conditions.
-
-=== PL Interfacing
+=== ACM Router + PL Interface
+The #acr("ACM") router is responsible for managing the configuration of the #acr("DVB-S2") system. This includes selection of modulation, coding rates, #acr("FECFRAME") length and #acr("DFL"). In the final system these decisions will be made based on information received from the ground station, however for this project they will be made based on a pre-defined schedule.
 
 This block will handle the alignment of packets to data fields and pass this to the #acr("PL"), along with control data. The interface driver will be created using the libiio library created by Analog Devices.
 
@@ -336,14 +334,18 @@ flipped: false,
 )
 #pagebreak()
 
+#set text(
+  size: 10pt,
+)
+
 = Project Review
 
 == Project Plan
-The first semester has primarily been devoted to the research and planning of the project as this was an area that had not been fully investigated prior. The main outcome of this work has been an in-depth system architecture that will facilitate implementation efforts in semester two. The lack of December exams also provides a key opportunity to get started on development before returning to classes in January.
+The first semester has been devoted to the research and planning of the project. The outcome of which has been a detailed analysis of each sub-block required for the final system and the identification of open source resources and relevant standards to ensure success.
 
-There are three key milestones outlined in the project timeline. The first being the system architecture, which has been defined in @Project_Context. The second is the creation of a "System Prototype" which will demonstrate the minimum features necessary to send a packet through the system. This is targeted for Week 3 of Semester 2. The final milestone is the report submission. This will mark the completion of the system and documentation of the project.
+There are three key milestones outlined in the project timeline. The first being the system architecture, which has been defined in @Project_Context. The second is the creation of a "System Prototype" which will demonstrate the minimum features necessary to send a packet through the system. This is targeted for Week 3 of Semester 2. 
 
-There are two key decision points, marked "DP1" and "DP2". DP1 has been reached, and marks the decision to target development hardware, as the TOTEM SDR could not be procured in time for the project. DP2 will be reached in Week 8 of Semester 2 and will mark the decision to focus on end to end testing of the system, rather than feature development and completeion of software and RTL components.
+There are two key decision points, marked "DP1" and "DP2". DP1 has been reached, and marks the decision to target development hardware, as the TOTEM SDR could not be procured in time for the project. DP2 will be reached in Week 8 of Semester 2 and will mark the decision to focus on end to end testing of the system versus continuing feature development.
 
 To ensure time is left for the final report, a design freeze will be implemented during week 9 of semester 2. This means that no major features or changes will be implemented from that point onwards to ensure that the system is finalised and tested in advance of the final report deadline.
 
@@ -364,8 +366,11 @@ To ensure time is left for the final report, a design freeze will be implemented
 //   }
 // }
 
+#set text(
+  size: 8pt,
+)
 #table(
-  columns: (auto,1fr,auto,auto,auto),
+  columns: (auto,auto,auto,auto,auto),
   inset: 6pt,
   align: (horizon,horizon,center,center,center),
   table.header(
@@ -401,16 +406,19 @@ To ensure time is left for the final report, a design freeze will be implemented
                                                           [3],[2],[6],
   [System not fit for purpose], [ + Design with requirements in mind
                                  + Use of open-source examples to ensure compatibility and reliability
-                                 + Use of a modular design to allow for easy changes],
+                                 + Use of a modular design to allow for changes and unit testing],
                                  [2],[3],[6],
 )
 
+#set text(
+  size: 10pt,
+)
 
 == Sustainability
 
-STRATHcube's primary mission to demonstrate the use of a #acr("PBR") is also combined with the secondary mission to collect telemetry data during re-entry to tackle some of the most important issues in the space industry today. The increasing number of satellites in orbit is leading to a large amount of space debris which poses a significant risk to operational satellites in congested areas such as sun synchronous orbits. This field is referred to as space situational awareness. The ability to detect and track space debris is crucial to ensure the safety of future missions however there are resolution issues with ground based solutions that can be solved by using a #acr("PBR") in orbit.
+STRATHcube's primary mission relates to a pressing issue in the space industry. The #acr("PBR") will demonstrate a technology that could fill a critical resolution gap in debris detection that ground based radars cannot. The importance of space situational awareness cannot be understated, as the amount of operational satellite increases there will be a higher risk of impact with debris too small to be detected with current methods.
 
-The main solution today for space debris is to de-orbit satellites at the end of their operational life. This process is difficult to model at present, as there are complex interactions between the satellite and the atmosphere at hypersonic speeds. The data collected during the re-entry of STRATHcube will be used to validate TITAN, a tool developed by the University of Strathclyde and overall improve the process of "Design for Demise" which is an increasingly important requirement for satellite design.
+The more data that can be downlinked during the mission, the more opportunities there are to observe passing debris and verify the operation of the #acr("PBR"). As such, the successful completion of this project will directly contribute to the success of the mission and an important aspect of space sustainability.
 
 == Ethical Considerations and EDI
 
@@ -418,7 +426,7 @@ The main ethical considerations for this project lie in compliance to relevant t
 
 The resulting source code will be made available to the public under an open-source license to ensure that the project is transparent and accessible to all. This will also allow for the project to be continued for further use in STRATHcube or as a resource for other projects.
 
-Aditionally, space is a resource that underpins modern society and it is important to ensure that it is used responsibly. The primary and secondary missions of STRATHcube will positively contribute to space sustainability and as such will have a positive impact that will support society as a whole.d1d1d1d1d1d
+Aditionally, space is a resource that underpins modern society and it is important to ensure that it is used responsibly. The primary and secondary missions of STRATHcube will positively contribute to space sustainability and as such will have a positive impact that will support society as a whole.
 
 #pagebreak()
 = References
