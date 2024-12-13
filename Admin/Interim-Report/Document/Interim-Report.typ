@@ -63,6 +63,7 @@
   "IP": "Internet Protocol",
   "PDR": "Preliminary Design Review",
   "BER": "Bit Error Rate",
+  "FPGA": "Field Programmable Gate Array",
 
 ))
 
@@ -80,26 +81,26 @@ As this project ties into a larger mission, it was important to identify clear g
 
 == DVB-S2
 === Overview
-The #acr("DVB-S2") standard is modular with several optional blocks and data formats depending on the application@noauthor_dvb-s2_nodate. This project will use a single generic packetised stream with a fixed #acr("UPL"), as it includes #acr("CRC-8") error detection. The data stream is sliced into #acr("DFL") sized chunks and a #acr("BBFRAME") header inserted. The #acr("FEC") systems require the #acr("BBFRAME") to be padded to a specific length that depends on the current #acr("ACM") settings. After two coding stages, this becomes a FECFRAME#mark-acr-used("FECFRAME") which goes through constellation mapping, pilot insertion and scrambling to become a Physical Layer Frame. It is finally filtered and modulated up to the carrier frequency.
+The #acr("DVB-S2") standard is modular with several optional blocks and data formats depending on the application@noauthor_dvb-s2_nodate. This project will use a single generic packetised stream with a fixed #acr("UPL"), as it includes #acr("CRC-8") error detection. The data stream is sliced into #acr("DFL") sized chunks and a header inserted to become a #acr("BBFRAME"). The #acr("FEC") systems require the #acr("BBFRAME") to be padded to a specific length that depends on the current #acr("ACM") settings. After two coding stages, this becomes a FECFRAME#mark-acr-used("FECFRAME") which goes through constellation mapping, pilot insertion and scrambling to become a Physical Layer Frame. It is finally filtered and modulated up to the carrier frequency.
 
-#acr("DVB-S2") uses four modulation schemes from QPSK to 32APSK, coding rates from 1/4 to 9/10 and two #acr("FECFRAME") lengths. The #acr("ACM") Router can change any of these parameters, as well as the #acr("DFL") and #acr("UPL") from one #acr("BBFRAME") to the next to adapt to channel conditions. To minimise padding, a link layer protocol can be used called #acr("GSE") that handles the fragmentation of the packet based on the current optimal #acr("DFL")@noauthor_ts_nodate
+#acr("DVB-S2") uses four modulation schemes from QPSK to 32APSK, coding rates from 1/4 to 9/10 and two #acr("FECFRAME") lengths. These parameters, along with #acr("DFL") and #acr("UPL"), are controlled by the #acr("ACM") Router to adapt to channel conditions and can be changed from one #acr("BBFRAME") to the next. To minimise padding, a link layer protocol can be used called #acr("GSE") that handles the fragmentation of packets based on the current optimal #acr("DFL")@noauthor_ts_nodate
 
 === Implementation
-One of the key challenges of this project is managing #acr("PL") resource usage. The flight hardware must handle uplink and downlink communications, #acr("PBR") processing and existing code included by the manufacturer. A target of no more than 50% usage on any one resource was implemented to ensure feasibility. The second key challenge is reliability, verification, and adherence to standard. To ensure this, a MATLAB example DVB-S2 implementation using HDL Coder will be modified to minimise resource requirements and integrate with the rest of the system. Packet handling will be managed on the #acr("PS"), including #acr("ACM"), scheduling, any #acr("GSE") implementation and header configuration.
+The Zynq #acr("SoC") consists of a traditional #acr("FPGA"), referred to as the #acr("PL") combined with two ARM processing cores, referred to as the #acr("PS"). One of the key challenges of this project is managing #acr("PL") resource usage. The flight hardware must handle uplink and downlink communications, #acr("PBR") processing and existing code included by the manufacturer. A target of no more than 50% usage on any one resource was implemented to ensure everything could fit. The second key challenge is reliability, verification, and adherence to standard. To ensure this, a MATLAB example DVB-S2 implementation using HDL Coder will be modified to minimise resource requirements and integrate with the rest of the system. Packet handling will be managed on the #acr("PS"), including #acr("ACM"), scheduling, any #acr("GSE") implementation and header configuration.
 
 #stack(
   dir:ltr,
-  box(width: 10.3cm)[
+  box(width: 10.5cm)[
     == Adaptive Coding and Modulation Analysis
 
-    Due to the complexity of implementing #acr("ACM") in the system, an investigation into the benefits over a fixed configuration that maximised availability was conducted. The satellite was simulated for the full mission duration at its initial altitude of 400km using the MATLAB Satellite Communications Toolbox. The elevation of the satellite during each pass over the Glasgow based ground station was binned into 5#symbol("°") increments. An existing link budget was used to calculate the #acr("CNR") for each elevation bin and cross-referenced to the optimimum modulation and coding rate using the #acr("DVB-S2") standard with a 10dB margin and #acr("BER") of 10#super("-7"). The maximum possible throughput was calculated for each elevation bin and multiplied by the time spent at each elevation to find the total throughput for each strategy. The results are shown in @Elevation2Capacity and show a significant increase in throughput, proving that the complexity of implementing #acr("ACM") is worth the benefits. The uplift would be further if the ground station was located at a lower latitude.
+    Due to the complexity of implementing #acr("ACM") in the system, an investigation into the benefits over a fixed configuration that maximised availability was conducted. The satellite was simulated for the full mission duration at its initial altitude of 400km using the MATLAB Satellite Communications Toolbox. The elevation of the satellite during each pass over the Glasgow based ground station was binned into 5#symbol("°") increments. An existing link budget was used to calculate the #acr("CNR") for each elevation bin and cross-referenced to the optimimum modulation and coding rate using the #acr("DVB-S2") standard with a 10dB link margin and #acr("BER") of 10#super("-7"). The maximum possible throughput was calculated for each elevation bin and multiplied by the time spent to find the total throughput for each strategy. The results are shown in @Elevation2Capacity and show a significant increase in throughput, proving that the complexity of implementing #acr("ACM") is worth the benefits.
   ],
   [
     #figure(
         
         image("Figures/Elevation2Throughput.svg",width:50%),
-        caption: [Left - Elevation vs Modulation and Coding Rate (Blue), \
-         Modulation and Coding rate to throughput (red). \
+        caption: [Left - Elevation vs modulation and coding rate (Blue), \
+         modulation and Coding rate to throughput (red). \
          Top Right - Time spent in each elevation bin. \
           Bottom Right - Throughput vs strategy.]
         ) <Elevation2Capacity>
@@ -107,20 +108,20 @@ One of the key challenges of this project is managing #acr("PL") resource usage.
 )
 == Packet Handling
 === Interfacing and Formatting
-When designing the system, it was important to balance implementation complexity with future integration of the final system as the onboard data handling on the satellite is an area that has not been fully developed. For this purpose it was decided to design all systems to be compatible with the #acr("XTCE") formatted packets. #acr("XTCE") was defined by the #acr("CCSDS") in order to unify the management data between space systems and is widely supported. This will allow generic packets to be defined for testing without restricting future development. 
+When designing the system, it was important to balance implementation complexity with future integration of the final system as the onboard data handling on the satellite is an area that has not been fully developed. For this purpose it was decided to design all systems to be compatible with #acr("XTCE") formatted packets. #acr("XTCE") was defined by the #acr("CCSDS") in order to unify the interpretation of data between space systems and is widely supported. This will allow generic packets to be defined for testing without restricting future development. 
 
 Project packet definitions will be managed by a NASA tool called #acr("CCDD"). This can be used to generate C headers for parsing, or a Python library may be used. The Python approach may be simpler to implement, but the C headers will be more efficient, and easier to integrate with the rest of the system.
 
-The TOTEM SDR is connected to the rest of the satellite through two bus interfaces: #acr("CAN") and #acr("I2C"). There is also an Ethernet interface for ground testing and the #acr("PBR") systems running in parallel on the #acr("PS") connected through a Linux #acr("IPC") #acr("FIFO") buffer. The system will be designed to accept packets from all of these sources in parallel.
+The TOTEM SDR is connected to the rest of the satellite through two bus interfaces: #acr("CAN") and #acr("I2C"). There is also an Ethernet interface for ground testing and the #acr("PBR") systems running in parallel on the #acr("PS") connected through Linux #acr("IPC"). The system will be designed to accept packets from all of these sources in parallel.
 
 === ACM Routing and PL Interface
-A previous dissertation project investigated the scheduling and compression requirements of the downlink system. This identified a need to prioritise housekeeping packets over #acr("PBR") data. The research also selected the POCKET lossless compression algorithm and created a Python implementation.
+A previous dissertation project investigated the scheduling and compression requirements of the downlink system. This identified a need to prioritise housekeeping packets over #acr("PBR") data. The research also selected the POCKET lossless compression algorithm and created a Python implementation in order to reduce the data footprint of packets.
 
-The #acr("DVB-S2") implementation guidelines define methods for controlling quality of service for several types of input stream, including transmission priority and changing the #acr("ACM") policy. This could allow the use of a lower speed, low #acr("BER") target for housekeeping data and a lower reliability target for #acr("PBR") data to increase total throughput. The flight implementation of the #acr("ACM") Router will utilise information received from uplinked data, which must be synthesised for this project based on expected channel conditions.
+The #acr("DVB-S2") implementation guidelines define methods for controlling quality of service for several types of input stream, including transmission priority and changing the #acr("ACM") policy. This could allow the use of a lower speed, low #acr("BER") target for housekeeping data and a lower reliability target but higher speed for #acr("PBR") data to increase total throughput. The flight implementation of the #acr("ACM") Router will utilise information received from uplinked data, which must be synthesised for this project based on expected channel conditions.
 
-#acr("GSE") may be used to handle the varying #acr("DFL") due to #acr("ACM"), however the standard defines several features required for Internet Protocol that may not be necessary for this application. To reduce complexity, the implementation may only include a subset.
+#acr("GSE") may be used to handle the varying #acr("DFL") due to #acr("ACM"), however the standard defines several features required for Internet Protocol that may not be necessary for this application. To reduce complexity, the system may implement only a subset of the standard.
 
-The #acr("ACM") Router will interface with the #acr("PL") using "libiio", a library for interfacing with devices that use the Linux Industrial Input Output subsystem. This library is well documented and simplifies the creation of drivers.
+The #acr("ACM") Router will interface with the #acr("PL") using "libiio", a library for interfacing with devices that use the Linux Industrial Input Output subsystem. Created by Analog Devices, this library is well documented and simplifies the creation of drivers.
 
 == System Architecture
 
@@ -128,7 +129,7 @@ The #acr("ACM") Router will interface with the #acr("PL") using "libiio", a libr
   dir:ltr,
   spacing:0.5cm,
   box(width:9cm)[
-    The resulting system will have a structure as defined in @SystemDiagram, with three main blocks on the #acr("PS"), most of which will will be connected through buffers.
+    The resulting system will have a structure as shown in @SystemDiagram, with three main blocks on the #acr("PS"), most of which connected through buffers.
     
     The first is the system interface, which collates packets from each external interface buffer and forwards them for parsing. 
 
@@ -136,7 +137,7 @@ The #acr("ACM") Router will interface with the #acr("PL") using "libiio", a libr
 
     The ACM Router will select packets based on their priority according to its scheduling policy. It will also choose ACM settings based on the current reported channel conditions and encapsulate packets accordingly using #acr("GSE"). The packets and #acr("ACM") command information will be passed to the relevant registers using the #acr("PL") Interface.
 
-    This data will be used for modulation on the #acr("PL"), and converted into In-phase and Quadrature (IQ) data for the transceiver. Control of the physical device will be through MATLAB HDL Coder blocks available from the Analog Devices that interface with the transceiver over a Low Voltage Digital Signalling (LVDS) link. The resulting RF signal output can then be connected to an SDR for analysis.
+    This data will go through modulation on the #acr("PL") and be converted into In-phase and Quadrature (IQ) data for the transceiver. Control of the physical device will be through MATLAB HDL Coder blocks available from the Analog Devices that interface with the transceiver over a Low Voltage Digital Signalling (LVDS) link. The resulting RF signal output can then be connected to an SDR for analysis.
 
 
 
@@ -214,11 +215,12 @@ flipped: true,
         taskgroup(title: [*R2 - Research - DVB-S2*], {
       task("R2.1 - ACM",                      (2.5+sem1,9.5+sem1),  style: tl_research)
       task("R2.2 - Standard",                 (2+sem1,  5+sem1),    style: tl_research)
-      task("R2.3 - Existing Implementations", (1+sem1,  1+os_break),style: tl_research)
+      task("R2.3 - Existing Implementations", (1+sem1,  0+os_break),style: tl_research)
+      task("R2.4 - GSE",                      (0+exam,  0+os_break),(1+os_break,3+os_break),style: tl_research)
         })
 
         taskgroup(title: [*R3 - Research - Packet Handling*], {
-      task("R3.1 - XTCE Standard",         (3+sem1, 3+os_break),    style: tl_research)
+      task("R3.1 - XTCE Standard",         (3+sem1, 0+os_break),    style: tl_research)
       task("R3.2 - Libraries",             (6+sem1, 11+sem1),       style: tl_research)
         })              
         
@@ -228,17 +230,16 @@ flipped: true,
 
         taskgroup(title:[*I1 - Implementation - Transmitter*], {
       task("I1.1 - Resource Usage Analysis", (5+sem1,   8+sem1),   style: tl_implementation)
-      task("I1.2 - Transceiver Integration", (11.5+sem1,3+sem2),   style: tl_implementation)
-      task("I1.3 - Resource Optimisation",   (9+sem2,   11+sem2),  style: tl_implementation)
-      task("I1.4 - Libiio Driver",           (0+sem2,   4+sem2),   style: tl_implementation)
-      task("I1.5 - GNU Radio Integration",   (3+sem2,   4+sem2),   style: tl_implementation)
+      task("I1.2 - Transceiver Integration", (1+os_break,1+sem2),   style: tl_implementation)
+      task("I1.3 - Libiio Driver",           (1+sem2,   4+sem2),   style: tl_implementation)
+      task("I1.4 - PL-PS Integration",   (2+sem2,   4+sem2),   style: tl_implementation)
+      task("I1.5 - Resource Optimisation",   (9+sem2,   11+sem2),  style: tl_implementation)
         })
 
         taskgroup(title:[*I2 - Implementation - Packet Handling*], {
-      task("I2.1 - System Interfacing",      (2+exam, 0.5+sem2), style: tl_implementation)
-      task("I2.2 - XTCE",                    (2+exam, 6+sem2),   style: tl_implementation)
-      task("I2.3 - Scheduling",              (5+sem2, 7+sem2),   style: tl_implementation)
-      task("I2.4 - PL Interfaces",           (2+sem2, 3+sem2),   style: tl_implementation)  
+      task("I2.1 - System Interfacing",      (3+exam, 0.5+sem2), style: tl_implementation)
+      task("I2.2 - XTCE",                    (0+sem2, 3+sem2),   style: tl_implementation)
+      task("I2.3 - ACM Router",              (4+sem2, 7+sem2),   style: tl_implementation)
         })
 
         taskgroup(title:[*V1 - Verification - Required*], {
@@ -259,15 +260,15 @@ flipped: true,
       style: (stroke: (dash: "dashed")),
       align(center, [
         *Statement of Intent*\
-        week 3 S1
+        Week 3 S1
       ])
     )
     milestone(
-      at: 2+exam,
+      at: 1+exam,
       style: (stroke: (dash: "dashed")),
       align(center, [
         *Interim Report*\
-        Exam Week 2
+        Exam Week 1
       ])
     )
     milestone(
@@ -275,7 +276,7 @@ flipped: true,
       style: (stroke: (dash: "dashed")),
       align(center, [
         *Poster*\
-        week 7 S2
+        Week 7 S2
       ])
     )
     milestone(
@@ -283,7 +284,7 @@ flipped: true,
       style: (stroke: (dash: "dashed")),
       align(center, [
         *Final Report*\
-        week 11 S2
+        Week 11 S2
       ])
     )
 
@@ -310,7 +311,7 @@ flipped: true,
     
     // Development Milestones
     milestone(
-      at: 11+sem1,
+      at: 11.07+sem1,
       style: (stroke: (dash: "dashed")),
       align(center, [
         *MS1 - System Architecture*\
@@ -351,10 +352,7 @@ There are two key decision points, marked "DP1" and "DP2". DP1 has been reached,
 To ensure time is left for the final report, a design freeze will be implemented during week 9 of semester 2. This means that no major features or changes will be implemented from that point onwards to ensure that the system is finalised and tested in advance of the final report deadline.
 
 
-== Technical Risks
-
-// Colouring risks by L*S
-//#let risk_colour = (1: color.rgb("#f75757"), 2: color.rgb("#f7a057"), 3: color.rgb("#f7f057"), 4: color.rgb("#aaf757"), 5: color.rgb("#57f757"))
+== Technical Riskswf7f057"), 4: color.rgb("#aaf757"), 5: color.rgb("#57f757"))
 
 // #show table.cell: it=> {
 //   if it.x == 4 and it.y > 0 {// L*S column values
