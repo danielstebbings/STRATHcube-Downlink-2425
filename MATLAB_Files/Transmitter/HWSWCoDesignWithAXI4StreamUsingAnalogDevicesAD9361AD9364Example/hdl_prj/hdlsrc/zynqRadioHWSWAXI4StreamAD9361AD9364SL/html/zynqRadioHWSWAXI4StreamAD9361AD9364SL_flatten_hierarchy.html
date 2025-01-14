@@ -1,0 +1,275 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+Hierarchy Flattening Report for zynqRadioHWSWAXI4StreamAD9361AD9364SL
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdFlattenHierarchy'); else local_onload();}} catch(err) {};">
+<font SIZE="+2" COLOR="#000066">
+Hierarchy Flattening Report for zynqRadioHWSWAXI4StreamAD9361AD9364SL
+</font>
+<br /><br /><br /><script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<a name="List of subsystems:">
+<font size="+1" color="#000066">
+<b class="midprod">
+List of subsystems:
+</b>
+
+</font>
+
+</a>
+<br /><br /><b>
+<li>'FlattenHierarchy' turned 'on':</li>
+</b>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'onList')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span name="onList" id="onList" style="display: none;">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:219')" name="code2model" class="code2model">
+HDL Counter
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:156')" name="code2model" class="code2model">
+HDL Counter
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:157')" name="code2model" class="code2model">
+HDL Counter1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><br /><b>
+<li>'FlattenHierarchy' turned 'off':</li>
+</b>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'offList')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span name="offList" id="offList" style="display: none;">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:160')" name="code2model" class="code2model">
+SR-Latch
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:155')" name="code2model" class="code2model">
+Detect
+Increase
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:475')" name="code2model" class="code2model">
+Detect
+Change
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:145')" name="code2model" class="code2model">
+Tx
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:220')" name="code2model" class="code2model">
+SR-Latch
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:218')" name="code2model" class="code2model">
+Detect
+Increase
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:209')" name="code2model" class="code2model">
+Rx
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('zynqRadioHWSWAXI4StreamAD9361AD9364SL:23')" name="code2model" class="code2model">
+HDL_DUT
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><br /><a name="Flattening Status:">
+<font size="+1" color="#000066">
+<b class="midprod">
+Flattening Status:
+</b>
+
+</font>
+
+</a>
+<br /><br />'Hierarchical flattening' was successful.<br /><br /><a name="Generated Model">
+<font size="+1" color="#000066">
+<b class="midprod">
+Generated Model
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Generated model after the transformation
+</td>
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:open_system('/home/daniel/Documents/MATLAB/Examples/R2024b/xilinxzynqbasedradio/HWSWCoDesignWithAXI4StreamUsingAnalogDevicesAD9361AD9364Example/hdl_prj/hdlsrc/zynqRadioHWSWAXI4StreamAD9361AD9364SL/gm_zynqRadioHWSWAXI4StreamAD9361AD9364SL')" class="callMATLAB" name="callMATLAB">gm_zynqRadioHWSWAXI4StreamAD9361AD9364SL</a>
+</td>
+
+</tr>
+
+</table>
+<br />
+</body>
+
+</html>

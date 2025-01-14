@@ -1,0 +1,10 @@
+vlib work
+vcom  HDL_Chirp_ip_src_Detect_Increase.vhd
+vcom  HDL_Chirp_ip_src_SR_Latch.vhd
+vcom  HDL_Chirp_ip_src_Rx.vhd
+vcom  HDL_Chirp_ip_src_Detect_Change.vhd
+vcom  HDL_Chirp_ip_src_Detect_Increase_block.vhd
+vcom  HDL_Chirp_ip_src_SR_Latch_block.vhd
+vcom  HDL_Chirp_ip_src_SimpleDualPortRAM_generic.vhd
+vcom  HDL_Chirp_ip_src_Tx.vhd
+vcom  HDL_Chirp_ip_src_HDL_DUT.vhd

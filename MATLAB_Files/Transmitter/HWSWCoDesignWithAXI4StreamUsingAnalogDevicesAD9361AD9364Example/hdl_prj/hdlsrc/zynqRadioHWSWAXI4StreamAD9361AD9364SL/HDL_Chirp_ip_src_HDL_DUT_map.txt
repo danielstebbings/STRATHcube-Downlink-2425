@@ -1,0 +1,9 @@
+zynqRadioHWSWAXI4StreamAD9361AD9364SL/HDL_DUT/Rx/Detect Increase --> HDL_Chirp_ip_src_Detect_Increase
+zynqRadioHWSWAXI4StreamAD9361AD9364SL/HDL_DUT/Rx/SR-Latch --> HDL_Chirp_ip_src_SR_Latch
+zynqRadioHWSWAXI4StreamAD9361AD9364SL/HDL_DUT/Rx --> HDL_Chirp_ip_src_Rx
+zynqRadioHWSWAXI4StreamAD9361AD9364SL/HDL_DUT/Tx/Detect Change --> HDL_Chirp_ip_src_Detect_Change
+zynqRadioHWSWAXI4StreamAD9361AD9364SL/HDL_DUT/Tx/Detect Increase --> HDL_Chirp_ip_src_Detect_Increase_block
+zynqRadioHWSWAXI4StreamAD9361AD9364SL/HDL_DUT/Tx/SR-Latch --> HDL_Chirp_ip_src_SR_Latch_block
+zynqRadioHWSWAXI4StreamAD9361AD9364SL/HDL_DUT/Tx/SimpleDualPortRAM_generic --> HDL_Chirp_ip_src_SimpleDualPortRAM_generic
+zynqRadioHWSWAXI4StreamAD9361AD9364SL/HDL_DUT/Tx --> HDL_Chirp_ip_src_Tx
+zynqRadioHWSWAXI4StreamAD9361AD9364SL/HDL_DUT --> HDL_Chirp_ip_src_HDL_DUT
