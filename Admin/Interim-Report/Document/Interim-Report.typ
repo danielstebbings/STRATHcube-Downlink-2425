@@ -352,7 +352,7 @@ There are two key decision points, marked "DP1" and "DP2". DP1 has been reached,
 To ensure time is left for the final report, a design freeze will be implemented during week 9 of semester 2. This means that no major features or changes will be implemented from that point onwards to ensure that the system is finalised and tested in advance of the final report deadline.
 
 
-== Technical Riskswf7f057"), 4: color.rgb("#aaf757"), 5: color.rgb("#57f757"))
+== Technical Risks
 
 // #show table.cell: it=> {
 //   if it.x == 4 and it.y > 0 {// L*S column values
