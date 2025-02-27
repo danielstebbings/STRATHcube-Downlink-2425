@@ -92,7 +92,7 @@
 % functionality to be implemented on the PS. These have been modeled so you
 % can verify behaviour via simulation.
 
-modelname = 'zynqRadioHWSWAXI4StreamAD9361AD9364SL';
+modelname = 'dvbs2_stream';
 load_system(modelname);
 open_system(modelname);
 
