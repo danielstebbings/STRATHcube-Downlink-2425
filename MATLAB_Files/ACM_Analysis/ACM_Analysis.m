@@ -20,11 +20,11 @@ load("modcod_to_CNR.mat")
 p_tx = 10*log10(1.5); % dBW 
 % Estimate of line losses in satellite telecom system. Based on numbers
 % from AMSAT Link Budget Calculator
-line_loss_tx = 1.93; % dB
+line_loss_tx = 1.26; % dB
 % ISIS antenna spec
 gain_antenna_tx = 0; % dBi
 % assumption as the ISIS antenna's beamwidth is unknown
-antenna_pointing_loss_tx = 3; % dB
+antenna_pointing_loss_tx = 0; % dB
 
 EIRP = p_tx - line_loss_tx + gain_antenna_tx - antenna_pointing_loss_tx;
 
@@ -33,12 +33,10 @@ bandwidth = 158.5*1000; % 158.5kHz BW defined by link budget investigation
 freq = 435e6; % Hz
 
 %% Ground Station Parameters
-gain_antenna_rx = 12; % dB
+gain_antenna_rx = 13; % dB
 gain_lna_rx = 22.5; % dB
 line_loss_rx = 0.2852; % dB
 other_line_losses_rx = 2.1; % dB
-temperature_line_loss = 10^(-line_loss_rx/10);
-
 % System noise temperature 
 temperature_antenna_rx = 154; % K
 % reference temperature, usually 290 K
@@ -79,8 +77,8 @@ path_loss = ionospheric_space_loss + atmospheric_space_loss + rain_space_loss + 
 
 
 %% System Performance
-CNR   = EIRP - free_space_path_loss - path_loss + gain_antenna_rx + 228.6 - 10*log10(temperature_system_noise_rx) - 10*log10(bandwidth);
-Margin_Requirement = 3; %dB
+CNR   = EIRP - free_space_path_loss - path_loss + gain_antenna_rx + 228.6 - 10*log10(temperature_system_noise_rx) - 10*log10(bandwidth) - 2.9;
+Margin_Requirement = 10; %dB
 
 %% Optimal MODCOD from CNR by Elevation and Altitude
 
@@ -108,7 +106,7 @@ opt_modcod_col = categorical(opt_modcod_col,modcod_cats);
 opt_modcod_tab = table( ...
             elevation_col,alt_col,CNR_col,opt_modcod_col',opt_bitrate, ...
             'VariableNames',["Elevation","Altitude","CNR_dB","Optimal_MODCOD","Optimal_Bitrate_bps"] ...
-            )
+            );
 
 %% Analysing MODCOD Benefit with ISS orbit over 1 month
 
@@ -155,9 +153,9 @@ elevation_times = histcounts(pass_elevations(:),[lowest_elevation:5:95]);
 
 % Time in each modcod at high altitude
 
-time_modcod_tab = opt_modcod_tab(opt_modcod_tab.Altitude == altitude_sat(end),:)
-time_modcod_tab.("Elevation_Time") = elevation_times'
-time_modcod_tab.("Bits_Sent") = time_modcod_tab.Optimal_Bitrate_bps .* time_modcod_tab.Elevation_Time
+time_modcod_tab = opt_modcod_tab(opt_modcod_tab.Altitude == altitude_sat(end),:);
+time_modcod_tab.("Elevation_Time") = elevation_times';
+time_modcod_tab.("Bits_Sent") = time_modcod_tab.Optimal_Bitrate_bps .* time_modcod_tab.Elevation_Time;
 
 bits_sent_ACM = sum(time_modcod_tab.Bits_Sent);
 bits_sent_fixed = time_modcod_tab(time_modcod_tab.Elevation == lowest_elevation,"Optimal_Bitrate_bps").Optimal_Bitrate_bps .* sum(time_modcod_tab.Elevation_Time);
@@ -173,7 +171,7 @@ for alt_it = 1:length(altitude_sat)
         "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
 
     yyaxis right
-    plot(CNR_vals.Elevation,CNR_vals.Optimal_Bitrate_bps/10e3, ...
+    plot(CNR_vals.Elevation,CNR_vals.Optimal_Bitrate_bps/1e3, ...
         "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
 end
 
@@ -203,7 +201,7 @@ for alt_it = 1:length(altitude_sat)
         "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
 
     yyaxis right
-    plot(CNR_vals.Elevation,CNR_vals.Optimal_Bitrate_bps/10e3, ...
+    plot(CNR_vals.Elevation,CNR_vals.Optimal_Bitrate_bps/1e3, ...
         "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
 end
 
