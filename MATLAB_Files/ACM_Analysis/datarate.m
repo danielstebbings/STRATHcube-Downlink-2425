@@ -1,4 +1,4 @@
-function [rates] = datarate(elevation,altitude,bandwidth,margin, link_parameters,verbose)
+function [rates] = datarate(elevation,altitude,bandwidth,margin,verbose, link_parameters)
 %DATARATE Calculates datarate for each elevation and altitude pair
 % Returns:
 %   rates:              Datarates for each      bits/sec, array size                                               
@@ -19,15 +19,16 @@ arguments
     altitude    (1,:)
     bandwidth   (1,1) = 158.5*1000
     margin      (1,1) = 10
-    link_parameters struct = struct( ...
-                                "Frequency",435e6, ... // Hz
-                                "GS_Altitude", 41, ... // m
-                                "EIRP", 0.5009, ... // dBW
-                                "Receiver_Gain",13-2.39, ... // dB
-                                "Receiver_Noise_Temperature",249.3651, ... // K
-                                "Atmo_Effect_Path_Loss",3.56 ... // dB
-                                );
     verbose     (1,1) = false
+    link_parameters struct = struct( ...
+                                "Frequency",435e6, ...                      % Hz
+                                "GS_Altitude", 41, ...                      % m
+                                "EIRP", 0, ...                              % dBW
+                                "Receiver_Gain",13-2.39, ...                % dB
+                                "Receiver_Noise_Temperature",249.3651, ...  % K
+                                "Atmo_Effect_Path_Loss",3.56 ...           % dB
+                                );
+    
     
 end
     % Validate Inputs
@@ -39,15 +40,15 @@ end
     APL = zeros(1,length(elevation));
     for elevation_it = 1:length(elevation)
         % Acubesat absorption values
-        if elevation(elevation_it) < 2.5
+        if elevation(elevation_it) < 2.5 || elevation(elevation_it) > 180 - 2.5
             Atmo_Absorption_Loss = 10.2;
-        elseif elevation(elevation_it) < 5
+        elseif elevation(elevation_it) < 5 || elevation(elevation_it) > 180 - 5
             Atmo_Absorption_Loss = 4.6;
-        elseif elevation(elevation_it) < 10
+        elseif elevation(elevation_it) < 10 || elevation(elevation_it) > 180 - 10
             Atmo_Absorption_Loss = 2.1;
-        elseif elevation(elevation_it) < 30
+        elseif elevation(elevation_it) < 30 || elevation(elevation_it) > 180 - 30
             Atmo_Absorption_Loss = 1.1;
-        elseif elevation(elevation_it) < 45
+        elseif elevation(elevation_it) < 45 || elevation(elevation_it) > 180 - 45
             Atmo_Absorption_Loss = 0.4;
         else
             Atmo_Absorption_Loss = 0.0;
@@ -59,8 +60,8 @@ end
     end
     slant_ranges = zeros(1,length(altitude));
     for slant_it = 1:length(altitude)
-        slant_ranges(slant_it) =  slantRangeCircularOrbit(elevation(slant_it), ...
-                                                         altitude(slant_it), ...
+        slant_ranges(slant_it) =  slantRangeCircularOrbit(elevation(slant_it),  ...
+                                                          altitude(slant_it),   ...
                                                           link_parameters.GS_Altitude ...
                                                           );
     end
@@ -71,9 +72,11 @@ end
     
     persistent modcodvalues
     if isempty(modcodvalues)
-        modcodvalues = load("modcod_to_CNR.mat","mdvals").mdvals;
+        modcodvalues = load("modcod_to_CNR.mat","mdvals").mdvals;      
     end
     modcodvalues.("dataratebps") = modcodvalues.("SpectralEfficiency") * bandwidth;
+    
+
     modcodvalues.("CNR_min") = modcodvalues.("EbN0_min") + 10*log10(modcodvalues.("dataratebps")) - 10*log10(bandwidth);
     
     rates = zeros(1,length(CNR));
@@ -88,7 +91,7 @@ end
         slant_ranges
         free_space_path_loss
         CNR
-        
+    end   
 end
 
 
