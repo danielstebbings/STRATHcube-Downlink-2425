@@ -18,37 +18,49 @@ function [data_Out,TSorGS_Out,DFL_Out,UPL_Out,SYNC_Out,MODCOD_Out,FECFRAME_Out] 
     end
     % Validate Inputs
     for i=[TSorGS_In,DFL_In,UPL_In,SYNC_In,MODCOD_In,FECFRAME_In,nPackets]
-        if length(i) ~= 1 && length(i) ~= nFrames_In
-            error("Config Params must be of length 1 or nFrames_In");
+        if length(i) ~= nFrames_In
+            error("Config Params must be of length Frames_In");
         end
     end
+    assert(UPL_In < DFL_In, "Packet size larger than Datafield");
     assert(nPackets*UPL_In<DFL_In,"Packets / Frame larger than Datafield");
-    assert
+    assert(frm_bits+pkt_bits+byte_bits == 8, "bit fields in data byte must add to 8 bits");
+    assert(frm_bits < 8 && pkt_bits < 8 && byte_vits < 8, "bit fields must not individually be 8 bits")
+
     
-    axiDataArray = zeros(1,nFrames.*nPackets.*UPL_In./8,'uint32')
 
-    % Generate Frames
-    for frame_it = 1:nFrames_In
-        TSorGS   = TSorGS_In(frame_it);
-        DFL      = DFL_In(frame_it);
-        UPL      = UPL_In(frame_it);
-        SYNC     = SYNC_In(frame_it);     
-        MODCOD   = MODCOD_In(frame_it);
-        FECFRAME = FECFRAME_In(frame_it);
+    axiDataArray = zeros(1,nFrames.*nPackets.*UPL_In./8,'uint32');
 
-        nBytes = nPackets/8;
-        assert(rem(nBytes,1)==0,"DFL/UPL must be divisible by 8");
-        frm_cnt = mod(frame_it-1,2^(frm_bits));
-        for pkt_it = 1:nPackets
-            for byte_it = 1:nBytes
-            end
-        end
+    frame_it    = uint32(0);
+    packet_it   = uint32(0);
+    byte_it     = uint32(0);
 
-    end
+    for axi_it = 1:length(axiDataArray)
+        axi_pkt = uint32(0);
+        byte = uint32(0);
+        byte = bitor(byte,uint32(byte_it));
+        byte = bitor(byte,bitshift(packet_it,byte_bits));
+        byte = bitor(byte,bitshift(frame_it,byte_bits+pkt_bits));
+        % Byte is of the form: [frm][pkt][byte_cnt]
+        assert(byte<256, "byte should be a byte!")
 
-    for byte_it = 1:axiDataArray/8
-        frame_it = 
 
+
+
+        packet_start = mod((axi_it+1)*8,UPL_Out);
+        packet_end   = 0;
+        frame_start  = 0;
+        frame_end    = 0;
+
+
+
+
+
+        % Update counters
+        frame_it    = mod(frame_it + 1,2^frame_bits);
+        packet_it   = mod(packet_it + 1,2^pkt_bits);
+        byte_it     = mod(byte_it + 1,2^frame_bits);
+        
 
 
 
