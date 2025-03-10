@@ -21,7 +21,7 @@ arguments
     margin      (1,1) = 10
     verbose     (1,1) = false
     link_parameters struct = struct( ...
-                                "Frequency",435e6, ...                      % Hz
+                                "Frequency",437e6, ...                      % Hz
                                 "GS_Altitude", 41, ...                      % m
                                 "EIRP", 0, ...                              % dBW
                                 "Receiver_Gain",13-2.39, ...                % dB
@@ -85,7 +85,13 @@ end
         if verbose
             modcod_row
         end
-        rates(cnr_it) = modcod_row.dataratebps;
+        % Check if link closes
+        if height(modcod_row) == 0
+            rates(cnr_it) = 0;
+        else
+            rates(cnr_it) = modcod_row.dataratebps;
+        end
+        
     end
     if verbose
         slant_ranges

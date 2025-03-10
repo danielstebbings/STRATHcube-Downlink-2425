@@ -17,7 +17,7 @@ load("modcod_to_CNR.mat")
 %% Satellite Parameters
 % ESA FYS! constrains antenna power output to 1.5W. ISIS Antenna max power
 % output is 2W
-p_tx = 10*log10(1.5); % dBW 
+p_tx = 10*log10(1); % dBW 
 % Estimate of line losses in satellite telecom system. Based on numbers
 % from AMSAT Link Budget Calculator
 line_loss_tx = 1.26; % dB

@@ -1,5 +1,6 @@
   #set math.equation(numbering: "(1)")
   #set text(lang: "gb", size: 12pt)
+  #show figure: set block(breakable: true)
 
 = Link Budget
 
@@ -9,14 +10,14 @@ STRATHcube is currently on the FYS design booster programme. For this a link bud
 
 #let result_fig = figure(
   table(
-    columns:8,
+    columns:7,
     align:(center),
     table.header(
-      [*Bits / Symbol*],[*Mod - ulation*],[*Coding Rate*],[*Data Rate (bps)*],[*Spectral Efficiency (bps/Hz)*],[*Minimum Eb/N0 *],[*Minimum CNR (dB)*],[*Minimum CNR w. 10dB Margin (dB)*]
+      [*Bits / Symbol*],[*Mod-ulation*],[*Coding Rate*],[*Spectral Efficiency (bps/Hz)*],[*Data Rate (bps)*],[*Minimum CNR (dB)*],[*Minimum CNR w. 10dB Margin (dB)*]
     ),
     ..results.slice(1).flatten(),
   ),
-  caption:"DVB-S2 Modulation and Coding Rate Requirements, 150kHz Bandwidth"
+  caption:"DVB-S2 Modulation and Coding Rate Requirements, 150kHz Bandwidth, "
 
 )
 == System Definitions
@@ -30,11 +31,11 @@ STRATHcube is currently on the FYS design booster programme. For this a link bud
       [*Name*],[*Value*],[*Source*]
     ),
     table.cell(colspan: 3, align(center,strong("System"))),
-    [Frequency ($f$)],[435 MHz],[UHF Amateur Satellite Service Allocation],
+    [Frequency ($f$)],[437 MHz],[UHF Amateur Satellite Service Allocation],
     [Bandwidth ($B$)],[150 kHz],[],
 
     table.cell(colspan: 3, align(center,strong("STRATHCube"))),
-    [Transmit Power ($P_"Tx"$)],       [$1.5 "W"$],      [Previous FYS limit],
+    [Transmit Power ($P_"Tx"$)],       [$0 "W"$],      [TOTEM UHF FE Limit],
     [Cable Losses ($L_"Cable"$)],         [$0.116 "dB"$],   [20cm RG-188/AU], // Big margin, Acubesat calc
     [VSWR],                 [$1.9:1$],        [ISIS Antenna Datasheet],// ISIS ant datasheet
     [Antenna Reflection Loss ($L_"Reflection"$)],[$0.44 "dB"$],    [@Reflection_Loss], // Acubesat link budget calculator
@@ -42,7 +43,7 @@ STRATHcube is currently on the FYS design booster programme. For this a link bud
     [Switch Losses ($L_"Switch"$)],      [$0.5 "dB"$],       [Acubesat, included specutalively], //acubesat, unsure if real
     [Total Line Losses ($L_"Line"$)],  [$1.26 "dB"$],      [@Line_Loss],
     [Transmit Antenna Gain ($G_"Tx"$)],  [$0 "dBi"$],        [ISIS Antenna Datasheet],
-    [*EIRP*],               [*$0.50 "dBW"$*],  [@EIRP],
+    [*EIRP*],               [*$0.50 "dBW"$*],  [@EIRP], 
 
     table.cell(colspan: 3, align(center,strong("Ground Station"))),
     [*Receive Antenna Gain ($G_"Rx"$)*], [*$13 "dBi"$*], [Arbitary Antenna], //https://www.rfsolutions.co.uk/antennas/directional-stacked-yagi-antenna-405-440mhz-with-13dbi-gain/
@@ -50,7 +51,7 @@ STRATHcube is currently on the FYS design booster programme. For this a link bud
     [Line Losses],                       [$2.39 "dB"$],           [Acubesat],
 
     table.cell(colspan: 3, align(center,strong("Ground Station Noise Temperature"))),
-    [Antenna ($T_"Ant"$)],                      [$154 "K"$],    [Acubesat],
+    [Antenna / Sky ($T_"Ant"$)],                      [$154 "K"$],    [Acubesat],
     [Feedline ($T_"Feed"$)],                     [$290 "K"$],    [Acubesat],
     [LNA ($T_"LNA"$)],                          [$28 "K"$],     [Acubesat],
     [Frontend ($T_"FE"$)],                     [$1000 "K"$],   [Acubesat],
@@ -80,13 +81,19 @@ STRATHcube is currently on the FYS design booster programme. For this a link bud
       [*Name*],[*Adverse*],[*Nominal*],[*Favourable*],[*Source(s)*]
     ),
     //[Pointing Loss],[ (90 #sym.degree error)],[3dB (30 #sym.degree error)],[0dB (10 #sym.degree error)],
-    [Elevation], [$10 #sym.degree$],[$20 #sym.degree$ ],[$40 #sym.degree$],[],
-    [Atmospheric Absorption ($L_"Atm"$)],[2.1 dB],[1.1 dB], [0.4 dB],[Acubesat]
+    [Elevation], [$10 #sym.degree$],[$20 #sym.degree$ ],[$40 #sym.degree$],[], //TODO: Updated elevation histogram for evidence
+    [Atmospheric Absorption ($L_"Atm"$)],[2.1 dB],[1.1 dB], [0.4 dB],[Acubesat],
+    [Slant Range], table.cell(colspan: 3, align(center,"Calculated / Scenario")),[@Atmospheric_Path_Loss],
+    [FSPL], table.cell(colspan: 3, align(center,"Calculated / Scenario")),[@FSPL],
+    [CNR],  table.cell(colspan: 3, align(center,"Calculated / Scenario")),[@FSPL],
   ),
   caption: "Dynamic Parameters"
 )
 
+
+
 == Methodology
+=== Link Budget
 Reflection loss can be calculated as follows:
 $ L_"Reflection,W"   = P_"Tx,W" times ("VSWR"-1)^2 / ("VSWR"+1)^2 ["W"] #linebreak()
   L_"Reflection,dB"  = 10 times log_10 ((P_"Tx,W" - L_"Reflection,W")/ P_"Tx,W") ["dB"] $ <Reflection_Loss>
@@ -94,7 +101,7 @@ $ L_"Reflection,W"   = P_"Tx,W" times ("VSWR"-1)^2 / ("VSWR"+1)^2 ["W"] #linebre
 The Transmitter total line losses are calculated as follows:
 $ L_"Line,dB" = L_"Cable,dB"+L_"Reflection,dB" + L_"Connectors,dB" + L_"Switch,dB" ["dB"] $ <Line_Loss>
 EIRP:
-$ "EIRP"_"dB" =  P_"Tx,dB" - L_"Line,dB" + G_"Tx,dB" ["dBW"] $ <EIRP>
+$ "EIRP"_"dB" =  10 times log_10 (P_"Tx,W") - L_"Line,dB" + G_"Tx,dB" ["dBW"] $ <EIRP>
 
 Receiver noise temperature:
 $ T_"Rx" = #sym.alpha times T_"Ant" + (1 - #sym.alpha) times T_"Feed" + (T_"FE" times L_"Cable") / (G_"LNA") [K] $ <Receiver_Noise_Temp>
@@ -102,11 +109,28 @@ $ T_"Rx" = #sym.alpha times T_"Ant" + (1 - #sym.alpha) times T_"Feed" + (T_"FE" 
 Atmospheric Effect Path Loss and Atmospheric Path Loss:
 $ "AEPL"_"dB" = L_"Scint,dB" + L_"Rain,dB" + L_"Ion,dB" + L_"Pol,dB" ["dB"] $ <Atmospheric_Effect_Loss>
 $ "APL"_"dB" = "AEPL"_"dB" + L_"Atm,dB" ["dB"] $ <Atmospheric_Path_Loss>
-
-// TODO: Add EsN0 to EbN0 to CNR calcs
-// TODO: Spect eff to datarate
-// TODO: total Spect eff calculation - Currently vibes based 100% 
 // TODO: Add received signal power, received noise power
+// TODO: Slant Range
+// TODO: FSPL
+$ x $ <Slant_Range> //TODO: Reference SlantRangeCircularOrbit
+$ x $ <FSPL>
+
+
+=== Required CNR by Modulation and Coding Rate 
+// TODO: Referencing
+The DVB-S2 standard provides values for spectral efficiency and minimum  $E_s / N_0$ in [Standard Table 13]. Those values are derived from simulation of a DVB-S2 system with 50 LDPC decoding iterations, 64,800 bit FECFRAME, no pilots, perfect carrier and synchronization recovery, no phase noise and an AWGN channel. The system shall include pilots to improve decoding performance, the spectral efficiency of which was obtained from a [CCSDS Green book Table 3-1]. As such, the actual minimum $E_s / N_0$ will be lower, adding further margin.
+
+Interference, demodulation and phase noise effects are still to be analysed, which will reduce the calculated link margin. For this reason a margin target of 10dB was selected.
+
+Additionally, it was assumed that perfect filtering is in place and thus that the total system spectral efficiency is equal to that of theoretical modulation and coding rate spectral efficiency. With that assumption, @ESN0_2_CNR and @spect_eff_2_cap were used to create @modcod_reqs_150khz.
+
+$ E_s / N_0 = C / N ["dB"] $ <ESN0_2_CNR>
+$ C = #sym.eta times B ["bps"] $ <spect_eff_2_cap>
+
+#result_fig <modcod_reqs_150khz>
+
+=== Adaptive Coding and Modulation Analysis
+
 
 == Scenarios
 
