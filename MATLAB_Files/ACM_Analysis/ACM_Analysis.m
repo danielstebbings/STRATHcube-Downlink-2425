@@ -30,21 +30,21 @@ EIRP = p_tx - line_loss_tx + gain_antenna_tx - antenna_pointing_loss_tx;
 
 %% Downlink transmission configuration
 bandwidth = 158.5*1000; % 158.5kHz BW defined by link budget investigation
-freq = 435e6; % Hz
+freq = 437e6; % Hz
 
 %% Ground Station Parameters
-gain_antenna_rx = 13; % dB
-gain_lna_rx = 22.5; % dB
-line_loss_rx = 0.2852; % dB
-other_line_losses_rx = 2.1; % dB
+gain_antenna_rx = 14.15; % dB STAC
+gain_lna_rx = 20; % dB STAC
+line_loss_rx = 0.2852; % dB AcubeSAT
+other_line_losses_rx = 2.1; % dB AcubeSAT
 % System noise temperature 
-temperature_antenna_rx = 154; % K
+temperature_antenna_rx = 154; % K AcubeSAT
 % reference temperature, usually 290 K
-temperature_feedline_rx = 290; % K
-temperature_lna_rx = 28; % K
-temperature_frontend_rx = 1000; % K
-cable_loss = 1.023;
-coeff_transmission_line = 0.6331;
+temperature_feedline_rx = 290; % K Sklar
+temperature_lna_rx = 66.8; % K STAC
+temperature_frontend_rx = 1539.8; % K STAC
+cable_loss = 1.023; % AcubeSAT
+coeff_transmission_line = 0.6331; % AcubeSAT
 
 temperature_system_noise_rx = coeff_transmission_line*temperature_antenna_rx + (1-coeff_transmission_line)*temperature_feedline_rx + (temperature_frontend_rx*cable_loss)/gain_lna_rx;
 
@@ -147,7 +147,8 @@ for pass_it = 1:height(passes_coarse)
     end
 end
 
-%%
+
+%% Analysing Predicted Pass Data
 % Bin into 5 degree angle bins
 elevation_times = histcounts(pass_elevations(:),[lowest_elevation:5:95]);
 
@@ -159,6 +160,31 @@ time_modcod_tab.("Bits_Sent") = time_modcod_tab.Optimal_Bitrate_bps .* time_modc
 
 bits_sent_ACM = sum(time_modcod_tab.Bits_Sent);
 bits_sent_fixed = time_modcod_tab(time_modcod_tab.Elevation == lowest_elevation,"Optimal_Bitrate_bps").Optimal_Bitrate_bps .* sum(time_modcod_tab.Elevation_Time);
+
+%% Analysing MODCOD Benefit with IST orbit
+% pass_elevations(time(s),altitude (km), pass_flag (bool), elevation (degrees),
+ist_pass_data = load("IST_Sim_data.mat").outputs;
+ist_altmin = 170;  % Minimum altitude to simulate
+ist_timestep = 10; % seconds
+% Find passes where flag is 1 and altitude > minimum
+ist_passes = ist_pass_data(ist_pass_data(:,3)==1 & ist_pass_data(:,2)> ist_altmin,:);
+ist_pass_times      = ist_passes(:,1) - ist_passes(1,1); % seconds
+ist_pass_altitudes  = ist_passes(:,2)*1000;     % in meters
+ist_pass_elevations = ist_passes(:,4);          % degrees
+% Bin into 5 degree angle bins
+ist_pass_elevations_binned = floor(ist_pass_elevations/5)*5;
+% Get capacity for each timestep
+ist_pass_capacities = datarate(ist_pass_elevations,ist_pass_altitudes);
+% Time in each modcod at high altitude
+
+ist_time_modcod_tab = opt_modcod_tab(opt_modcod_tab.Altitude == altitude_sat(end),:);
+ist_time_modcod_tab.("Elevation_Time") = elevation_times';
+ist_time_modcod_tab.("Bits_Sent") = time_modcod_tab.Optimal_Bitrate_bps .* time_modcod_tab.Elevation_Time;
+
+ist_bits_sent_ACM = sum(ist_time_modcod_tab.Bits_Sent);
+bits_sent_fixed = time_modcod_tab(time_modcod_tab.Elevation == lowest_elevation,"Optimal_Bitrate_bps").Optimal_Bitrate_bps .* sum(time_modcod_tab.Elevation_Time);
+
+
 
 %% Plot Elevation vs MODCOD by Altitude
 figure
@@ -189,7 +215,7 @@ hold off
 % Also plot Datathroughput of each strategy
 figure
 hold on
-title("Adaptive vs Fixed Coding and Modulation")
+sgtitle("Adaptive vs Fixed Coding and Modulation - 409km Fixed Orbit")
 
 % Elevation to MODCOD and bitrate
 subplot(2,2,[1,3])
@@ -211,6 +237,7 @@ ylabel("Modulation and Coding Rate")
 yyaxis right
 ylabel("Maximum Bitrate (kilobits/sec)")
 title("Elevation vs Optimal MODCOD")
+
 
 
 subplot(2,2,2)

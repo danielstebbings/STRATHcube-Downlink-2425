@@ -24,8 +24,8 @@ arguments
                                 "Frequency",437e6, ...                      % Hz
                                 "GS_Altitude", 41, ...                      % m
                                 "EIRP", 0, ...                              % dBW
-                                "Receiver_Gain",13-2.39, ...                % dB
-                                "Receiver_Noise_Temperature",249.3651, ...  % K
+                                "Receiver_Gain",14.15-2.39, ...             % dB
+                                "Receiver_Noise_Temperature",282.6592, ...  % K
                                 "Atmo_Effect_Path_Loss",3.56 ...           % dB
                                 );
     

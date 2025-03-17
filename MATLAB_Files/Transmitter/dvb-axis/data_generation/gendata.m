@@ -26,8 +26,8 @@ function [data_Out,TSorGS_Out,DFL_Out,UPL_Out,SYNC_Out,MODCOD_Out,FECFRAME_Out] 
 
     arguments
         % Packet Generation
-        nFrames         (1,1) uint32              % Frames to generate
-        nPackets        (1,1) uint32             % Packets to generate / frame
+        nFrames         (1,1) {mustBeNonnegative,mustBeInteger}             % Frames to generate
+        nPackets        (1,1) {mustBeNonnegative,mustBeInteger}             % Packets to generate / frame
         
         % Control Signals
         TSorGS_In       (1,1) {mustBeNonnegative,mustBeInteger,mustBeLessThan(TSorGS_In,    4)} % fixdt(0,2,0)
@@ -49,22 +49,18 @@ function [data_Out,TSorGS_Out,DFL_Out,UPL_Out,SYNC_Out,MODCOD_Out,FECFRAME_Out] 
         pktStart_pos    (1,1) = 0;
     end
     % Validate Inputs
-    for i=[TSorGS_In,DFL_In,UPL_In,SYNC_In,MODCOD_In,FECFRAME_In,nPackets]
-        if length(i) ~= 1
-            error("Config Params must be of length 1");
-        end
-    end
     assert(UPL_In < DFL_In,                     "Packet size larger than Datafield");
     assert(nPackets*UPL_In==DFL_In,             "Packets / Frame larger than Datafield");
     assert(frm_bits+pkt_bits+pl_cnt_bits == 8, "bit fields in data byte must add to 8 bits");
     assert(frm_bits < 8 && pkt_bits < 8 && pl_cnt_bits < 8, "bit fields must not individually be 8 bits")
 
-    % Fixing Types
-    TSorGS_In_t = fi(TSorGS_In,0,2,0);
-    DFL_In_t    = uint16(DFL_In);
-    UPL_In_t    = uint16(UPL_In);
-    SYNC_In_t   =  
-    FECFRAME_In_t = logical(FECFRAME_In)
+    % Fixing Types: Will use at end
+    TSorGS_In_t   = fi(TSorGS_In,0,2,0);
+    DFL_In_t      = uint16(DFL_In);
+    UPL_In_t      = uint16(UPL_In);
+    SYNC_In_t     = uint8(SYNC_In);
+    MODCOD_In_t   = fi(MODCOD_In,0,5,0);
+    FECFRAME_In_t = logical(FECFRAME_In);
     
     % Generate nFrames each with nPackets, each containing UPL[bits] / 8 bytes
     axiDataArray = zeros(1,nFrames.*nPackets.*UPL_In./8,'uint32');
@@ -153,11 +149,11 @@ function [data_Out,TSorGS_Out,DFL_Out,UPL_Out,SYNC_Out,MODCOD_Out,FECFRAME_Out] 
 data_Out     = axiDataArray;
 % Match length of control signals
 TSorGS_Out   = repelem(TSorGS_In_t,   length(axiDataArray)); 
-DFL_Out      = repelem(DFL_In_t,    length(axiDataArray));
+DFL_Out      = repelem(DFL_In_t,      length(axiDataArray));
 UPL_Out      = repelem(UPL_In_t,      length(axiDataArray));
-SYNC_Out     = repelem(SYNC_In,     length(axiDataArray));
-MODCOD_Out   = repelem(MODCOD_In,   length(axiDataArray));
-FECFRAME_Out = repelem(FECFRAME_In, length(axiDataArray));
+SYNC_Out     = repelem(SYNC_In_t,     length(axiDataArray));
+MODCOD_Out   = repelem(MODCOD_In_t,   length(axiDataArray));
+FECFRAME_Out = repelem(FECFRAME_In_t, length(axiDataArray));
     
 
 end % Function

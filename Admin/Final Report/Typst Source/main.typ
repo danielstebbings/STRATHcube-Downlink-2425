@@ -1,6 +1,7 @@
 #import "template.typ": *
 #import "@preview/codelst:2.0.2": sourcecode
 #import "@preview/acrostiche:0.5.1": *
+#import "@preview/wordometer:0.1.4" : word-count, total-words
 
 
 #init-acronyms((
@@ -61,7 +62,12 @@
 //Appendices
 
 
+
+
 = Introduction
+//Todo: Delete this!
+#show: word-count
+#total-words
 = Background
 = ACM Analysis
 #include("link_budget.typ")
@@ -83,5 +89,5 @@ example_c_code() =
 ```], caption: [code listing])
 
 #show bibliography: set heading(numbering: "1")
-//#bibliography("example.bib")
+#bibliography(("../Bibliographies/Link-Budget.bib","../Bibliographies/DVB-S2.bib","../Bibliographies/Hardware.bib"))
 
