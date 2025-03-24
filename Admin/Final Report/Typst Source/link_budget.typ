@@ -1,13 +1,14 @@
-  #set math.equation(numbering: "(1)")
+
   #set text(lang: "gb", size: 12pt)
   #show figure: set block(breakable: true)
+  #set heading(offset: 0)
 
-= Link Budget
+//= Link Budget
 // Acronym Reference
 Much of the background research for this link budget was done by a previous student , identifying the AcubeSAT link budget @amarantidou_acubesat_2020 as a key source of information.
 The link budget was then reassessed and updated to identify varying parameters and to reflect the impact of DVB-S2 and ACM. It has also been updated to reflect the information obtained regarding the STAC ground station @calum_clarke_group_2016. The current operation of the STAC is unknown, as such component values and performance figures are to be confirmed.
 //== DVB-S2 Modulation and Coding Rate Requirements
-#let results=csv("../Figures/modvals.csv")
+#let results=csv("../Figures/Link-Budget/modvals.csv")
 
 #let result_fig = figure(
   table(
@@ -37,7 +38,7 @@ The link budget was then reassessed and updated to identify varying parameters a
     [Bandwidth ($B$)],[150 kHz],[],
 
     table.cell(colspan: 3, align(center,strong("STRATHCube"))),
-    [Transmit Power ($P_"Tx"$)],                  [$0 "W"$],        [TOTEM UHF FE Limit, @alen_space_frontenduhf_2021],
+    [Transmit Power ($P_"Tx"$)],                  [$1 "W"$],        [TOTEM UHF FE Limit, @alen_space_frontenduhf_2021],
     [Cable Losses ($L_"Cable"$)],                 [$0.116 "dB"$],   [20cm RG-188/AU, AcubeSAT], // Big margin, AcubeSAT calc
     [VSWR],                                       [$1.9:1$],        [ISIS Antenna Datasheet @isispace_cubesat_nodate],// ISIS ant datasheet
     [Antenna Reflection Loss ($L_"Reflection"$)], [$0.44 "dB"$],    [@Reflection_Loss, AcubeSAT], // AcubeSAT link budget calculator
@@ -157,7 +158,7 @@ Using the system parameters defined in @System-Definitions, the equations define
 CNR values defined in @modcod_reqs_150khz, the max achievable data rate was precomputed for each elevation value from 0 to 90#sym.degree in 5#sym.degree increments for both 170km and 409km altitude orbits, the resulting rates shown are in @elevation2Throughput. //TODO: include elevation to throughput
 
 #figure(
-  image("../Figures/Elevation2Throughput.svg"),
+  image("../Figures/Link-Budget/Elevation2Throughput.svg"),
   caption: "Elevation vs Throughput"
 ) <elevation2Throughput>
 
@@ -168,7 +169,7 @@ The simulated elevation angles were then binned with values rounded down to the 
 
 //TODO: include ACM vs CCM plot
 #figure(
-  image("../Figures/ACMvCCM.svg"),
+  image("../Figures/Link-Budget/ACMvCCM.svg"),
   caption:"ACM Performance Analysis"
   ) <ACMvCCM>
  
@@ -244,7 +245,7 @@ the recovery is significantly degraded however the filter is able to improve per
 The paper also notes that the filter could reduce performance in certain scenarios.
 
 #figure(
-  image("../Figures/DVB-S2_Interference.png",width:auto),
+  image("../Figures/Link-Budget/DVB-S2_Interference.png",width:auto),
   caption: "Impact of interference on DVB-S2 QPSK signal reception."
 ) <Interference-Filter-Results>
 
