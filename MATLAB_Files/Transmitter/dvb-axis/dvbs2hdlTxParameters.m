@@ -17,7 +17,7 @@ function txConfig = dvbs2hdlTxParameters()
     txConfig.dummyFramePLHeaderptruefshort = satcom.internal.dvbs.plHeader('s2',0,true,16200);
     txConfig.dummyFrameLength = 90+36*90; % PL Header + 36 slots of unmodulated carriers
 
-    txConfig.RolloffFactor       = 0.35;
+    txConfig.RolloffFactor       = 0.25;
     txConfig.FilterSpanInSymbols = 10;
     txConfig.SamplesPerSymbol    = 4;
     txConfig.RRCImpulseResponse  = rcosdesign(txConfig.RolloffFactor,...
