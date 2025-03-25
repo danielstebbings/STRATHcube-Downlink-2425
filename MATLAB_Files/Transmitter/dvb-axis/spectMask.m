@@ -1,4 +1,4 @@
-ich function [mask] = spectMask(Bn, Ptx)
+function [mask] = spectMask(Bn, Ptx)
 %SPECTMASK Creates mask limit boundaries based on ITU-R SM.1541-7 Fig 43
 %   Bn   : Necessary bandwidth (Hz)
 %   Ptx  : Transmit power (W)
