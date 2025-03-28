@@ -53,8 +53,14 @@
   "ADC": "Analog to Digital Converter",
   "DAC": "Digital to Analog Converter",
   "ETSI": "European Telecommunications Standards Institute",
-  "VCM": "Variable Coding and Modulation"
+  "VCM": "Variable Coding and Modulation",
+  "VL-SNR": "Very Low Signal-to-Noise Ratio",
+  "BPSK": "Binary Phase Shift Keying",
+  "PDU": "Protocol Data Unit",
+  "AWGN": "Additive White Gaussian Noise",
+  "RTL": "Register Transfer Level",
 ))
+
 
 // Take a look at the file `template.typ` in the file panel
 // to customize this template and discover how it works.
@@ -67,7 +73,7 @@
   ),
   
   declaration: [
-  I confirm and declare that this report and the project work is entirely the product of my own effort and I have not used or presented the work of others herein without acknowledgment
+  I hereby declare that this work has not been submitted for any other degree/course at this University or any other institution and that, except where reference is made to the work of other authors, the material presented is original and entirely the result of my own work at the University of Strathclyde under the supervision of Louise Crockett.
   ],
 
   abstract: [
@@ -75,7 +81,8 @@
   ],
   
   subtitle: [
-  Supervised by Louise Crockett \
+  Supervisor: Louise Crockett \
+  Second Assessor: \ // TODO: Second Asssessor
   Department of Electronic and Electrical Engineering \
   University of Strathclyde, Glasgow
   ],
@@ -115,26 +122,34 @@
 
 
 = Introduction
-//Todo: Delete this!
-//#show: word-count
-//#total-words
+//TODO: Finish this!
+
+The objectives for this project were as follows
+
++ Reliability
++ Datarate
++ 
++ Fit within resources available
++ 
 = Literature Review
 
 
 #include("lit_review.typ")
 = ACM Analysis
 #include("link_budget.typ")
-= System Architecture
-
+= System Design
+#include("system_architecture.typ")
 
 = Implementation
-== Transmitter
-#include("transmitter.typ")
-== Packet Handling
+#include("Implementation.typ")
+
 = Results
+#include("results.typ")
+
 = Discussion
 = Conclusion
 == Further Work
+// DVB-S2X - VL-SNR features
 
 /*= Code listings
 
@@ -147,6 +162,7 @@ example_c_code() =
 ```], caption: [code listing])
 */
 
+#pagebreak()
 #show bibliography: set heading(numbering: "1")
 #bibliography(("../Bibliographies/Link-Budget.bib","../Bibliographies/DVB-S2.bib","../Bibliographies/Hardware.bib"))
 

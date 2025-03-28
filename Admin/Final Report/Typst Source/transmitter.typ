@@ -1,1 +1,0 @@
-The transmitter was implemented using MATLAB HDL Coder. 

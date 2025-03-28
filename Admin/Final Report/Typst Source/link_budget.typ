@@ -5,8 +5,9 @@
 
 //= Link Budget
 // Acronym Reference
-Much of the background research for this link budget was done by a previous student , identifying the AcubeSAT link budget @amarantidou_acubesat_2020 as a key source of information.
-The link budget was then reassessed and updated to identify varying parameters and to reflect the impact of DVB-S2 and ACM. It has also been updated to reflect the information obtained regarding the STAC ground station @calum_clarke_group_2016. The current operation of the STAC is unknown, as such component values and performance figures are to be confirmed.
+The link budget was then reassessed and updated to identify varying parameters and to reflect the impact of ACM. It has also been updated to reflect the information obtained regarding the STAC ground station @calum_clarke_group_2016. The current operation of the STAC is unknown, as such component values and performance figures are to be confirmed.
+
+// TODO: Mention BDR here?
 //== DVB-S2 Modulation and Coding Rate Requirements
 #let results=csv("../Figures/Link-Budget/modvals.csv")
 
@@ -70,7 +71,7 @@ The link budget was then reassessed and updated to identify varying parameters a
     [Rain Fade ($L_"Rain,dB"$)],      [$0 "dB"$],     [Assumed as negligible in UHF],
     [Ionospheric ($L_"Ion,dB"$)],     [$0.4 "dB"$],   [AcubeSAT],
     [Polarisation ($L_"Pol,dB"$)],    [$3 "dB"$],     [],
-    [*AEL*],                         [*$3.56 "dB"$*], [@Atmospheric_Effect_Loss],
+    [*AEL*],                          [*$3.56 "dB"$*], [@Atmospheric_Effect_Loss],
 
 
   ),
@@ -145,7 +146,7 @@ Interference, demodulation and phase noise effects are still to be analysed, whi
 Additionally, it was assumed that perfect filtering is in place and thus that the total system spectral efficiency is equal to that of the theoretical value for the modulation and coding rate. With that assumption, @ESN0_2_CNR and @spect_eff_2_cap were used to create @modcod_reqs_150khz.
 
 $ E_s / N_0 = C / N ["dB"] $ <ESN0_2_CNR>
-$ C = #sym.eta times B ["bps"] $ <spect_eff_2_cap>
+$ "Capacity" = #sym.eta times B ["bps"] $ <spect_eff_2_cap>
 
 #result_fig <modcod_reqs_150khz>
 
@@ -230,19 +231,12 @@ STRATHcube at end of primary phase.
 
 == Areas for Further Investigation
 
-// TODO: AcubeSAT citation
-//.TODO: Interference citation
+// TODO: Rephrasing to make sense with lit review
 Thusfar the downlink link budget has been concerned with proving viability and performance limits for development of the  
 transmitter system. As such, there has been comparatively less investigation of the receiver system and there has been a large
 reliance on numbers derived from the AcubeSAT link budget. There are multiple key challenges for implementing a DVB-S2 receiver,
 the largest issue being interference, which can be prevalent on the planned UHF band @quintana-diaz_detection_2022, another being carrier synchronisation and
 phase correction.
-
-// TODO: DVB-S2 Notch filter Paper
-In @same_effects_2020 the effect of narrowband continuous wave interference was investigated for DVB-S2 QPSK communications and an adaptive notch filter designed. 
-@Interference-Filter-Results @same_effects_2020[Fig. 27] shows the effect on BER of a Jamming to Signal Ratio (JSR) of just -6dB. Without filtering, and at low Eb/N0 values, 
-the recovery is significantly degraded however the filter is able to improve performance to close to that of the theoretical peak.
-The paper also notes that the filter could reduce performance in certain scenarios.
 
 #figure(
   image("../Figures/Link-Budget/DVB-S2_Interference.png",width:auto),
