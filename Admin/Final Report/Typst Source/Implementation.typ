@@ -34,10 +34,12 @@ There were multiple options for implementation of the #acr("DVB-S2") subsytem.
 //TODO: DVB-S2 HDL Coder citation
 The core of the design is built upon a DVB-S2 HDL coder example created by Mathworks.
 
+#pagebreak()
 #figure(
-  image("../Figures/Implementation/MATLAB-Examples/DVB-S2-Tx.png"),
+  rotate(image("../Figures/Implementation/MATLAB-Examples/DVB-S2-Tx.png")),
   caption:"DVB-S2 HDL Transmitter MATLAB Example Design"
 )
+#pagebreak()
 
 #figure(
   table(
@@ -95,7 +97,7 @@ Data is transferred from the #acr("PS") via one of two methods. AXI-lite interfa
     [TLast],  [boolean], [Indication from master to slave that the current packet is the last in the current stream],
 
   ),
-  caption: "AXI-Stream Minimal Signals"
+  caption: "Minimum AXI-Stream Signals"
 )
 
 #import "@preview/wavy:0.1.1"
@@ -113,45 +115,53 @@ Data is transferred from the #acr("PS") via one of two methods. AXI-lite interfa
     //. -> repeat last
     //p -> pulse
     // 1 / 0 -> signal for whole timestep
-    {                 node:'...AC.E', phase:'0.14'}, // Start of lines
+    {                 node:'..ACEGI', phase:'0.14'}, // Start of lines
     {name:'ACLK',     wave:'p......'},
     ['Master',
       {name:'TDATA',  wave:'x.34.5.',data:'1 2 3'},
-      {name:'TVALID', wave:'0.1...0'},
+      {name:'TVALID', wave:'0.34.5.'},
     ],
     ['Slave',
-      {name:'TREADY', wave:'0.1..0.'},
+      {name:'TREADY', wave:'07...0.'},
     ],
-    {name:'', node:'...BD.F', phase:'0.14'},
+    {name:'', node:'..BDFHJ', phase:'0.14'},
   ],
   edge: [
     'A-|B',
     'C-|D',
     'E-|F',
+    'G-|H',
+    'I-|J',
+  
   ],
   foot: {
     text:[
       'tspan', 
     //['tspan', {dy:'-5'}, 'wdwdwd'],
-     ['tspan', {x: '130',dy:'-25',class:'h6'}, 'XFR 1'],
-     ['tspan', {x: '170',dy:'0',class:'h6'}, 'XFR 2'],
-    ['tspan', {x: '245',dy:'0',class:'h6'}, 'NO XFR'],
+      ['tspan', {x: '80',dy:'-25',class:'h6'}, 'NO XFR'],
+      ['tspan', {x: '120',dy:'0',class:'h6'}, 'XFR 1'],
+      ['tspan', {x: '160',dy:'0',class:'h6'}, 'XFR 2'],
+      ['tspan', {x: '200',dy:'0',class:'h6'}, 'XFR 2'],
+      ['tspan', {x: '245',dy:'0',class:'h6'}, 'NO XFR'],
     ],
       
       
   }
 }
 ```,
-caption: "AXI-Stream Timing"
+caption: "Minimal AXI-Stream timing diagram. A transfer (XFR) occurs on the active edge of the clock when both TVALID and TREADY are high. TDATA can change after a transfer occurs, but must be held once TVALID is asserted until the next transfer.",
+kind:image,
 ) <AXI-Stream-Timing>
 
 
-The DVB-S2 design used requires sideband signals to indicate the start and end of a frame or packet. Additionally, due to the use of HDL Coder, the implementation of TUser sidebands was deemed to be infeasible. Unlike the other control signals, these require a high level of synchronisation with the data stream, necessitating their inclusion within the 32 bit TData. 
+The DVB-S2 design used requires sideband signals to indicate the start and end of a frame or packet. Additionally, as the 
+
+Unlike the other control signals, these require a high level of synchronisation with the data stream, necessitating their inclusion within the 32 bit TData. 
 
 The remaining 28 bits could then be used to carry the packet data. No DFL size was evenly divisible by 28, giving two avenues for implementation. The first option was to implement a signalling system within the TDATA field allowing for a variable amount of packet bits within each TDATA field. The second was to find the largest number that factored all possible DFL sizes and accept the lower performance.
 
 //TODO: Fastest 
-All DFL sizes were factorised, giving a maximum size of 8 bits. AXI-Streams can transfer data much faster than the resultant symbols could be transmitted, so it was decided to accept the performance loss of using a subset of the TDATA field.
+All DFL sizes were factorised, giving a maximum size of 8 bits. AXI-Streams can transfer data much faster than the resultant symbols could be transmitted, so it was decided to accept the performance loss of using a subset of the TDATA field as it greatly reduced complexity.
 
 #figure(
   table(
@@ -166,15 +176,15 @@ All DFL sizes were factorised, giving a maximum size of 8 bits. AXI-Streams can 
 
 #subpar.grid(
   columns: (1fr),
-  caption: [AXI Packet Structure],
+  caption: [Design TDATA structure. TDATA is 32 bits wide here, ],
   label: <AXI-Pkts>,
-  figure(
-    image("../Figures/Implementation/Packets/AXI_pkt_1.svg",width:100%),
-    caption: "AXI Packet With Sidebands"
-  ),<AXI-Packet-Sidebands>,
+  //figure(
+  //  image("../Figures/Implementation/Packets/AXI_pkt_1.svg",width:100%),
+  //  caption: "AXI Packet With Sidebands"
+  //),<AXI-Packet-Sidebands>,
   figure(
     image("../Figures/Implementation/Packets/AXI_pkt_2.svg",width:100%),
-    caption: "AXI Packet Final Structure"
+    //caption: "AXI Packet Final Structure"
   ), <AXI-Packet-Structure>,
 )
 
@@ -183,7 +193,9 @@ All DFL sizes were factorised, giving a maximum size of 8 bits. AXI-Streams can 
 
 // TODO: Packet Parser
 
-The AXI packets contain the start and end signals, as well as a byte of packet data in a parallel format. This must be serialised into a bitstream to interface with the #acr("DVB-S2") modulation block.
+The AXI packets contain the start and end signals, as well as a byte of packet data in a parallel format. This must be serialised into a bitstream to interface with the #acr("DVB-S2") transmitter block. This in turn means that buffering is required. A #acr("FIFO") buffer was selected for this purpose, as the interface signals can be used to manage the AXI interface.
+
+//TODO: FIFO diagram
 
 #figure(
 ```wavy
@@ -196,11 +208,11 @@ The AXI packets contain the start and end signals, as well as a byte of packet d
     {name:'ACLK',     	  wave:'p.|..|..|..|..|..|..'},
     
     //{name:'nFull',  wave:'x.34.5.',data:'1 2 3'},
-    {name:'tx_nextFrame', wave:'10|..|10|..|..|..|10'},
-    {name:'pkt_frameEnd', wave:'0.|10|..|..|..|10|..'},
-    {name:'DVB-S2 Ready', wave:'1.|.0|.1|..|..|.0|1.'},
-    {name:'FIFO_nFull',   wave:'1.|..|..|0.|1.|..|..'},
-    {name:'TREADY',		    wave:'1.|.0|.1|0.|.1|0.|1.'},
+    {name:'tx_nextFrame', wave:'30|..|30|..|..|..|30'},
+    {name:'pkt_frameEnd', wave:'0.|40|..|..|..|40|..'},
+    {name:'DVB-S2 Ready', wave:'5.|.0|.5|..|..|.0|5.'},
+    {name:'FIFO_nFull',   wave:'8.|..|..|0.|8.|..|..'},
+    {name:'TREADY',		    wave:'7.|.0|.7|0.|.7|0.|7.'},
     {name:'', 		        node:'A.BC.DE.FG.HI.JK.LM.N', phase:'0.14'},
     
     
@@ -228,7 +240,8 @@ The AXI packets contain the start and end signals, as well as a byte of packet d
   }
 }
 ```,
-caption: "AXI-Stream TReady Timing"
+caption: "AXI-Stream TReady timing. The DVB-S2 transceiver block asserts nextFrame for a single clock. This signal is extended until a packet signalling the end of a frame is received to create DVB-S2 Ready.",
+kind:image,
 ) <AXI-Stream-Timing>
 
 
@@ -240,22 +253,23 @@ caption: "AXI-Stream TReady Timing"
     //. -> repeat last
     //p -> pulse
     // 1 / 0 -> signal for whole timestep
-    {                 		node:'..AC.E', phase:'0.14'}, // Start of lines
+    {                 		node:'..AC.I.......K......', phase:'0.14'}, // Start of lines
     {name:'ACLK',     		wave:'p...................'},
     
     //{name:'nFull',  wave:'x.34.5.',data:'1 2 3'},
     ['Stream',
     	{name:'TDATA', 		  wave:'x34xX...............', 'data':'A B'},
-    	{name:'TVALID', 	  wave:'01.0................'},
-    	{name:'TREADY',		  wave:'01.0................'},
+    	{name:'TVALID', 	  wave:'0110................'},
+    	{name:'TREADY',		  wave:'07.0................'},
     ],
     ['Parse Interface',
-    	{name:'FIFO_Pop', 	wave:'0..10......10.......'},
+    	{name:'FIFO_Pop', 	wave:'0..80......80.......'},
     	{name:'FIFO_Out',   wave:'0...3xxxxxxx4xxxxxxx', 'data':'A B'},
-		  {name:'FIFO_nEmpty',wave:'0..1........0.......'},
-     	{name:'Parse_Ready',wave:'1....0.....1.0....1.'},
+      {name:'FIFO_Valid', wave:'0...10......10......',},
+		  {name:'FIFO_nEmpty',wave:'0..8........0.......'},
+     	{name:'Parse_Ready',wave:'5....0.....5.0....5.'},
     	{name:'', 		    node:'..BDE.......F', phase:'0.14'},
-     	//{name:'', 		    node:'....', phase:'0.14'},
+      {name:'', 		    node:'.....J.......L.', phase:'0.14'},
     ],
     
     
@@ -263,22 +277,25 @@ caption: "AXI-Stream TReady Timing"
   edge: [
     'A-|B',
     'C-|D',
+    'I-|J',
+    'K-|L',
     'E+F	8 Cycles / AXI Packet',
   ],
   foot: {
     text:[
       'tspan', 
-    //['tspan', {dy:'-5'}, 'wdwdwd'],
-    	['tspan', {x: '80',dy:'-30',class:'h6'}, 'XFR A'],
-    	['tspan', {x: '120',dy:'0',class:'h6'},  'XFR B'],
-    	//['tspan', {x: '245',dy:'0',class:'h6'},  'NO XFR'],
+    	['tspan', {x: '80', dy:'-60',class:'h6'}, 'XFR A'],
+    	['tspan', {x: '120',dy:'0',class:'h6'},   'XFR B'],
+      ['tspan', {x: '200',dy:'+30',class:'h6'}, 'XFR A'],
+    	['tspan', {x: '520',dy:'0',class:'h6'},   'XFR B'],
     ],
       
       
   }
 }
 ```,
-caption: "FIFO Timing"
+caption: "FIFO stream and parser interfacing timing. The input of the FIFO is used to handle the AXI-Stream, with TVALID driving \"FIFO_Push\". If Parse_Ready is asserted and the FIFO is not empty then FIFO_Pop is asserted and a packet output on the next clock.",
+kind:image,
 ) <FIFO-Timing>
 
 #figure(
@@ -303,9 +320,9 @@ caption: "FIFO Timing"
     	
      	//{name:'', 		    node:'....', phase:'0.14'},
     ],
-     ['Parser - DVB-S2',
+     ['Parser - DVB-S2 Tx',
       {name:'pktValid',		wave:'0.1...............0'},
-      {name:'pktBits',		wave:'x.3333333344444444x','data':'A7 A6 A5 A4 A3 A2 A1 A0 B7 B6 B5 B4 B3 B2 B1 B0'},
+      {name:'pktBits',		wave:'x.3333333344444444x','data':'D7 D6 D5 D4 D3 D2 D1 D0 D7 D6 D5 D4 D3 D2 D1 D0'},
       {name:'pktStart',		wave:'x.10..............x'},
       {name:'pktEnd',		  wave:'x.0..............1x'},
       {name:'frmStart',		wave:'x.10..............x'},
@@ -333,12 +350,15 @@ caption: "FIFO Timing"
   }
 }
 ```,
-caption: "Parser Timing"
+caption: "Parser timing. When Parse_Ready is asserted and the FIFO is not empty, the FIFO outputs a packet. The Parser processes the packet when FIFO_Valid is asserted, outputting the MSB of the packet data field along with start flags in the same cycle. Over the next six cycles, the packet data field is output sequentially, ending with the LSB and end flags on the 8th cycle. Parse_Ready is reasserted on the 8th cycle, ensuring no gaps between packets.",
+kind:image,
+
 ) <Parser-Timing>
 
 // TODO: TReady generation
 
 // TODO: DAC conversion
+// RRC changed to output sfix12 from sfix18
 
 = Packet Handling
 

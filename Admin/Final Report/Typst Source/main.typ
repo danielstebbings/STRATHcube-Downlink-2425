@@ -82,7 +82,7 @@
   
   subtitle: [
   Supervisor: Louise Crockett \
-  Second Assessor: \ // TODO: Second Asssessor
+  //Second Assessor: \ // TODO: Second Asssessor
   Department of Electronic and Electrical Engineering \
   University of Strathclyde, Glasgow
   ],

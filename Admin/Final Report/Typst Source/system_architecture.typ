@@ -14,12 +14,15 @@
 )
 
 = Packet Handling
+// GSE Usage
+// Why not gse-lite?
+// -- PPL Data size req
 
 = Full System
 
 // TODO: PHY -> not that
 // TODO: AD936x controller control signals
 #figure(
-  image("../Figures/System-Architecture/System_Diagram.drawio.svg"),
+  image("../Figures/System-Architecture/System_Diagram.drawio.svg",width:75%),
   caption: "System Diagram"
 )

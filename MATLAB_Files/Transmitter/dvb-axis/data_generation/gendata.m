@@ -6,6 +6,7 @@ function [data_Out,TSorGS_Out,DFL_Out,UPL_Out,SYNC_Out,MODCOD_Out,FECFRAME_Out] 
 % Outputs data bits and control signals padded accordingly
 % Data packets contains counters for frame, packet, and byte, as well as
 % start and end markers.
+% If UPL = 0, then generic stream. Fr
 % ---------------------------
 % Bit Maps
 % data_Out:
@@ -49,8 +50,9 @@ function [data_Out,TSorGS_Out,DFL_Out,UPL_Out,SYNC_Out,MODCOD_Out,FECFRAME_Out] 
         pktStart_pos    (1,1) = 0;
     end
     % Validate Inputs
-    assert(UPL_In < DFL_In,                     "Packet size larger than Datafield");
-    assert(nPackets*UPL_In==DFL_In,             "Packets / Frame larger than Datafield");
+    assert((UPL_In == 0) | (UPL_In > 8),       "Packet size must be larger than 8 if packetised stream");
+    assert(UPL_In <= DFL_In,                    "Packet size larger than Datafield");
+    assert(nPackets*UPL_In==DFL_In,            "Packets / Frame larger than Datafield");
     assert(frm_bits+pkt_bits+pl_cnt_bits == 8, "bit fields in data byte must add to 8 bits");
     assert(frm_bits < 8 && pkt_bits < 8 && pl_cnt_bits < 8, "bit fields must not individually be 8 bits")
 
@@ -76,7 +78,7 @@ function [data_Out,TSorGS_Out,DFL_Out,UPL_Out,SYNC_Out,MODCOD_Out,FECFRAME_Out] 
         UPL_it  = UPL_In; % TODO: change for UPL_In matrix
         DFL_it  = DFL_In; % TODO: change for DFL_In matrix
         
-        % Creating payload byte
+        % Creating payload byte 
         % 0b[00...][byte_it] -> 0b[0...][byte_bits]
         payload = bitor(payload,mod(payload_it,2^pl_cnt_bits));
         % 0b[000...][packet_it] -> 0b[00...][pkt_bits][byte_bits]
