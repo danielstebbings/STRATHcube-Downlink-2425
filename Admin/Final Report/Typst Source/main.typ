@@ -59,6 +59,8 @@
   "PDU": "Protocol Data Unit",
   "AWGN": "Additive White Gaussian Noise",
   "RTL": "Register Transfer Level",
+  "TT&C": "Telemetry, Tracking and Command",
+  "CCM" : "Constant Coding and Modulation",
 ))
 
 
@@ -77,7 +79,16 @@
   ],
 
   abstract: [
-   
+    //TODO: Update and change!
+    Efficient downlink of recorded telemetry is a critical challenge in CubeSat missions, constrained by power limitations, bandwidth restrictions, and dynamic CM) must be used. Digital Video Broadcasting – Satellite Second Generation (DVB-S2) is one such ACM system, with near Shannon limit performance and a modular standard allowing it to be matched to the use case. Despite this, there are no space rated UHF DVB-S2 transmitters currently on the market which necessitates its implementation on a Software Defined Radio (SDR). While integrating an SDR can be costly and complex for many missions, the design of STRATHcube already includes one, minimising additional expenses.  
+
+    STRATHcube is a student led 2U CubeSat mission at the University of Strathclyde, the primary payload being a technology demonstrator of a Passive Bistatic Radar (PBR) using an SDR and communicating in the UHF band. Consequently, there will already be a powerful System on Chip (SoC) Field Programmable Gate Array (FPGA) based SDR included on the mission allowing a DVB-S2 transmitter to be implemented as a piggy-back on the primary payload using spare resources.  
+
+    This paper outlines the downlink system design for STRATHcube. Performance and link analyses were conducted, analysing communication windows over the course of the mission and expected theoretical performance. The design was implemented in hardware using MathWorks HDL Coder and work began on a Generic Stream Encapsulation (GSE) implementation using C++.
+
+    Initial performance analysis was conducted in comparison to a typical system which uses Constant Coding and Modulation (CCM) and optimises for maximum availability and shows a significant uplift in data throughput over the course of the mission. 
+
+    Additionally, resource analysis of the target FPGA SoC and the synthesised design show that the implementation is realisable in hardware.
   ],
   
   subtitle: [
@@ -115,24 +126,52 @@
 //1. Introduction
 //2. Background
 //3. ACM Analysis
-//4. HDL Implementation
-//Appendices
+//4. HDL Implementationsity of Strathclyde to create a 2U CubeSat. It has two payloads aimed at tackling important issues in space sustainability.
 
-
-
+// Payloads
 
 = Introduction
-//TODO: Finish this!
 
-The objectives for this project were as follows
+== CubeSat Communications
+Efficient downlink of recorded telemetry is a critical challenge in CubeSat missions as they are constrained by power limitations, bandwidth restrictions, and dynamic channel conditions imposed during a ground station pass. Further, many CubeSats use the Ultra High Frequency (UHF) amateur band which introduces the further issue of in-band interference which cannot be accounted for in advance.
 
-+ Reliability
-+ Datarate
-+ 
-+ Fit within resources available
-+ 
+To mitigate these issues, many satellites designed for high throughput modify their modulation and coding settings over time, in a process called #acr("VCM"), where this is pre-planned, or #acr("ACM"), where this is based on real time measurements of channel conditions. This allows much higher throughput for a given bandwidth, which is key in the bandwidth constrained amateur allocations.
+
+#acr("DVB-S2") is a system designed for high throughput satellite data transmission which includes support for #acr("CCM"), #acr("VCM") and #acr("ACM") and has a highly modular structure allowing it to be adapted for a given application. 
+
+Although #acr("ACM")/#acr("VCM") has a high performance improvement, there are few examples of satellites using these systems in the #acr("UHF") band, due to the high complexity required and the fact that high rate communications are typically conducted in the S band. For this reason, any implementations must be created using #acr("SDR") which increase cost.
+
+== STRATHcube
+=== Mission Overview
+STRATHcube is a student-led 2U CubeSat mission developed at the University of Strathclyde as part of the European Space Agency's #acr("ESA") Fly Your Satellite! and Design Booster programs. The mission addresses critical aspects of space sustainability through two distinct payloads.
+
+The primary payload involves the demonstration of a #acr("PBR") system for in-orbit space debris detection. This payload operates by measuring signal power attenuation caused by debris passing between an Iridium communication satellite (acting as an external transmitter) and STRATHcube's receiver. The acquired data requires ground-based processing, necessitating reliable high-speed downlink capabilities. A key operational constraint arises from the substantial volume of data generated during each observation pass. While onboard data compression mitigates this to some extent, the downlink speed remains the limiting factor governing the payload's operational time.
+
+The secondary payload focuses on characterizing aerothermal effects during atmospheric re-entry, specifically investigating solar panel fragmentation mechanisms. This payload becomes operational during the terminal mission phase and relies on the Iridium satellite network for data transmission, as re-entry may occur beyond ground station coverage. However, this secondary communication channel operates at significantly lower data rates compared to the primary #acr("UHF") system and incurs additional operational costs.
+
+=== Communication Systems Architecture
+STRATHcube incorporates two independent communication systems. The primary system utilizes the #acr("UHF") band for high-rate data transmission directly to ground stations, supporting the bulk of mission operations. 
+
+ The secondary system employs the Iridium network for use during the secondary payload operations, where ground station contact cannot be guaranteed.
+
+=== Mission Phases
+The mission timeline comprises four distinct operational phases. The Early Operations and Commissioning Phase begins immediately following deployment from the #acr("ISS") at an initial altitude of approximately 415 kilometers. This critical 10-day period involves antenna deployment, system activation, and initial communications establishment.
+
+The Nominal Operations Phase represents the mission's primary duration, during which the satellite alternates between #acr("PBR") measurement collection and dedicated downlink sessions using the primary #acr("UHF") communication system. This phase continues until the satellite reaches the altitude trigger of 170 kilometers, typically occurring around 180 days post-deployment and initiating the Transition Phase.
+
+During the Transition Phase, the satellite undergoes reconfiguration to prepare for atmospheric re-entry. Finally, the Secondary Phase encompasses the re-entry process itself, where the secondary payload actively records sensor data and transmits available measurements through the Iridium network until communication becomes impossible.
+
+== Objectives
+The project aimed to advance the design of the downlink communications system for STRATHcube while actively contributing to design reviews. Key objectives included:
+
++ Developing a detailed system design for downlink communications.
++ Building an engineering model of the downlink system using development boards for validation.
+
+Given the complexity of the STRATHcube mission, the project scope was deliberately constrained to ensure feasibility. The focus was solely on downlink communications, deferring uplink system design for future work. Further, implementation on hardware was reserved as an optional stretch goal.
+
+To maintain flexibility for later development, the implementation was designed to be modular, preventing unnecessary constraints on subsequent phases. This approach ensured that progress could be made efficiently while laying a strong foundation for future enhancements.
+
 = Literature Review
-
 
 #include("lit_review.typ")
 = ACM Analysis

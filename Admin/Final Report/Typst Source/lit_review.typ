@@ -242,49 +242,37 @@ As part of the 2015/2016 renovation, a link budget was created for reception of 
 = Standards
 == DVB-S2 Overview
 //TODO: Finish
-//TODO: Frame Flow chart
-#acr("DVB-S2") is a system designed for the transmission of data at high rates from satellite. It was standardised by the #acr("ETSI"). The standard is designed to be modular in order to improve flexibility, with structures suitable for video broadcasting and IP data transmission codified in the standard. The full block diagram can be seen in @dvb-s2-stand-bd. The key advantage of #acr("DVB-S2") for communications is its robust #acr("ACM") features.
-
-// TODO: DVB-S2 Standard Citation Fig 1
-#figure(
-  image("../Figures/Lit-Review/DVB-S2/DVB-S2_Full.png"),
-  caption: "DVB-S2 Block Diagram"
-) <dvb-s2-stand-bd>
-
-// ACM
-#acr("ACM") is the process of changing modulation and coding settings to meet channel conditions in real time. Similar in concept is #acr("VCM"), where the settings are precomputed. #acr("ACM") utilises a return path, data transmitted from the ground station to indicate received signal quality, in order to provide closed loop control. This has the key advantage of being able to adapt to transient channel effects, such as the presence of interference, or atmospheric fading.
-
-// GSE
-Due to the use of #acr("ACM"), the mapping of a packet into a dynamically changing frame is difficult. The #acr("GSE") protocol introduces an intermediate layer to handle fragmentation of network packets, referred to as #acr("PDU")s, into one or more #acr("GSE") packets.
 
 //FEC
 //TODO: dvb-s2 shannon paper citation
 #acr("DVB-S2") utilises two stages of #acr("FEC"), the first code is #acr("BCH") followed by #acr("LDPC"). This combination results in extremely strong error correction performance, allowing near Shannon limit performance.
 
+//GSE
+Mapping a packet into a dynamically changing frame is difficult. The #acr("GSE") protocol introduces an intermediate layer to handle fragmentation of network packets, referred to as #acr("PDU")s, into one or more #acr("GSE") packets.
 
 // DVB-S2X
 ETSI released an extension to the original DVB-S2 standard called DVB-S2X, this included several features to improve efficiency for high throughput satellites, such as bonding multiple transponders, beam hopping, and high order modulations up to 256APSK. Particularly relevant, are the new features for #acr("VL-SNR"), which include new #acr("PLFRAME") structures, #acr("BPSK") modulation, and lower coding rates down to 1/5. Features were also added to improve the efficiency of #acr("GSE") packet transmission.
 //TODO: Write paragraph about this
 #figure(
   image("../Figures/Lit-Review/DVB-S2/DVB-S2-Streams.svg"),
-  caption:"DVB-S2 Input Stream Types"
+  caption:"DVB-S2 Input Stream Types."
 )
 // TODO: Write paragraph about this
 #subpar.grid(
   columns: (1fr),
-  caption: [DVB-S2 Frame Structures],
+  caption: [DVB-S2 Frame Structures. (a) Shows a BBFRAME, where $K_"BCH"$ is the input data size to the #acr("FEC") system. (b) Shows a FECFRAME before scrambling. (c) Shows a PLFRAME, where the header is transmitted using $pi/2$ BPSK and data transmitted in groups of 16 slots, followed by an optional 36 symbol pilot block.],
   label: <DVB-S2-Frame-Structure>,
   figure(
     image("../Figures/Lit-Review/DVB-S2/BBFRAME.svg"),
-    caption: "BBFRAME"
+    caption: ""
   ), <BBFRAME>,
   figure(
     image("../Figures/Lit-Review/DVB-S2/FECFRAME.svg"),
-    caption: "FECFRAME"
+    caption: ""
   ), <FECFRAME>,
   figure(
     image("../Figures/Lit-Review/DVB-S2/PLFRAME.svg"),
-    caption: "PLFRAME"
+    caption: ""
   ), <PLFRAME>,
   
 )

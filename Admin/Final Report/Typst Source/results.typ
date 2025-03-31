@@ -11,7 +11,7 @@
 )
 
 #figure(
-  image("../Figures/Results/Vivado/Implementation.png"),
+  image("../Figures/Results/Vivado/Implementation.png",width:80%),
   caption: "Implemented Design on Zynq 7020 FPGA"
 )
 
