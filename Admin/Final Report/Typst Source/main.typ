@@ -1,8 +1,9 @@
-#import "template.typ": *
+#import "@local/opinionated-eng-strath:0.1.0": *
 #import "@preview/codelst:2.0.2": sourcecode
 #import "@preview/acrostiche:0.5.1": *
 #import "@preview/wordometer:0.1.4" : word-count, total-words
 #import "@preview/subpar:0.2.1"
+#import "@preview/numbly:0.1.0": numbly
 
 
 #init-acronyms((
@@ -61,12 +62,13 @@
   "RTL": "Register Transfer Level",
   "TT&C": "Telemetry, Tracking and Command",
   "CCM" : "Constant Coding and Modulation",
+  "EDHPC": ("European Data Handling & Data Processing Conference"),
 ))
 
 
 // Take a look at the file `template.typ` in the file panel
 // to customize this template and discover how it works.
-#show: project.with(
+#show: strathy.with(
   title: "Downlink System Design for the STRATHcube Satellite Mission",
 
   //takes in a list of dicts (name: full_name, reg: registration_number)
@@ -89,6 +91,18 @@
     Initial performance analysis was conducted in comparison to a typical system which uses Constant Coding and Modulation (CCM) and optimises for maximum availability and shows a significant uplift in data throughput over the course of the mission. 
 
     Additionally, resource analysis of the target FPGA SoC and the synthesised design show that the implementation is realisable in hardware.
+  ],
+  acknowledgements: [
+
+    // 
+
+    // template acknowledgement 
+
+    // Rephrase, taken from paper acks
+    Thanks are given to the sponsors of the STRATHcube, without whom this project would not be possible: The University of Strathclyde Alumni Fund,
+    the Institute of Mechanical Engineers, the Royal Aeronautical Society, the University
+    of Strathclyde Mechanical and Aerospace Engineering Department, and the University
+    of Strathclyde Aerospace Centre of Excellence.
   ],
   
   subtitle: [
@@ -135,11 +149,14 @@
 == CubeSat Communications
 Efficient downlink of recorded telemetry is a critical challenge in CubeSat missions as they are constrained by power limitations, bandwidth restrictions, and dynamic channel conditions imposed during a ground station pass. Further, many CubeSats use the Ultra High Frequency (UHF) amateur band which introduces the further issue of in-band interference which cannot be accounted for in advance.
 
-To mitigate these issues, many satellites designed for high throughput modify their modulation and coding settings over time, in a process called #acr("VCM"), where this is pre-planned, or #acr("ACM"), where this is based on real time measurements of channel conditions. This allows much higher throughput for a given bandwidth, which is key in the bandwidth constrained amateur allocations.
+To mitigate these issues, many satellites requiring high data throughput modify their modulation and coding settings over time, in a process called #acr("VCM"), where this is pre-planned, or #acr("ACM"), where this is based on real time measurements of channel conditions. This allows much higher throughput for a given bandwidth, which is key in the bandwidth constrained amateur allocations.
 
 #acr("DVB-S2") is a system designed for high throughput satellite data transmission which includes support for #acr("CCM"), #acr("VCM") and #acr("ACM") and has a highly modular structure allowing it to be adapted for a given application. 
 
 Although #acr("ACM")/#acr("VCM") has a high performance improvement, there are few examples of satellites using these systems in the #acr("UHF") band, due to the high complexity required and the fact that high rate communications are typically conducted in the S band. For this reason, any implementations must be created using #acr("SDR") which increase cost.
+
+// TODO: cite  
+In TODO:, an SDR-based communication system operating in the 915 MHz UHF band and utilizing ACM is described. The system employed modulation techniques similar to DVB-S2 but implemented a different coding scheme. Their analysis demonstrated nearly double the throughput compared to CCM, confirming the feasibility and significant performance advantages of ACM systems for CubeSats.
 
 == STRATHcube
 === Mission Overview
@@ -149,7 +166,7 @@ The primary payload involves the demonstration of a #acr("PBR") system for in-or
 
 The secondary payload focuses on characterizing aerothermal effects during atmospheric re-entry, specifically investigating solar panel fragmentation mechanisms. This payload becomes operational during the terminal mission phase and relies on the Iridium satellite network for data transmission, as re-entry may occur beyond ground station coverage. However, this secondary communication channel operates at significantly lower data rates compared to the primary #acr("UHF") system and incurs additional operational costs.
 
-=== Communication Systems Architecture
+=== Communication Architecture
 STRATHcube incorporates two independent communication systems. The primary system utilizes the #acr("UHF") band for high-rate data transmission directly to ground stations, supporting the bulk of mission operations. 
 
  The secondary system employs the Iridium network for use during the secondary payload operations, where ground station contact cannot be guaranteed.
@@ -157,9 +174,17 @@ STRATHcube incorporates two independent communication systems. The primary syste
 === Mission Phases
 The mission timeline comprises four distinct operational phases. The Early Operations and Commissioning Phase begins immediately following deployment from the #acr("ISS") at an initial altitude of approximately 415 kilometers. This critical 10-day period involves antenna deployment, system activation, and initial communications establishment.
 
-The Nominal Operations Phase represents the mission's primary duration, during which the satellite alternates between #acr("PBR") measurement collection and dedicated downlink sessions using the primary #acr("UHF") communication system. This phase continues until the satellite reaches the altitude trigger of 170 kilometers, typically occurring around 180 days post-deployment and initiating the Transition Phase.
+The Nominal Operations Phase represents the mission's primary duration, during which the satellite alternates between #acr("PBR") measurement collection and dedicated downlink sessions using the primary #acr("UHF") communication system. This phase continues until the satellite reaches the altitude trigger of 170 kilometers, expected to occur around 180 days post-deployment and initiating the Transition Phase.
 
 During the Transition Phase, the satellite undergoes reconfiguration to prepare for atmospheric re-entry. Finally, the Secondary Phase encompasses the re-entry process itself, where the secondary payload actively records sensor data and transmits available measurements through the Iridium network until communication becomes impossible.
+
+// TODO: conops citation. From BDR
+These phases are shown graphically in @strathcube-phases.
+
+#figure(
+  image("../Figures/Introduction/conops_with_background.png"),
+  caption:"STRATHcube mission phases. "
+) <strathcube-phases>
 
 == Objectives
 The project aimed to advance the design of the downlink communications system for STRATHcube while actively contributing to design reviews. Key objectives included:
@@ -186,9 +211,17 @@ To maintain flexibility for later development, the implementation was designed t
 #include("results.typ")
 
 = Discussion
+// Transmitter spectrum
+The transmitter complies to the spectral mask for all tested inputs. This indicates that the 
+
+// Resource Usage
+
+// Packet Handling
 = Conclusion
 == Further Work
 // DVB-S2X - VL-SNR features
+
+An extended abstract regarding the work completed so far has been created and submitted to the #acr("EDHPC") for consideration, as shown in. If accepted, further work on hardware implementation and packet handling will be conducted and a paper created.
 
 /*= Code listings
 
@@ -204,4 +237,24 @@ example_c_code() =
 #pagebreak()
 #show bibliography: set heading(numbering: "1")
 #bibliography(("../Bibliographies/Link-Budget.bib","../Bibliographies/DVB-S2.bib","../Bibliographies/Hardware.bib"))
+
+
+#let appendix(body) = {
+  set heading(numbering: numbly(
+  "Appendix {1:A}", // use {level:format} to specify the format
+  "{1:A}.{2}.", // if format is not specified, arabic numbers will be used, supplement: [Appendix])
+  ))
+  counter(heading).update(0)
+  body
+}
+
+#show: appendix
+
+
+= EDHPC Paper <EDHPC-Paper>
+==
+===
+==
+wdwdwd
+= 
 

@@ -1,7 +1,7 @@
 %--------------------------------------------------------------------------
 % Host Interface Script
 % 
-% Generated with MATLAB 24.2 (R2024b) at 20:15:17 on 24/03/2025.
+% Generated with MATLAB 24.2 (R2024b) at 16:10:24 on 01/04/2025.
 % This script was created for the IP Core generated from design 'dvbs2_stream'.
 % 
 % Use this script to access DUT ports in the design that were mapped to compatible IP core interfaces.
@@ -30,6 +30,12 @@ gs_dvbs2_stream_setup(hFPGA);
 % Uncomment the following lines to write/read DUT ports in the generated IP Core.
 % Update the example data in the write commands with meaningful data to write to the DUT.
 %% AXI4-Lite
+% writePort(hFPGA, "TSorGS_In", zeros([1 1]));
+% writePort(hFPGA, "DFL_In", zeros([1 1]));
+% writePort(hFPGA, "UPL_In", zeros([1 1]));
+% writePort(hFPGA, "SYNC_In", zeros([1 1]));
+% writePort(hFPGA, "MODCOD_In", zeros([1 1]));
+% writePort(hFPGA, "FECFRAME_In", zeros([1 1]));
 
 %% AXI4-Stream Write
 % data_AXI4S_Data_Out = readPort(hFPGA, "AXI4S_Data_Out");

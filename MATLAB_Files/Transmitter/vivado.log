@@ -3,13 +3,13 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Mar 25 10:44:42 2025
-# Process ID: 6970
+# Start of session at: Tue Apr  1 14:48:07 2025
+# Process ID: 17454
 # Current directory: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter
 # Command line: vivado
 # Log file: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/vivado.log
 # Journal file: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/vivado.jou
-# Running On: Sure-Hope-It-Does, OS: Linux, CPU Frequency: 2975.728 MHz, CPU Physical cores: 16, Host memory: 32918 MB
+# Running On: Sure-Hope-It-Does, OS: Linux, CPU Frequency: 2978.868 MHz, CPU Physical cores: 16, Host memory: 32918 MB
 #-----------------------------------------------------------
 start_gui
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at /tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
@@ -92,109 +92,617 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 avail
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
 open_project /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/ipcore'.
-WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/ipcore/adi/library'. The path is contained within another repository.
+INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 8130.445 ; gain = 576.438 ; free physical = 19146 ; free virtual = 32387
-update_compile_order -fileset sources_1
-open_bd_design {/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system/system.bd}
-Reading block design file </home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system/system.bd>...
-Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - sys_ps7
-Adding component instance block -- xilinx.com:ip:axi_iic:2.1 - axi_iic_main
-Adding component instance block -- analog.com:user:util_i2c_mixer:1.0 - sys_i2c_mixer
-Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - sys_200m_rstgen
-Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - sys_logic_inv
-Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - sys_audio_clkgen
-Adding component instance block -- analog.com:user:axi_i2s_adi:1.0 - axi_i2s_adi
-Adding component instance block -- xilinx.com:ip:axi_iic:2.1 - axi_iic_fmc
-Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - GND_1
-Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_cpu_interconnect
-Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
-Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m13_regslice
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m14_regslice
-Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding component instance block -- analog.com:user:axi_ad9361:1.0 - axi_ad9361
-Adding component instance block -- analog.com:user:util_tdd_sync:1.0 - util_ad9361_tdd_sync
-Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - util_ad9361_divclk_sel_concat
-Adding component instance block -- xilinx.com:ip:util_reduced_logic:2.0 - util_ad9361_divclk_sel
-Adding component instance block -- analog.com:user:util_clkdiv:1.0 - util_ad9361_divclk
-Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - util_ad9361_divclk_reset
-Adding component instance block -- analog.com:user:util_wfifo:1.0 - util_ad9361_adc_fifo
-Adding component instance block -- analog.com:user:util_cpack2:1.0 - util_ad9361_adc_pack
-Adding component instance block -- analog.com:user:axi_dmac:1.0 - axi_ad9361_adc_dma
-Adding component instance block -- analog.com:user:util_rfifo:1.0 - axi_ad9361_dac_fifo
-Adding component instance block -- analog.com:user:util_upack2:1.0 - util_ad9361_dac_upack
-Adding component instance block -- analog.com:user:axi_dmac:1.0 - axi_ad9361_dac_dma
-Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_hp1_interconnect
-Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_hp2_interconnect
-Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - const_intr_concat_gnd
-Adding component instance block -- mathworks.com:user:util_mw_dac_reg:1.0 - dac_latch
-Adding component instance block -- mathworks.com:user:util_mw_bypass_user_logic:1.0 - bypass_tx
-Adding component instance block -- mathworks.com:user:util_mw_bypass_user_logic:1.0 - bypass_rx
-Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_dma_mm2s_cpu_ic
-Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
-Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
-Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - auto_rs_w
-Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_dma_s2mm_cpu_ic
-Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
-Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
-Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - auto_rs_w
-Adding component instance block -- analog.com:user:axi_dmac:1.0 - axi_dma_mm2s
-Adding component instance block -- analog.com:user:axi_dmac:1.0 - axi_dma_s2mm
-Adding component instance block -- mathworks.com:user:util_mw_gpio_mux:1.0 - gpio_mux_0
-Adding component instance block -- mathworks.com:user:util_mw_clkconstr:1.0 - util_mw_clkconstr
-Adding component instance block -- mathworks.com:user:util_mw_led_driver:1.0 - led_driver
-Adding component instance block -- user.org:ip:HDL_Chirp_ip:1.0 - HDL_Chirp_ip_0
-Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - const_gnd_ad9361_dac_data
-Successfully read diagram <system> from block design file </home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system/system.bd>
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7z020clg484-1
-Netlist sorting complete. Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.54 . Memory (MB): peak = 8797.117 ; gain = 0.000 ; free physical = 10516 ; free virtual = 26028
-INFO: [Netlist 29-17] Analyzing 3985 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2023.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF Files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9680.457 ; gain = 66.977 ; free physical = 9925 ; free virtual = 25561
-Restored from archive | CPU: 4.860000 secs | Memory: 82.794060 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 9680.457 ; gain = 66.977 ; free physical = 9925 ; free virtual = 25561
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9680.457 ; gain = 0.000 ; free physical = 9793 ; free virtual = 25439
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1249 instances were transformed.
-  IOBUF => IOBUF (IBUF, OBUFT): 54 instances
-  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 721 instances
-  RAM16X1D => RAM32X1D (RAMD32(x2)): 209 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 170 instances
-  RAM32X1D => RAM32X1D (RAMD32(x2)): 13 instances
-  SRLC32E => SRL16E: 82 instances
-
-open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 9863.445 ; gain = 1066.328 ; free physical = 9631 ; free virtual = 25281
-WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
-exit
-INFO: [Common 17-206] Exiting Vivado at Tue Mar 25 13:40:18 2025...
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 7966.723 ; gain = 383.496 ; free physical = 296 ; free virtual = 18336
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+xhub::refresh_catalog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 8009.051 ; gain = 3.141 ; free physical = 486 ; free virtual = 18515
+xhub::install [xhub::get_xitems]
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:ac701:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:k26c:1.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:k26c:1.3' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:k26c:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:k26i:1.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:k26i:1.3' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:k26i:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kc705:1.6' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kcu105:1.6' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kcu105:1.7' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kcu116:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kcu116:1.5' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kcu1500:1.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kr260:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kr260_som:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kr260_som:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kv260_carrier:1.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kv260_carrier:1.3' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kv260_som:1.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kv260_som:1.3' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:kv260_som:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'Leopardimaging:xilinx_board_store:LI-IMX274MIPI-FMC-Versal:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'Leopardimaging:xilinx_board_store:LI-IMX274MIPI-FMC:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:sp701:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:sp701:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vc707:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vc709:1.8' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vck190:2.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vck190:3.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vck190:3.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vck190:3.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vck190_newl:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vck190_newl:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vcu108:1.6' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vcu108:1.7' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vcu110:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vcu118:2.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vcu118:2.3' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vcu118:2.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vcu128:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vcu129:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vcu1525:1.3' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vek280_es:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vek280_es:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vek280_es_revb:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vek280_es_revb:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vermeo_t1_mpsoc:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vermeo_t1_rfsoc:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vhk158_es:3.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vhk158_es:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vhk158:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vmk180:2.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vmk180:3.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vmk180:3.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vmk180:3.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vmk180_newl:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vmk180_newl:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vpk120_es:1.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vpk120_es:1.3' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vpk120:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vpk120:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vpk120_es_revb:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vpk120_es_revb:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vpk180_es:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vpk180_es:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vpk180:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:vpk180:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:xm105:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zc702:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:ZC706:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu102:3.3' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu102:3.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu104:1.1' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu106:2.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu106:2.5' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu106:2.6' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu111:1.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu111:1.3' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu111:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu1275:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu1285:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu208:2.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu208ld:2.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu216:2.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu216ld:2.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu670:2.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'xilinx.com:xilinx_board_store:zcu670ld:1.0' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-32] Installing object 'em.avnet.com:xilinx_board_store:picozed_7010_fmc2:1.2' ...
+INFO: [Common 17-1570] Installing object em.avnet.com:xilinx_board_store:picozed_7010_fmc2:1.2 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object em.avnet.com:xilinx_board_store:picozed_7010_fmc2:1.2 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty:1.1' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty-a7-100:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty-a7-100:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty-a7-100:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty-a7-35:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty-a7-35:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty-a7-35:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty-s7-25:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty-s7-25:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty-s7-25:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty-s7-50:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty-s7-50:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty-s7-50:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty-z7-10:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty-z7-10:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty-z7-10:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty-z7-20:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty-z7-20:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty-z7-20:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:basys3:1.1' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:basys3:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:basys3:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:cmod_a7-15t:1.1' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:cmod_a7-15t:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:cmod_a7-15t:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:cmod_a7-35t:1.1' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:cmod_a7-35t:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:cmod_a7-35t:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:cora-z7-07s:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:cora-z7-07s:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:cora-z7-07s:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:cora-z7-10:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:cora-z7-10:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:cora-z7-10:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:genesys2:1.1' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:genesys2:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:genesys2:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:nexys4:1.1' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:nexys4:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:nexys4:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:nexys4_ddr:1.1' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:nexys4_ddr:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:nexys4_ddr:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:nexys_video:1.1' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:nexys_video:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:nexys_video:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:zybo:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:zybo:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:zybo:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:zybo-z7-10:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:zybo-z7-10:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:zybo-z7-10:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:zybo-z7-20:1.0' ...
+INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:zybo-z7-20:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:zybo-z7-20:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'em.avnet.com:xilinx_board_store:minized:1.2' ...
+INFO: [Common 17-1570] Installing object em.avnet.com:xilinx_board_store:minized:1.2 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object em.avnet.com:xilinx_board_store:minized:1.2 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_100_1i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_100_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_100_1i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_100_2c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_100_2c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_100_2c:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_100_2c:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_100_2c:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_200_1i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_200_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_200_1i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_200_2c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_200_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_200_2c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_200_2i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_200_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_200_2i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_35_2i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_35_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_35_2i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0724_10_1i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0724_10_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0724_10_1i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0724_20_1i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0724_20_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0724_20_1i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0725_100_2c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0725_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0725_100_2c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0725_100_2i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0725_100_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0725_100_2i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0725_15_1c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0725_15_1c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0725_15_1c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0725_35_2c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0725_35_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0725_35_2c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0729_20_2i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0729_20_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0729_20_2i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0729_20_2i:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0729_20_2i:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0729_20_2i:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_2cg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_2cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_2cg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_2cg_1e_tebf0808:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_2cg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_2cg_1e_tebf0808:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_2eg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_2eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_2eg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_2eg_1e_tebf0808:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_2eg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_2eg_1e_tebf0808:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3cg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3cg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3cg_1e_tebf0808:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3cg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3cg_1e_tebf0808:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3eg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3eg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3eg_1e:3.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3eg_1e:3.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3eg_1e:3.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:4.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:4.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:4.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4cg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4cg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4cg_1e_tebf0808:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4cg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4cg_1e_tebf0808:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4eg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4eg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4eg_1e_tebf0808:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4eg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4eg_1e_tebf0808:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4ev_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4ev_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4ev_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4ev_1e_tebf0808:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4ev_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4ev_1e_tebf0808:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_5ev_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_5ev_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_5ev_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_5ev_1e_tebf0808:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_5ev_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_5ev_1e_tebf0808:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_5ev_1i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_5ev_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_5ev_1i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_5ev_1i_tebf0808:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_5ev_1i_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_5ev_1i_tebf0808:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_15eg_1e:3.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_15eg_1e:3.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_15eg_1e:3.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_15eg_1e_tebf0808:4.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_15eg_1e_tebf0808:4.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_15eg_1e_tebf0808:4.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_6eg_1e:3.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_6eg_1e:3.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_6eg_1e:3.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_6eg_1e_tebf0808:4.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_6eg_1e_tebf0808:4.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_6eg_1e_tebf0808:4.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_1e:3.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_1e:3.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_1e:3.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:4.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:4.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:4.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_2i:3.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_2i:3.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_2i:3.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_2i_tebf0808:4.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_2i_tebf0808:4.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_2i_tebf0808:4.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_2cg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_2cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_2cg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_2eg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_2eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_2eg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_2eg_1e:2.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_2eg_1e:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_2eg_1e:2.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_3cg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_3cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_3cg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_3eg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_3eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_3eg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_4cg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_4cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_4cg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:teb0911_9eg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:teb0911_9eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:teb0911_9eg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:tec0850_15eg_1e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:tec0850_15eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:tec0850_15eg_1e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'tul.com.tw:xilinx_board_store:pynqzu:1.1' ...
+INFO: [Common 17-1570] Installing object tul.com.tw:xilinx_board_store:pynqzu:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object tul.com.tw:xilinx_board_store:pynqzu:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0710_02_100_2c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0710_02_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0710_02_100_2c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0710_02_100_2i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0710_02_100_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0710_02_100_2i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0710_02_35_2c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0710_02_35_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0710_02_35_2c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0710_02_35_2i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0710_02_35_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0710_02_35_2i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0711_100_2c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0711_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0711_100_2c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0711_100_2i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0711_100_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0711_100_2i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0711_35_2c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0711_35_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0711_35_2c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0711_35_2i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0711_35_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0711_35_2i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0713_100_2c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0713_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0713_100_2c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0713_200_2c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0713_200_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0713_200_2c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_12s_1c:1.1' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_12s_1c:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_12s_1c:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_1c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_1c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_1c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_1c:1.1' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_1c:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_1c:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_1i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_1i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_1i:1.1' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_1i:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_1i:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_2i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_2i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_2i:1.1' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_2i:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_2i:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_1c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_1c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_1c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_1c:1.1' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_1c:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_1c:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_1i:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_1i:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_1i:1.1' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_1i:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_1i:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_3e:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_3e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_3e:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_3e:1.1' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_3e:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_3e:1.1 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0716_20_1c:1.0' ...
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0716_20_1c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0716_20_1c:1.0 has been installed successfully.
+INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0725lp_100_2c:1.0' ...
+INFO: [Common 17-14] Message 'xhubtcl 76-32' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0725lp_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git
+INFO: [Common 17-14] Message 'Common 17-1570' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0725lp_100_2c:1.0 has been installed successfully.
+INFO: [Common 17-14] Message 'Common 17-1573' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+xhub::install: Time (s): cpu = 00:00:04 ; elapsed = 00:00:46 . Memory (MB): peak = 8009.051 ; gain = 0.000 ; free physical = 406 ; free virtual = 18157
+INFO: [Common 17-344] 'xhub::install' was cancelled
+xhub::get_xitems
+xilinx.com:xilinx_board_store:ac701:1.4 xilinx.com:xilinx_board_store:k26c:1.2 xilinx.com:xilinx_board_store:k26c:1.3 xilinx.com:xilinx_board_store:k26c:1.4 xilinx.com:xilinx_board_store:k26i:1.2 xilinx.com:xilinx_board_store:k26i:1.3 xilinx.com:xilinx_board_store:k26i:1.4 xilinx.com:xilinx_board_store:kc705:1.6 xilinx.com:xilinx_board_store:kcu105:1.6 xilinx.com:xilinx_board_store:kcu105:1.7 xilinx.com:xilinx_board_store:kcu116:1.4 xilinx.com:xilinx_board_store:kcu116:1.5 xilinx.com:xilinx_board_store:kcu1500:1.2 xilinx.com:xilinx_board_store:kr260:1.0 xilinx.com:xilinx_board_store:kr260_som:1.0 xilinx.com:xilinx_board_store:kr260_som:1.1 xilinx.com:xilinx_board_store:kv260_carrier:1.2 xilinx.com:xilinx_board_store:kv260_carrier:1.3 xilinx.com:xilinx_board_store:kv260_som:1.2 xilinx.com:xilinx_board_store:kv260_som:1.3 xilinx.com:xilinx_board_store:kv260_som:1.4 Leopardimaging:xilinx_board_store:LI-IMX274MIPI-FMC-Versal:1.0 Leopardimaging:xilinx_board_store:LI-IMX274MIPI-FMC:1.0 xilinx.com:xilinx_board_store:sp701:1.0 xilinx.com:xilinx_board_store:sp701:1.1 xilinx.com:xilinx_board_store:vc707:1.4 xilinx.com:xilinx_board_store:vc709:1.8 xilinx.com:xilinx_board_store:vck190:2.2 xilinx.com:xilinx_board_store:vck190:3.0 xilinx.com:xilinx_board_store:vck190:3.1 xilinx.com:xilinx_board_store:vck190:3.2 xilinx.com:xilinx_board_store:vck190_newl:1.0 xilinx.com:xilinx_board_store:vck190_newl:1.1 xilinx.com:xilinx_board_store:vcu108:1.6 xilinx.com:xilinx_board_store:vcu108:1.7 xilinx.com:xilinx_board_store:vcu110:1.4 xilinx.com:xilinx_board_store:vcu118:2.0 xilinx.com:xilinx_board_store:vcu118:2.3 xilinx.com:xilinx_board_store:vcu118:2.4 xilinx.com:xilinx_board_store:vcu128:1.0 xilinx.com:xilinx_board_store:vcu129:1.0 xilinx.com:xilinx_board_store:vcu1525:1.3 xilinx.com:xilinx_board_store:vek280_es:1.0 xilinx.com:xilinx_board_store:vek280_es:1.1 xilinx.com:xilinx_board_store:vek280_es_revb:1.0 xilinx.com:xilinx_board_store:vek280_es_revb:1.1 xilinx.com:xilinx_board_store:vermeo_t1_mpsoc:1.0 xilinx.com:xilinx_board_store:vermeo_t1_rfsoc:1.0 xilinx.com:xilinx_board_store:vhk158_es:3.0 xilinx.com:xilinx_board_store:vhk158_es:1.1 xilinx.com:xilinx_board_store:vhk158:1.0 xilinx.com:xilinx_board_store:vmk180:2.2 xilinx.com:xilinx_board_store:vmk180:3.0 xilinx.com:xilinx_board_store:vmk180:3.1 xilinx.com:xilinx_board_store:vmk180:3.2 xilinx.com:xilinx_board_store:vmk180_newl:1.0 xilinx.com:xilinx_board_store:vmk180_newl:1.1 xilinx.com:xilinx_board_store:vpk120_es:1.2 xilinx.com:xilinx_board_store:vpk120_es:1.3 xilinx.com:xilinx_board_store:vpk120:1.0 xilinx.com:xilinx_board_store:vpk120:1.1 xilinx.com:xilinx_board_store:vpk120_es_revb:1.0 xilinx.com:xilinx_board_store:vpk120_es_revb:1.1 xilinx.com:xilinx_board_store:vpk180_es:1.0 xilinx.com:xilinx_board_store:vpk180_es:1.1 xilinx.com:xilinx_board_store:vpk180:1.0 xilinx.com:xilinx_board_store:vpk180:1.1 xilinx.com:xilinx_board_store:xm105:1.0 xilinx.com:xilinx_board_store:zc702:1.4 xilinx.com:xilinx_board_store:ZC706:1.4 xilinx.com:xilinx_board_store:zcu102:3.3 xilinx.com:xilinx_board_store:zcu102:3.4 xilinx.com:xilinx_board_store:zcu104:1.1 xilinx.com:xilinx_board_store:zcu106:2.4 xilinx.com:xilinx_board_store:zcu106:2.5 xilinx.com:xilinx_board_store:zcu106:2.6 xilinx.com:xilinx_board_store:zcu111:1.2 xilinx.com:xilinx_board_store:zcu111:1.3 xilinx.com:xilinx_board_store:zcu111:1.4 xilinx.com:xilinx_board_store:zcu1275:1.0 xilinx.com:xilinx_board_store:zcu1285:1.0 xilinx.com:xilinx_board_store:zcu208:2.0 xilinx.com:xilinx_board_store:zcu208ld:2.0 xilinx.com:xilinx_board_store:zcu216:2.0 xilinx.com:xilinx_board_store:zcu216ld:2.0 xilinx.com:xilinx_board_store:zcu670:2.0 xilinx.com:xilinx_board_store:zcu670ld:1.0 em.avnet.com:xilinx_board_store:picozed_7010_fmc2:1.2 digilentinc.com:xilinx_board_store:arty:1.1 digilentinc.com:xilinx_board_store:arty-a7-100:1.0 digilentinc.com:xilinx_board_store:arty-a7-35:1.0 digilentinc.com:xilinx_board_store:arty-s7-25:1.0 digilentinc.com:xilinx_board_store:arty-s7-50:1.0 digilentinc.com:xilinx_board_store:arty-z7-10:1.0 digilentinc.com:xilinx_board_store:arty-z7-20:1.0 digilentinc.com:xilinx_board_store:basys3:1.1 digilentinc.com:xilinx_board_store:cmod_a7-15t:1.1 digilentinc.com:xilinx_board_store:cmod_a7-35t:1.1 digilentinc.com:xilinx_board_store:cora-z7-07s:1.0 digilentinc.com:xilinx_board_store:cora-z7-10:1.0 digilentinc.com:xilinx_board_store:genesys2:1.1 digilentinc.com:xilinx_board_store:nexys4:1.1 digilentinc.com:xilinx_board_store:nexys4_ddr:1.1 digilentinc.com:xilinx_board_store:nexys_video:1.1 digilentinc.com:xilinx_board_store:zybo:1.0 digilentinc.com:xilinx_board_store:zybo-z7-10:1.0 digilentinc.com:xilinx_board_store:zybo-z7-20:1.0 em.avnet.com:xilinx_board_store:minized:1.2 trenz.biz:xilinx_board_store:te0712_100_1i:1.0 trenz.biz:xilinx_board_store:te0712_100_2c:1.0 trenz.biz:xilinx_board_store:te0712_100_2c:2.0 trenz.biz:xilinx_board_store:te0712_200_1i:1.0 trenz.biz:xilinx_board_store:te0712_200_2c:1.0 trenz.biz:xilinx_board_store:te0712_200_2i:1.0 trenz.biz:xilinx_board_store:te0712_35_2i:1.0 trenz.biz:xilinx_board_store:te0724_10_1i:1.0 trenz.biz:xilinx_board_store:te0724_20_1i:1.0 trenz.biz:xilinx_board_store:te0725_100_2c:1.0 trenz.biz:xilinx_board_store:te0725_100_2i:1.0 trenz.biz:xilinx_board_store:te0725_15_1c:1.0 trenz.biz:xilinx_board_store:te0725_35_2c:1.0 trenz.biz:xilinx_board_store:te0729_20_2i:1.0 trenz.biz:xilinx_board_store:te0729_20_2i:2.0 trenz.biz:xilinx_board_store:te0803_2cg_1e:1.0 trenz.biz:xilinx_board_store:te0803_2cg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_2eg_1e:1.0 trenz.biz:xilinx_board_store:te0803_2eg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_3cg_1e:1.0 trenz.biz:xilinx_board_store:te0803_3cg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_3eg_1e:1.0 trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_3eg_1e:3.0 trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:4.0 trenz.biz:xilinx_board_store:te0803_4cg_1e:1.0 trenz.biz:xilinx_board_store:te0803_4cg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_4eg_1e:1.0 trenz.biz:xilinx_board_store:te0803_4eg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_4ev_1e:1.0 trenz.biz:xilinx_board_store:te0803_4ev_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_5ev_1e:1.0 trenz.biz:xilinx_board_store:te0803_5ev_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_5ev_1i:1.0 trenz.biz:xilinx_board_store:te0803_5ev_1i_tebf0808:2.0 trenz.biz:xilinx_board_store:te0808_15eg_1e:3.0 trenz.biz:xilinx_board_store:te0808_15eg_1e_tebf0808:4.0 trenz.biz:xilinx_board_store:te0808_6eg_1e:3.0 trenz.biz:xilinx_board_store:te0808_6eg_1e_tebf0808:4.0 trenz.biz:xilinx_board_store:te0808_9eg_1e:1.0 trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0808_9eg_1e:3.0 trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:4.0 trenz.biz:xilinx_board_store:te0808_9eg_2i:3.0 trenz.biz:xilinx_board_store:te0808_9eg_2i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0820_2cg_1e:1.0 trenz.biz:xilinx_board_store:te0820_2eg_1e:1.0 trenz.biz:xilinx_board_store:te0820_2eg_1e:2.0 trenz.biz:xilinx_board_store:te0820_3cg_1e:1.0 trenz.biz:xilinx_board_store:te0820_3eg_1e:1.0 trenz.biz:xilinx_board_store:te0820_4cg_1e:1.0 trenz.biz:xilinx_board_store:teb0911_9eg_1e:1.0 trenz.biz:xilinx_board_store:tec0850_15eg_1e:1.0 tul.com.tw:xilinx_board_store:pynqzu:1.1 trenz.biz:xilinx_board_store:te0710_02_100_2c:1.0 trenz.biz:xilinx_board_store:te0710_02_100_2i:1.0 trenz.biz:xilinx_board_store:te0710_02_35_2c:1.0 trenz.biz:xilinx_board_store:te0710_02_35_2i:1.0 trenz.biz:xilinx_board_store:te0711_100_2c:1.0 trenz.biz:xilinx_board_store:te0711_100_2i:1.0 trenz.biz:xilinx_board_store:te0711_35_2c:1.0 trenz.biz:xilinx_board_store:te0711_35_2i:1.0 trenz.biz:xilinx_board_store:te0713_100_2c:1.0 trenz.biz:xilinx_board_store:te0713_200_2c:1.0 trenz.biz:xilinx_board_store:te0715_12s_1c:1.1 trenz.biz:xilinx_board_store:te0715_15_1c:1.0 trenz.biz:xilinx_board_store:te0715_15_1c:1.1 trenz.biz:xilinx_board_store:te0715_15_1i:1.0 trenz.biz:xilinx_board_store:te0715_15_1i:1.1 trenz.biz:xilinx_board_store:te0715_15_2i:1.0 trenz.biz:xilinx_board_store:te0715_15_2i:1.1 trenz.biz:xilinx_board_store:te0715_30_1c:1.0 trenz.biz:xilinx_board_store:te0715_30_1c:1.1 trenz.biz:xilinx_board_store:te0715_30_1i:1.0 trenz.biz:xilinx_board_store:te0715_30_1i:1.1 trenz.biz:xilinx_board_store:te0715_30_3e:1.0 trenz.biz:xilinx_board_store:te0715_30_3e:1.1 trenz.biz:xilinx_board_store:te0716_20_1c:1.0 trenz.biz:xilinx_board_store:te0725lp_100_2c:1.0 trenz.biz:xilinx_board_store:te0725lp_100_2i:1.0 trenz.biz:xilinx_board_store:te0725_35_2i:1.0 trenz.biz:xilinx_board_store:te0741_160_2c:1.0 trenz.biz:xilinx_board_store:te0741_160_2c:2.0 trenz.biz:xilinx_board_store:te0741_160_2i:1.0 trenz.biz:xilinx_board_store:te0741_160_3e:2.0 trenz.biz:xilinx_board_store:te0741_325_2c:1.0 trenz.biz:xilinx_board_store:te0741_325_2i:1.0 trenz.biz:xilinx_board_store:te0741_410_2c:1.0 trenz.biz:xilinx_board_store:te0741_410_2i:1.0 trenz.biz:xilinx_board_store:te0741_070_2c:1.0 trenz.biz:xilinx_board_store:te0741_070_2i:1.0 trenz.biz:xilinx_board_store:te0745_30_1i:1.0 trenz.biz:xilinx_board_store:te0745_30_2i:1.0 trenz.biz:xilinx_board_store:te0745_35_1c:1.0 trenz.biz:xilinx_board_store:te0745_45_1c:1.0 trenz.biz:xilinx_board_store:te0745_45_2i:1.0 trenz.biz:xilinx_board_store:te0745_45_2i:2.0 trenz.biz:xilinx_board_store:te0745_45_3e:1.0 trenz.biz:xilinx_board_store:te0802_2cg_1e:1.0 trenz.biz:xilinx_board_store:te0802_2cg_1e:2.0 trenz.biz:xilinx_board_store:te0803_3cg_1e:5.0 trenz.biz:xilinx_board_store:te0803_3cg_1e_tebf0808:6.0 trenz.biz:xilinx_board_store:te0803_3eg_1e:5.0 trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:6.0 trenz.biz:xilinx_board_store:te0803_3eg_1i:3.0 trenz.biz:xilinx_board_store:te0803_3eg_1i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0803_3eg_1li:3.0 trenz.biz:xilinx_board_store:te0803_3eg_1li_tebf0808:4.0 trenz.biz:xilinx_board_store:te0803_4eg_1e:3.0 trenz.biz:xilinx_board_store:te0803_4eg_1e_tebf0808:4.0 trenz.biz:xilinx_board_store:te0803_4eg_1i:3.0 trenz.biz:xilinx_board_store:te0803_4eg_1i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0803_4eg_2e:1.0 trenz.biz:xilinx_board_store:te0803_4eg_2e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_4eg_2e:3.0 trenz.biz:xilinx_board_store:te0803_4eg_2e_tebf0808:4.0 trenz.biz:xilinx_board_store:te0803_4eg_2i:1.0 trenz.biz:xilinx_board_store:te0803_4eg_2i_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_4eg_2i:3.0 trenz.biz:xilinx_board_store:te0803_4eg_2i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0803_4ev_1e:3.0 trenz.biz:xilinx_board_store:te0803_4ev_1e_tebf0808:4.0 trenz.biz:xilinx_board_store:te0803_4ev_1i:3.0 trenz.biz:xilinx_board_store:te0803_4ev_1i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0803_5eg_1e:1.0 trenz.biz:xilinx_board_store:te0803_5eg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0803_5ev_1i:3.0 trenz.biz:xilinx_board_store:te0803_5ev_1i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0807_4cg_1i:3.0 trenz.biz:xilinx_board_store:te0807_4cg_1i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0807_4eg_1e:3.0 trenz.biz:xilinx_board_store:te0807_4eg_1e_tebf0808:4.0 trenz.biz:xilinx_board_store:te0807_5cg_1i:3.0 trenz.biz:xilinx_board_store:te0807_5cg_1i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0807_5ev_1i:3.0 trenz.biz:xilinx_board_store:te0807_5ev_1i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0807_7cg_1i:3.0 trenz.biz:xilinx_board_store:te0807_7cg_1i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0807_7ev_1e:3.0 trenz.biz:xilinx_board_store:te0807_7ev_1e_tebf0808:4.0 trenz.biz:xilinx_board_store:te0807_7ev_1i:3.0 trenz.biz:xilinx_board_store:te0807_7ev_1i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0807_7ev_3e:3.0 trenz.biz:xilinx_board_store:te0807_7ev_3e_tebf0808:4.0 trenz.biz:xilinx_board_store:te0808_6eg_1i:3.0 trenz.biz:xilinx_board_store:te0808_6eg_1i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0808_6eg_1i:5.0 trenz.biz:xilinx_board_store:te0808_6eg_1i_tebf0808:6.0 trenz.biz:xilinx_board_store:te0808_6eg_2i:3.0 trenz.biz:xilinx_board_store:te0808_6eg_2i_tebf0808:4.0 trenz.biz:xilinx_board_store:te0808_9eg_1i:5.0 trenz.biz:xilinx_board_store:te0808_9eg_1i_tebf0808:6.0 trenz.biz:xilinx_board_store:te0820_2cg_1e:2.0 trenz.biz:xilinx_board_store:te0820_2cg_1i:2.0 trenz.biz:xilinx_board_store:te0820_3cg_1e:2.0 trenz.biz:xilinx_board_store:te0820_3cg_1i:2.0 trenz.biz:xilinx_board_store:te0820_3eg_1e:2.0 trenz.biz:xilinx_board_store:te0820_4cg_1e:2.0 trenz.biz:xilinx_board_store:te0820_4cg_1e:3.0 trenz.biz:xilinx_board_store:te0820_4cg_1i:3.0 trenz.biz:xilinx_board_store:te0820_4ev_1e:2.0 trenz.biz:xilinx_board_store:te0820_4ev_1i:2.0 trenz.biz:xilinx_board_store:te0820_5ev_1q:2.0 trenz.biz:xilinx_board_store:te0821_2cg_1e:3.0 trenz.biz:xilinx_board_store:te0821_3cg_1e:3.0 trenz.biz:xilinx_board_store:te0821_3eg_1e:2.0 trenz.biz:xilinx_board_store:te0821_3eg_1i:2.0 trenz.biz:xilinx_board_store:te0821_4ev_1e:3.0 trenz.biz:xilinx_board_store:te0823_3cg_1li:1.0 trenz.biz:xilinx_board_store:te0835_25dr_1e:1.0 trenz.biz:xilinx_board_store:te0841_35_1c:1.0 trenz.biz:xilinx_board_store:te0841_35_1c:2.0 trenz.biz:xilinx_board_store:te0841_35_1i:1.0 trenz.biz:xilinx_board_store:te0841_35_1i:2.0 trenz.biz:xilinx_board_store:te0841_35_2i:1.0 trenz.biz:xilinx_board_store:te0841_35_2i:2.0 trenz.biz:xilinx_board_store:te0841_40_1c:1.0 trenz.biz:xilinx_board_store:te0841_40_1c:2.0 trenz.biz:xilinx_board_store:te0841_40_1i:1.0 trenz.biz:xilinx_board_store:te0841_40_1i:2.0 trenz.biz:xilinx_board_store:teb0911_15eg_1e:1.0 avnet.com:xilinx_board_store:zedboard:1.4 avnet.com:xilinx_board_store:Ultra96v1:1.2 avnet.com:xilinx_board_store:Ultra96v2:1.1 avnet.com:xilinx_board_store:microzed_7010:1.3 avnet.com:xilinx_board_store:microzed_7020:1.3 avnet.com:xilinx_board_store:minized:1.3 avnet.com:xilinx_board_store:picozed_7010_fmc2:1.3 avnet.com:xilinx_board_store:picozed_7015_fmc2:1.3 avnet.com:xilinx_board_store:picozed_7020_fmc2:1.3 avnet.com:xilinx_board_store:picozed_7030_fmc2:1.3 avnet.com:xilinx_board_store:Ultra96v2:1.2 avnet.com:xilinx_board_store:ultrazed_3eg_iocc:1.2 avnet.com:xilinx_board_store:ultrazed_3eg_pciecc:1.3 avnet.com:xilinx_board_store:ultrazed_7ev_cc:1.5 iwavesystems.com:xilinx_board_store:iW-G35M-19EG-4E004G-E008G-LIA:1.5 iwavesystems.com:xilinx_board_store:iW-G28M-SM20-3D512M-E008G-BIE:2.0 iwavesystems.com:xilinx_board_store:iW-G30M-C4EV-4E002G-E008G-LIA:2.8 iwavesystems.com:xilinx_board_store:iW-G30M-C7EV-4E004G-E008G-LEA:2.0 iwavesystems.com:xilinx_board_store:iW-G35M-11EG-4E004G-E008G-LIA:1.2 iwavesystems.com:xilinx_board_store:iW-G35M-17EG-4E004G-E008G-LIA:1.1 iwavesystems.com:xilinx_board_store:iW-G36S-4EV1-4E002G-E008G-BEE:2.0 iwavesystems.com:xilinx_board_store:iW-G36S-2CG1-4E002G-E008G-BEE:2.2 iwavesystems.com:xilinx_board_store:iW-G36S-3EG1-4E002G-E008G-BEE:2.1 iwavesystems.com:xilinx_board_store:iW-G36S-5EV1-4E002G-E008G-BED:2.4 iwavesystems.com:xilinx_board_store:iW-G36S-5EV1-4E002G-E008G-BEE:2.3 trenz.biz:xilinx_board_store:am0010_3eg_1i:1.0 trenz.biz:xilinx_board_store:am0010_4ev_1e:1.0 trenz.biz:xilinx_board_store:te0720_14s_1c:1.0 trenz.biz:xilinx_board_store:te0720_20_1c:1.0 trenz.biz:xilinx_board_store:te0720_20_1c:2.0 trenz.biz:xilinx_board_store:te0720_20_1il:1.0 trenz.biz:xilinx_board_store:te0720_20_1q:1.0 trenz.biz:xilinx_board_store:te0720_20_1q:2.0 trenz.biz:xilinx_board_store:te0720_20_2e:1.0 trenz.biz:xilinx_board_store:te0720_20_2i:1.0 trenz.biz:xilinx_board_store:te0722_10_1C:1.0 trenz.biz:xilinx_board_store:te0722_10_1i:1.0 trenz.biz:xilinx_board_store:te0722_10_1i:2.0 trenz.biz:xilinx_board_store:te0722_7s_1c:1.0 trenz.biz:xilinx_board_store:te0726_10_1c:1.0 trenz.biz:xilinx_board_store:te0726_10_1c:2.1 trenz.biz:xilinx_board_store:te0726_10_1c:3.1 trenz.biz:xilinx_board_store:te0726_10_1i:3.1 trenz.biz:xilinx_board_store:te0726_7s_1c:3.1 trenz.biz:xilinx_board_store:te0728_1q:1.0 trenz.biz:xilinx_board_store:te0728_1q:1.1 trenz.biz:xilinx_board_store:te0803_4eg_1i:5.0 trenz.biz:xilinx_board_store:te0803_4eg_1i_tebf0808:6.0 trenz.biz:xilinx_board_store:te0813_2cg_1e:1.0 trenz.biz:xilinx_board_store:te0813_2cg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0813_2eg_1e:1.0 trenz.biz:xilinx_board_store:te0813_2eg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0813_3cg_1e:1.0 trenz.biz:xilinx_board_store:te0813_3cg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0813_3eg_1e:1.0 trenz.biz:xilinx_board_store:te0813_3eg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0813_4cg_1e:1.0 trenz.biz:xilinx_board_store:te0813_4cg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0813_4eg_1e:1.0 trenz.biz:xilinx_board_store:te0813_4eg_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0813_4ev_1e:1.0 trenz.biz:xilinx_board_store:te0813_4ev_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0813_5ev_1e:1.0 trenz.biz:xilinx_board_store:te0813_5ev_1e_tebf0808:2.0 trenz.biz:xilinx_board_store:te0820_2eg_1i:2.0 trenz.biz:xilinx_board_store:te0820_4eg_1i:2.0 trenz.biz:xilinx_board_store:te0820_5ev_1i:2.0 trenz.biz:xilinx_board_store:te0823_3cg_1li:2.0 trenz.biz:xilinx_board_store:te0835_47dr_1e:1.0 digilentinc.com:xilinx_board_store:arty-a7-100:1.1 digilentinc.com:xilinx_board_store:arty-a7-35:1.1 digilentinc.com:xilinx_board_store:arty-s7-25:1.1 digilentinc.com:xilinx_board_store:arty-s7-50:1.1 digilentinc.com:xilinx_board_store:arty-z7-10:1.1 digilentinc.com:xilinx_board_store:arty-z7-20:1.1 digilentinc.com:xilinx_board_store:basys3:1.2 digilentinc.com:xilinx_board_store:cmod-s7-25:1.0 digilentinc.com:xilinx_board_store:cmod_a7-15t:1.2 digilentinc.com:xilinx_board_store:cmod_a7-35t:1.2 digilentinc.com:xilinx_board_store:cora-z7-07s:1.1 digilentinc.com:xilinx_board_store:cora-z7-10:1.1 digilentinc.com:xilinx_board_store:eclypse-z7:1.1 digilentinc.com:xilinx_board_store:gzu_3eg:1.0 digilentinc.com:xilinx_board_store:gzu_3eg:1.1 digilentinc.com:xilinx_board_store:gzu_5ev:1.1 digilentinc.com:xilinx_board_store:nexys-a7-100t:1.2 digilentinc.com:xilinx_board_store:nexys-a7-50t:1.2 digilentinc.com:xilinx_board_store:nexys_video:1.2 digilentinc.com:xilinx_board_store:usb104-a7:1.3 digilentinc.com:xilinx_board_store:zedboard:1.0 digilentinc.com:xilinx_board_store:zybo-z7-10:1.1 digilentinc.com:xilinx_board_store:zybo-z7-20:1.1 opalkelly.com:xilinx_board_store:BRK1900-7CG:1.0 opalkelly.com:xilinx_board_store:BRK1900-7EG:1.0 opalkelly.com:xilinx_board_store:BRK1900-7EV:1.0 opalkelly.com:xilinx_board_store:SZG_MIPI_8320:1.0 opalkelly.com:xilinx_board_store:SZG_PCIEX4:1.0 avnet.com:xilinx_board_store:ZUBoard_1CG:1.0 tulembedded.com:xilinx_board_store:pynq-z2:1.0 opalkelly.com:xilinx_board_store:SZG_ENET1G:1.1 opalkelly.com:xilinx_board_store:XEM7305-S50:1.0 opalkelly.com:xilinx_board_store:XEM7310-A200:1.0 opalkelly.com:xilinx_board_store:XEM7310-A75:1.0 opalkelly.com:xilinx_board_store:XEM7310MT-A200:1.0 opalkelly.com:xilinx_board_store:XEM7310MT-A75:1.0 opalkelly.com:xilinx_board_store:XEM7320-A200:1.0 opalkelly.com:xilinx_board_store:XEM7320-A75:1.0 opalkelly.com:xilinx_board_store:XEM7350-K160T:1.0 opalkelly.com:xilinx_board_store:XEM7350-K410T-3E:1.0 opalkelly.com:xilinx_board_store:XEM7350-K410T:1.0 opalkelly.com:xilinx_board_store:XEM7350-K70T:1.0 opalkelly.com:xilinx_board_store:XEM7360-K160T-3E:1.0 opalkelly.com:xilinx_board_store:XEM7360-K160T:1.0 opalkelly.com:xilinx_board_store:XEM7360-K410T-3E:1.0 opalkelly.com:xilinx_board_store:XEM7360-K410T:1.0 opalkelly.com:xilinx_board_store:XEM8310-AU25P:1.0 opalkelly.com:xilinx_board_store:XEM8320-AU25P:1.2 OpalKelly.com:xilinx_board_store:XEM8350-KU060:1.0 OpalKelly.com:xilinx_board_store:XEM8350-KU060-3E:1.0 opalkelly.com:xilinx_board_store:XEM8350-KU115:1.0 alpha-data.com:xilinx_board_store:admpa100_2ms:1.0 alpha-data.com:xilinx_board_store:admpa101_2ms:1.1 alpha-data.com:xilinx_board_store:admpa100_2ms:1.2 alpha-data.com:xilinx_board_store:admpa101_2ms:1.2 xilinx.com:xilinx_board_store:vpk120:1.2 alpha-data.com:xilinx_board_store:admva600_dev:1.0 xilinx.com:xilinx_board_store:vhk158:1.1 xilinx.com:xilinx_board_store:k24c:1.0 xilinx.com:xilinx_board_store:k24i:1.0 xilinx.com:xilinx_board_store:kd240_carrier:1.0 xilinx.com:xilinx_board_store:kd240_som:1.0 opalkelly.com:xilinx_board_store:XEM8370-KU11P:1.0 opalkelly.com:xilinx_board_store:BRK1900-7CG:2.0 opalkelly.com:xilinx_board_store:BRK1900-7EG:2.0 opalkelly.com:xilinx_board_store:BRK1900-7EV:2.0 opalkelly.com:xilinx_board_store:XEM8305-AU15P-1E:1.0 opalkelly.com:xilinx_board_store:XEM8305-AU15P-2E:1.0 alpha-data.com:xilinx_board_store:admpa120_vp1202_2ms:1.0 alpha-data.com:xilinx_board_store:admpa120_vp1502_2ms:1.0 xilinx.com:Vivado_example_project:ver_ps_perf:1.0 xilinx.com:Vivado_example_project:MPSoC_ext_platform:1.0 xilinx.com:Vivado_example_project:MPSoC_ext_platform_part:1.0 xilinx.com:Vivado_example_project:mb_preset:1.0 xilinx.com:Vivado_example_project:TMR_Microblaze:1.0 xilinx.com:Vivado_example_project:axidma:1.0 xilinx.com:Vivado_example_project:multirategty:1.0 xilinx.com:Vivado_example_project:Versal_CPM_PCIe_Debug:1.0 xilinx.com:Vivado_example_project:ext_platform:1.0 xilinx.com:Vivado_example_project:ext_platform_part:1.0 xilinx.com:Vivado_example_project:mpsoc_preset:1.0 xilinx.com:Vivado_example_project:zynq7000_preset:1.0 xilinx.com:Vivado_example_project:cips_ddr_pl_debug:1.0 xilinx.com:Vivado_example_project:soc_vip:1.0 xilinx.com:Vivado_example_project:versal_mb_preset:1.0 xilinx.com:Vivado_example_project:BFT:1.0 xilinx.com:Vivado_example_project:cpu_hdl:1.0 xilinx.com:Vivado_example_project:cpu_netlist:1.0 xilinx.com:Vivado_example_project:wave_gen:1.0 xilinx.com:Vivado_example_project:Versal_CPM_Tandem PCIe:1.0 xilinx.com:Vivado_example_project:versal_dfx_platform:1.0 xilinx.com:Vivado_example_project:chipscopy:1.0 xilinx.com:Vivado_example_project:versal_ibert_ced:1.0 xilinx.com:Vivado_example_project:cpm_rp:1.0 xilinx.com:Vivado_example_project:cpm_pcie_pio:1.0 xilinx.com:Vivado_example_project:cpm5_pcie_bmd:1.0 xilinx.com:Vivado_example_project:cpm5_qdma:1.0 xilinx.com:Vivado_example_project:cpm4_bmd:1.0 xilinx.com:Vivado_example_project:cpm_pcie_qdma_ep:1.0 xilinx.com:Vivado_example_project:hsdp_ced:1.0
+report_property [lindex [xhub::get_xitems] 0]
+Property                   Type     Read-only  Value
+AUTHOR                     string   true       Vanitha
+CATEGORY                   string*  true       Evaluation Boards
+CLASS                      string   true       xitem
+COMMIT_ID                  string   true       4a8cc15a3c894840a9ca9ab1d7097865a9339401
+COMPANY                    string   true       xilinx.com
+COMPANY_NAME               string   true       Xilinx
+DATA_SOURCE                enum     true       INSTALL
+DESCRIPTION                string   true       Artix-7 AC701 Evaluation Platform
+DISPLAY_NAME               string   true       Artix-7 AC701 Evaluation Platform
+IS_ACTIVE                  bool     true       1
+IS_INSTALLED               bool     true       1
+IS_INSTALLED_REV_UPTODATE  bool     true       1
+LATEST_AVAILABLE_REVISION  double   true       1.4
+LOCAL_ROOT_DIR             string   true       /tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4
+LOGO                       string   true       /tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/ac701_board.jpg
+NAME                       string   true       xilinx.com:xilinx_board_store:ac701:1.4
+REVISION                   double   true       1.4
+SHORT_NAME                 string   true       ac701
+STORE_NAME                 string   true       xilinx_board_store
+WEBSITE                    string   true       http://www.xilinx.com/ac701
+report_property [lindex [xhub::get_xitems] 1]
+Property                   Type     Read-only  Value
+AUTHOR                     string   true       Vanitha
+CATEGORY                   string*  true       System On Modules(SOM)
+CLASS                      string   true       xitem
+COMMIT_ID                  string   true       4ffb74a880493790308ac51156e664569eb3901a
+COMPANY                    string   true       xilinx.com
+COMPANY_NAME               string   true       Xilinx
+DATA_SOURCE                enum     true       INSTALL
+DESCRIPTION                string   true       Kria K26C SOM
+DISPLAY_NAME               string   true       Kria K26C SOM
+IS_ACTIVE                  bool     true       1
+IS_INSTALLED               bool     true       1
+IS_INSTALLED_REV_UPTODATE  bool     true       0
+LATEST_AVAILABLE_REVISION  double   true       1.2
+LOCAL_ROOT_DIR             string   true       /tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2
+LOGO                       string   true       /tools/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/k26c_board.jpeg
+NAME                       string   true       xilinx.com:xilinx_board_store:k26c:1.2
+REVISION                   double   true       1.2
+SHORT_NAME                 string   true       k26c
+STORE_NAME                 string   true       xilinx_board_store
+WEBSITE                    string   true       www.xilinx.com/SOM
+xhub::install [xhub::get_xitems zedboard]
+WARNING: [xhubtcl 76-56] No objects matched with given name : zedboard in xhub database,invoke command 'xhub::refresh_catalog <xstores>' to sync xhub database with remote repositories. 
+xhub::install [xhub::get_xitems *zed*]
+INFO: [xhubtcl 76-61] The object 'em.avnet.com:xilinx_board_store:picozed_7010_fmc2:1.2' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'em.avnet.com:xilinx_board_store:minized:1.2' is already installed, to update use xhub::update command.
+xhub::get_xitems *zed*
+em.avnet.com:xilinx_board_store:picozed_7010_fmc2:1.2 em.avnet.com:xilinx_board_store:minized:1.2 avnet.com:xilinx_board_store:zedboard:1.4 avnet.com:xilinx_board_store:microzed_7010:1.3 avnet.com:xilinx_board_store:microzed_7020:1.3 avnet.com:xilinx_board_store:minized:1.3 avnet.com:xilinx_board_store:picozed_7010_fmc2:1.3 avnet.com:xilinx_board_store:picozed_7015_fmc2:1.3 avnet.com:xilinx_board_store:picozed_7020_fmc2:1.3 avnet.com:xilinx_board_store:picozed_7030_fmc2:1.3 avnet.com:xilinx_board_store:ultrazed_3eg_iocc:1.2 avnet.com:xilinx_board_store:ultrazed_3eg_pciecc:1.3 avnet.com:xilinx_board_store:ultrazed_7ev_cc:1.5 digilentinc.com:xilinx_board_store:zedboard:1.0
+xhub::install [xhub::get_xitems *zedboard*]
+INFO: [xhubtcl 76-61] The object 'avnet.com:xilinx_board_store:zedboard:1.4' is already installed, to update use xhub::update command.
+INFO: [xhubtcl 76-61] The object 'digilentinc.com:xilinx_board_store:zedboard:1.0' is already installed, to update use xhub::update command.
+set_param board.repoPaths [get_property LOCAL_ROOT_DIR [xhub::get_xstores xilinx_board_store]]
+/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store
+echo LOCAL_ROOT_DIR
+WARNING: [Common 17-259] Unknown Tcl command 'echo LOCAL_ROOT_DIR' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+LOCAL_ROOT_DIR
+echo $LOCAL_ROOT_DIR
+can't read "LOCAL_ROOT_DIR": no such variable
+LOCAL_ROOT_DIR
+invalid command name "LOCAL_ROOT_DIR"
+get_board_parts
+avnet.com:microzed_7010:part0:1.3 avnet.com:microzed_7020:part0:1.3 avnet.com:minized:part0:1.2 avnet.com:minized:part0:1.3 avnet.com:picozed_7010_fmc2:part0:1.2 avnet.com:picozed_7010_fmc2:part0:1.3 avnet.com:picozed_7015_fmc2:part0:1.3 avnet.com:picozed_7020_fmc2:part0:1.3 avnet.com:picozed_7030_fmc2:part0:1.3 avnet.com:zedboard:part0:1.4 digilentinc.com:arty-z7-10:part0:1.0 digilentinc.com:arty-z7-10:part0:1.1 digilentinc.com:arty-z7-20:part0:1.0 digilentinc.com:arty-z7-20:part0:1.1 digilentinc.com:cora-z7-07s:part0:1.0 digilentinc.com:cora-z7-07s:part0:1.1 digilentinc.com:cora-z7-10:part0:1.0 digilentinc.com:cora-z7-10:part0:1.1 digilentinc.com:eclypse-z7:part0:1.1 digilentinc.com:zedboard:part0:1.0 digilentinc.com:zybo-z7-10:part0:1.0 digilentinc.com:zybo-z7-10:part0:1.1 digilentinc.com:zybo-z7-20:part0:1.0 digilentinc.com:zybo-z7-20:part0:1.1 digilentinc.com:zybo:part0:1.0 iwavesystems.com:iw-g28m-sm20-3d512m-e008g-bie:part0:1.0 trenz.biz:te0715_12s_1c:part0:1.1 trenz.biz:te0715_15_1c:part0:1.0 trenz.biz:te0715_15_1c:part0:1.1 trenz.biz:te0715_15_1i:part0:1.0 trenz.biz:te0715_15_1i:part0:1.1 trenz.biz:te0715_15_2i:part0:1.0 trenz.biz:te0715_15_2i:part0:1.1 trenz.biz:te0715_30_1c:part0:1.0 trenz.biz:te0715_30_1c:part0:1.1 trenz.biz:te0715_30_1i:part0:1.0 trenz.biz:te0715_30_1i:part0:1.1 trenz.biz:te0715_30_3e:part0:1.0 trenz.biz:te0715_30_3e:part0:1.1 trenz.biz:te0716_20_1c:part0:1.0 trenz.biz:te0720_14s_1c:part0:1.0 trenz.biz:te0720_20_1c:part0:1.0 trenz.biz:te0720_20_1c:part0:2.0 trenz.biz:te0720_20_1il:part0:1.0 trenz.biz:te0720_20_1q:part0:1.0 trenz.biz:te0720_20_1q:part0:2.0 trenz.biz:te0720_20_2e:part0:1.0 trenz.biz:te0720_20_2i:part0:1.0 trenz.biz:te0722_10_1c:part0:1.0 trenz.biz:te0722_10_1i:part0:1.0 trenz.biz:te0722_10_1i:part0:2.0 trenz.biz:te0722_7s_1c:part0:1.0 trenz.biz:te0724_10_1i:part0:1.0 trenz.biz:te0724_20_1i:part0:1.0 trenz.biz:te0726_10_1c:part0:1.0 trenz.biz:te0726_10_1c:part0:2.1 trenz.biz:te0726_10_1c:part0:3.1 trenz.biz:te0726_10_1i:part0:3.1 trenz.biz:te0726_7s_1c:part0:3.1 trenz.biz:te0728_1q:part0:1.0 trenz.biz:te0728_1q:part0:1.1 trenz.biz:te0729_20_2i:part0:1.0 trenz.biz:te0729_20_2i:part0:2.0 trenz.biz:te0745_30_1i:part0:1.0 trenz.biz:te0745_30_2i:part0:1.0 trenz.biz:te0745_35_1c:part0:1.0 trenz.biz:te0745_45_1c:part0:1.0 trenz.biz:te0745_45_2i:part0:1.0 trenz.biz:te0745_45_2i:part0:2.0 trenz.biz:te0745_45_3e:part0:1.0 tul.com.tw:pynq-z2:part0:1.0 xilinx.com:zc702:part0:1.4 xilinx.com:zc706:part0:1.4
+get_board_parts *zed*
+avnet.com:microzed_7010:part0:1.3 avnet.com:microzed_7020:part0:1.3 avnet.com:minized:part0:1.2 avnet.com:minized:part0:1.3 avnet.com:picozed_7010_fmc2:part0:1.2 avnet.com:picozed_7010_fmc2:part0:1.3 avnet.com:picozed_7015_fmc2:part0:1.3 avnet.com:picozed_7020_fmc2:part0:1.3 avnet.com:picozed_7030_fmc2:part0:1.3 avnet.com:zedboard:part0:1.4 digilentinc.com:zedboard:part0:1.0
+get_board_parts zed
+WARNING: [Vivado 12-4842] No board parts matched 'get_board_parts zed'.
+get_board_parts *zed:part0:1.0
+WARNING: [Vivado 12-4842] No board parts matched 'get_board_parts *zed:part0:1.0'.
+get_board_parts *zed:part0:1.0*
+WARNING: [Vivado 12-4842] No board parts matched 'get_board_parts *zed:part0:1.0*'.
+get_board_parts *zed:*
+avnet.com:minized:part0:1.2 avnet.com:minized:part0:1.3
+get_board_parts *zedboard*
+avnet.com:zedboard:part0:1.4 digilentinc.com:zedboard:part0:1.0
+get_board_parts *zedboard*
+avnet.com:zedboard:part0:1.4 digilentinc.com:zedboard:part0:1.0
+set_param board.repoPaths [get_property LOCAL_ROOT_DIR [xhub::get_xstores xilinx_board_store]]
+/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store
+get_board_parts *zedboard*
+avnet.com:zedboard:part0:1.4 digilentinc.com:zedboard:part0:1.0
+get_board_parts *zed*
+avnet.com:microzed_7010:part0:1.3 avnet.com:microzed_7020:part0:1.3 avnet.com:minized:part0:1.2 avnet.com:minized:part0:1.3 avnet.com:picozed_7010_fmc2:part0:1.2 avnet.com:picozed_7010_fmc2:part0:1.3 avnet.com:picozed_7015_fmc2:part0:1.3 avnet.com:picozed_7020_fmc2:part0:1.3 avnet.com:picozed_7030_fmc2:part0:1.3 avnet.com:zedboard:part0:1.4 digilentinc.com:zedboard:part0:1.0
+get_board_parts *zed:*
+avnet.com:minized:part0:1.2 avnet.com:minized:part0:1.3
+get_board_parts *zed*0.1.0
+WARNING: [Vivado 12-4842] No board parts matched 'get_board_parts *zed*0.1.0'.
+get_board_parts 0.1.0
+WARNING: [Vivado 12-4842] No board parts matched 'get_board_parts 0.1.0'.
+get_board_parts *0.1.0
+WARNING: [Vivado 12-4842] No board parts matched 'get_board_parts *0.1.0'.
+get_board_parts *zed*0.1.0*
+WARNING: [Vivado 12-4842] No board parts matched 'get_board_parts *zed*0.1.0*'.
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+xhub::refresh_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 8084.184 ; gain = 0.000 ; free physical = 221 ; free virtual = 16700
+WARNING: [Board 49-26] cannot add Board Part alpha-data.com:admpa100_2ms:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/AlphaData/admpa100_2ms/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part alpha-data.com:admpa100_2ms:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/AlphaData/admpa100_2ms/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part alpha-data.com:admpa101_2ms:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/AlphaData/admpa101_2ms/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part alpha-data.com:admpa101_2ms:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/AlphaData/admpa101_2ms/1.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part alpha-data.com:admva600_dev:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/AlphaData/admva600_dev/1.0/board.xml as part xcvc1902-vsva2197-1mp-i-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultra96v1:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Avnet/ultra96v1/1.2/board.xml as part xczu3eg-sbva484-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultra96v2:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Avnet/ultra96v2/1.1/board.xml as part xczu3eg-sbva484-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultra96v2:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Avnet/ultra96v2/1.2/board.xml as part xczu3eg-sbva484-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_7ev_cc:part0:1.5 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Avnet/ultrazed_7ev_cc/1.5/board.xml as part xczu7ev-fbvb900-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_iocc_production:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Avnet/ultrazed_3eg_iocc/1.2/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:ultrazed_eg_pciecc_production:part0:1.3 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Avnet/ultrazed_3eg_pciecc/1.3/board.xml as part xczu3eg-sfva625-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part avnet.com:zuboard_1cg:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Avnet/zub1cg/1.0/board.xml as part xczu1cg-sbva484-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/arty-a7-100/E.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-100:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/arty-a7-100/1.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/arty-a7-35/E.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-a7-35:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/arty-a7-35/1.1/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/arty-s7-25/1.1/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/arty-s7-50/1.1/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/arty/C.0/board.xml as part xc7a35ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:basys3:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/basys3/C.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:basys3:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/basys3/1.2/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-15t:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/cmod_a7-15t/B.0/board.xml as part xc7a15tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-15t:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/cmod_a7-15t/1.2/board.xml as part xc7a15tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-35t:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/cmod_a7-35t/B.0/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod_a7-35t:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/cmod_a7-35t/1.2/board.xml as part xc7a35tcpg236-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-100t:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/nexys-a7-100t/D.0/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys-a7-50t:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/nexys-a7-50t/D.0/board.xml as part xc7a50ticsg324-1l specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/nexys4/B.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys4_ddr:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/nexys4_ddr/C.1/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.1 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/nexys_video/A.0/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:nexys_video:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/nexys_video/1.2/board.xml as part xc7a200tsbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:usb104-a7:part0:1.3 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Digilent/usb104-a7/B/board.xml as part xc7a100tcsg324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part iwavesystems.com:iw-g30m-c4ev-4e002g-e008g-lia:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/iWave/iw-g30m-c4ev-4e002g-e008g-lia/1.0/board.xml as part xczu4ev-fbvb900-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part iwavesystems.com:iw-g30m-c7ev-4e004g-e008g-lea:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/iWave/iw-g30m-c7ev-4e004g-e008g-lea/1.0/board.xml as part xczu7ev-fbvb900-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part iwavesystems.com:iw-g35m-11eg-4e004g-e008g-lia:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/iWave/iw-g35m-11eg-4e004g-e008g-lia/1.0/board.xml as part xczu11eg-ffvc1760-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part iwavesystems.com:iw-g35m-17eg-4e004g-e008g-lia:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/iWave/iw-g35m-17eg-4e004g-e008g-lia/1.0/board.xml as part xczu17eg-ffvc1760-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part iwavesystems.com:iw-g35m-19eg-4e004g-e008g-lia:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/iWave/iw-g35m-19eg-4e004g-e008g-lia/1.0/board.xml as part xczu19eg-ffvc1760-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part iwavesystems.com:iw-g36s-2cg1-4e002g-e008g-bee:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/iWave/iw-g36s-2cg1-4e002g-e008g-bee/1.0/board.xml as part xczu2cg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part iwavesystems.com:iw-g36s-3eg1-4e002g-e008g-bee:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/iWave/iw-g36s-3eg1-4e002g-e008g-bee/1.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part iwavesystems.com:iw-g36s-4ev1-4e002g-e008g-bee:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/iWave/iw-g36s-4ev1-4e002g-e008g-bee/1.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part iwavesystems.com:iw-g36s-5ev1-4e002g-e008g-bed:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/iWave/iw-g36s-5ev1-4e002g-e008g-bed/1.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part iwavesystems.com:iw-g36s-5ev1-4e002g-e008g-bee:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/iWave/iw-g36s-5ev1-4e002g-e008g-bee/1.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:brk1900-7cg:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/BRK1900-7CG/1.0/board.xml as part xczu7cg-ffvc1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:brk1900-7cg:part0:2.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/BRK1900-7CG/2.0/board.xml as part xczu7cg-ffvc1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:brk1900-7eg:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/BRK1900-7EG/1.0/board.xml as part xczu7eg-ffvc1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:brk1900-7eg:part0:2.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/BRK1900-7EG/2.0/board.xml as part xczu7eg-ffvc1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:brk1900-7ev:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/BRK1900-7EV/1.0/board.xml as part xczu7ev-ffvc1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:brk1900-7ev:part0:2.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/BRK1900-7EV/2.0/board.xml as part xczu7ev-ffvc1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7305-s50:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7305-S50/1.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7310-a200:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7310-A200/1.0/board.xml as part xc7a200tfbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7310-a75:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7310-A75/1.0/board.xml as part xc7a75tfgg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7310mt-a200:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7310MT-A200/1.0/board.xml as part xc7a200tfbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7310mt-a75:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7310MT-A75/1.0/board.xml as part xc7a75tfgg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7320-a200:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7320-A200/1.0/board.xml as part xc7a200tfbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7320-a75:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7320-A75/1.0/board.xml as part xc7a75tfgg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7350-k160t:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7350-K160T/1.0/board.xml as part xc7k160tffg676-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7350-k410t-3e:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7350-K410T-3E/1.0/board.xml as part xc7k410tffg676-3 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7350-k410t:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7350-K410T/1.0/board.xml as part xc7k410tffg676-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7350-k70t:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7350-K70T/1.0/board.xml as part xc7k70tfbg676-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7360-k160t-3e:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7360-K160T-3E/1.0/board.xml as part xc7k160tffg676-3 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7360-k160t:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7360-K160T/1.0/board.xml as part xc7k160tffg676-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7360-k410t-3e:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7360-K410T-3E/1.0/board.xml as part xc7k410tffg676-3 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem7360-k410t:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM7360-K410T/1.0/board.xml as part xc7k410tffg676-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem8305-au15p-1e:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM8305-AU15P-1E/1.0/board.xml as part xcau15p-ffvb676-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem8305-au15p-2e:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM8305-AU15P-2E/1.0/board.xml as part xcau15p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem8310-au25p:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM8310-AU25P/1.0/board.xml as part xcau25p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem8320-au25p:part0:1.2 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM8320-AU25P/1.2/board.xml as part xcau25p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem8350-ku060-3e:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM8350-KU060-3E/1.0/board.xml as part xcku060-ffva1517-3-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem8350-ku060:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM8350-KU060/1.0/board.xml as part xcku060-ffva1517-1-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem8350-ku115:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM8350-KU115/1.0/board.xml as part xcku115-flva1517-1-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part opalkelly.com:xem8370-ku11p:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/OpalKelly/XEM8370-KU11P/1.0/board.xml as part xcku11p-ffva1156-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:am0010_3eg_1i:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/AM0010_3EG_1I/1.0/board.xml as part xczu3eg-sfvc784-1-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:am0010_4ev_1e:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/AM0010_4EV_1E/1.0/board.xml as part xczu4ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0710_02_100_2c:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0710_100_2C/1.0/board.xml as part xc7a100tcsg324-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0710_02_100_2i:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0710_100_2I/1.0/board.xml as part xc7a100tcsg324-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0710_02_35_2c:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0710_35_2C/1.0/board.xml as part xc7a35tcsg324-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0710_02_35_2i:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0710_35_2I/1.0/board.xml as part xc7a35tcsg324-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0711_100_2c:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0711_100_2C/1.0/board.xml as part xc7a100tcsg324-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0711_100_2i:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0711_100_2I/1.0/board.xml as part xc7a100tcsg324-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0711_35_2c:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0711_35_2C/1.0/board.xml as part xc7a35tcsg324-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0711_35_2i:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0711_35_2I/1.0/board.xml as part xc7a35tcsg324-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0712_100_1i:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0712_100_1I/1.0/board.xml as part xc7a100tfgg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0712_100_2c:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0712_100_2C/1.0/board.xml as part xc7a100tfgg484-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0712_100_2c:part0:2.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0712_100_2C/2.0/board.xml as part xc7a100tfgg484-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0712_200_1i:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0712_200_1I/1.0/board.xml as part xc7a200tfbg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0712_200_2c:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0712_200_2C/1.0/board.xml as part xc7a200tfbg484-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0712_200_2i:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0712_200_2I/1.0/board.xml as part xc7a200tfbg484-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0712_35_2i:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0712_35_2I/1.0/board.xml as part xc7a35tfgg484-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0713_100_2c:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0713_100_2C/1.0/board.xml as part xc7a100tfgg484-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0713_200_2c:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0713_200_2C/1.0/board.xml as part xc7a200tfbg484-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0725_100_2c:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0725_100_2C/1.0/board.xml as part xc7a100tcsg324-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0725_100_2i:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0725_100_2I/1.0/board.xml as part xc7a100tcsg324-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part trenz.biz:te0725_15_1c:part0:1.0 available at /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store/boards/Trenz_Electronic/TE0725_15_1C/1.0/board.xml as part xc7a15tcsg324-1 specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/board-def}
+set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}
+set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}
+/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo
+set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}
+/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo
+set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}
+/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo
+set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store}
+set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}
+get_param board.repoPaths
+/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo

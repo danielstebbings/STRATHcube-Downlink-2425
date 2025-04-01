@@ -43,29 +43,34 @@ The core of the design is built upon a DVB-S2 HDL coder example created by Mathw
 
 #figure(
   table(
-    columns:3,
-    align:(left,center,center),
+    columns:4,
+    align:(left,center,center,center),
     table.header(
-      [*Port*],[*Type*],[*Purpose*]
+      [*Port*],[*Direction*],[*Type*],[*Purpose*],
     ),
-    
-    [pktBitsIn],    [Boolean Stream], [],
-    [pktStartIn],   [Boolean],        [],
-    [pktEndIn],     [Boolean],        [],
-    [pktValidIn],   [Boolean],        [],
-    [frameStartIn], [Boolean],        [],
-    [frameEndIn],   [Boolean],        [],
-    [TSorGS],       [ufix2],          [],
-    [DFL],          [uint16],         [],
-    [UPL],          [uint16],         [],
-    [SYNC],         [uint8],          [],
-    [pMODCOD],      [ufix5],          [],
-    [pFECFRAME],    [boolean],        [],
-    
+    table.cell(colspan: 4,  align:center, [*Sideband Signals*]),
+    [pktValidIn],   [Input],[Boolean],        [Indicates that input data is valid. Used to ],
+    [pktBitsIn],    [Input],[Boolean Stream], [Information for transmission],
+    [pktStartIn],   [Input],[Boolean],        [Indicates packet start, not used for continuous stream],
+    [pktEndIn],     [Input],[Boolean],        [Indicates packet end, not used for continuous stream],
+    [frameStartIn], [Input],[Boolean],        [],
+    [frameEndIn],   [Input],[Boolean],        [],
+    table.cell(colspan: 4,  align:center, [*Control Signals*]),
+    [TSorGS],      [Input],[ufix2],          [],
+    [DFL],         [Input],[uint16],         [Data Field Length, can be from 0 to $K_"BCH"$],
+    [UPL],         [Input],[uint16],         [User Packet Length, 0 for continuous stream],
+    [SYNC],        [Input],[uint8],          [],
+    [MODCOD],      [Input],[ufix5],          [MODulation and CODing rate selection],
+    [FECFRAME],    [Input],[boolean],        [FECFRAME length selection. 1 for ],
+    table.cell(colspan: 4,  align:center, [*Output*]),
+    [dataOut],    [Output],[ufix18en16 (c)], [IQ output data. 18 bit complex fixed point data with 16 fraction bits],
+    [validOut],   [Output],[boolean],        [],
+    [flag],       [Output],[ufix2],          [],
+    [nextFrame],  [Output],[boolean],        [Asserted for one cycle when transmitter is ready to receive next frame],
 
-
+    
   ),
-  caption: "AXI-Stream Minimal Signals"
+  caption: "DVB-S2 Transmitter Ports"
 )
 // TODO: rolloff investigation
 
@@ -94,7 +99,7 @@ Data is transferred from the #acr("PS") via one of two methods. AXI-lite interfa
     [TData],  [uint32],  [Data to be transferred from master to slave],
     [TValid], [boolean], [Indication from master to slave that data is valid and can be read],
     [TReady], [boolean], [Indication from slave to master that it is ready for new data],
-    [TLast],  [boolean], [Indication from master to slave that the current packet is the last in the current stream],
+    [TLast],  [boolean], [Indication from master to slave that the current packet is the last in the current stream (optional)],
 
   ),
   caption: "Minimum AXI-Stream Signals"
@@ -264,7 +269,7 @@ kind:image,
     ],
     ['Parse Interface',
     	{name:'FIFO_Pop', 	wave:'0..80......80.......'},
-    	{name:'FIFO_Out',   wave:'0...3xxxxxxx4xxxxxxx', 'data':'A B'},
+    	{name:'FIFO_Out',   wave:'x...3xxxxxxx4xxxxxxx', 'data':'A B'},
       {name:'FIFO_Valid', wave:'0...10......10......',},
 		  {name:'FIFO_nEmpty',wave:'0..8........0.......'},
      	{name:'Parse_Ready',wave:'5....0.....5.0....5.'},
@@ -362,12 +367,21 @@ kind:image,
 
 = Packet Handling
 
+== PS-PL Integration
+The PS-PL integration was generated using the HW/SW Codesign flow of HDL Coder. This automatically generated libiio bindings for the PL Logic, resulting in @PS-PL-Interface. The intended flow requires flashing a specific Linux image onto the board. This is acceptable for an engineering model, however for flight hardware this will need to change. 
+
+#figure(
+  image("../Figures/Implementation/block-diagram/software-interface.png"),
+  caption: "Generated software interface. Packets are transmitted by sending data into the \"data\" port of the AD936x Transmitter block. This block can also be used to configure the radio, including center frequency."
+) <PS-PL-Interface>
+
+
 == Test Data Generation
 To verify the proper functioning of the transceiver, synthetic packet data was required. Additionally, all sideband signals and control signals would need to be generated appropriately to ensure all inputs were valid.
 
 #subpar.grid(
   columns: (1fr),
-  caption: [Data Generation Function Structure],
+  caption: [Data generation function structure. (a) Shows the inputs and outputs of  the function, where both the AXI packet stream and control signals have the same size. (b) Shows the functionality of the gendata function. ],
   label: <gendata-struct>,
   figure(
     image("../Figures/Implementation/Packets/Gendata-Highlevel.svg"),

@@ -1,0 +1,721 @@
+/*
+
+AMD Vivado v2023.1 (64-bit) [Major: 2023, Minor: 1]
+SW Build: 3865809 on Sun May  7 15:04:56 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+
+Process ID (PID): 17454
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Apr 01 14:48:17 BST 2025
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Ubuntu
+OS Version: 6.11.0-21-generic
+OS Architecture: amd64
+Available processors (cores): 16
+
+Display: 0
+Screen size: 2256x1504
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+
+Java version: 	17.0.3 64-bit
+JavaFX version: 17.0.1
+Java home: 	/tools/Xilinx/Vivado/2023.1/tps/lnx64/jre17.0.3_7
+Java executable: 	/tools/Xilinx/Vivado/2023.1/tps/lnx64/jre17.0.3_7/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	daniel
+User home directory: /home/daniel
+User working directory: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2023.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2023.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2023.1/bin
+
+Vivado preferences file: /home/daniel/.Xilinx/Vivado/2023.1/vivado.xml
+Vivado preferences directory: /home/daniel/.Xilinx/Vivado/2023.1/
+Vivado layouts directory: /home/daniel/.Xilinx/Vivado/2023.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2023.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/vivado.log
+Vivado journal file: 	/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-17454-Sure-Hope-It-Does
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /tools/Xilinx/Vivado/2023.1
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2023.1/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/Vivado/2023.1/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2023.1
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 17.0.3_7
+RDI_LIBDIR: /tools/Xilinx/Vivado/2023.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2023.1/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2023.1/bin:/tools/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter:Sure-Hope-It-Does_1743515286_17385
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2023.1/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2023.1/tps/lnx64
+RDI_USE_JDK17: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2023.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2023.1
+XILINX_SDK: /tools/Xilinx/Vitis/2023.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2023.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2023.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2023.1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,450 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,464 MB. GUI used memory: 73 MB. Current time: 4/1/25, 2:48:18 PM BST
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // al
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,532 MB. GUI used memory: 102 MB. Current time: 4/1/25, 2:48:38 PM BST
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store]", 2); // s
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Example Project Repository]", 4, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s
+selectButton(PAResourceItoN.MultiFileChooser_ADD_DIRECTORIES, "Add Directories"); // B
+dismissFolderChooser();
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store]", 2, true); // s - Node
+dismissDialog("Settings"); // d
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_VIVADO_STORE, "Vivado Store"); // u
+// Run Command: PAResourceCommand.PACommandNames_VIVADO_STORE
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // f: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Install Applications Information"); // u
+selectTab((HResource) null, (HResource) null, "Boards", 1); // g
+// Elapsed time: 11 seconds
+selectButton(PAResourceTtoZ.XhubStoresDialog_GOTO_GIT, "Go to Git"); // g
+openHTML ("https://github.com/Xilinx/XilinxBoardStore/wiki");af
+selectButton(PAResourceTtoZ.XhubStoresDialog_GOTO_GIT, "Go to Git"); // g
+openHTML ("https://github.com/Xilinx/XilinxBoardStore/wiki");af
+// Elapsed time: 21 seconds
+dismissDialog("Vivado Store"); // af
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.xpr", 0); // b.c
+// Opening Vivado Project: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.xpr. Version: Vivado v2023.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// [GUI Memory]: 238 MB (+247119kb) [00:01:35]
+// [Engine Memory]: 1,556 MB (+1479707kb) [00:01:35]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// Tcl Message: open_project /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,671 MB. GUI used memory: 108 MB. Current time: 4/1/25, 2:49:48 PM BST
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,942 MB (+323279kb) [00:01:43]
+// WARNING: HEventQueue.dispatchEvent() is taking  1128 ms.
+// Tcl Message: open_project /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'. 
+// Project name: vivado_prj; location: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj; part: xc7z020clg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 7966.723 ; gain = 383.496 ; free physical = 296 ; free virtual = 18336 
+dismissDialog("Open Project"); // bq
+// Elapsed time: 29 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aa
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 384, 99); // cD
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]", true); // h.b
+// Tcl Command: 'xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]'
+// Tcl Command: 'xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]'
+// TclEventType: LOAD_FEATURE
+// TclEventType: XHUB_XSTORE_DIR_CHANGE
+// TclEventType: XHUB_XSTORE_REFRESH
+// Tcl Message: xhub::refresh_catalog [xhub::get_xstores xilinx_board_store] 
+// TclEventType: XHUB_XSTORE_REFRESH
+// Tcl Message: xhub::refresh_catalog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 8009.051 ; gain = 3.141 ; free physical = 486 ; free virtual = 18515 
+// Elapsed time: 11 seconds
+dismissDialog("Tcl Command"); // bq
+// Elapsed time: 37 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xhub::install [xhub::get_xitems]", true); // h.b
+// Tcl Command: 'xhub::install [xhub::get_xitems]'
+// Tcl Command: 'xhub::install [xhub::get_xitems]'
+// TclEventType: XHUB_XITEM_INSTALL
+// Tcl Message: xhub::install [xhub::get_xitems] 
+// Tcl Message: INFO: [Common 17-1573] Object em.avnet.com:xilinx_board_store:picozed_7010_fmc2:1.2 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty:1.1' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty-a7-100:1.0' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty-a7-100:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty-s7-50:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty-z7-10:1.0' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty-z7-10:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty-z7-10:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:arty-z7-20:1.0' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:arty-z7-20:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:arty-z7-20:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:basys3:1.1' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:basys3:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:basys3:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:cmod_a7-15t:1.1' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:cmod_a7-15t:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:cmod_a7-15t:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:cmod_a7-35t:1.1' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:cmod_a7-35t:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:cmod_a7-35t:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:cora-z7-07s:1.0' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:cora-z7-07s:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:cora-z7-07s:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:cora-z7-10:1.0' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:cora-z7-10:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:cora-z7-10:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:genesys2:1.1' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:genesys2:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:nexys_video:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:zybo:1.0' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:zybo:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:zybo:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:zybo-z7-10:1.0' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:zybo-z7-10:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:zybo-z7-10:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'digilentinc.com:xilinx_board_store:zybo-z7-20:1.0' ... INFO: [Common 17-1570] Installing object digilentinc.com:xilinx_board_store:zybo-z7-20:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object digilentinc.com:xilinx_board_store:zybo-z7-20:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'em.avnet.com:xilinx_board_store:minized:1.2' ... INFO: [Common 17-1570] Installing object em.avnet.com:xilinx_board_store:minized:1.2 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object em.avnet.com:xilinx_board_store:minized:1.2 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_100_1i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_100_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_100_1i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_100_2c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_200_2c:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_200_2i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_200_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_200_2i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0712_35_2i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0712_35_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0712_35_2i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0724_10_1i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0724_10_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0724_10_1i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0724_20_1i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0724_20_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0724_20_1i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0725_100_2c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0725_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0725_100_2c:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0725_100_2i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0725_100_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0725_100_2i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0725_15_1c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0725_15_1c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0725_15_1c:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0725_35_2c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0725_35_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0725_35_2c:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0729_20_2i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0729_20_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0729_20_2i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0729_20_2i:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0729_20_2i:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0729_20_2i:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_2cg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_2cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_2cg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_2cg_1e_tebf0808:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_2cg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_2cg_1e_tebf0808:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_2eg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_2eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_2eg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_2eg_1e_tebf0808:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_2eg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_2eg_1e_tebf0808:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3cg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3cg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3cg_1e_tebf0808:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3cg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3cg_1e_tebf0808:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3eg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3eg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3eg_1e:3.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3eg_1e:3.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3eg_1e:3.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:4.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:4.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_3eg_1e_tebf0808:4.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4cg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4cg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4cg_1e_tebf0808:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4cg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4cg_1e_tebf0808:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4eg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4eg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4eg_1e_tebf0808:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4eg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4eg_1e_tebf0808:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4ev_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4ev_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4ev_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_4ev_1e_tebf0808:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_4ev_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_4ev_1e_tebf0808:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_5ev_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_5ev_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_5ev_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_5ev_1e_tebf0808:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_5ev_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_5ev_1e_tebf0808:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_5ev_1i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_5ev_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0803_5ev_1i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0803_5ev_1i_tebf0808:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0803_5ev_1i_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_6eg_1e_tebf0808:4.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_1e:3.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_1e:3.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_1e:3.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:4.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:4.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_1e_tebf0808:4.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_2i:3.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_2i:3.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_2i:3.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0808_9eg_2i_tebf0808:4.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0808_9eg_2i_tebf0808:4.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0808_9eg_2i_tebf0808:4.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_2cg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_2cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_2cg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_2eg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_2eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_2eg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_2eg_1e:2.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_2eg_1e:2.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_2eg_1e:2.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_3cg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_3cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_3cg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_3eg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_3eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_3eg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0820_4cg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0820_4cg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0820_4cg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:teb0911_9eg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:teb0911_9eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:teb0911_9eg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:tec0850_15eg_1e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:tec0850_15eg_1e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:tec0850_15eg_1e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'tul.com.tw:xilinx_board_store:pynqzu:1.1' ... INFO: [Common 17-1570] Installing object tul.com.tw:xilinx_board_store:pynqzu:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object tul.com.tw:xilinx_board_store:pynqzu:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0710_02_100_2c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0710_02_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0710_02_100_2c:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0710_02_100_2i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0710_02_100_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0710_02_100_2i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0710_02_35_2c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0710_02_35_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0710_02_35_2c:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0710_02_35_2i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0710_02_35_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0710_02_35_2i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0711_100_2c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0711_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0711_100_2c:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0711_100_2i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0711_100_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0711_100_2i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0711_35_2c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0711_35_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0711_35_2c:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0711_35_2i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0711_35_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0711_35_2i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0713_100_2c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0713_100_2c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,997 MB. GUI used memory: 180 MB. Current time: 4/1/25, 2:51:49 PM BST
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_1c:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_1c:1.1' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_1c:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_1c:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_1i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_1i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_1i:1.1' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_1i:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_1i:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_2i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_2i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_2i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_15_2i:1.1' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_15_2i:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_15_2i:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_1c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_1c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_1c:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_1c:1.1' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_1c:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_1c:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_1i:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_1i:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_1i:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_1i:1.1' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_1i:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_1i:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_3e:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_3e:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Tcl Message: INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_3e:1.0 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0715_30_3e:1.1' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0715_30_3e:1.1 from remote host https://github.com/Xilinx/XilinxBoardStore.git INFO: [Common 17-1573] Object trenz.biz:xilinx_board_store:te0715_30_3e:1.1 has been installed successfully. INFO: [xhubtcl 76-32] Installing object 'trenz.biz:xilinx_board_store:te0716_20_1c:1.0' ... INFO: [Common 17-1570] Installing object trenz.biz:xilinx_board_store:te0716_20_1c:1.0 from remote host https://github.com/Xilinx/XilinxBoardStore.git 
+// Elapsed time: 45 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// TclEventType: BOARD_CATALOG_MODIFIED
+// TclEventType: XHUB_XITEM_INSTALL
+// Tcl Message: xhub::install: Time (s): cpu = 00:00:04 ; elapsed = 00:00:46 . Memory (MB): peak = 8009.051 ; gain = 0.000 ; free physical = 406 ; free virtual = 18157 
+// Tcl Message: INFO: [Common 17-344] 'xhub::install' was cancelled 
+// Elapsed Time for: 'b.c': 45s
+dismissDialog("Tcl Command"); // bq
+// Tcl (Dont Echo) Command: 'rdi::info_commands {xhub::get_xitems*}'
+// Elapsed time: 19 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xhub::get_xitems", true); // h.b
+// Tcl Command: 'xhub::get_xitems'
+// Tcl Command: 'xhub::get_xitems'
+// Tcl Message: xhub::get_xitems 
+// Elapsed time: 16 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "report_property [lindex [xhub::get_xitems] 0]", true); // h.b
+// Tcl Command: 'report_property [lindex [xhub::get_xitems] 0]'
+// Tcl Command: 'report_property [lindex [xhub::get_xitems] 0]'
+// Tcl Message: report_property [lindex [xhub::get_xitems] 0] 
+// Elapsed time: 10 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "report_property [lindex [xhub::get_xitems] 1]", true); // h.b
+// Tcl Command: 'report_property [lindex [xhub::get_xitems] 1]'
+// Tcl Command: 'report_property [lindex [xhub::get_xitems] 1]'
+// Tcl Message: report_property [lindex [xhub::get_xitems] 1] 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xhub::install [xhub::get_xitems ]"); // h.b
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xhub::install [xhub::get_xitems zedboard]", true); // h.b
+// Tcl Command: 'xhub::install [xhub::get_xitems zedboard]'
+// Tcl Command: 'xhub::install [xhub::get_xitems zedboard]'
+// Tcl Message: xhub::install [xhub::get_xitems zedboard] 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xhub::install [xhub::get_xitems *zed*]", true); // h.b
+// Tcl Command: 'xhub::install [xhub::get_xitems *zed*]'
+// Tcl Command: 'xhub::install [xhub::get_xitems *zed*]'
+// TclEventType: XHUB_XITEM_INSTALL
+// Tcl Message: xhub::install [xhub::get_xitems *zed*] 
+// Tcl Message: INFO: [xhubtcl 76-61] The object 'em.avnet.com:xilinx_board_store:picozed_7010_fmc2:1.2' is already installed, to update use xhub::update command. INFO: [xhubtcl 76-61] The object 'em.avnet.com:xilinx_board_store:minized:1.2' is already installed, to update use xhub::update command. 
+// TclEventType: BOARD_CATALOG_MODIFIED
+// TclEventType: XHUB_XITEM_INSTALL
+dismissDialog("Tcl Command"); // bq
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 106, 306); // cD
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // cD
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xhub::get_xitems *zed*", true); // h.b
+// Tcl Command: 'xhub::get_xitems *zed*'
+// Tcl Command: 'xhub::get_xitems *zed*'
+// Tcl Message: xhub::get_xitems *zed* 
+// Tcl Message: em.avnet.com:xilinx_board_store:picozed_7010_fmc2:1.2 em.avnet.com:xilinx_board_store:minized:1.2 avnet.com:xilinx_board_store:zedboard:1.4 avnet.com:xilinx_board_store:microzed_7010:1.3 avnet.com:xilinx_board_store:microzed_7020:1.3 avnet.com:xilinx_board_store:minized:1.3 avnet.com:xilinx_board_store:picozed_7010_fmc2:1.3 avnet.com:xilinx_board_store:picozed_7015_fmc2:1.3 avnet.com:xilinx_board_store:picozed_7020_fmc2:1.3 avnet.com:xilinx_board_store:picozed_7030_fmc2:1.3 avnet.com:xilinx_board_store:ultrazed_3eg_iocc:1.2 avnet.com:xilinx_board_store:ultrazed_3eg_pciecc:1.3 avnet.com:xilinx_board_store:ultrazed_7ev_cc:1.5 digilentinc.com:xilinx_board_store:zedboard:1.0 
+// Elapsed time: 12 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 496, 127); // cD
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xhub::install [xhub::get_xitems *zedboard*]", true); // h.b
+// Tcl Command: 'xhub::install [xhub::get_xitems *zedboard*]'
+// Tcl Command: 'xhub::install [xhub::get_xitems *zedboard*]'
+// TclEventType: XHUB_XITEM_INSTALL
+// Tcl Message: xhub::install [xhub::get_xitems *zedboard*] 
+// Tcl Message: INFO: [xhubtcl 76-61] The object 'avnet.com:xilinx_board_store:zedboard:1.4' is already installed, to update use xhub::update command. INFO: [xhubtcl 76-61] The object 'digilentinc.com:xilinx_board_store:zedboard:1.0' is already installed, to update use xhub::update command. 
+// Elapsed time: 25 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 673, 324); // cD
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_param board.repoPaths [get_property LOCAL_ROOT_DIR [xhub::get_xstores xilinx_board_store]]", true); // h.b
+// Tcl Command: 'set_param board.repoPaths [get_property LOCAL_ROOT_DIR [xhub::get_xstores xilinx_board_store]]'
+// Tcl Command: 'set_param board.repoPaths [get_property LOCAL_ROOT_DIR [xhub::get_xstores xilinx_board_store]]'
+// Tcl Message: set_param board.repoPaths [get_property LOCAL_ROOT_DIR [xhub::get_xstores xilinx_board_store]] 
+// Tcl Message: /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store 
+// [GUI Memory]: 255 MB (+5157kb) [00:17:56]
+// Elapsed time: 1615 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 769, 133); // cD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,013 MB. GUI used memory: 160 MB. Current time: 4/1/25, 3:21:53 PM BST
+// Tcl (Dont Echo) Command: 'rdi::info_commands {ech*}'
+// Elapsed time: 579 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "echo LOCAL_ROOT_DIR", true); // h.b
+// Tcl Command: 'echo LOCAL_ROOT_DIR'
+// Tcl Command: 'echo LOCAL_ROOT_DIR'
+// Tcl Message: echo LOCAL_ROOT_DIR 
+// Tcl Message: LOCAL_ROOT_DIR 
+// Tcl (Dont Echo) Command: 'rdi::info_commands {ech*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {echo*}'
+// Elapsed time: 15 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "echo $LOCAL_ROOT_DIR", true); // h.b
+// Tcl Command: 'echo $LOCAL_ROOT_DIR'
+// Tcl Command: 'echo $LOCAL_ROOT_DIR'
+// Tcl Message: echo $LOCAL_ROOT_DIR 
+// Tcl Message: can't read "LOCAL_ROOT_DIR": no such variable 
+// Tcl (Dont Echo) Command: 'rdi::info_commands {LOCAL*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {LOCAL_*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {LOCAL_RO*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {LOCAL_ROOT_D*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {LOCAL_ROOT_DR*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {LOCAL_ROOT_D*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {LOCAL_ROOT_DIR*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "LOCAL_ROOT_DIR", true); // h.b
+// Tcl Command: 'LOCAL_ROOT_DIR'
+// Tcl Command: 'LOCAL_ROOT_DIR'
+// Tcl Message: LOCAL_ROOT_DIR 
+// Tcl Message: invalid command name "LOCAL_ROOT_DIR" 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 858, 243); // cD
+// Elapsed time: 19 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenuItem(PAResourceCommand.PACommandNames_VIVADO_STORE, "Vivado Store..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: PAResourceCommand.PACommandNames_VIVADO_STORE
+selectTreeTable(PAResourceTtoZ.XhubStoreListTab_TREE_TABLE, "Microzed 7010", 5, "Microzed 7010", 0, false); // O
+selectTreeTable(PAResourceTtoZ.XhubStoreListTab_TREE_TABLE, "UltraZed-EG SOM + IO Carrier", 12, "UltraZed-EG SOM + IO Carrier", 0, false); // O
+selectTreeTable(PAResourceTtoZ.XhubStoreListTab_TREE_TABLE, "ZedBoard Zynq Evaluation and Development Kit", 15, "ZedBoard Zynq Evaluation and Development Kit", 0, false); // O
+selectTreeTable(PAResourceTtoZ.XhubStoreListTab_TREE_TABLE, "ZedBoard Zynq Evaluation and Development Kit", 15, "ZedBoard Zynq Evaluation and Development Kit", 0, false, false, false, false, true, false); // O - Popup Trigger
+selectTreeTable(PAResourceTtoZ.XhubStoreListTab_TREE_TABLE, "ZedBoard Zynq Evaluation and Development Kit", 15, "ZedBoard Zynq Evaluation and Development Kit", 0, false); // O
+selectTreeTable(PAResourceTtoZ.XhubStoreListTab_TREE_TABLE, "Avnet", 3, "Avnet", 0, true); // O - Node
+selectTreeTable(PAResourceTtoZ.XhubStoreListTab_TREE_TABLE, "Evaluation Boards", 4, "Evaluation Boards", 0, true); // O - Node
+selectTab((HResource) null, (HResource) null, "Example Designs", 2); // g
+selectTab((HResource) null, (HResource) null, "Boards", 1); // g
+selectTab((HResource) null, (HResource) null, "Tcl Apps", 0); // g
+selectTab((HResource) null, (HResource) null, "Boards", 1); // g
+selectButton(RDIResource.QuickHelp_HELP, (String) null); // u
+// HMemoryUtils.trashcanNow. Engine heap size: 2,072 MB. GUI used memory: 155 MB. Current time: 4/1/25, 3:32:08 PM BST
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // j
+dismissDialog("Vivado Store"); // af
+// [GUI Memory]: 268 MB (+866kb) [00:44:12]
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // f
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 7); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 7, true); // s - Node
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store]", 2, true); // s - Node
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store]", 2); // s
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store", 0); // r
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store", 0); // r
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store", 0, false, false, false, false, true); // r - Double Click
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store", 0, false, false, false, true, false); // r - Popup Trigger
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store", 0); // r
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store", 0, false, false, false, true, false); // r - Popup Trigger
+selectMenuItem((HResource) null, "Copy"); // ao
+// Elapsed time: 36 seconds
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store", 0); // r
+// Elapsed time: 33 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 330, 279); // cD
+// Tcl (Dont Echo) Command: 'rdi::info_commands {get*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {get_board*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {get_board_*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {get_board_pa*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {get_board_pat*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts", true); // h.b
+// Tcl Command: 'get_board_parts'
+// Tcl Command: 'get_board_parts'
+// Tcl Message: get_board_parts 
+// Tcl (Dont Echo) Command: 'rdi::info_commands {get*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {get_boar*}'
+// Elapsed time: 24 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zed*", true); // h.b
+// Tcl Command: 'get_board_parts *zed*'
+// Tcl Command: 'get_board_parts *zed*'
+// Tcl Message: get_board_parts *zed* 
+// Tcl Message: avnet.com:microzed_7010:part0:1.3 avnet.com:microzed_7020:part0:1.3 avnet.com:minized:part0:1.2 avnet.com:minized:part0:1.3 avnet.com:picozed_7010_fmc2:part0:1.2 avnet.com:picozed_7010_fmc2:part0:1.3 avnet.com:picozed_7015_fmc2:part0:1.3 avnet.com:picozed_7020_fmc2:part0:1.3 avnet.com:picozed_7030_fmc2:part0:1.3 avnet.com:zedboard:part0:1.4 digilentinc.com:zedboard:part0:1.0 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts zed", true); // h.b
+// Tcl Command: 'get_board_parts zed'
+// Tcl Command: 'get_board_parts zed'
+// Tcl Message: get_board_parts zed 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zed"); // h.b
+// Elapsed time: 14 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zed:part0:1.0", true); // h.b
+// Tcl Command: 'get_board_parts *zed:part0:1.0'
+// Tcl Command: 'get_board_parts *zed:part0:1.0'
+// Tcl Message: get_board_parts *zed:part0:1.0 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zed:part0:1.0*", true); // h.b
+// Tcl Command: 'get_board_parts *zed:part0:1.0*'
+// Tcl Command: 'get_board_parts *zed:part0:1.0*'
+// Tcl Message: get_board_parts *zed:part0:1.0* 
+// [Engine Memory]: 2,039 MB (+18kb) [00:46:40]
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zed:*", true); // h.b
+// Tcl Command: 'get_board_parts *zed:*'
+// Tcl Command: 'get_board_parts *zed:*'
+// Tcl Message: get_board_parts *zed:* 
+// Tcl Message: avnet.com:minized:part0:1.2 avnet.com:minized:part0:1.3 
+// Elapsed time: 80 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zedboard*", true); // h.b
+// Tcl Command: 'get_board_parts *zedboard*'
+// Tcl Command: 'get_board_parts *zedboard*'
+// Tcl Message: get_board_parts *zedboard* 
+// Tcl Message: avnet.com:zedboard:part0:1.4 digilentinc.com:zedboard:part0:1.0 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 300, 343); // cD
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 203, 336); // cD
+// Elapsed time: 275 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 8, false); // s
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Settings"); // d
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // f
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 9, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store]", 2, true); // s - Node
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s
+dismissDialog("Settings"); // d
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 812, 175); // cD
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zedboard*", true); // h.b
+// Tcl Command: 'get_board_parts *zedboard*'
+// Tcl Command: 'get_board_parts *zedboard*'
+// Tcl Message: get_board_parts *zedboard* 
+// Tcl Message: avnet.com:zedboard:part0:1.4 digilentinc.com:zedboard:part0:1.0 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_param board.repoPaths [get_property LOCAL_ROOT_DIR [xhub::get_xstores xilinx_board_store]]", true); // h.b
+// Tcl Command: 'set_param board.repoPaths [get_property LOCAL_ROOT_DIR [xhub::get_xstores xilinx_board_store]]'
+// Tcl Command: 'set_param board.repoPaths [get_property LOCAL_ROOT_DIR [xhub::get_xstores xilinx_board_store]]'
+// Tcl Message: set_param board.repoPaths [get_property LOCAL_ROOT_DIR [xhub::get_xstores xilinx_board_store]] 
+// Tcl Message: /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zedboard*", true); // h.b
+// Tcl Command: 'get_board_parts *zedboard*'
+// Tcl Command: 'get_board_parts *zedboard*'
+// Tcl Message: get_board_parts *zedboard* 
+// Tcl Message: avnet.com:zedboard:part0:1.4 digilentinc.com:zedboard:part0:1.0 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zed*", true); // h.b
+// Tcl Command: 'get_board_parts *zed*'
+// Tcl Command: 'get_board_parts *zed*'
+// Tcl Message: get_board_parts *zed* 
+// Tcl Message: avnet.com:microzed_7010:part0:1.3 avnet.com:microzed_7020:part0:1.3 avnet.com:minized:part0:1.2 avnet.com:minized:part0:1.3 avnet.com:picozed_7010_fmc2:part0:1.2 avnet.com:picozed_7010_fmc2:part0:1.3 avnet.com:picozed_7015_fmc2:part0:1.3 avnet.com:picozed_7020_fmc2:part0:1.3 avnet.com:picozed_7030_fmc2:part0:1.3 avnet.com:zedboard:part0:1.4 digilentinc.com:zedboard:part0:1.0 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zed:*", true); // h.b
+// Tcl Command: 'get_board_parts *zed:*'
+// Tcl Command: 'get_board_parts *zed:*'
+// Tcl Message: get_board_parts *zed:* 
+// Tcl Message: avnet.com:minized:part0:1.2 avnet.com:minized:part0:1.3 
+// Elapsed time: 11 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zed*0.1.0", true); // h.b
+// Tcl Command: 'get_board_parts *zed*0.1.0'
+// Tcl Command: 'get_board_parts *zed*0.1.0'
+// Tcl Message: get_board_parts *zed*0.1.0 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts 0.1.0", true); // h.b
+// Tcl Command: 'get_board_parts 0.1.0'
+// Tcl Command: 'get_board_parts 0.1.0'
+// Tcl Message: get_board_parts 0.1.0 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *0.1.0", true); // h.b
+// Tcl Command: 'get_board_parts *0.1.0'
+// Tcl Command: 'get_board_parts *0.1.0'
+// Tcl Message: get_board_parts *0.1.0 
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // h.b
+typeControlKey(null, null, 'z');
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts *zed*0.1.0*", true); // h.b
+// Tcl Command: 'get_board_parts *zed*0.1.0*'
+// Tcl Command: 'get_board_parts *zed*0.1.0*'
+// Tcl Message: get_board_parts *zed*0.1.0* 
+// Elapsed time: 21 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]", true); // h.b
+// Tcl Command: 'xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]'
+// Tcl Command: 'xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]'
+// TclEventType: XHUB_XSTORE_DIR_CHANGE
+// TclEventType: XHUB_XSTORE_REFRESH
+// Tcl Message: xhub::refresh_catalog [xhub::get_xstores xilinx_board_store] 
+// TclEventType: XHUB_XSTORE_REFRESH
+// Tcl Message: xhub::refresh_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 8084.184 ; gain = 0.000 ; free physical = 221 ; free virtual = 16700 
+// [Engine Memory]: 2,278 MB (+143868kb) [00:54:35]
+// Elapsed Time for: 'b.c': 23s
+// Elapsed time: 23 seconds
+dismissDialog("Tcl Command"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 2,287 MB. GUI used memory: 167 MB. Current time: 4/1/25, 3:42:48 PM BST
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // al
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // al
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ag
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // f
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // s
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // r
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zed"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; Zedboard ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 8, "Zedboard", 0, false); // l
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; Zedboard ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 8, "Zedboard", 0, false); // l
+openHTML ("https://reference.digilentinc.com/reference/programmable-logic/zedboard/start");l
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; Zedboard ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 8, "Zedboard", 0, false); // l
+openHTML ("https://reference.digilentinc.com/reference/programmable-logic/zedboard/start");l
+expandTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; Zedboard ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 8); // l
+openHTML ("https://reference.digilentinc.com/reference/programmable-logic/zedboard/start");l
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "ZedBoard Zynq Evaluation and Development Kit ; ZedBoard Zynq Evaluation and Development Kit ; avnet.com ; 1.4 ; ZedBoard Zynq Evaluation and Development Kit ; 484 ; d ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 7, "ZedBoard Zynq Evaluation and Development Kit", 0, false); // l
+selectTable(PAResourceOtoP.PartUtils_ADD_CHANGE_AND_REMOVE_BOARD_CONNECTIONS, "FMC_LPC ; ", 0, (String) null, 1); // p
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Manage Board Connections"); // h.a
+dismissDialog("Select Device"); // c
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store]", 2, true); // s - Node
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Example Project Repository]", 4, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s
+// Elapsed time: 33 seconds
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store", 0); // r
+selectButton(PAResourceItoN.MultiFileChooser_ADD_DIRECTORIES, "Add Directories"); // B
+// Elapsed time: 13 seconds
+setFolderChooser("/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/board-def");
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a
+// Tcl Message: set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/board-def} 
+dismissDialog("Set Example Project Repository Paths"); // bq
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Settings"); // d
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // f
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 7, true); // s - Node
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 8, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 8, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 9, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // s
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // r
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g
+// [GUI Memory]: 287 MB (+5674kb) [00:56:51]
+// Elapsed time: 16 seconds
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zedboard"); // OverlayTextField
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Parts", 0); // g
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Select Device"); // c
+// Elapsed time: 90 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 8, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 9, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 8, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 7, true); // s - Node
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Example Project Repository]", 4, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/board-def", 1); // r
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B
+selectButton(PAResourceItoN.MultiFileChooser_ADD_DIRECTORIES, "Add Directories"); // B
+// Elapsed time: 13 seconds
+setFolderChooser("/home/daniel/Vivado-Files/Board-Repo");
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a
+// Tcl Message: set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo} 
+dismissDialog("Set Example Project Repository Paths"); // bq
+// Elapsed time: 22 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}", true); // h.b
+// Tcl Command: 'set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}'
+// Tcl Command: 'set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}'
+// Tcl Message: set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo} 
+// Tcl Message: /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 3, 322); // cD
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // cD
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}", true); // h.b
+// Tcl Command: 'set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}'
+// Tcl Command: 'set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}'
+// Tcl Message: set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo} 
+// Tcl Message: /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 792, 357); // cD
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 789, 333); // cD
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // s
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // r
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zedb"); // OverlayTextField
+// Elapsed time: 54 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Select Device"); // c
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}", true); // h.b
+// Tcl Command: 'set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}'
+// Tcl Command: 'set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo}'
+// Tcl Message: set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo} 
+// Tcl Message: /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo 
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // s
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // r
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zedb"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "ZedBoard Zynq Evaluation and Development Kit ; ZedBoard Zynq Evaluation and Development Kit ; avnet.com ; 1.4 ; ZedBoard Zynq Evaluation and Development Kit ; 484 ; d ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "ZedBoard Zynq Evaluation and Development Kit", 0, false); // l
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Select Device"); // c
+// Elapsed time: 22 seconds
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // r
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zed"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; Zedboard ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 8, "Zedboard", 0, false); // l
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; Zedboard ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 8, "digilentinc.com", 2, false); // l
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; Zedboard ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 8, "digilentinc.com", 2, false); // l
+expandTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; Zedboard ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 8); // l
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; digilentinc.com ; 1.0 ; Zedboard ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 8, "digilentinc.com", 2, false, false, false, false, false, true); // l - Double Click
+dismissDialog("Select Device"); // c
+// Elapsed time: 58 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 7, true); // s - Node
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 8, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Packager]", 9, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/Vivado-Files/Board-Repo", 1); // r
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B
+selectButton(PAResourceItoN.MultiFileChooser_ADD_DIRECTORIES, "Add Directories"); // B
+setFolderChooser("/home/daniel/Vivado-Files/Board-Repo");
+selectList(RDIResource.HListPanel_CHOOSER_LIST, "/home/daniel/Vivado-Files/Board-Repo", 1); // r
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // B
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a
+// Tcl Message: set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store} 
+dismissDialog("Set Example Project Repository Paths"); // bq
+selectButton(PAResourceItoN.MultiFileChooser_ADD_DIRECTORIES, "Add Directories"); // B
+setFolderChooser("/home/daniel/Vivado-Files/Board-Repo");
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a
+// Tcl Message: set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo} 
+dismissDialog("Set Example Project Repository Paths"); // bq
+// [Engine Memory]: 2,559 MB (+175574kb) [01:03:10]
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 7, true); // s - Node
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 8, false); // s
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, General]", 0, false); // s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,561 MB. GUI used memory: 169 MB. Current time: 4/1/25, 3:51:23 PM BST
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // r
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g
+// Elapsed time: 14 seconds
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zedboard"); // OverlayTextField
+selectButton(PAResourceAtoD.BoardChooser_RESET_ALL_FILTERS, "Reset All Filters"); // g
+// Elapsed time: 27 seconds
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zedboard"); // OverlayTextField
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Select Device"); // c
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Settings"); // d
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_param board.repoPaths", true); // h.b
+// Tcl Command: 'get_param board.repoPaths'
+// Tcl Command: 'get_param board.repoPaths'
+// Tcl Message: get_param board.repoPaths 
+// Tcl Message: /home/daniel/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store /home/daniel/Vivado-Files/Board-Repo 
+// Elapsed time: 14 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_DESIGN_TOOLS, "Add Design Tools or Devices..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ag
+// Run Command: PAResourceCommand.PACommandNames_ADD_DESIGN_TOOLS
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ag
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_DESIGN_TOOLS, "Add Design Tools or Devices..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ag
+// Run Command: PAResourceCommand.PACommandNames_ADD_DESIGN_TOOLS
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // al
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_DESIGN_TOOLS, "Add Design Tools or Devices..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // ag
+// Run Command: PAResourceCommand.PACommandNames_ADD_DESIGN_TOOLS
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: BOARD_CATALOG_MODIFIED
+selectButton("NEXT", "Next >"); // JButton
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "zedb"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Zedboard ; Zedboard ; Zedboard ; em.avnet.com ; 1.0 ; Zedboard ; 484 ; D.3 ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 2, "Zedboard", 0, false); // l
+// 'g' command handler elapsed time: 32 seconds
+dismissDialog("New Project"); // f
+// HMemoryUtils.trashcanNow. Engine heap size: 2,530 MB. GUI used memory: 155 MB. Current time: 4/1/25, 4:21:23 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,475 MB. GUI used memory: 153 MB. Current time: 4/1/25, 4:51:23 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,454 MB. GUI used memory: 151 MB. Current time: 4/1/25, 5:21:23 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,448 MB. GUI used memory: 152 MB. Current time: 4/1/25, 5:51:23 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,448 MB. GUI used memory: 151 MB. Current time: 4/1/25, 6:21:23 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,442 MB. GUI used memory: 152 MB. Current time: 4/1/25, 6:51:24 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,442 MB. GUI used memory: 151 MB. Current time: 4/1/25, 7:21:24 PM BST

@@ -260,7 +260,7 @@ ETSI released an extension to the original DVB-S2 standard called DVB-S2X, this 
 // TODO: Write paragraph about this
 #subpar.grid(
   columns: (1fr),
-  caption: [DVB-S2 Frame Structures. (a) Shows a BBFRAME, where $K_"BCH"$ is the input data size to the #acr("FEC") system. (b) Shows a FECFRAME before scrambling. (c) Shows a PLFRAME, where the header is transmitted using $pi/2$ BPSK and data transmitted in groups of 16 slots, followed by an optional 36 symbol pilot block.],
+  caption: [DVB-S2 Frame Structures. (a) Shows a BBFRAME, where $K_"BCH"$ is the input data size to the #acr("FEC") system. (b) Shows a FECFRAME before scrambling. (c) Shows a PLFRAME, where the header is transmitted using $pi/2$ BPSK modulation and data transmitted in groups of 16 slots, followed by an optional 36 symbol pilot block.],
   label: <DVB-S2-Frame-Structure>,
   figure(
     image("../Figures/Lit-Review/DVB-S2/BBFRAME.svg"),

@@ -33,7 +33,9 @@ This contributed to a complete overhaul of all #acr("TT&C") requirements to be m
   caption: "Relevant system and TT&C requirements for downlink communications"
 ) <System-Requirements>
 
-There also exist data handling requirements, although this is an area that needs substantially more work at this time, so are currently vague.
+There also exist data handling requirements, although this is an area that needs substantially more work at this time, so are currently vague and provided little impact to the implementation.
+
+
 
 Derived from the design are some further interface requirements.
 

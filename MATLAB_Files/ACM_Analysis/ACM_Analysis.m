@@ -254,3 +254,41 @@ ylabel("Throughput (bits)")
 
 
 hold off
+
+figure
+hold on 
+for alt_it = 2:length(altitude_sat)
+    CNR_vals = opt_modcod_tab(opt_modcod_tab.Altitude == altitude_sat(alt_it),:);
+
+    yyaxis left
+    plot(CNR_vals.Elevation,CNR_vals.Optimal_MODCOD, ...
+        "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
+
+    yyaxis right
+    plot(CNR_vals.Elevation,CNR_vals.Optimal_Bitrate_bps/1e3, ...
+        "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
+end
+
+xlabel("Elevation Angle (Degrees)")
+yyaxis left
+ylabel("Modulation and Coding Rate")
+yyaxis right
+ylabel("Maximum Bitrate (kilobits/sec)")
+title("Elevation vs Optimal MODCOD")
+hold off
+
+figure 
+hold on 
+bar(time_modcod_tab.Elevation',time_modcod_tab.Elevation_Time')
+title("Elevation vs Time Spent at Elevation")
+xlabel("Elevation (degrees)")
+ylabel("Time spent at Elevation (s)")
+hold off 
+
+figure 
+hold on 
+bar(["Adaptive","Fixed"],[bits_sent_ACM,bits_sent_fixed])
+title("Adaptive vs Fixed Throughput")
+xlabel("Strategy")
+ylabel("Throughput (bits)")
+hold off
