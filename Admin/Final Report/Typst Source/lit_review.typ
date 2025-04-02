@@ -277,17 +277,39 @@ ETSI released an extension to the original DVB-S2 standard called DVB-S2X, this 
   
 )
 
+// TODO: cite  
+In TODO:, an SDR-based communication system operating in the 915 MHz UHF band and utilizing ACM is described. The system employed modulation techniques similar to DVB-S2 but implemented a different coding scheme. Their analysis demonstrated nearly double the throughput compared to CCM, confirming the feasibility and significant performance advantages of ACM systems for CubeSats.
+
 
 
 == CCSDS
 = Interference
 
 //TODO: Serpens interference ref
-Interference is particularly prevalent in the UHF amateur band. In @quintana-diaz_detection_2022
+Interference is particularly prevalent in the UHF amateur band. In @quintana-diaz_detection_2022 interference power in the UHF was measured using the Serpens satellite over time. Sustained interference power of over -70dBm was measured, with particularly high levels measured over Europe, as shown in @interference-heatmap and @interference-pass. This issue is more relevant for uplink communications, as ground stations can use highly directional antennas to reduce the impact of terrestrial interference, however during low elevation passes this will impact the downlink communications as well.
+
+#subpar.grid(
+  columns: (1fr),
+  caption: [Interference Analysis],
+  label: <Interference-Analysis>,
+  figure(
+    image("../Figures/Lit-Review/Interference/interference-heatmap.png",height:25%),
+    caption: "Interference power heatmap."
+  ), <interference-heatmap>,
+  figure(
+    image("../Figures/Lit-Review/Interference/UK-Pass.png",height:40%),
+    caption: "Interference power over time during a pass over Europe."
+  ), <interference-pass>
+)
 
 
 // TODO: DVB-S2 Notch filter Paper
-In @same_effects_2020 the effect of narrowband continuous wave interference was investigated for DVB-S2 QPSK communications and an adaptive notch filter designed. 
+To reduce the impact of this interference, advanced filtering could be used. In @same_effects_2020 the effect of narrowband continuous wave interference was investigated for DVB-S2 QPSK communications and an adaptive notch filter designed. 
 @Interference-Filter-Results @same_effects_2020[Fig. 27] shows the effect on BER of a Jamming to Signal Ratio (JSR) of just -6dB. Without filtering, and at low Eb/N0 values, 
 the recovery is significantly degraded however the filter is able to improve performance to close to that of the theoretical peak.
 The paper also notes that the filter could reduce performance in certain scenarios.
+
+#figure(
+  image("../Figures/Link-Budget/DVB-S2_Interference.png",width:50%),
+  caption: "Impact of interference on DVB-S2 QPSK signal reception."
+) <Interference-Filter-Results>

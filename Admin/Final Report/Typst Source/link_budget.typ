@@ -143,7 +143,7 @@ Values for spectral efficiency and minimum $E_s / N_0$ are provided in @etsi_en_
 
 Interference, demodulation and phase noise effects are still to be analysed, which will reduce the calculated link margin. For this reason a margin target of 10dB was selected.
 
-Additionally, it was assumed that perfect filtering is in place and thus that the total system spectral efficiency is equal to that of the theoretical value for the modulation and coding rate. With that assumption, @ESN0_2_CNR and @spect_eff_2_cap were used to create @modcod_reqs_150khz.
+Additionally, it was assumed that ideal matched filtering is in place and thus that the total system spectral efficiency is equal to that of the theoretical value for the modulation and coding rate. With that assumption, @ESN0_2_CNR and @spect_eff_2_cap were used to create @modcod_reqs_150khz.
 
 $ E_s / N_0 = C / N ["dB"] $ <ESN0_2_CNR>
 $ "Capacity" = #sym.eta times B ["bps"] $ <spect_eff_2_cap>
@@ -237,10 +237,5 @@ transmitter system. As such, there has been comparatively less investigation of 
 reliance on numbers derived from the AcubeSAT link budget. There are multiple key challenges for implementing a DVB-S2 receiver,
 the largest issue being interference, which can be prevalent on the planned UHF band @quintana-diaz_detection_2022, another being carrier synchronisation and
 phase correction.
-
-#figure(
-  image("../Figures/Link-Budget/DVB-S2_Interference.png",width:auto),
-  caption: "Impact of interference on DVB-S2 QPSK signal reception."
-) <Interference-Filter-Results>
 
 // TODO: Work Package citation?

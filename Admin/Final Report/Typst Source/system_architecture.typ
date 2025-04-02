@@ -9,7 +9,7 @@
 
 In order to work effectively in a large project structure, a review of system requirements was conducted with close collaboration with system engineers on the team.
 
-This contributed to a complete overhaul of all #acr("TT&C") requirements to be more relevant to actual operations, for submission as part of the ESA Baseline Design Review. The relevant requirements are shown in @System-Requirements.
+This contributed to a complete overhaul of all #acr("TT&C") requirements to be more relevant to actual operations, for submission as part of the ESA Baseline Design Review. The relevant requirements are shown in @TTC-Reqs. Many numbers here are #acr("TBC") as the mission parameters are being fully analysed.
 
 #figure(
   table(
@@ -30,14 +30,43 @@ This contributed to a complete overhaul of all #acr("TT&C") requirements to be m
     [TTC-021],  [During ground communication windows, the primary communications system shall have a minimum link margin of 3dB.],
     
   ),
-  caption: "Relevant system and TT&C requirements for downlink communications"
-) <System-Requirements>
+  caption: "Relevant system and TT&C requirements for downlink communications."
+) <TTC-Reqs>
 
-There also exist data handling requirements, although this is an area that needs substantially more work at this time, so are currently vague and provided little impact to the implementation.
+There also exist data handling requirements, however this is an area that required significant work at time of writing and provided little impact for the project. The most relevant of which are shown in @Data-handling-reqs.
 
+//TODO: review obsw reqs, make sure all relevant ones are met.
+#figure(
+  table(
+    columns: 2,
+    inset: 6pt,
+    align: (horizon,left), 
+    table.header(
+      [*Code*],[*Description*],
+    ),
+    [ODH-039],[The OBC shall support standardised protocols such as CAN/UART/I2C.],
+    [ODH-040],[The OBSW shall produce PPL data packets that include timestamp, I/Q, position, and attitude.],
+  ),
+  caption: "Relevant data handling requirements.",
+) <Data-handling-reqs>
 
+From these requirements, rough design objectives were derived for the downlink communication system.
 
-Derived from the design are some further interface requirements.
+// TODO: formatting on numbers
+// TODO: Embetter
+// TODO: Justification
++ The system shall support packet input from all interfaces present on the TOTEM SDR
++ The system should maximise datarate while conforming to #acr("BER") requirements.
+  + The system shall support modification of modulation and coding rate through #acr("ACM") or #acr("VCM").
+  + Efficiency shall be prioritised. The design should use minimal padding and seek to reduce overheads.
++ The system should be reliable
+  + The system shall be designed for testability.
+    + Large pieces of logic shall be broken up into smaller systems that can be unit tested.
+    + Assertions shall be used regularly throughout code and block designs.
+  + The system shall be tested thoroughly using simulation to verify operation.
++ The downlink subsystem and PBR system should fit on the PL at the same time. // Regular reconfiguration is complex. If code gets corrupted, could be major issues!
+  + The downlink system should use no more than 50% of any one resource type.
++ The downlink subsystem shall be capable of transmitting packets that are over 64kB large.
 
 
 
@@ -49,9 +78,49 @@ Derived from the design are some further interface requirements.
 // XTCE Schemas / CCSDS Packet Library
 The packets onboard STRATHcube can be grouped into two distinct types: Telemetry, those that are required for the continued functioning of the spacecraft, such as information regarding battery state or the orientation of the craft. The second being payload packets, such as the measured IQ signals during an observation period.
 
-Of the two types, telemetry has 
+Of the two types, telemetry packets are more important and make up a much smaller proportion of total data sent.
+
+Telemetry packets are to be compressed using the POCKET or POCKET+ algorithm. This may occur on the SDR, but is more likely to be done in advance on the #acr("OBC").
 
 // non-exhaustive list of packet types and grouping
+
+//TODO: Reference OPS-SAT FAPEC re chunk size
+The spectrum data recorded by the PBR will be compressed using the FAPEC algorithm, which outputs data in "chunks". These chunks typically have a fixed size, which could be from 4kB to 384 MB and give the minimum size of the packet. The maximum #acr("DFL") for DVB-S2 is 58,112 bits, or 7264 Bytes, and only possible when using the highest modulation and coding rates, which are not expected to be feasible for much of the mission. Therefore, a mechanism for fragmenting these packets across multiple frames is required.
+
+#acr("GSE") will be used for this purpose, as it is specifically designed for DVB-S2 transmission. A #acr("GSE") packet has the following structure:
+
+#figure(
+  image("../Figures/System-Architecture/GSE_Structure.drawio.svg"),
+  caption:"GSE packet structure. The header is composed of two sections, the first is fixed, and the second has content determined by those fixed flags. This is followed by the data field, with the final part being a CRC32 checksum to detect reconstruction errors."
+) <GSE_Structure>
+
+#subpar.grid(
+  columns: (1fr,1fr),
+  caption: [GSE header fields. The fixed header is 16 bits long, while the variable header can be from 0 to 11 Bytes.],
+  label: <gse_header_Structure>,
+  
+  figure(
+    image("../Figures/System-Architecture/GSE_Fixed_Header.svg"),
+    caption: "Fixed"
+  ),  <gse_fixed>,
+  figure(
+    image("../Figures/System-Architecture/GSE_Variable_Header.svg"),
+    caption: "Variable"
+  ), <gse_variable>,
+  
+)
+
+There are four key parts of the header for this application.
+
++ *Label Type*: Indicates the length or existence of the label field. Can also indicate if a label is to repeated from the previous GSE packet.
++ *Label*: Typically used to indicate addresses for networking. Optional.
++ *Total Length*: Total length of #acr("PDU") before fragmentation in bits. Maximum of 65536 Bytes.
++ *GSE Length*: Length of GSE packet in bits. Maximum of 4096 Bytes.
+
+For this application, the label field is unnecessary, as the source and destination of packets is always known. This also means that the label type field could be omitted, saving two further bits per GSE packet at the expense of standard compliance.
+
+
+
 
 = Transmitter
 // Continuous stream vs generic stream etc,

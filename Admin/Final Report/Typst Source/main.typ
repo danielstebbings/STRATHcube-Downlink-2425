@@ -63,6 +63,8 @@
   "TT&C": "Telemetry, Tracking and Command",
   "CCM" : "Constant Coding and Modulation",
   "EDHPC": ("European Data Handling & Data Processing Conference"),
+  "TBC": "To Be Confirmed",
+  "OBC": "On Board Computer",
 ))
 
 
@@ -155,9 +157,6 @@ To mitigate these issues, many satellites requiring high data throughput modify 
 
 Although #acr("ACM")/#acr("VCM") has a high performance improvement, there are few examples of satellites using these systems in the #acr("UHF") band, due to the high complexity required and the fact that high rate communications are typically conducted in the S band. For this reason, any implementations must be created using #acr("SDR") which increase cost.
 
-// TODO: cite  
-In TODO:, an SDR-based communication system operating in the 915 MHz UHF band and utilizing ACM is described. The system employed modulation techniques similar to DVB-S2 but implemented a different coding scheme. Their analysis demonstrated nearly double the throughput compared to CCM, confirming the feasibility and significant performance advantages of ACM systems for CubeSats.
-
 == STRATHcube
 === Mission Overview
 STRATHcube is a student-led 2U CubeSat mission developed at the University of Strathclyde as part of the European Space Agency's #acr("ESA") Fly Your Satellite! and Design Booster programs. The mission addresses critical aspects of space sustainability through two distinct payloads.
@@ -194,7 +193,7 @@ The project aimed to advance the design of the downlink communications system fo
 
 Given the complexity of the STRATHcube mission, the project scope was deliberately constrained to ensure feasibility. The focus was solely on downlink communications, deferring uplink system design for future work. Further, implementation on hardware was reserved as an optional stretch goal.
 
-To maintain flexibility for later development, the implementation was designed to be modular, preventing unnecessary constraints on subsequent phases. This approach ensured that progress could be made efficiently while laying a strong foundation for future enhancements.
+To maintain flexibility for later development, the implementation was designed to be modular, preventing unnecessary constraints on subsequent development. This approach ensured that progress could be made efficiently while laying a strong foundation for future enhancements.
 
 = Literature Review
 

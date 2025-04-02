@@ -719,3 +719,22 @@ dismissDialog("New Project"); // f
 // HMemoryUtils.trashcanNow. Engine heap size: 2,448 MB. GUI used memory: 151 MB. Current time: 4/1/25, 6:21:23 PM BST
 // HMemoryUtils.trashcanNow. Engine heap size: 2,442 MB. GUI used memory: 152 MB. Current time: 4/1/25, 6:51:24 PM BST
 // HMemoryUtils.trashcanNow. Engine heap size: 2,442 MB. GUI used memory: 151 MB. Current time: 4/1/25, 7:21:24 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,442 MB. GUI used memory: 151 MB. Current time: 4/1/25, 7:51:24 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,442 MB. GUI used memory: 138 MB. Current time: 4/1/25, 8:21:24 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  259013 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,415 MB. GUI used memory: 151 MB. Current time: 4/1/25, 8:51:26 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,415 MB. GUI used memory: 151 MB. Current time: 4/1/25, 9:21:26 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  1932992 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,415 MB. GUI used memory: 222 MB. Current time: 4/1/25, 10:02:13 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,415 MB. GUI used memory: 150 MB. Current time: 4/1/25, 10:32:14 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,415 MB. GUI used memory: 149 MB. Current time: 4/1/25, 11:02:14 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,415 MB. GUI used memory: 149 MB. Current time: 4/1/25, 11:32:14 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,415 MB. GUI used memory: 149 MB. Current time: 4/2/25, 12:02:14 AM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  1685774 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,425 MB. GUI used memory: 167 MB. Current time: 4/2/25, 12:54:04 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,423 MB. GUI used memory: 165 MB. Current time: 4/2/25, 1:24:04 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,423 MB. GUI used memory: 166 MB. Current time: 4/2/25, 1:54:04 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,423 MB. GUI used memory: 165 MB. Current time: 4/2/25, 2:24:04 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,423 MB. GUI used memory: 165 MB. Current time: 4/2/25, 2:54:04 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,423 MB. GUI used memory: 165 MB. Current time: 4/2/25, 3:24:05 AM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,423 MB. GUI used memory: 166 MB. Current time: 4/2/25, 3:54:05 AM BST

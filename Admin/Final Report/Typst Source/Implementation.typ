@@ -31,8 +31,36 @@ There were multiple options for implementation of the #acr("DVB-S2") subsytem.
 + Vitis Model Composer or System Generator
 
 == DVB-S2 Modulation
+=== Bandwidth and Symbol Rate
+The single sided bandwidth of a modulated DVB-S2 signal is a function of the symbol rate, $R_s$, and the roll-off factor, #sym.alpha, of the root raised cosine filter as shown in @bandwidth. This can be rearrange to find the highest symbol rate for a given bandwidth, as shown in @symbolrate.
+
+$ B_"single" = f_N (1+ #sym.alpha) \
+ "Where" f_N = R_s /2 $ <bandwidth>
+
+$ R_s =  (B_"double") / (1+ #sym.alpha) \
+ "Where" B_"double" = 2B_"single" $ <symbolrate>
+
+The standard allows for a roll-off factor of 0.35, 0.25 or 0.20. For the target bandwidth of 150 kHz, this gives the theoretical maximum symbol rates shown in @roll-off2Rs.
+
+#figure(
+  table(
+    columns:2,
+    align:(center,center),
+    table.header(
+      [*#sym.alpha*],[*$R_S$ (Symbols / sec)*]
+    ),
+    [0.35],[111,111],
+    [0.25],[120,000],
+    [0.20],[125,000],
+  ),
+  caption: "Symbol rate vs roll-off factor"
+) <roll-off2Rs>
+
+This results in a tradeoff between maximum symbol rate and the roll-off factor, which is linked to the complexity of the filter. A pulse shaping filter with more weights is required to achieve the higher symbol rates, which increases the overall size of the design. 
+
+=== Transmitter block
 //TODO: DVB-S2 HDL Coder citation
-The core of the design is built upon a DVB-S2 HDL coder example created by Mathworks.
+The core of the design is built upon a DVB-S2 HDL coder example implementation created by Mathworks. This block implements all of the necessary logic for the modulation of a bitstream into a valid DVB-S2 signal.
 
 #pagebreak()
 #figure(
@@ -379,6 +407,14 @@ The PS-PL integration was generated using the HW/SW Codesign flow of HDL Coder. 
 == Test Data Generation
 To verify the proper functioning of the transceiver, synthetic packet data was required. Additionally, all sideband signals and control signals would need to be generated appropriately to ensure all inputs were valid.
 
+The test data encoded DVB-S2 frame and packet, as well as AXI packet, counters into the data field. This allowed easier debugging of the resulting waveforms. Only 8 bits were available, so these were assigned accordingly: A single frame may contain hundreds of small packets and thousands of AXI packets. These counters would rollover and were zero indexed. The resulting packet structure is shown in @test-packet-struct, and the flow for generation in @gendata-struct.
+
+#figure(
+  image("../Figures/Implementation/Packets/Synth-AXI-Packet.svg"),
+  caption: "Test Packet Structure "
+) <test-packet-struct>
+
+
 #subpar.grid(
   columns: (1fr),
   caption: [Data generation function structure. (a) Shows the inputs and outputs of  the function, where both the AXI packet stream and control signals have the same size. (b) Shows the functionality of the gendata function. ],
@@ -394,8 +430,10 @@ To verify the proper functioning of the transceiver, synthetic packet data was r
 )
 
 
+
 == GSE
 
 // TODO: gendata()
 // TODO: serialisation + GSE
 // TODO: Pocket???
+
