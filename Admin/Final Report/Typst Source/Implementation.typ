@@ -1,5 +1,8 @@
 #import "@preview/acrostiche:0.5.1": *
 #import "@preview/subpar:0.2.1"
+#import "@preview/wavy:0.1.1"
+#import "@preview/codelst:2.0.2": sourcecode
+#show raw.where(lang: "wavy"): it => wavy.render(it.text)
 
 #set heading(offset: 1)
 
@@ -11,28 +14,26 @@ There were multiple options for implementation of the #acr("DVB-S2") subsytem.
 
 #figure(
   table(
-    columns:3,
+    columns:4,
     align:(left,center,center,center,),
     table.header(
-      [*Method*],[*Advantage*],[*Disadvantage*]
+      [*Method*],[*Type*],[*Advantage*],[*Disadvantage*]
     ),
-    [GNU Radio software implementation],  [Simplicity of implementation],   [Processing speed],
-    [COTS IP Core],                       [Reliability],   [Expensive],
-    [Vitis Model Composer],               [Simplicity of implementation],   [],
-    [MATLAB HDL Coder],                   [Specific Support from Analog Devices], [Resource efficiency],   
+    [GNU Radio software implementation],         [Software],   [Simplicity of implementation],             [Slower processing speed],
+    [COTS IP Core],                               [Hardware],   [Pre-tested, guaranteed reliability],       [Expensive, could complicate integration with PBR system],
+    [Vitis Model Composer],                       [Hardware],   [Simplicity of implementation, Can be fully verified using MatLab simulation],             [Would have to implement interface with transceiver block manually, taking more development time.],
+    [Scratch implementation in VHDL or Verilog], [Hardware],    [Highest resource efficiency.],             [Will require much more development time, as well as much increased testing time],
+    [MATLAB HDL Coder],                   [Hardware], [Supports AD936x transceiver as a target. Can be fully verified using MatLab simulation], [Poorer resource efficiency],   
   ),
   caption:"Implementation Tool Tradeoff"
 )
-+ 
-+ Scratch implementation in #acr("RTL") code.
-// TODO: DO i need to expand IP here?
-+ Use of off-the-shelf DVB-S2 IP core
-+ MATLAB HDL Coder
-+ Vitis Model Composer or System Generator
 
 == DVB-S2 Modulation
 === Bandwidth and Symbol Rate
+The block design has a sample rate dependent on the symbol rate of the transmitter, to limit the clock domains on the design, this was used to define the sample rate for the entire system.
+
 The single sided bandwidth of a modulated DVB-S2 signal is a function of the symbol rate, $R_s$, and the roll-off factor, #sym.alpha, of the root raised cosine filter as shown in @bandwidth. This can be rearrange to find the highest symbol rate for a given bandwidth, as shown in @symbolrate.
+
 
 $ B_"single" = f_N (1+ #sym.alpha) \
  "Where" f_N = R_s /2 $ <bandwidth>
@@ -56,7 +57,19 @@ The standard allows for a roll-off factor of 0.35, 0.25 or 0.20. For the target 
   caption: "Symbol rate vs roll-off factor"
 ) <roll-off2Rs>
 
-This results in a tradeoff between maximum symbol rate and the roll-off factor, which is linked to the complexity of the filter. A pulse shaping filter with more weights is required to achieve the higher symbol rates, which increases the overall size of the design. 
+This results in a tradeoff between maximum symbol rate and the roll-off factor, which is linked to the complexity of the filter. A pulse shaping filter with more weights is required to achieve the higher symbol rates, which increases the overall resource requirements of the design. 
+
+With this filter in place, the expected bitrate can be re-calculated for each roll-off factor, with the spectral efficiency values from @modcod_reqs_150khz, the result is shown in @bitrateVrolloff. Note that the resulting datarates are lower than in @ACM-Analysis-Section as the usable bandwidth has lowered.
+
+#figure(
+  image("../Figures/Implementation/roll-off/roll-off-investigation.svg"),
+  caption:"Bitrate achievable by modulation, coding rate, and roll-off factor (Alpha).",
+) <bitrateVrolloff>
+
+For most of the settings, all three have relatively similar performance. As the modulation and coding rates get higher, the differences become more apparent. Overall, the difference between #sym.alpha = 0.25 and #sym.alpha = 0.20 is minimal, but #sym.alpha = 0.35 consistently performs significantly worse than the other two.
+
+It was determined in @ACM-Analysis-Section that the majority of time during a pass will be using the lower modulation and coding rate settings, so it was decided to use #sym.alpha = 0.25 to save some resources. Through simulation, it was determined that a symbol rate of 125,000 Symbols / second using this rolloff was achievable, while staying within the ITU spectrum mask, see @DAC-Spectrum-ITU-Mask.
+
 
 === Transmitter block
 //TODO: DVB-S2 HDL Coder citation
@@ -69,6 +82,7 @@ The core of the design is built upon a DVB-S2 HDL coder example implementation c
 )
 #pagebreak()
 
+//TODO: SYNC
 #figure(
   table(
     columns:4,
@@ -77,24 +91,24 @@ The core of the design is built upon a DVB-S2 HDL coder example implementation c
       [*Port*],[*Direction*],[*Type*],[*Purpose*],
     ),
     table.cell(colspan: 4,  align:center, [*Sideband Signals*]),
-    [pktValidIn],   [Input],[Boolean],        [Indicates that input data is valid. Used to ],
+    [pktValidIn],   [Input],[Boolean],        [Indicates that input data is valid],
     [pktBitsIn],    [Input],[Boolean Stream], [Information for transmission],
     [pktStartIn],   [Input],[Boolean],        [Indicates packet start, not used for continuous stream],
     [pktEndIn],     [Input],[Boolean],        [Indicates packet end, not used for continuous stream],
-    [frameStartIn], [Input],[Boolean],        [],
-    [frameEndIn],   [Input],[Boolean],        [],
+    [frameStartIn], [Input],[Boolean],        [Indicates frame start],
+    [frameEndIn],   [Input],[Boolean],        [Indicates frame end],
     table.cell(colspan: 4,  align:center, [*Control Signals*]),
-    [TSorGS],      [Input],[ufix2],          [],
+    [TSorGS],      [Input],[ufix2],          [Indicates if transport stream, continuous or packetised generic stream],
     [DFL],         [Input],[uint16],         [Data Field Length, can be from 0 to $K_"BCH"$],
-    [UPL],         [Input],[uint16],         [User Packet Length, 0 for continuous stream],
+    [UPL],         [Input],[uint16],         [User Packet Length, 0 for continuous stream, up to $K_"BCH"$],
     [SYNC],        [Input],[uint8],          [],
     [MODCOD],      [Input],[ufix5],          [MODulation and CODing rate selection],
     [FECFRAME],    [Input],[boolean],        [FECFRAME length selection. 1 for ],
     table.cell(colspan: 4,  align:center, [*Output*]),
     [dataOut],    [Output],[ufix18en16 (c)], [IQ output data. 18 bit complex fixed point data with 16 fraction bits],
-    [validOut],   [Output],[boolean],        [],
-    [flag],       [Output],[ufix2],          [],
-    [nextFrame],  [Output],[boolean],        [Asserted for one cycle when transmitter is ready to receive next frame],
+    [validOut],   [Output],[boolean],        [Indicates that IQ data is valid],
+    [flag],       [Output],[ufix2],          [Flag bits to indicate when a dummy frame is sent, and when a real frame is sent.],
+    [nextFrame],  [Output],[boolean],        [Asserted when transmitter is ready for next frame. Is reset when frameStart is asserted],
 
     
   ),
@@ -104,18 +118,31 @@ The core of the design is built upon a DVB-S2 HDL coder example implementation c
 
 
 
-== Transceiver Integration
+== PL System Integration
 //TODO: HW/SW
-This then needed to interface with the rest of the system. It was decided to use the HW/SW Codesign features of HDL Coder to generate IIO bindings for the software to hook into. Support for Zedboard and FMCOMMS is provided by a support package. A MATLAB Example provided the interface that was then used to implement the final design.
+=== Hardware-Software Co-Design
+The transmission subsystem required an interface with both with the packet handling software on the PS and the external transceiver chip. It was decided to use the Hardware-Software Co-Design features of HDL coder to accomplish this. 
+
+The Co-Design workflow starts with the creation of an IP block using HDL coder with a specific interface. This design is then automatically integrated into a predefined "reference design" in Vivado and can be synthesised and implemented on hardware. Additionally, software drivers can be generated to handle the PS-PL interface.
+
+// TODO: Include a hwsw flow design here
+
+This workflow massively simplifies the PS-PL interfacing, which is one of the most challenging parts of an SoC FPGA design. However, it comes with some drawbacks. The first is that the design is limited in that it must conform to the reference design. If there is not a reference design for the target platform this must be implemented manually, a non-trivial process. Additionally, any other software running on the PS will have to integrate with the generated C code, an area that appeared to have little documentation or examples.
+
+// TODO: Reference hwsw chirp
+A Co-Design example project was used as a template to ensure that all necessary interfaces were generated in order to comply with the requirements of the reference design. This example project had support for both receive and transmit, which would allow both the PBR and downlink communications systems to be implemented on the same design. The top level interface is shown in @hwswchirp.
 
 #figure(
   image("../Figures/Implementation/MATLAB-Examples/HWSWCodesign.png"),
-  caption: "HW/SW Codesign Chirp Example"
-)
-
-The provided example supports both the transmit and receive paths for the AD936x transceiver. This offers the possibility of implementing both the PBR processing and downlink communications using the same block design.
+  caption: "HW/SW Co-Design Chirp Example. The logic to be implemented on the PL is defined within the orange block. External blocks are used to verify operation."
+) <hwswchirp>
 
 Data is transferred from the #acr("PS") via one of two methods. AXI-lite interfaces are used for control signals, as they have lower throughput, this was used for all control signals, such as #acf("DFL"), #acr("UPL"), etc. An AXI-Stream was used to transfer packet data, as it has a much higher throughput.
+
+//TODO: Ensure all AXI-Lite mentions capitalised correctly.
+The reference design included an AXI-Stream for the transfer of data from the PS to the design, and separate I and Q ports to connect to the transceiver. Additional control signals could be implemented using AXI-Lite and the design included further ports for implementation of the receiving logic.
+
+An AXI-Stream interface can be implemented with as few as three signals, TData, TValid and TReady but there are several optional signals defined in the standard, the most relevant being TLast and TUser. TLast is used to indicate the final AXI packet in a stream, while TUser can be used to carry any arbitrary user defined data, commonly being information to control the transfer such as flags. These signals are summarised in @Relevant-AXI-Signals. 
 
 #figure(
   table(
@@ -124,19 +151,20 @@ Data is transferred from the #acr("PS") via one of two methods. AXI-lite interfa
     table.header(
       [*Signal*],[*Type*],[*Purpose*]
     ),
-    [TData],  [uint32],  [Data to be transferred from master to slave],
+    [TData],  [uint32 ],  [Data to be transferred from master to slave],
     [TValid], [boolean], [Indication from master to slave that data is valid and can be read],
     [TReady], [boolean], [Indication from slave to master that it is ready for new data],
     [TLast],  [boolean], [Indication from master to slave that the current packet is the last in the current stream (optional)],
+    [TUser],  [User Defined], [Encodes extra information about the transfer (optional)]
+
 
   ),
-  caption: "Minimum AXI-Stream Signals"
-)
+  caption: "Relevant AXI-Stream Signals"
+) <Relevant-AXI-Signals>
 
-#import "@preview/wavy:0.1.1"
+TData is listed as 32 bits here although by the standard this can be any integer number of bytes. This is due to the fact that the physical PS-PL interface on the Zynq 7020 is 32 bits wide, meaning wider interfaces require more complexity. Additionally, the PS connects to the PL through AXI-MM memory mapped interfaces, with additional PL logic required to interface with a stream. This means that the creation of TUser signalling synchronised with the AXI-Stream is non-trivial.
 
-
-#show raw.where(lang: "wavy"): it => wavy.render(it.text)
+An AXI-Stream transfer occurs on the rising edge of the clock, when both TReady is asserted by the slave, and TValid by the master. This process is shown in @AXI-Stream-Timing for a minimal stream.
 
 
 //TODO: Axi stream citation
@@ -186,15 +214,18 @@ caption: "Minimal AXI-Stream timing diagram. A transfer (XFR) occurs on the acti
 kind:image,
 ) <AXI-Stream-Timing>
 
+=== DVB-S2 Transmitter integration
 
-The DVB-S2 design used requires sideband signals to indicate the start and end of a frame or packet. Additionally, as the 
+The selected template architecture suited the requirements for the downlink transmission system well. Control signals could be implemented using the AXI-Lite interface, as they can be asserted at any point before the next frame has started. The packet and sideband data could then be transferred using the AXI-Stream, as this required much higher datarates and guaranteed alignment.
 
-Unlike the other control signals, these require a high level of synchronisation with the data stream, necessitating their inclusion within the 32 bit TData. 
+For the reasons mentioned previously, it was determined that the implementation of the sideband signals using the TUSER features of the AXI-Stream would overcomplicate implementation as the interface is determined by the reference design. These signals would instead be transferred within the 32 bit TDATA stream.
 
 The remaining 28 bits could then be used to carry the packet data. No DFL size was evenly divisible by 28, giving two avenues for implementation. The first option was to implement a signalling system within the TDATA field allowing for a variable amount of packet bits within each TDATA field. The second was to find the largest number that factored all possible DFL sizes and accept the lower performance.
 
 //TODO: Fastest 
-All DFL sizes were factorised, giving a maximum size of 8 bits. AXI-Streams can transfer data much faster than the resultant symbols could be transmitted, so it was decided to accept the performance loss of using a subset of the TDATA field as it greatly reduced complexity.
+The maximum DFL sizes corresponding to all valid modulation and coding rates, as shown in @DFL-Sizes, were factorised and the largest common factor found to be 8, giving a maximum of 1 byte per AXI packet without additional signalling.
+
+AXI-Streams can transfer data much faster than the resultant symbols could be transmitted, so it was decided to accept the performance loss of using a subset of the TDATA field as it greatly reduced complexity. The performance impact was minimal, as each packet needed to be serialised over multiple clock cycles anyway. The resultant TDATA structure is shown in @AXI-Pkts.
 
 #figure(
   table(
@@ -205,11 +236,12 @@ All DFL sizes were factorised, giving a maximum size of 8 bits. AXI-Streams can 
 
   ),
   caption: "Possible DFL Sizes (bits)"
-)
+) <DFL-Sizes>
+
 
 #subpar.grid(
   columns: (1fr),
-  caption: [Design TDATA structure. TDATA is 32 bits wide here, ],
+  caption: [Designed TDATA structure.],
   label: <AXI-Pkts>,
   //figure(
   //  image("../Figures/Implementation/Packets/AXI_pkt_1.svg",width:100%),
@@ -226,9 +258,15 @@ All DFL sizes were factorised, giving a maximum size of 8 bits. AXI-Streams can 
 
 // TODO: Packet Parser
 
-The AXI packets contain the start and end signals, as well as a byte of packet data in a parallel format. This must be serialised into a bitstream to interface with the #acr("DVB-S2") transmitter block. This in turn means that buffering is required. A #acr("FIFO") buffer was selected for this purpose, as the interface signals can be used to manage the AXI interface.
+The AXI packets were transferred as uint32 words, which required serialisation for interface with the #acr("DVB-S2") transmitter block. This introduced multiple rates for the interface, for which a FIFO buffer was implemented as it could be used to manage the AXI-Stream interface logic.
 
-//TODO: FIFO diagram
+The implementation of the TREADY handling is very important for an AXI-Stream slave and is a common source of issues within an AXI based design. The DVB-S2 transmitter block asserts nextFrame to indicate it is ready for data and deasserts it once frameStart has been asserted, however the AXI-Stream required TREADY to be high for the entire frame. This resulted in the circuit shown in @TREADY-Circuit, with the intended timings shown in @AXI-Stream-FIFO-Timing.
+
+#figure(
+  image("../Figures/Implementation/Timing Diagrams/TREADY-Circuit.svg",width:70%),
+  caption:"AXI-Stream TREADY generation logic. nextFrame is connected to the Set input of an SR flip flop, and frame end to the Reset. The output of this is then ANDed with FIFO nFull."
+) <TREADY-Circuit>
+
 
 #figure(
 ```wavy
@@ -273,11 +311,18 @@ The AXI packets contain the start and end signals, as well as a byte of packet d
   }
 }
 ```,
-caption: "AXI-Stream TReady timing. The DVB-S2 transceiver block asserts nextFrame for a single clock. This signal is extended until a packet signalling the end of a frame is received to create DVB-S2 Ready.",
+caption: "AXI-Stream TREADY timing. The DVB-S2 transceiver block asserts nextFrame for a single clock. This signal is extended until a packet signalling the end of a frame is received to create DVB-S2 Ready. TREADY is only asserted when both the transceiver block is ready and the FIFO is not full.",
 kind:image,
-) <AXI-Stream-Timing>
+) <AXI-Stream-FIFO-Timing>
 
+The next stage of the input stream handling is the FIFO buffer. Data is pushed onto the FIFO when TREADY and TVALID are asserted, in compliance with an AXI transaction. There are three conditions to be met to pop data off the FIFO. First, TREADY must be asserted, indicating that the transmitter is ready for new data. Second, the packet serialiser block must be ready for a new packet. Third, the FIFO must not be empty. There is a further delay circuit to ensure only one packet is output at a time. The resulting blocks can be seen in @packet-input-circuit, and intended timing in @FIFO-Timing.
 
+#figure(
+  image("../Figures/Implementation/Timing Diagrams/FIFO-Serialiser-Circuit.svg"),
+  caption:"Annotated Packet Input Circuit"
+) <packet-input-circuit>
+
+// FIFO timing
 #figure(
 ```wavy
 {
@@ -327,9 +372,47 @@ kind:image,
   }
 }
 ```,
-caption: "FIFO stream and parser interfacing timing. The input of the FIFO is used to handle the AXI-Stream, with TVALID driving \"FIFO_Push\". If Parse_Ready is asserted and the FIFO is not empty then FIFO_Pop is asserted and a packet output on the next clock.",
+caption: "FIFO stream and parser interfacing timing. The input of the FIFO is used to handle the AXI-Stream, with TVALID driving \"FIFO_Push\". If TREADY and Parse_Ready are asserted, and the FIFO is not empty, then FIFO_Pop is asserted and a packet output on the next clock.",
 kind:image,
 ) <FIFO-Timing>
+
+The serialisation block, Parse Packet, was implemented through MATLAB code wrapped in a function block. It takes two inputs, pktIn and pktValidin, and is configurable via a mask. The ports and parameters are defined in @Parse-Packet-Signals. The block serialises the data as shown in @Parser-Timing.
+
+#figure(
+  table(
+    columns:3,
+    align:(left,center,center),
+    table.header(
+      [*Name*],[*Type*],[*Purpose*]
+    ),
+    table.cell(colspan: 3,  align:center, [*Inputs*]),
+    [pktIn],      [uint32],   [AXI Packet to be serialised],
+    [pktValidIn], [boolean],  [Indicates if packet input is valid],
+    
+    table.cell(colspan: 3,  align:center, [*Outputs*]),
+    [readyOut],    [Boolean], [Indicates that the block is ready for new data],
+    
+    [pktBitOut],   [boolean], [Output data stream],
+    [pktStartOut], [boolean], table.cell(rowspan: 5,  align:center, [Synchronised sideband signal outputs]),
+    [pktEndOut],   [boolean], 
+    [pktValidOut], [boolean], 
+    [frmStartOut], [boolean], 
+    [frmEndOut],   [boolean], 
+
+    table.cell(colspan: 3,  align:center, [*Configuration*]),
+    [LSB First],[boolean],  [If false, data is output MSB first, if true data, is output LSB first. Should always be 0, as DVB-S2 is MSB first.],
+    [Frame End Position],   [unsigned int],table.cell(rowspan: 4,  align:center, [Bit position of signals within AXI packet.]),
+    [Frame Start Position], [unsigned int],
+    [Packet End Position],  [unsigned int],
+    [Packet Start Position],[unsigned int],
+    [Payload Position],     [unsigned int],[Bit position of LSB of payload data byte],
+  ),
+  caption: "Parse Packet Interface"
+) <Parse-Packet-Signals>
+
+
+
+
 
 #figure(
 ```wavy
@@ -383,20 +466,82 @@ kind:image,
   }
 }
 ```,
-caption: "Parser timing. When Parse_Ready is asserted and the FIFO is not empty, the FIFO outputs a packet. The Parser processes the packet when FIFO_Valid is asserted, outputting the MSB of the packet data field along with start flags in the same cycle. Over the next six cycles, the packet data field is output sequentially, ending with the LSB and end flags on the 8th cycle. Parse_Ready is reasserted on the 8th cycle, ensuring no gaps between packets.",
+caption: "Parser timing. When Parse_Ready is asserted and the FIFO is not empty, the FIFO outputs a packet on the next cycle. The Parser processes the packet when FIFO_Valid is asserted, outputting the MSB of the packet data field along with start flags in the same cycle. Over the next six cycles, the packet data field is output sequentially, ending with the LSB and end flags on the 8th cycle. Parse_Ready is reasserted on the 8th cycle, ensuring no gaps between packets.",
 kind:image,
 
 ) <Parser-Timing>
 
-// TODO: TReady generation
+The next stage of the design handled the interface between the DVB-S2 Transmitter block and the #acr("DAC") interface. 
 
-// TODO: DAC conversion
-// RRC changed to output sfix12 from sfix18
+Both I and Q outputs are in the form of signed 16 bit words, where only the most significant 12 bits are used and the remaining 4 bits ignored. The DVB-S2 Transmitter block outputs signed fixed point 18 bit complex words with 16 fractional bits, which is more precision than required. The block was tested with all modulation constellations and the maximum magnitude of the output signal was found to be less than 1. This indicated that the bit depth could be safely reduced. To ensure that the full 12 bits of accuracy were maintained only the final block was modified, the root-raised-cosine pulse shaping filter.
+
+With the modification, the output data type was signed 12 bit words with 11 fractional bits. These are then scaled and cast to a signed 16 bit word for output to the DAC. The resulting blocks are shown in @DAC-interface. The scaling factor is indicated as En11, meaning $times 2^-11$ and E4 meaning $times 2^4$.
+
+#figure(
+  image("../Figures/Implementation/block-diagram/DAC-SCaling.png"),
+  caption: "Blocks for scaling of IQ data for transceiver interface"
+) <DAC-interface>
+
+// TODO: PAcket Parser operation. Flowchart + walk through + Listing.
+
+= HDL Generation
+
+Once the PL design was ready, HDL code could be generated. The device target was set as "Zedboard and FMCOMMS2/3/4" and the "Receive and transmit path" reference design selected. #footnote([Vivado expected a version of the Zedboard board file that was not present. This required the manual modification of an existing board file before the design could be generated.]) The target interface was configured according to @HDL-Coder-interface. Most signals were automatically assigned to the interface of the reference design, however the control signals required manual assignment. 
+
+The FMCOMMS2 and FMCOMMS3 are based on the AD9361 and AD9363 respectively. These have two channel transmit and recieve, wheras the FMCOMMS4 with its AD9364 only has single channel receive. The controller block is common across all three devices, however in the case of the FMCOMMS4, these extra channel interfaces are nonfunctional. For this reason, there are two Rx channels defined within the block design, with the second channel tied to "0".
+
+All of the interface ports for the design are shown in @HDL-Coder-interface.
+
+#figure(
+  table(
+    columns:4,
+    align:(left,center,center),
+    table.header(
+      [*Port Name*],[*Port Type*],[*Data Type*],[*Target Platform Interface*]
+    ),
+    
+    table.cell(colspan: 4,  align:center, [*PS-PL Transmit*]),
+    [AXI4S_Data_In],    [Input],  [uint32],  [AXI4-Stream Read Slave],
+    [AXI4S_Valid_In],   [Input],  [boolean], [AXI4-Stream Read Slave],
+    [AXI4S_Tready_Out], [Output], [boolean], [AXI4-Stream Read Slave Ready (optional)],
+
+    table.cell(colspan: 4,  align:center, [*DVB-S2 Control Signals*]),
+    [TSorGS_In],     [Input], [ufix2],   [AXI4-Lite],
+    [DFL_In],        [Input], [uint16],  [AXI4-Lite],
+    [UPL_In],        [Input], [uint16],  [AXI4-Lite],
+    [SYNC_In],       [Input], [uint8],   [AXI4-Lite],
+    [MODCOD_In],     [Input], [ufix5],   [AXI4-Lite],
+    [FECFRAME_In],   [Input], [boolean], [AXI4-Lite],
+    
+    table.cell(colspan: 4,  align:center, [*Transceiver Transmit*]),
+    [Tx_Valid_In],    [Input],  [boolean], [DMA Tx Valid In],
+    [Tx1_Data_I_In],  [Input],  [int16],   [DMA Tx I1 In [0:15]],
+    [Tx1_Data_Q_In],  [Input],  [int16],   [DMA Tx Q1 In [0:15]],
+    [Tx_Valid_Out],   [Output], [boolean], [Baseband Tx Valid Out],
+    [Tx1_Data_I_Out], [Output], [int16],   [Baseband Tx I1 Out [0:15]],
+    [Tx1_Data_Q_Out], [Output], [int16],   [Baseband Tx Q1 Out [0:15]],
+    
+
+    table.cell(colspan: 4,  align:center, [*Transceiver Receive*]),
+    [Rx_Valid_In],    [Input],  [boolean], [Baseband Rx Valid In],
+    [Rx1_Data_I_In],  [Input],  [int16],   [Baseband Rx I1 In [0:15]],
+    [Rx1_Data_Q_In],  [Input],  [int16],   [Baseband Rx Q1 In [0:15]],    
+    [Rx_Valid_Out],   [Output], [boolean], [DMA Rx Valid Out],
+    [Rx1_Data_I_Out], [Output], [int16],   [DMA Rx I1 Out [0:15]],
+    [Rx1_Data_Q_Out], [Output], [int16],   [DMA Rx Q1 Out [0:15]],
+    [Rx2_Data_I_Out], [Output], [int16],   [DMA Rx I2 Out [0:15]],
+    [Rx2_Data_Q_Out], [Output], [int16],   [DMA Rx Q2 Out [0:15]],
+    table.cell(colspan: 4,  align:center, [*PL-PS Receive*]),
+    [AXI4S_Tready_In],  [Input],  [boolean], [AXI4-Stream Write Master],
+    [AXI4S_Data_Out],   [Output], [uint32],  [AXI4-Stream Write Master],
+    [AXI4S_Valid_Out],  [Output], [boolean], [AXI4-Stream Write Master Valid],
+  )
+) <HDL-Coder-interface>
 
 = Packet Handling
 
-== PS-PL Integration
-The PS-PL integration was generated using the HW/SW Codesign flow of HDL Coder. This automatically generated libiio bindings for the PL Logic, resulting in @PS-PL-Interface. The intended flow requires flashing a specific Linux image onto the board. This is acceptable for an engineering model, however for flight hardware this will need to change. 
+== PS-PL Interface
+HDL Coder generated the software interface shown in @PS-PL-Interface, however due to time constraints, this was not tested.
 
 #figure(
   image("../Figures/Implementation/block-diagram/software-interface.png"),
@@ -407,7 +552,7 @@ The PS-PL integration was generated using the HW/SW Codesign flow of HDL Coder. 
 == Test Data Generation
 To verify the proper functioning of the transceiver, synthetic packet data was required. Additionally, all sideband signals and control signals would need to be generated appropriately to ensure all inputs were valid.
 
-The test data encoded DVB-S2 frame and packet, as well as AXI packet, counters into the data field. This allowed easier debugging of the resulting waveforms. Only 8 bits were available, so these were assigned accordingly: A single frame may contain hundreds of small packets and thousands of AXI packets. These counters would rollover and were zero indexed. The resulting packet structure is shown in @test-packet-struct, and the flow for generation in @gendata-struct.
+The test data encoded DVB-S2 frame and packet, as well as AXI packet, counters into the data field to ease debugging of the resulting waveforms. Only 8 bits were available, so these were assigned accordingly: A single frame may contain hundreds of small packets and thousands of AXI packets. These counters would rollover and were zero indexed. The resulting packet structure is shown in @test-packet-struct, and the flow for generation in @gendata-struct.
 
 #figure(
   image("../Figures/Implementation/Packets/Synth-AXI-Packet.svg"),
@@ -429,11 +574,76 @@ The test data encoded DVB-S2 frame and packet, as well as AXI packet, counters i
   ), <gendata-low>,
 )
 
-
+Another function called parse_axipkt was developed to verify that gendata was generating data as expected. This used bit shift operations to parse the generated 32 bit data word into a formatted struct.
 
 == GSE
 
 // TODO: gendata()
 // TODO: serialisation + GSE
 // TODO: Pocket???
+
+// TODO: reference cereal
+Initial work on the GSE implementation has been completed. Various libraries for serialisation were investigated, with the cereal library being considered, as it supports the creation of binary archive files with embedded flags to make them portable across computer architectures. Ultimately, the conclusion was reached that serialisation will have to be implemented manually, as the libraries found increased overheads to improve compatibility. For this application, the exact packet structures are known as a schema will be created ahead of time.
+
+@GSE-Packet-Class shows the class definition for a GSE Packet. The fixed header specifies the bit alignmment of the members in order to byte align it properly. std::optional was chosen to handle the missing members of the variable header. The serialise function shall return a byte array that can be passed to the PS-PL interface.
+
+#figure(sourcecode[```C++
+class GSE_Packet {
+public:
+    struct FixedHeader {
+        bool start    : 1;
+        bool end      : 1;
+        int labelType : 2;
+        int GSElength : 12;
+        };
+    struct VariableHeader {
+        std::optional<char>     fragID;
+        std::optional<uint16_t> totalLength;
+        std::optional<uint16_t> protocolType;
+        std::optional<char[3]>  label;
+    };
+private:
+    FixedHeader fh;
+    std::optional<VariableHeader> vh;
+    Packet* pdu;
+
+public:
+    // constructor
+    GSE_Packet(FixedHeader fh, VariableHeader vh, Packet* pdu);
+    std::vector<uint8_t> serialise();
+};
+```], 
+caption: [GSE_Packet Class Definition]) <GSE-Packet-Class>
+
+During the investigation of packet structure, it decided that all packets shall include both a type and version field. The type field shall occur first such that buffers can be allocated appropriately, and the version field included to ensure that packet structure can be updated without breaking backwards compatibility. For the final system, these fields could be reduced in size, as it is not expected for the packet definitions to change during the mission however they should not be omitted in order to allow this possibility. @Packet-Class shows a possible implementation of a packet class, with the cereal library used for serialisation.
+
+#figure(sourcecode[```C++
+class Packet {
+    uint8_t type;
+    uint8_t version;
+    timestamp time;
+    virtual cereal::PortableBinaryOutputArchive serialise();
+};
+```], 
+caption: [Packet Interface Definition]) <Packet-Class>
+
+@fragment-function shows a possible function definition for fragmentation. 
+
+#figure(sourcecode[```C++
+std::vector<GSE_Packet> fragment(Packet* pdu);
+```], 
+caption: [Packet Fragmentation Function Structure]) <fragment-function>
+
+An example primary payload packet is shown in @PPL-Packet-Definition. It inherits the members from Packet and creates a definition for serialise().
+
+#figure(sourcecode[```C++
+struct PPL_pkt_64k : Packet{
+    double standard_deviation;  // Standard deviation of data
+    double codebook[16];        // Quantization levels
+    uint32_t data[2048];        // compressed PPL data
+
+    cereal::PortableBinaryOutputArchive serialise();
+};
+```], 
+caption: [Primary Payload Packet Definition]) <PPL-Packet-Definition>
 

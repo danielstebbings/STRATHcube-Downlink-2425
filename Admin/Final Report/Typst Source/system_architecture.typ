@@ -58,7 +58,7 @@ From these requirements, rough design objectives were derived for the downlink c
 + The system shall support packet input from all interfaces present on the TOTEM SDR
 + The system should maximise datarate while conforming to #acr("BER") requirements.
   + The system shall support modification of modulation and coding rate through #acr("ACM") or #acr("VCM").
-  + Efficiency shall be prioritised. The design should use minimal padding and seek to reduce overheads.
+  + Efficiency should be prioritised. The design should use minimal padding and seek to reduce overheads.
 + The system should be reliable
   + The system shall be designed for testability.
     + Large pieces of logic shall be broken up into smaller systems that can be unit tested.
@@ -66,11 +66,12 @@ From these requirements, rough design objectives were derived for the downlink c
   + The system shall be tested thoroughly using simulation to verify operation.
 + The downlink subsystem and PBR system should fit on the PL at the same time. // Regular reconfiguration is complex. If code gets corrupted, could be major issues!
   + The downlink system should use no more than 50% of any one resource type.
-+ The downlink subsystem shall be capable of transmitting packets that are over 64kB large.
++ The downlink subsystem shall be capable of transmitting packets that are over 64kB.
 
 
 
 = Packet Handling
+== Quality of Service
 // GSE Usage
 // Why not gse-lite?
 // -- PPL Data size req
@@ -78,14 +79,13 @@ From these requirements, rough design objectives were derived for the downlink c
 // XTCE Schemas / CCSDS Packet Library
 The packets onboard STRATHcube can be grouped into two distinct types: Telemetry, those that are required for the continued functioning of the spacecraft, such as information regarding battery state or the orientation of the craft. The second being payload packets, such as the measured IQ signals during an observation period.
 
-Of the two types, telemetry packets are more important and make up a much smaller proportion of total data sent.
+Of the two types, telemetry packets are more important and make up a much smaller proportion of total data sent. These telemetry packets are to be compressed using the POCKET or POCKET+ algorithm. This may occur on the SDR, but is more likely to be done in advance on the #acr("OBC"). 
 
-Telemetry packets are to be compressed using the POCKET or POCKET+ algorithm. This may occur on the SDR, but is more likely to be done in advance on the #acr("OBC").
+To maximise datarates, it is possible to group packets into classes, and apply rules for #acr("BER") seperately for each class. For instance, the primary payload data may be transmitted with a #acr("BER") target of $10^-5$, and the telemetry data with a target of $10^-9$. The exact targets should be subject of future analysis, as retransmission of primary payload data could be extremely costly due to large block sizes.
 
-// non-exhaustive list of packet types and grouping
-
+== Fragmentation
 //TODO: Reference OPS-SAT FAPEC re chunk size
-The spectrum data recorded by the PBR will be compressed using the FAPEC algorithm, which outputs data in "chunks". These chunks typically have a fixed size, which could be from 4kB to 384 MB and give the minimum size of the packet. The maximum #acr("DFL") for DVB-S2 is 58,112 bits, or 7264 Bytes, and only possible when using the highest modulation and coding rates, which are not expected to be feasible for much of the mission. Therefore, a mechanism for fragmenting these packets across multiple frames is required.
+The spectrum data recorded by the PBR will be compressed using the FAPEC algorithm, which outputs data in "chunks". These chunks typically have a fixed size, which could be from 4kB to 384 MB and give the minimum size of the packet. The maximum #acr("DFL") for DVB-S2 is 58,112 bits, or 7264 Bytes, only possible when using the highest modulation and coding rates which are not expected to be feasible for much of the mission. Therefore, a mechanism for fragmenting these packets across multiple frames is required.
 
 #acr("GSE") will be used for this purpose, as it is specifically designed for DVB-S2 transmission. A #acr("GSE") packet has the following structure:
 
@@ -119,17 +119,22 @@ There are four key parts of the header for this application.
 
 For this application, the label field is unnecessary, as the source and destination of packets is always known. This also means that the label type field could be omitted, saving two further bits per GSE packet at the expense of standard compliance.
 
+The GSE standard also defines GSE-Lite which is optimised for constrained systems, however it only supports a max PDU size of 1800 Bytes, making it unsuitable for this application.
 
+== Packet Definition
+As the data handling systems on the satellite are underdeveloped at time of writing, it was decided that the final system should accept packet schemas in order to handle future updates with minimal refactoring. The #acr("XTCE") format was identified as suitable, as it is a #acr("CCSDS") standard that has been used for several missions. 
 
+NASA has created an open source program called #acr("CCDD") which can be used for the creation and management of XTCE packet schemas. Additionally, it can export packets to C headers, which could be useful for future packet handling work.
 
 = Transmitter
 // Continuous stream vs generic stream etc,
 // Decision not to use DVB-S2X features
+It was decided to handle merging of packet streams in the PS, and to implement a single stream transmitter in the PL. This is due to the limited memory available in the PL, which would otherwise be consumed by large buffers required for handling multiple streams simultaneously. It was also decided that the transmitter should support both continuous and generic stream transmission, as the GSE design architecture had not been finalised, meaning that variable packet sizes may be necessary. The resulting architecture with optional blocks removed is shown in @DVB-S2-Single-GS.
 
 #figure(
   image("../Figures/System-Architecture/DVB-S2.drawio.svg"),
   caption:"Transmitter Block Diagram"
-)
+) <DVB-S2-Single-GS>
 
 
 = Full System
@@ -143,7 +148,8 @@ For this application, the label field is unnecessary, as the source and destinat
 
 // TODO: ACM return path
 // TODO: Reerence link analysis
-Due to the limitation of scope for this project, the particulars of the channel measurement has been underdeveloped. The two main factors are accuracy and frequency.
-As identified in TODO:, the main varying factor is the distance from the ground station to the satellite which can be computed in advance, giving #acr("VCM"). Interference has not been extensively analysed, but is expected to be a significant and varying factor.
+Due to the limitation of scope for this project, the particulars of the channel measurement has not been investigated, there are two requirements that require definition: Accuracy and frequency of updates.
+
+As identified in TODO:, the main varying factor is the distance from the ground station to the satellite which can be computed in advance, giving #acr("VCM"). Interference has not been analysed thusfar, but is expected to be a significant and varying factor that cannot be predicted.
 
 Another important factor for the system is "in the blind" communications, i.e. downlink data transmission without any uplink communications from the ground station. Under these conditions, there is no return channel to facilitate #acr("ACM") operation. Additionally, prescheduled #acr("VCM") operation requires orbit position information that may not be present. For this reason, the lowest MODCOD of QPSK 1/4 shall be used, as this maximises availaibility.

@@ -33,7 +33,8 @@ private:
 
 public:
     // constructor
-    GSE_Packet(FixedHeader fh, VariableHeader vh);
+    GSE_Packet(FixedHeader fh, VariableHeader vh, Packet* pdu);
+    std::vector<uint8_t> serialise();
 };
 
 
@@ -41,10 +42,7 @@ class Packet {
     uint8_t type;
     uint8_t version;
     timestamp time;
-
     virtual cereal::PortableBinaryOutputArchive serialise();
-
-
 };
 
 std::vector<GSE_Packet> fragment(Packet* pdu);
@@ -55,4 +53,6 @@ struct PPL_pkt_64k : Packet{
     double standard_deviation;  // Standard deviation of data
     double codebook[16];        // Quantization levels
     uint32_t data[2048];        // compressed PPL data
+
+    cereal::PortableBinaryOutputArchive serialise();
 };

@@ -195,32 +195,42 @@ Given the complexity of the STRATHcube mission, the project scope was deliberate
 
 To maintain flexibility for later development, the implementation was designed to be modular, preventing unnecessary constraints on subsequent development. This approach ensured that progress could be made efficiently while laying a strong foundation for future enhancements.
 
-= Literature Review
+= Literature Review <Lit-Review-Section>
 
 #include("lit_review.typ")
-= ACM Analysis
+= ACM Analysis <ACM-Analysis-Section>
 #include("link_budget.typ")
-= System Design
+= System Design <System-Design-Section>
 #include("system_architecture.typ")
 
-= Implementation
+= Implementation <Implementation-Section>
 #include("Implementation.typ")
 
-= Results
+= Implementation and Simulation Results <Results-Section>
 #include("results.typ")
 
-= Discussion
+= Discussion <Discussion-Section>
 // Transmitter spectrum
 The transmitter complies to the spectral mask for all tested inputs. This indicates that the 
 
 // Resource Usage
 
 // Packet Handling
-= Conclusion
+
 == Further Work
+The work on the downlink communications has several avenues for further development. The packet handling system requires completion, with the 
+
+// Completion and verification
+// Packet Handling
+The packet handling system i
+
 // DVB-S2X - VL-SNR features
 
-An extended abstract regarding the work completed so far has been created and submitted to the #acr("EDHPC") for consideration, as shown in. If accepted, further work on hardware implementation and packet handling will be conducted and a paper created.
+
+An extended abstract regarding the work completed so far has been created and submitted to the #acr("EDHPC") for consideration, as shown in @EDHPC-Paper. If accepted, further work on hardware implementation and packet handling will be conducted and a paper created.
+
+= Conclusion
+
 
 /*= Code listings
 
