@@ -211,47 +211,38 @@ To maintain flexibility for later development, the implementation was designed t
 
 = Discussion <Discussion-Section>
 // Transmitter spectrum
-The transmitter complies to the spectral mask for all tested inputs. This indicates that the 
+The transmitter complies to the spectral mask for all tested inputs. This also held true for the DVB-S2 transmitter block when tested in the original example code, ensuring that the observed interfacing issues did not have an effect.
 
-// Resource Usage
+The logic analyser waveform of the AXI-Stream interfacing logic was found to match extremely well to the intended timing diagram. This indicates that further investigation of the original DVB-S2 HDL Coder example design to ensure that the designed system is appropriate.
 
-// Packet Handling
+The resource usage of the implemented design was found to comply with the goal of no more than 50% usage on any one resource, with the exception of Block RAM. High RAM usage is to be expected for a HDL Coder design, as extra buffering is used between blocks. In order to integrate the PBR design with the downlink implementation, this may require further optimisation.
+
+The design was found to meet timing, however by a very small margin. With reference to @implemented-design, it is clear that the design is extremely spread out over the chip, meaning long chains of logic which likely impacts timing closure. Optimisation of the Block RAM usage might also then improve the timing of the design, allowing higher clock rates to be used.
 
 == Further Work
-The work on the downlink communications has several avenues for further development. The packet handling system requires completion, with the 
+The work on the downlink communications has several avenues for further development. The first priority, is to fix the interfacing issues with the transmitter block. Another avenue for work is testing the design in hardware using development boards. This is expected to take some time to complete, as the AXI packet handling code has not been fully verified to ensure compliance to the protocol. The packet handling systems could also be worked upon, with the investigation of the ACM routing being of particular importance.
 
-// Completion and verification
-// Packet Handling
-The packet handling system i
+Once the system is operational, the addition of DVB-S2X features could be of interest. The #acr("VL-SNR") features could improve system performance considerably at low elevations. The impact of interference is also yet to be analysed in the context of the STRATHcube mission, which may necessitate the link budget to be reassessed.
 
-// DVB-S2X - VL-SNR features
+As part of the ESA Baseline Design Review, several work packages were created that are relevant to the future of this project. They include interference analysis of the ground station site and creation of a receiver for the downlink communications.
 
-
-An extended abstract regarding the work completed so far has been created and submitted to the #acr("EDHPC") for consideration, as shown in @EDHPC-Paper. If accepted, further work on hardware implementation and packet handling will be conducted and a paper created.
+An extended abstract regarding the work completed so far has been created and submitted to the #acr("EDHPC") for consideration, as shown in @EDHPC-Paper. If accepted, further development on hardware implementation and packet handling will be conducted as part of its work.
 
 = Conclusion
+The downlink communications system for STRATHcube has been thoroughly analysed and a detailed system design created. Analysis was conducted of the performance impact of ACM/VCM features for total data downlinked over the mission, finding a signficant uplift. Work was started on the implementation of the design using HDL Coder and an FPGA implementation succesfully generated, although further work is required on interfacing with the transmitter block for the design to be fully functional.
 
 
-/*= Code listings
-
-#figure(sourcecode[```C
-example_c_code() =
-example_c_code() = 
-example_c_code() = 
-example_c_code() = 
-example_c_code() = 
-```], caption: [code listing])
-*/
 
 #pagebreak()
 #show bibliography: set heading(numbering: "1")
 #bibliography(("../Bibliographies/Link-Budget.bib","../Bibliographies/DVB-S2.bib","../Bibliographies/Hardware.bib"))
 
-
+#pagebreak()
 #let appendix(body) = {
   set heading(numbering: numbly(
   "Appendix {1:A}", // use {level:format} to specify the format
   "{1:A}.{2}.", // if format is not specified, arabic numbers will be used, supplement: [Appendix])
+  "{1:A}.{2}.{3}", // if format is not specified, arabic numbers will be used, supplement: [Appendix])
   ))
   counter(heading).update(0)
   body
@@ -261,9 +252,8 @@ example_c_code() =
 
 
 = EDHPC Paper <EDHPC-Paper>
-==
-===
-==
-wdwdwd
-= 
+
+
+#pagebreak()
+#include("code-listings.typ")
 

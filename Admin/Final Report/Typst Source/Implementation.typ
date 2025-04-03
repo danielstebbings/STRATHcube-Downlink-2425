@@ -583,11 +583,11 @@ Another function called parse_axipkt was developed to verify that gendata was ge
 // TODO: Pocket???
 
 // TODO: reference cereal
-Initial work on the GSE implementation has been completed. Various libraries for serialisation were investigated, with the cereal library being considered, as it supports the creation of binary archive files with embedded flags to make them portable across computer architectures. Ultimately, the conclusion was reached that serialisation will have to be implemented manually, as the libraries found increased overheads to improve compatibility. For this application, the exact packet structures are known as a schema will be created ahead of time.
+Initial work on the GSE implementation has been completed. C++ was selected for this purpose due to familiarity and various libraries for serialisation were investigated, with the cereal library being considered, as it supports the creation of binary archive files with embedded flags to make them portable across computer architectures. Ultimately, the conclusion was reached that serialisation will have to be implemented manually, as the libraries found increased overheads to improve compatibility. For this application, the exact packet structures are known as a schema will be created ahead of time.
 
 @GSE-Packet-Class shows the class definition for a GSE Packet. The fixed header specifies the bit alignmment of the members in order to byte align it properly. std::optional was chosen to handle the missing members of the variable header. The serialise function shall return a byte array that can be passed to the PS-PL interface.
 
-#figure(sourcecode[```C++
+#figure(sourcecode[```C
 class GSE_Packet {
 public:
     struct FixedHeader {
@@ -617,7 +617,7 @@ caption: [GSE_Packet Class Definition]) <GSE-Packet-Class>
 
 During the investigation of packet structure, it decided that all packets shall include both a type and version field. The type field shall occur first such that buffers can be allocated appropriately, and the version field included to ensure that packet structure can be updated without breaking backwards compatibility. For the final system, these fields could be reduced in size, as it is not expected for the packet definitions to change during the mission however they should not be omitted in order to allow this possibility. @Packet-Class shows a possible implementation of a packet class, with the cereal library used for serialisation.
 
-#figure(sourcecode[```C++
+#figure(sourcecode[```C
 class Packet {
     uint8_t type;
     uint8_t version;
@@ -629,14 +629,14 @@ caption: [Packet Interface Definition]) <Packet-Class>
 
 @fragment-function shows a possible function definition for fragmentation. 
 
-#figure(sourcecode[```C++
+#figure(sourcecode[```C
 std::vector<GSE_Packet> fragment(Packet* pdu);
 ```], 
 caption: [Packet Fragmentation Function Structure]) <fragment-function>
 
 An example primary payload packet is shown in @PPL-Packet-Definition. It inherits the members from Packet and creates a definition for serialise().
 
-#figure(sourcecode[```C++
+#figure(sourcecode[```C
 struct PPL_pkt_64k : Packet{
     double standard_deviation;  // Standard deviation of data
     double codebook[16];        // Quantization levels
