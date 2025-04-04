@@ -52,7 +52,7 @@ Late in testing it was found that the transmitter was not functioning correctly 
   caption:"Flag signal generation. The MSB of the flag signal indicates the end of a dummy header, and the LSB the end of a valid PL Header carryig data."
 ) <flag-generation>
 
-Assertion logic was added to verify that the serialisation of packet data was functioning correctly. The circuit is shown in @assert-circuit. By modifying the circuit, the successful serialisation was confirmed. The resulting waveform can be seen in @assert-wav.
+Assertion logic was added to verify that the serialisation of packet data was functioning correctly. The circuit is shown in @assert-circuit. By modifying the circuit, it was confirmed that packet data was being serialised correctly, however the transmitter was still not functional. The resulting waveform can be seen in @assert-wav.
 
 #figure(
   image("../Figures/Results/MATLAB/Serialisation-Assert.png"),
@@ -64,16 +64,29 @@ Assertion logic was added to verify that the serialisation of packet data was fu
   caption:"Logic analyser waveform of assertion circuit. The serialised data, Assert_S, can be seen to be identical to the parallel data, Assert_P with zeros inserted. The signals are only not equal during the zero padding, from Assert_Sneq0."
 ) <assert-wav>
 
-The serialisation circuit was also analysed using a logic analyser, resulting in @parse-fifo-waveform.
+The serialisation circuit was also analysed using a logic analyser, resulting in @parse-fifo-waveform, and found to be functioning correctly.
 
 #figure(
   image("../Figures/Results/MATLAB/parse-FIFO-waveform.drawio.svg"),
   caption:"AXI-Stream Interface Logic Analyser Waveform"
 ) <parse-fifo-waveform>
 
+Unfortunately, the issue with the transmitter interface was not able to be corrected before the end of the project, however the design was still able to be exported to Vivado to test feasibility.
 
-= Implementation
-The HDL Coder design was exported to Vivado. The generated block diagram is shown in @vivado-block-diagram. This design was succesfully implemented and synthesised. The resource report showed that the design fit onto the chip, however there was very little Block RAM left over. The usage by subsystem and resource type is shown in @resource-util-Bar. The placed and routed design on the chip is shown in @implemented-design. The design also succesfully passed timing, with the slack shown @timing-analysis .
+= Code Generation & Hardware Implementation
+The HDL Coder design was exported to Vivado. The generated block diagram is shown in @vivado-block-diagram. This design was succesfully implemented and synthesised. The resource report showed that the design fit onto the chip, however there was very little Block RAM left over. The usage by subsystem and resource type is shown in @resource-util-Bar. The placed and routed design on the chip is shown in @implemented-design. The design also succesfully passed timing, with the slack shown @timing-analysis.
+
+#figure(
+  table(
+    columns:3,
+    align:(center),
+    table.header(
+      [*Worst Negative Slack*],[*Worst Hold Slack*],[*Worst Pulse Width Slack*]
+    ),
+    [0.126 ns],[0.016 ns],[0.264]
+  ),
+  caption: "Timing Analysis Results"
+) <timing-analysis>
 
 #pagebreak()
 #set page(flipped: true)
@@ -94,16 +107,6 @@ The HDL Coder design was exported to Vivado. The generated block diagram is show
   caption: "Implemented design on Zynq 7020 SoC FPGA. Areas coloured in blue are FPGA resources used by the design. "
 ) <implemented-design>
 
-#figure(
-  table(
-    columns:3,
-    align:(center),
-    table.header(
-      [*Worst Negative Slack*],[*Worst Hold Slack*],[*Worst Pulse Width Slack*]
-    ),
-    [0.126 ns],[0.016 ns],[0.264]
-  )
-) <timing-analysis>
 
 
 

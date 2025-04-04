@@ -17,35 +17,29 @@
 
 = STRATHcube
 Sporadic work has been completed for the downlink communications system in the previous years of the project. 
-// TODO: Add masters project reference 2020-2021
+
 // TODO: ITU
-In TODO: a tradeoff study was conducted of the communications system. It identified the 
+In @lewis_creed_strathcube_2021 a tradeoff study was conducted of the communications system. It identified the 
 UHF amateur allocation in 435 - 438 MHz as suitable for uplink and downlink. A 
-preliminary link budget was conducted using information about the STAC ground station 
+preliminary link budget was conducted using information about the #acr("STAC") ground station 
 and a radio module was selected. 
 
-// TODO: Gaus reference
-The first radio selected was the GAUS Low Power UHF Radio which can use various frequency shift keying modes and convolutional codes for error correction. This has a stated max capacity of 250kbps, but 
+The first radio selected was the GAUSS Low Power UHF Radio  which can use various frequency shift keying modes and convolutional codes for error correction. This has a stated max capacity of 250kbps, but 
 per the datasheet this rating is not currently supported leaving the actual maximum rate of 100kbps. Additionally, the datasheet also states that Reed Solomon coding is supported, whilst also 
 stating that it is not _currently_ supported in a footnote. Additionally, the coding rates for which 
-the datarate values are calculated are not available.
+the datarate values are calculated are not available. @gauss_srl_gauss_2018
 
-//TODO: TOTEM Reference
-//TODO: 2324 masters reference
-//TODO: Alen 
-In TODO: another tradeoff study was conducted for the primary payload system, ultimately selecting 
-the TOTEM SDR from Alen Space. Alen Space also manufacture a UHF #acr("FE") compatible with the 
-TOTEM SDR, for this reason it was decided to consolidate both the primary telecommunications and 
+In @pablo_alvarez-icaza_advancing_2024 another tradeoff study was conducted for the primary payload system, ultimately selecting 
+the TOTEM SDR from Alén Space. @alen_space_totem_2024 Alén Space also manufacture a UHF #acr("FE") compatible with the 
+TOTEM SDR, @alen_space_frontenduhf_2021 for this reason it was decided to consolidate both the primary telecommunications and 
 primary payload onto the TOTEM SDR in order to reduce component count and project cost. The full 
 specification and operation of the TOTEM SDR is defined in @TOTEM_SDR.
 
-//TODO: ISIS Antenna ref
-UHF communications will be transmitted using the ISIS deployable antenna system configured 
+UHF communications will be transmitted using the ISIS deployable antenna system @isispace_cubesat_nodate configured 
 with a single deployable dipole antenna. The exact specifications are selectable by the user, being 
 rated for 10 MHz of usable bandwidth at design frequency and a VSWR < 1.9:1.
 
-//TODO: Link budget reference
-A member of the team completed a research internship analysing the downlink in summer 2024. This analysis compared multiple types of modulation and #acr("FEC"), ultimately recommending #acr("DVB-S2") for the final system. It also analysed the maximum bandwidth for the link to close, i.e. to have a positive link margin, arriving at a figure of 158.5 kHz. The resulting link budget is shown in @Preben-2024-Link-Budget. With the ground station undefined, many of the performance figures were based on the link budget created by AcubeSAT, @amarantidou_acubesat_2020 an open source satellite mission
+A member of the team completed a research internship analysing the downlink in summer 2024. @preben_rasamanickam_strathcube_2024 This analysis compared multiple types of modulation and #acr("FEC"), ultimately recommending #acr("DVB-S2") for the final system. It also analysed the maximum bandwidth for the link to close, i.e. to have a positive link margin, arriving at a figure of 158.5 kHz. The resulting link budget is shown in @Preben-2024-Link-Budget. With the ground station undefined, many of the performance figures were based on the link budget created by AcubeSAT, @amarantidou_acubesat_2020 an open source satellite mission. The final link margin number is effectively the #acr("CNR") above the margin requirement, so the actual margin would be 12 dB.
 /*
 #subpar.grid(
   columns: (1fr, 1fr),
@@ -71,7 +65,7 @@ A member of the team completed a research internship analysing the downlink in s
     [Transmitter Gain],                   [0],      [dBi],
     [Transmitter Line Losses],            [-1.93],  [dB],
     [Transmitter Antenna Pointing Loss],  [-3],     [dB],
-    [EIRP],                               [-3.17],  [dBW],
+    [#acr("EIRP")],                               [-3.17],  [dBW],
 
     table.cell(colspan: 3, align(center,strong("Link"))),
     [Frequency],                                    [435],      [MHz],
@@ -95,9 +89,10 @@ A member of the team completed a research internship analysing the downlink in s
   caption:"Summer 2024 Link Budget"
 ) <Preben-2024-Link-Budget>
 
+The ISIS space antenna VSWR and @Preben-2024-Link-Budget contributed to the link analysis in @ACM-Analysis-Section.
+
 = TOTEM SDR <TOTEM_SDR>
-//TODO: Zynq product selection guide
-The TOTEM SDR consists of an AMD Zynq 7020 #acr("SoC") #acr("FPGA") connected to an AD9364 RF Transceiver via #acr("LVDS"), as shown in @TOTEM-Block. Compatible frontend modules can be mounted on the motherboard using the connector in the center of the board, which can be seen in @TOTEM-Motherboard.
+The TOTEM SDR consists of an AMD Zynq 7020 #acr("SoC") #acr("FPGA") connected to an AD9364 RF Transceiver via #acr("LVDS"), as shown in @TOTEM-Block. @alen_space_totem_2024 Compatible frontend modules can be mounted on the motherboard using the connector in the center of the board, which can be seen in @TOTEM-Motherboard.
 
 // TODO: TOTEM Reference
 #subpar.grid(
@@ -119,16 +114,9 @@ The Zynq 7020 has dual ARM Cortex-A9
 processor cores that form the #acr("PS") and #acr("FPGA") fabric that forms the #acr("PL"). 
 This allows improved performance, as serial operations such as network interfacing can be accomplished on the #acr("PS") and highly parallel operations such as signal processing can be accomplished on the #acr("PL"). The Zynq 
 
-//TODO: AD9364 
-The AD9364 is a high performance RF transceiver with separate ports for receive and transmit. It can operate from 70 MHz to 6 GHz and has a bandwidth of up to 56 MHz with a 12 bit #acr("ADC") and #acr("DAC"). A #acr("SPI") bus is used for control signals and a high speed #acr("LVDS") interface for #acr("IQ") data. This device is part of the larger family of AD936x transceivers form Analog Devices. The chips in this family differ in port count, bandwidth, and operating frequency, however the control interfaces are very similar across devices. For this reason, many software drivers and FPGA IPs work with multiple devices in the family.
+The AD9364 is a high performance #acr("RF") transceiver with separate ports for receive and transmit. It can operate from 70 MHz to 6 GHz and has a bandwidth of up to 56 MHz with a 12 bit #acr("ADC") and #acr("DAC"). A #acr("SPI") bus is used for control signals and a high speed #acr("LVDS") interface for #acr("IQ") data. This device is part of the larger family of AD936x transceivers form Analog Devices. The chips in this family differ in port count, bandwidth, and operating frequency, however the control interfaces are very similar across devices. For this reason, many software drivers and FPGA #acr("IP") blocks work with multiple devices in the family. @analog_devices_ad9364_2014
 
-// TODO: Cite ad9364 datasheet
-#figure(
-  image("../Figures/Lit-Review/TOTEM-AD9364-BD.png",width:50%),
-  caption: "AD9364 Functional Block Diagram"
-)
-
-The frontend module is called FrontendUHF, and includes a transmit / receive switch, bandpass filtering and amplification for both transmit and recieve. It has a frequency range of 430 to 440 MHz and a typical power output of 30dBm. @TOTEM-frontendUHF depicts the module and a block diagram of its operation. 
+The frontend module is called FrontendUHF, and includes a transmit / receive switch, bandpass filtering and amplification for both transmit and recieve. It has a frequency range of 430 to 440 MHz and a typical power output of 30dBm. @TOTEM-frontendUHF depicts the module and a block diagram of its operation. @alen_space_frontenduhf_2021
 
 #subpar.grid(
   columns: (1fr,1fr),
@@ -144,11 +132,8 @@ The frontend module is called FrontendUHF, and includes a transmit / receive swi
   )
 )
 
-//todo: reference FMCOMMS
-As the TOTEM SDR could not be purchased in time for the project, implementation was targeted towards development boards. The Digilent Zedboard is a Zynq 7020 development board with much less external RAM than the TOTEM, however it has the same FPGA resources. The Zedboard also includes an FPC connector, allowing the connection of high speed peripherals. This can be used to connect an FMCOMMS development board from Analog Devices, one of which is available for the AD9364 used in the TOTEM. As the control interfaces are the same, another FMCOMMS board from the AD936x family can be used for functional testing without changing the design.
+As the TOTEM SDR could not be purchased in time for the project, implementation was targeted towards development boards. The Digilent Zedboard is a Zynq 7020 development board with much less external #acr("RAM") than the TOTEM, however it has the same FPGA resources. The Zedboard also includes a #acr("FMC")connector, allowing the connection of high speed peripherals. @noauthor_zedboard_nodate This can be used to connect an FMCOMMS development board from Analog Devices, one of which is available for the AD9364 used in the TOTEM. As the control interfaces are the same, another FMCOMMS board from the AD936x family can be used for functional testing without changing the design. @noauthor_ad-fmcomms4-ebz_nodate @noauthor_ad-fmcomms1-ebz_nodate
 
-//TODO: FMCOMMS4 reference
-//TODO: Zedboard reference digilent website
 #subpar.grid(
   columns: (1fr,1fr),
   caption: [Development Boards],
@@ -163,23 +148,23 @@ As the TOTEM SDR could not be purchased in time for the project, implementation 
   ), <Zedboard>,
 )
 
+The interface of the TOTEM UHF described here contributed to the system design in @System-Design-Section, and the selected development boards used as the target for implementation in @Implementation-Section.
+
 = STAC Ground Station
-// TODO: STAC GS reference
-The #acr("STAC") ground station was first created in 2008 and resides on the roof 
+The decision for which ground station will be used for communications has not been finalised, however one of the most likely options is the #acr("STAC") ground station. It was first created in 2008 and resides on the roof 
 of the James Weir building at the University of Strathlycde. After a fire in the 
 building, the project was abandoned in 2012. In 2015/2016, a master's group 
 renovated the #acr("STAC") and were successful in receiving telemetry from the 
-Strand-1 CubeSat. The station has since been out of use and has not been maintained,
+Strand-1 CubeSat. @calum_clarke_strathclyde_2016 The station has since been out of use and has not been maintained,
 as such, the current status of the components is unknown.
 #figure(
   image("../Figures/Lit-Review/STAC.png",width: 50%),
   caption: "STAC After 2016 Renovation "
 )
 
-// TODO: Antenna reference
 The #acr("STAC") has dual #acr("VHF") and #acr("UHF") antennas and includes pre-amplifiers suitable for both receive and transmit. The UHF antennas are the 
 436CP30 from M2 Antenna Systems and the UHF pre-amplifier is the SP-7000 from SSB.
-The details of which are shown in @SP7000 and @436CP0 respectively.
+The details of which are shown in @SP7000 and @436CP0 respectively. @ssb_sp-7000_2012 @m2_antenna_systems_inc_436cp30_2017.
 
 #figure(
   table(
@@ -205,10 +190,8 @@ The details of which are shown in @SP7000 and @436CP0 respectively.
   caption: "436CP0 Antenna Specification"
 ) <436CP0>
 
-// TODO: Link budget citation STAC
-As part of the 2015/2016 renovation, a link budget was created for reception of communications from the Strand-1 satellite. @STAC-UHF-Link-Budget shows the original numbers, with the "Unit" column subsequently added for context.
+As part of the 2015/2016 renovation, a link budget was created for reception of communications from the Strand-1 satellite. @STAC-UHF-Link-Budget shows the original numbers, with the "Unit" column subsequently added for context. @calum_clarke_strathclyde_2016
 
-// TODO: Referencing.
 #figure(
   table(
     columns:4,
@@ -239,24 +222,38 @@ As part of the 2015/2016 renovation, a link budget was created for reception of 
   caption:"STAC Strand-1 UHF Downlink Link Budget"
 ) <STAC-UHF-Link-Budget>
 
+The link budget here was used to update the link budget described in @preben_rasamanickam_strathcube_2024, contributing to the analysis in @ACM-Analysis-Section.
+
 = Standards
 == DVB-S2 Overview
 //TODO: Finish
+The input to a DVB-S2 system is one or more datastreams. These can be transport streams, for transmission of video, or generic streams which are either packetised or continuous. A packetised stream has a constant packet size termed the  #acr("UPL"). Variable packet sizes are sent via a continuous generic stream. These are depicted in @dvb-s2-stream-types.
 
-//FEC
-//TODO: dvb-s2 shannon paper citation
-#acr("DVB-S2") utilises two stages of #acr("FEC"), the first code is #acr("BCH") followed by #acr("LDPC"). This combination results in extremely strong error correction performance, allowing near Shannon limit performance.
-
-//GSE
-Mapping a packet into a dynamically changing frame is difficult. The #acr("GSE") protocol introduces an intermediate layer to handle fragmentation of network packets, referred to as #acr("PDU")s, into one or more #acr("GSE") packets.
-
-// DVB-S2X
-ETSI released an extension to the original DVB-S2 standard called DVB-S2X, this included several features to improve efficiency for high throughput satellites, such as bonding multiple transponders, beam hopping, and high order modulations up to 256APSK. Particularly relevant, are the new features for #acr("VL-SNR"), which include new #acr("PLFRAME") structures, #acr("BPSK") modulation, and lower coding rates down to 1/5. Features were also added to improve the efficiency of #acr("GSE") packet transmission.
-//TODO: Write paragraph about this
 #figure(
   image("../Figures/Lit-Review/DVB-S2/DVB-S2-Streams.svg"),
   caption:"DVB-S2 Input Stream Types."
-)
+) <dvb-s2-stream-types>
+
+The input streams are sliced and merged to create a #acr("BBFRAME"). The Structure of which is shown in @BBFRAME. A #acr("BBHEADER") is also applied, which contains various signalling fields providing information about the transmitted frame. The structure is shown in @BBHEADER. Contained within the #acr("MATYPE") field is the #acr("MODCOD") field, which indicates the settings being used on the frame.
+
+#figure(
+  image("../Figures/Lit-Review/DVB-S2/DVB-S2-Sliciing.png"),
+  caption: "DVB-S2 BBHEADER Structure"
+) <BBHEADER>
+
+//FEC
+#acr("DVB-S2") utilises two stages of #acr("FEC"), the first code is #acr("BCH") followed by #acr("LDPC"). This combination results in extremely strong error correction performance, allowing near Shannon limit performance. @eroz_dvb-s2_2004 The output of the #acr("FEC") subsystem is a #acr("FECFRAME"). This can either be short, 16200 bits, or normal, 64800 bits. This is shown in @FECFRAME. The information content of the #acr("FECFRAME") is determined by the coding rate, which can be from 1/4 to 9/10.
+
+The FECFRAME is then mapped to symbols and modulated to become a #acr("PLFRAME"). Pilots can optionally be inserted here to aid in decoding. Dummy frames are PLFRAMEs that carry no information. DVB-S2 used #acr("APSK") modulation, configurable between QPSK to 8PSK, 16PSK and 32PSK.
+
+The final block in the system is a root-raised-cosine filter for pulse shaping. This can have a roll-off factor of 0.35, 0.25 or 0.20. The value of which is indicated in the #acr("MATYPE") field.
+
+//GSE
+Mapping a packet into a dynamically changing frame is difficult. The #acr("GSE") protocol introduces an intermediate layer to handle fragmentation of network packets, referred to as #acr("PDU")s, into one or more #acr("GSE") packets. @etsi_ts_2014 The operation of the protocol is discussed further in @fragmentation-section.
+
+// DVB-S2X
+ETSI released an extension to the original DVB-S2 standard called DVB-S2X, this included several features to improve efficiency for high throughput satellites, such as bonding multiple transponders, beam hopping, and high order modulations up to 256APSK. Particularly relevant, are the new features for #acr("VL-SNR"), which include new #acr("PLFRAME") structures, #acr("BPSK") modulation, and lower coding rates down to 1/5. Features were also added to improve the efficiency of #acr("GSE") packet transmission. 
+
 // TODO: Write paragraph about this
 #subpar.grid(
   columns: (1fr),
@@ -277,16 +274,11 @@ ETSI released an extension to the original DVB-S2 standard called DVB-S2X, this 
   
 )
 
-// TODO: cite  
-In TODO:, an SDR-based communication system operating in the 915 MHz UHF band and utilizing ACM is described. The system employed modulation techniques similar to DVB-S2 but implemented a different coding scheme. Their analysis demonstrated nearly double the throughput compared to CCM, confirming the feasibility and significant performance advantages of ACM systems for CubeSats.
+In @grayver_software_2015, an SDR-based communication system operating in the 915 MHz UHF band and utilizing ACM is described. The system employed modulation techniques similar to DVB-S2 but implemented a different coding scheme. Their analysis demonstrated nearly double the throughput compared to CCM, confirming the feasibility and significant performance advantages of ACM systems for CubeSats.
 
+= Interference <Inteference-Section>
 
-
-== CCSDS
-= Interference
-
-//TODO: Serpens interference ref
-Interference is particularly prevalent in the UHF amateur band. In @quintana-diaz_detection_2022 interference power in the UHF was measured using the Serpens satellite over time. Sustained interference power of over -70dBm was measured, with particularly high levels measured over Europe, as shown in @interference-heatmap and @interference-pass. This issue is more relevant for uplink communications, as ground stations can use highly directional antennas to reduce the impact of terrestrial interference, however during low elevation passes this will impact the downlink communications as well.
+Interference is particularly prevalent in the UHF amateur band. In @quintana-diaz_detection_2022 interference power in the UHF amateur space allocation was measured using the Serpens satellite. Sustained interference power of over -70dBm was measured, with particularly high levels measured over Europe, as shown in @interference-heatmap and @interference-pass. This issue is more relevant for uplink communications, as ground stations can use highly directional antennas to reduce the impact of terrestrial interference, however during low elevation passes this will impact the downlink communications as well.
 
 #subpar.grid(
   columns: (1fr),
@@ -302,10 +294,8 @@ Interference is particularly prevalent in the UHF amateur band. In @quintana-dia
   ), <interference-pass>
 )
 
-
-// TODO: DVB-S2 Notch filter Paper
 To reduce the impact of this interference, advanced filtering could be used. In @same_effects_2020 the effect of narrowband continuous wave interference was investigated for DVB-S2 QPSK communications and an adaptive notch filter designed. 
-@Interference-Filter-Results @same_effects_2020[Fig. 27] shows the effect on BER of a Jamming to Signal Ratio (JSR) of just -6dB. Without filtering, and at low Eb/N0 values, 
+@Interference-Filter-Results @same_effects_2020[Fig. 27] shows the effect on #acr("BER") of a Jamming to Signal Ratio (JSR) of just -6dB. Without filtering, and at low Eb/N0 values, 
 the recovery is significantly degraded however the filter is able to improve performance to close to that of the theoretical peak.
 The paper also notes that the filter could reduce performance in certain scenarios.
 
@@ -313,3 +303,5 @@ The paper also notes that the filter could reduce performance in certain scenari
   image("../Figures/Link-Budget/DVB-S2_Interference.png",width:50%),
   caption: "Impact of interference on DVB-S2 QPSK signal reception."
 ) <Interference-Filter-Results>
+
+The issue of interference was identified as a gap in the analysis described in @ACM-Analysis-Section, and will form the basis of future analysis of the communications system. It will be particularly important during the design of the uplink communications system.

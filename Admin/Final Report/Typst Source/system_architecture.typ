@@ -2,14 +2,14 @@
 #import "@preview/subpar:0.2.1"
 #set heading(offset: 1)
 
-= Systems Engineering
+= Systems Engineering <system-engineering-section>
 // TODO: Development of requirements
 // TODO: Review of existing requirements
 // 
 
 In order to work effectively in a large project structure, a review of system requirements was conducted with close collaboration with system engineers on the team.
 
-This contributed to a complete overhaul of all #acr("TT&C") requirements to be more relevant to actual operations, for submission as part of the ESA Baseline Design Review. The relevant requirements are shown in @TTC-Reqs. Many numbers here are #acr("TBC") as the mission parameters are being fully analysed.
+This contributed to a complete overhaul of all #acr("TT&C") requirements to be more relevant to actual operations, for submission as part of the ESA Baseline Design Review. The relevant requirements are shown in @TTC-Reqs. The figures marked #acr("TBC") are indicative only, pending full analysis of the mission parameters. PPL refers to the Primary Payload, the #acr("PBR"). TM refers to telemetry data, including data about the spacecraft state, such as battery charge levels. GS refers to the Ground Station, (network) used to indicate that there may be several.
 
 #figure(
   table(
@@ -33,7 +33,10 @@ This contributed to a complete overhaul of all #acr("TT&C") requirements to be m
   caption: "Relevant system and TT&C requirements for downlink communications."
 ) <TTC-Reqs>
 
-There also exist data handling requirements, however this is an area that required significant work at time of writing and provided little impact for the project. The most relevant of which are shown in @Data-handling-reqs.
+The data handling requirements had not yet been substantially explored at time of writing. The most relevant requirements that had been created are shown in @Data-handling-reqs. OBC refers to the On-Board Computer, used for data processing and control of the spacecraft. OBSW refers to On-Board SoftWare, this refers to any code running on the satellite, whether it is on the #acr("SDR"), OBC, or elsewhere. The listed protocols are #acr("CAN"), #acr("UART"), and #acr("I2C").
+
+
+#acused("OBC")
 
 //TODO: review obsw reqs, make sure all relevant ones are met.
 #figure(
@@ -50,12 +53,14 @@ There also exist data handling requirements, however this is an area that requir
   caption: "Relevant data handling requirements.",
 ) <Data-handling-reqs>
 
-From these requirements, rough design objectives were derived for the downlink communication system.
+From these requirements, rough design objectives were derived for the downlink communication system:
 
 // TODO: formatting on numbers
 // TODO: Embetter
 // TODO: Justification
-+ The system shall support packet input from all interfaces present on the TOTEM SDR
+
+#set enum(numbering: "1.a.i.")
++ The system shall support packet input from all interfaces present on the TOTEM SDR <totem-interface-objective>
 + The system should maximise datarate while conforming to #acr("BER") requirements.
   + The system shall support modification of modulation and coding rate through #acr("ACM") or #acr("VCM").
   + Efficiency should be prioritised. The design should use minimal padding and seek to reduce overheads.
@@ -68,7 +73,9 @@ From these requirements, rough design objectives were derived for the downlink c
   + The downlink system should use no more than 50% of any one resource type.
 + The downlink subsystem shall be capable of transmitting packets that are over 64kB.
 
+Requirement 4 follows on from requirement 3 of reliability. If the FPGA has to be reconfigured for every downlink pass, this introduces a large amount of complexity. If this process fails, communication will have to fall back to the much slower secondary communication system. There is also the effect of radiation to consider, if the stored bitstream file is corrupted its recovery could be very difficult.
 
+Requirement 5 is derived from the #acr("PBR") packet size requirements. This is discussed further in @fragmentation-section.
 
 = Packet Handling
 == Quality of Service
@@ -77,15 +84,15 @@ From these requirements, rough design objectives were derived for the downlink c
 // -- PPL Data size req
 // PBR block sizes
 // XTCE Schemas / CCSDS Packet Library
-The packets onboard STRATHcube can be grouped into two distinct types: Telemetry, those that are required for the continued functioning of the spacecraft, such as information regarding battery state or the orientation of the craft. The second being payload packets, such as the measured IQ signals during an observation period.
+The packets onboard STRATHcube can be grouped into two distinct types. The first is telemetry, those that are required for the continued functioning of the spacecraft, such as information regarding battery state or the orientation of the craft. The second being payload packets, such as the measured IQ signals during an observation period.
 
 Of the two types, telemetry packets are more important and make up a much smaller proportion of total data sent. These telemetry packets are to be compressed using the POCKET or POCKET+ algorithm. This may occur on the SDR, but is more likely to be done in advance on the #acr("OBC"). 
 
 To maximise datarates, it is possible to group packets into classes, and apply rules for #acr("BER") seperately for each class. For instance, the primary payload data may be transmitted with a #acr("BER") target of $10^-5$, and the telemetry data with a target of $10^-9$. The exact targets should be subject of future analysis, as retransmission of primary payload data could be extremely costly due to large block sizes.
 
-== Fragmentation
+== Fragmentation <fragmentation-section>
 //TODO: Reference OPS-SAT FAPEC re chunk size
-The spectrum data recorded by the PBR will be compressed using the FAPEC algorithm, which outputs data in "chunks". These chunks typically have a fixed size, which could be from 4kB to 384 MB and give the minimum size of the packet. The maximum #acr("DFL") for DVB-S2 is 58,112 bits, or 7264 Bytes, only possible when using the highest modulation and coding rates which are not expected to be feasible for much of the mission. Therefore, a mechanism for fragmenting these packets across multiple frames is required.
+The FAPEC algorithm was one of the options identified for compression of the #acr("PBR") data, which outputs data in "chunks". These chunks typically have a fixed size, ranging from 4kB to 384 MB @de_mora_image_2022. If the compressed data is corrupted, only those chunks containing errors need to be corrected, therefore, the selection of chunk size provides a logical minimum packet size. The maximum #acr("DFL") for DVB-S2 is 58,112 bits, or 7264 Bytes. This is only possible when using the highest modulation and coding rates, which are not expected to be feasible for much of the mission. For this reason, it was deemed likely that the #acr("PBR") data packets would require fragmentation across multiple frames.
 
 #acr("GSE") will be used for this purpose, as it is specifically designed for DVB-S2 transmission. A #acr("GSE") packet has the following structure:
 
@@ -122,14 +129,14 @@ For this application, the label field is unnecessary, as the source and destinat
 The GSE standard also defines GSE-Lite which is optimised for constrained systems, however it only supports a max PDU size of 1800 Bytes, making it unsuitable for this application.
 
 == Packet Definition
-As the data handling systems on the satellite are underdeveloped at time of writing, it was decided that the final system should accept packet schemas in order to handle future updates with minimal refactoring. The #acr("XTCE") format was identified as suitable, as it is a #acr("CCSDS") standard that has been used for several missions. 
+As discussed in @system-engineering-section, the data handling systems on the satellite were underdeveloped at time of writing, it was decided that the final system should accept packet schemas in order to handle future updates to packet structure with minimal refactoring. The #acr("XTCE") format was identified as suitable, as it is a #acr("CCSDS") standard that has been used for several missions. 
 
 NASA has created an open source program called #acr("CCDD") which can be used for the creation and management of XTCE packet schemas. Additionally, it can export packets to C headers, which could be useful for future packet handling work.
 
 = Transmitter
 // Continuous stream vs generic stream etc,
 // Decision not to use DVB-S2X features
-It was decided to handle merging of packet streams in the PS, and to implement a single stream transmitter in the PL. This is due to the limited memory available in the PL, which would otherwise be consumed by large buffers required for handling multiple streams simultaneously. It was also decided that the transmitter should support both continuous and generic stream transmission, as the GSE design architecture had not been finalised, meaning that variable packet sizes may be necessary. The resulting architecture with optional blocks removed is shown in @DVB-S2-Single-GS.
+It was decided to handle merging of packet streams in the processing system, and to implement a single stream transmitter using the programmable logic. This is due to the limited memory available in the FPGA fabric, which would otherwise be consumed by large buffers required for handling multiple streams simultaneously. It was also decided that the transmitter should support both continuous and generic stream transmission, as the GSE design architecture had not been finalised, meaning that variable packet sizes may be necessary. The resulting architecture with optional blocks removed is shown in @DVB-S2-Single-GS.
 
 #figure(
   image("../Figures/System-Architecture/DVB-S2.drawio.svg"),
@@ -139,17 +146,13 @@ It was decided to handle merging of packet streams in the PS, and to implement a
 
 = Full System
 
-// TODO: PHY -> not that"C"OR
-// TODO: AD936x controller control signals
 #figure(
   image("../Figures/System-Architecture/System_Diagram.drawio.svg",width:75%),
   caption: "System Diagram"
 )
 
-// TODO: ACM return path
-// TODO: Reerence link analysis
-Due to the limitation of scope for this project, the particulars of the channel measurement has not been investigated, there are two requirements that require definition: Accuracy and frequency of updates.
+Due to the limitation of scope for this project, the particulars of the channel measurement has not been investigated, there are two main requirements for the system: Accuracy and frequency of updates.
 
-As identified in TODO:, the main varying factor is the distance from the ground station to the satellite which can be computed in advance, giving #acr("VCM"). Interference has not been analysed thusfar, but is expected to be a significant and varying factor that cannot be predicted.
+As identified in @ACM-Analysis-Section, the main varying factor is the distance from the ground station to the satellite which can be computed in advance, giving #acr("VCM"). Interference has not been analysed thusfar, but is expected to be a significant and varying factor that cannot be predicted, requiring the implementation of #acr("ACM"). The presented architecture allowed either to be implemented without redesign.
 
 Another important factor for the system is "in the blind" communications, i.e. downlink data transmission without any uplink communications from the ground station. Under these conditions, there is no return channel to facilitate #acr("ACM") operation. Additionally, prescheduled #acr("VCM") operation requires orbit position information that may not be present. For this reason, the lowest MODCOD of QPSK 1/4 shall be used, as this maximises availaibility.

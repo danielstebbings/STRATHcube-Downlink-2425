@@ -1,8 +1,8 @@
 function [rates] = datarate(elevation,altitude,bandwidth,margin,verbose, link_parameters)
 %DATARATE Calculates datarate for each elevation and altitude pair
 % Returns:
-%   rates:              Datarates for each      bits/sec, array size                                               
-%                       elevation & altitude    length(elevation)
+%   rates:              Datarates for each      bits/sec,   array size = length(elevation)                                            
+%                       elevation & altitude                
 %                       
 % Parameters:
 %   elevation:          Satellite Elevation     degrees,    can be array
@@ -26,7 +26,7 @@ arguments
                                 "EIRP", 0, ...                              % dBW
                                 "Receiver_Gain",14.15-2.39, ...             % dB
                                 "Receiver_Noise_Temperature",282.6592, ...  % K
-                                "Atmo_Effect_Path_Loss",3.56 ...           % dB
+                                "Atmo_Effect_Path_Loss",3.56 ...            % dB
                                 );
     
     

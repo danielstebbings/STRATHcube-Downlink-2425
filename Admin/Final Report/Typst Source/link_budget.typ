@@ -1,13 +1,14 @@
-
+#import "@preview/acrostiche:0.5.1": *
+#import "@preview/codelst:2.0.2": sourcecode
   #set text(lang: "gb", size: 12pt)
   #show figure: set block(breakable: true)
   #set heading(offset: 0)
 
 //= Link Budget
 // Acronym Reference
-The link budget was then reassessed and updated to identify varying parameters and to reflect the impact of ACM. It has also been updated to reflect the information obtained regarding the STAC ground station @calum_clarke_group_2016. The current operation of the STAC is unknown, as such component values and performance figures are to be confirmed.
+The link budget described in @Preben-2024-Link-Budget was reassessed and updated to identify parameters that vary over time and to reflect the impact of ACM. It has also been updated to reflect the information obtained regarding the STAC ground station, shown in @STAC-UHF-Link-Budget, although these numbers will require update as the condition of the ground station has likely degraded. This analysis contributed to the ESA Baseline Design Review as part of the 
+Link and Data Analysis Report.
 
-// TODO: Mention BDR here?
 //== DVB-S2 Modulation and Coding Rate Requirements
 #let results=csv("../Figures/Link-Budget/modvals.csv")
 
@@ -50,7 +51,7 @@ The link budget was then reassessed and updated to identify varying parameters a
     [*EIRP*],                                     [*$0.50 "dBW"$*], [@EIRP], 
 
     table.cell(colspan: 3, align(center,strong("Ground Station"))),
-    [*Receive Antenna Gain ($G_"Rx"$)*], [*$14.15 "dBi"$*], [STAC UHF Antenna @calum_clarke_group_2016], 
+    [*Receive Antenna Gain ($G_"Rx"$)*], [*$14.15 "dBi"$*], [STAC UHF Antenna @calum_clarke_strathclyde_2016], 
     [LNA Gain ($G_"LNA"$)],              [$20   "dB"$],     [SP-7000 Datasheet, STAC @ssb_sp-7000_2012 ],
     [Line Losses],                       [$2.39 "dB"$],     [AcubeSAT],
 
@@ -131,7 +132,7 @@ $ "SR" = sqrt(R^2 + (R+H)^2 - 2 times R times (R+H) times cos(#sym.theta)) \
 
 Free Space Path Loss: @sklar_digital_2009[eq. 5.10]
 $ "FSPL" = 20 log_10 ((4 pi d f)/ (c)) ["dB"] $ <FSPL>
-Received CNR:
+Received #acr("CNR"):
 $ "CNR"_"Rx"  = "EIRP" - "FSPL" - "APL" + G_"Rx" + 228.6 - 10log_10 (T_"Rx") - 10log_10 (B) ["dB"] $ <CNR>
 Link Margin:
 $ "Margin" = "CNR"_"Rx" - "CNR"_"Required" ["dB"] $ <Margin>
@@ -139,7 +140,7 @@ $ "Margin" = "CNR"_"Rx" - "CNR"_"Required" ["dB"] $ <Margin>
 
 
 === Required CNR by Modulation and Coding Rate <Req-CNR>
-Values for spectral efficiency and minimum $E_s / N_0$ are provided in @etsi_en_2014[Tab. 13]. Those values are derived from simulation of a DVB-S2 system with 50 LDPC decoding iterations, 64,800 bit FECFRAME, no pilots, perfect carrier and synchronization recovery, no phase noise and an AWGN channel. The system shall include pilots to improve decoding performance, the spectral efficiency of which was obtained from @ccsds_ccsds_2023[Tab. 3-1]. As such, the actual minimum $E_s / N_0$ will be lower, adding further margin under AWGN conditions.
+Values for spectral efficiency and minimum $E_s / N_0$ are provided in @etsi_en_2014[Tab. 13]. Those values are derived from simulation of a DVB-S2 system with 50 LDPC decoding iterations, 64,800 bit FECFRAME, no pilots, perfect carrier and synchronization recovery, no phase noise and an #acr("AWGN") channel. The system shall include pilots to improve decoding performance, the spectral efficiency of which was obtained from @ccsds_ccsds_2023[Tab. 3-1]. As such, the actual minimum $E_s / N_0$ will be lower, adding further margin under AWGN conditions.
 
 Interference, demodulation and phase noise effects are still to be analysed, which will reduce the calculated link margin. For this reason a margin target of 10dB was selected.
 
@@ -152,11 +153,11 @@ $ "Capacity" = #sym.eta times B ["bps"] $ <spect_eff_2_cap>
 
 === Adaptive Coding and Modulation Analysis <ACM-Analysis>
 
-An initial proof of concept investigation was conducted to determine if implementation of ACM is worth the increased complexity. This investigation assumed a fixed orbit altitude of 409km and used ISS TLE data to propagate this for the full 
+An initial proof of concept investigation was conducted to determine if implementation of ACM is worth the increased complexity. This investigation assumed a fixed orbit altitude of 409km and used ISS #acr("TLE") data to propagate this for the full 
 mission length of 180 days. Orbit propagation was conducted using the MATLAB Satellite Communications Toolbox @mathworks_satellite_nodate Satellite Scenario and Access objects.
 
 Using the system parameters defined in @System-Definitions, the equations defined in @Link-Budget-Equations, and the required 
-CNR values defined in @modcod_reqs_150khz, the max achievable data rate was precomputed for each elevation value from 0 to 90#sym.degree in 5#sym.degree increments for both 170km and 409km altitude orbits, the resulting rates shown are in @elevation2Throughput. //TODO: include elevation to throughput
+CNR values defined in @modcod_reqs_150khz, the maximum achievable data rate was precomputed for each elevation value from 0 to 90#sym.degree in 5#sym.degree increments for both 170km and 409km altitude orbits. The resulting rates are shown in @elevation2Throughput. 
 
 #figure(
   image("../Figures/Link-Budget/Elevation2Throughput.svg"),
@@ -166,23 +167,41 @@ CNR values defined in @modcod_reqs_150khz, the max achievable data rate was prec
 To improve performance, the simulation is run with two timesteps. First, a coarse search is run with a timestep of 100 seconds and the accessIntervals() function used to find the starting time of each ground station pass. Then, a fine search
 using a timestep of 1 second is used to find the elevation of the satellite over time during each pass. 
 
-The simulated elevation angles were then binned with values rounded down to the nearest multiple of 5. A histogram of the binned elevation angles versus the time spent within each elevation bin was then created. This was then multipled by the corresponding values in @elevation2Throughput to obtain an estimate of the total data downlinked over the course of the mission using ACM. For CCM it was assumed that the capacity value corresponding to 10#sym.degree elevation was used for the entire mission. The resulting plots are shown in @ACMvCCM.
+The simulated elevation angles were then binned with values rounded down to the nearest multiple of 5. A histogram of the binned elevation angles versus the time spent within each elevation bin was then created. This was then multiplied by the corresponding values in @elevation2Throughput to obtain an estimate of the total data downlinked over the course of the mission using ACM. For CCM it was assumed that the capacity value corresponding to 10#sym.degree elevation was used for the entire mission. The resulting plots are shown in @ACMvCCM.
 
-//TODO: include ACM vs CCM plot
 #figure(
   image("../Figures/Link-Budget/ACMvCCM.svg"),
   caption:"ACM Performance Analysis"
   ) <ACMvCCM>
- 
 
-// TODO: Include Tom's updated propagation?
+// TODO: Mention datarate()
 
+A MATLAB function was created to automate this process, called datarate(). This is used to calculate the highest datarate possible given a set link budget and the satellite's elevation relative to the ground station and altitude above the Earth. This has been integrated into the Mission Analysis Tool, an internal mission analysis framework for STRATHcube. The beginning of the function definition is shown in @datarate-excerpt, and the full code is shown in Appendix A.1.1
 
-
+#figure(
+  sourcecode[```MATLAB
+function [rates] = datarate(elevation,altitude,bandwidth,margin,verbose, link_parameters)
+%DATARATE Calculates datarate for each elevation and altitude pair
+% Returns:
+%   rates:              Datarates for each      bits/sec, array size                                               
+%                       elevation & altitude    length(elevation)
+%                       
+% Parameters:
+%   elevation:          Satellite Elevation     degrees,    can be array
+%   altitude:           Satellite Altitude      meters,     can be array (must be same length as elevation)
+%   bandwidth:          Link Bandwidth          Hz          Optional
+%   margin:             Link Margin Required    dB          Optional
+%   link_parameters:    Static link values      struct      Optional
+%
+% Requires modcod_to_CNR.mat to be in same directory. This contains
+% spectral efficiency values for each MODCOD
+```],
+caption: "Excerpt from datarate."
+) <datarate-excerpt>
 
 == Scenarios
 #show figure: set block(breakable: false)
-Current analysis has been restricted to link budgets based on elevation relative to ground station and satellite altitude as the impact of FSPL is dominant over most other factors. Additionally, the impact of component degradation is yet to be investigated and is to be determined. The scenarios were selected such that they represent the best and worst case for FSPL using the STAC ground station over the expected lifetime, with orbital parameters
+Current analysis has been restricted to link budgets based on elevation relative to ground station and satellite altitude, as the impact of FSPL is dominant over most other factors. Additionally, the impact of component degradation is yet to be investigated and requires determination. The scenarios were selected such that they represent the best and worst case for FSPL using the STAC ground station over the expected lifetime. As discussed in @mission-phases-section, the satellite is at its highest altitude at release from the International Space Station. The primary downlink communications are no longer used during the secondary phase, so the final relevant altitude is 170km when the transition phase begins.
 
 === Commisioning Phase
 STRATHcube shortly after deployment from the international space station.
@@ -230,12 +249,12 @@ STRATHcube at end of primary phase.
 #show figure: set block(breakable: true)
 
 == Areas for Further Investigation
+Thus far the link budget has been concerned with proving viability and performance limits for development of the  
+transmitter system. As such, there has been comparatively less investigation of the ground station receiver system. There has also been a large reliance on numbers derived from the AcubeSAT link budget due to this. 
 
-// TODO: Rephrasing to make sense with lit review
-Thusfar the downlink link budget has been concerned with proving viability and performance limits for development of the  
-transmitter system. As such, there has been comparatively less investigation of the receiver system and there has been a large
-reliance on numbers derived from the AcubeSAT link budget. There are multiple key challenges for implementing a DVB-S2 receiver,
-the largest issue being interference, which can be prevalent on the planned UHF band @quintana-diaz_detection_2022, another being carrier synchronisation and
+There are multiple key challenges for implementing a DVB-S2 receiver, the largest issue being interference, which can be prevalent on the planned UHF band, see @Inteference-Section. Further challenges include carrier synchronisation and
 phase correction.
+
+Additionally, the bandwidth calculations have been made with the assumption of perfect filtering with zero roll-off, which is not representative of a practical DVB-S2 system. This is discussed further, and practical datarates established in @symbol-rate-roll-off-section.
 
 // TODO: Work Package citation?

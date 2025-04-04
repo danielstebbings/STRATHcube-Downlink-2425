@@ -2,11 +2,11 @@
 
 = Code Listings <Code-Listings>
 == ACM Analysis
-//#show: sourcecode[```MATLAB
+//#sourcecode[```MATLAB
 //```]
-=== datarate.m
+=== datarate.m <datarate-listing>
 
-#show: sourcecode[```MATLAB
+#sourcecode[```MATLAB
 function [rates] = datarate(elevation,altitude,bandwidth,margin,verbose, link_parameters)
 %DATARATE Calculates datarate for each elevation and altitude pair
 % Returns:
@@ -112,7 +112,7 @@ end
 
 === ACM_Analysis.m
 
-#show: sourcecode[```MATLAB
+#sourcecode[```MATLAB
 % Analysing the effect of Active Coding and Modulation (ACM) for DVB-S2
 % By Daniel Stebbings
 % Based upon "dynamic_link_schemes_analysis" by Preben
@@ -413,7 +413,7 @@ hold off
 == Transmitter Implementation
 
 === DFL_Adressing.mlx
-#show: sourcecode[```MATLAB
+#sourcecode[```MATLAB
 
 %Intro
 %As we're using an AXI-Stream to access the DVB-S2 transmitter, data will be input in 32b words. For ease of implementation, 4b will be reserved for control words leaving a 28b data field. The DFL of a packet can be of size Kbch - 80. What is the optimal data size to fill all possible DFL?
@@ -483,7 +483,7 @@ mods(mods > 0)
 ```]
 
 === rolloff_demonstration.mlx
-#show: sourcecode[```MATLAB
+#sourcecode[```MATLAB
 %Investigation of impact of roll-off factor
 %The final block in the DVB-S2 transmission system is a Root-Raised-Cosine Filter for pulse shaping. This has the effect of increasing the total bandwidth of the transmission based on the roll-off factor. Therefore, the maximum symbol rate can be calculated for the target bandwidth for each value of roll-off in the standard. 
 modtable = readtable("Rs2Rb.csv");
@@ -527,7 +527,7 @@ hold off
 
 ```]
 === gendata.m
-#show: sourcecode[```MATLAB
+#sourcecode[```MATLAB
 function [data_Out,TSorGS_Out,DFL_Out,UPL_Out,SYNC_Out,MODCOD_Out,FECFRAME_Out] = gendata(nFrames,nPackets, ...
                                                                                             TSorGS_In,DFL_In,UPL_In,SYNC_In,MODCOD_In,FECFRAME_In, ...
                                                                                             frm_bits, pkt_bits, pl_cnt_bits, ...
@@ -691,7 +691,7 @@ FECFRAME_Out = repelem(FECFRAME_In_t, length(axiDataArray));
 end % Function
 ```]
 === parse_axipkt.m
-#show: sourcecode[```MATLAB
+#sourcecode[```MATLAB
 function [parsed_pkt] = parse_axipkt(axipkt_in, ...
                                     frm_bits, pkt_bits, pl_cnt_bits, ...
                                     frameEnd_pos, frameStart_pos, pktEnd_pos, pktStart_pos)
@@ -795,7 +795,7 @@ end
 
 ```]
 === spectMask.m
-#show: sourcecode[```MATLAB
+#sourcecode[```MATLAB
 function [mask] = spectMask(Bn, Ptx)
 %SPECTMASK Creates mask limit boundaries based on ITU-R SM.1541-7 Fig 43
 %   Bn   : Necessary bandwidth (Hz)
@@ -824,7 +824,7 @@ end
 == Packet Handling
 
 === Packet.hpp
-#show: sourcecode[```MATLAB
+#sourcecode[```MATLAB
 /* Definition of Packet Class 
 */
 
