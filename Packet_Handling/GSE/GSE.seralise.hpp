@@ -1,2 +1,0 @@
-/* Takes in a PDU of type Packet
-*/

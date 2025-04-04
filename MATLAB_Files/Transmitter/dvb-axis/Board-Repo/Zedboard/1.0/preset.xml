@@ -31,7 +31,7 @@ SOFTWARE.
   </ip>
 </ip_preset>
   <ip_preset preset_proc_name="oled_preset">
-    <ip vendor="digilentinc.com" library="ip" name="pmod_bridge" ip_interface="Pmod_out">
+    <ip vendor="em.avnet.com" library="ip" name="pmod_bridge" ip_interface="Pmod_out">
         <user_parameters>
           <user_parameter name="CONFIG.Top_Row_Interface" value="SPI"/> 
           <user_parameter name="CONFIG.Bottom_Row_Interface" value="GPIO"/>

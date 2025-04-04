@@ -22,7 +22,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
-<board schema_version="2.0" vendor="digilentinc.com" name="zedboard" display_name="Zedboard" url="https://reference.digilentinc.com/reference/programmable-logic/zedboard/start" preset_file="preset.xml">
+<board schema_version="2.0" vendor="em.avnet.com" name="zed" display_name="Zedboard" url="https://reference.em.avnet.com/reference/programmable-logic/zedboard/start" preset_file="preset.xml">
   <images>
     <image name="zed_board.jpg" display_name="ZED BOARD" sub_type="board">
       <description>ZED Board File Image</description>
@@ -34,7 +34,7 @@ SOFTWARE.
   <file_version>1.0</file_version>
   <description>ZedBoard Zynq Evaluation and Development Kit</description>
   <components>
-    <component name="part0" display_name="ZedBoard" type="fpga" part_name="xc7z020clg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/zedboard/start">
+    <component name="part0" display_name="ZedBoard" type="fpga" part_name="xc7z020clg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.em.avnet.com/reference/programmable-logic/zedboard/start">
       <description>FPGA part on the board</description>
       <interfaces>
         <interface mode="master" name="btns_5bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="btns_5bits" preset_proc="btns_5bits_preset">
@@ -108,7 +108,7 @@ SOFTWARE.
             <parameter name="frequency" value="100000000" />
           </parameters>
         </interface>
-		<interface mode="master" name="ja" type="digilentinc.com:interface:pmod_rtl:1.0" of_component="ja">
+		<interface mode="master" name="ja" type="em.avnet.com:interface:pmod_rtl:1.0" of_component="ja">
         <port_maps>
           <port_map logical_port="PIN1_I" physical_port="JA1" dir="in"> 
             <pin_maps>
@@ -232,7 +232,7 @@ SOFTWARE.
 		  </port_map>
         </port_maps>
       </interface>
-	  <interface mode="master" name="jb" type="digilentinc.com:interface:pmod_rtl:1.0" of_component="jb">
+	  <interface mode="master" name="jb" type="em.avnet.com:interface:pmod_rtl:1.0" of_component="jb">
         <port_maps>
           <port_map logical_port="PIN1_I" physical_port="JB1" dir="in"> 
             <pin_maps>
@@ -356,7 +356,7 @@ SOFTWARE.
 		  </port_map>
         </port_maps>
       </interface>
-	  <interface mode="master" name="jc" type="digilentinc.com:interface:pmod_rtl:1.0" of_component="jc">
+	  <interface mode="master" name="jc" type="em.avnet.com:interface:pmod_rtl:1.0" of_component="jc">
         <port_maps>
           <port_map logical_port="PIN1_I" physical_port="JC1" dir="in"> 
             <pin_maps>
@@ -480,7 +480,7 @@ SOFTWARE.
 		  </port_map>
         </port_maps>
       </interface>
-	  <interface mode="master" name="jd" type="digilentinc.com:interface:pmod_rtl:1.0" of_component="jd">
+	  <interface mode="master" name="jd" type="em.avnet.com:interface:pmod_rtl:1.0" of_component="jd">
         <port_maps>
           <port_map logical_port="PIN1_I" physical_port="JD1" dir="in"> 
             <pin_maps>
@@ -604,10 +604,10 @@ SOFTWARE.
 		  </port_map>
         </port_maps>
       </interface>
-	  <interface mode="master" name="oled" type="digilentinc.com:interface:pmod_rtl:1.0" of_component="oled" preset_proc="oled_preset">
+	  <interface mode="master" name="oled" type="em.avnet.com:interface:pmod_rtl:1.0" of_component="oled" preset_proc="oled_preset">
        <preferred_ips>
-			<preferred_ip vendor="digilentinc.com" library="ip" name="PmodOLED" order="0"/>
-			<preferred_ip vendor="digilentinc.com" library="ip" name="pmod_bridge" order="1"/>
+			<preferred_ip vendor="em.avnet.com" library="ip" name="PmodOLED" order="0"/>
+			<preferred_ip vendor="em.avnet.com" library="ip" name="pmod_bridge" order="1"/>
 		</preferred_ips>
 		<port_maps>
 		  <port_map logical_port="PIN2_I" physical_port="OLED2" dir="in"> 
@@ -753,7 +753,7 @@ SOFTWARE.
   	  	<interface name="oled"/>
   	    </interfaces>
   	    <preferred_ips>
-  	  		<preferred_ip vendor="digilentinc.com" library="ip" name="PmodOLED" order="0"/>
+  	  		<preferred_ip vendor="em.avnet.com" library="ip" name="PmodOLED" order="0"/>
   	    </preferred_ips>
   	</component_mode>
   	  <component_mode name="bpmodbridge" display_name="Pmod Bridge (Custom SPI/GPIO)">
@@ -761,7 +761,7 @@ SOFTWARE.
   	  	<interface name="oled"/>
   	    </interfaces>
   	    <preferred_ips>
-  	  	  <preferred_ip vendor="digilentinc.com" library="ip" name="pmod_bridge" order="0"/>
+  	  	  <preferred_ip vendor="em.avnet.com" library="ip" name="pmod_bridge" order="0"/>
   	    </preferred_ips>
   	  </component_mode>
     </component_modes>    
