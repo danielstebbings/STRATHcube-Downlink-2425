@@ -29,7 +29,7 @@ antenna_pointing_loss_tx = 0; % dB
 EIRP = p_tx - line_loss_tx + gain_antenna_tx - antenna_pointing_loss_tx;
 
 %% Downlink transmission configuration
-bandwidth = 158.5*1000; % 158.5kHz BW defined by link budget investigation
+bandwidth = 1*1000; % 158.5kHz BW defined by link budget investigation
 freq = 437e6; % Hz
 
 %% Ground Station Parameters
@@ -80,33 +80,33 @@ path_loss = ionospheric_space_loss + atmospheric_space_loss + rain_space_loss + 
 CNR   = EIRP - free_space_path_loss - path_loss + gain_antenna_rx + 228.6 - 10*log10(temperature_system_noise_rx) - 10*log10(bandwidth) - 2.9;
 Margin_Requirement = 10; %dB
 
-%% Optimal MODCOD from CNR by Elevation and Altitude
-
-% Creating a table by flattening each value array into columns
-elevation_col = repmat(elevation_angles,[1,length(altitude_sat)])';
-alt_col = repelem(altitude_sat, length(elevation_angles)*ones(length(altitude_sat),1))';
-CNR_col = reshape(CNR',[],1);
-
-% Finding optimal modulation and coding from CNR
-opt_modcod_col = repelem("",length(CNR_col));
-opt_bitrate = zeros(length(CNR_col),1);
-for cnr_it = 1:length(CNR_col)
-    % Find fastest modulation with minimum CNR below current CNR w. margin
-    modcod_row = mdvals(find(mdvals.CNR_min < (CNR_col(cnr_it) - Margin_Requirement),1,"last"),:);
-    opt_modcod_col(cnr_it) = strcat(string(modcod_row.Modulation)," ", string(modcod_row.CodingRate));
-    opt_bitrate(cnr_it) = modcod_row.dataratebps;
-    %[CNR_col(cnr_it),modcod_row.CNR_min] % Debug
-end
-
-% Change type for plotting
-modcod_cats = strcat(string(mdvals.Modulation)," ",string(mdvals.CodingRate));
-opt_modcod_col = categorical(opt_modcod_col,modcod_cats);
-
-
-opt_modcod_tab = table( ...
-            elevation_col,alt_col,CNR_col,opt_modcod_col',opt_bitrate, ...
-            'VariableNames',["Elevation","Altitude","CNR_dB","Optimal_MODCOD","Optimal_Bitrate_bps"] ...
-            );
+% %% Optimal MODCOD from CNR by Elevation and Altitude
+% 
+% % Creating a table by flattening each value array into columns
+% elevation_col = repmat(elevation_angles,[1,length(altitude_sat)])';
+% alt_col = repelem(altitude_sat, length(elevation_angles)*ones(length(altitude_sat),1))';
+% CNR_col = reshape(CNR',[],1);
+% 
+% % Finding optimal modulation and coding from CNR
+% opt_modcod_col = repelem("",length(CNR_col));
+% opt_bitrate = zeros(length(CNR_col),1);
+% for cnr_it = 1:length(CNR_col)
+%     % Find fastest modulation with minimum CNR below current CNR w. margin
+%     modcod_row = mdvals(find(mdvals.CNR_min < (CNR_col(cnr_it) - Margin_Requirement),1,"last"),:);
+%     opt_modcod_col(cnr_it) = strcat(string(modcod_row.Modulation)," ", string(modcod_row.CodingRate));
+%     opt_bitrate(cnr_it) = modcod_row.dataratebps;
+%     %[CNR_col(cnr_it),modcod_row.CNR_min] % Debug
+% end
+% 
+% % Change type for plotting
+% modcod_cats = strcat(string(mdvals.Modulation)," ",string(mdvals.CodingRate));
+% opt_modcod_col = categorical(opt_modcod_col,modcod_cats);
+% 
+% 
+% opt_modcod_tab = table( ...
+%             elevation_col,alt_col,CNR_col,opt_modcod_col',opt_bitrate, ...
+%             'VariableNames',["Elevation","Altitude","CNR_dB","Optimal_MODCOD","Optimal_Bitrate_bps"] ...
+%             );
 
 %% Analysing MODCOD Benefit with ISS orbit over 1 month
 
@@ -136,14 +136,14 @@ passes_coarse = accessIntervals(ac_coarse);
 pass_elevations = zeros( ... % Initialise dimensions
                         height(passes_coarse), ...
                         max(passes_coarse.Duration), ...
-                        "uint16" ...
+                        "single" ...
                         );              
 
 for pass_it = 1:height(passes_coarse)
     pass = passes_coarse(pass_it,:);
     for time_it = 1:pass.Duration
         [~,pass_elevation_val,~] = aer(gs_fine,sat_fine,[pass.StartTime + seconds(time_it -1)]);
-        pass_elevations(pass_it,time_it) = uint16(pass_elevation_val);
+        pass_elevations(pass_it,time_it) = single(pass_elevation_val);
     end
 end
 
@@ -154,12 +154,24 @@ elevation_times = histcounts(pass_elevations(:),[lowest_elevation:5:95]);
 
 % Time in each modcod at high altitude
 
-time_modcod_tab = opt_modcod_tab(opt_modcod_tab.Altitude == altitude_sat(end),:);
-time_modcod_tab.("Elevation_Time") = elevation_times';
-time_modcod_tab.("Bits_Sent") = time_modcod_tab.Optimal_Bitrate_bps .* time_modcod_tab.Elevation_Time;
+[sim_bitrates,sim_modcods] = datarate( ...
+                                pass_elevations(:), ...
+                                repelem( ...
+                                    altitude_sat(end), ... % Highest value
+                                    length(pass_elevations(:)) ...
+                                    ), ...
+                                bandwidth ...
+                                );
+% Time in each modcod at high altitude
+sim_bits_sent_ACM = sum(sim_bitrates .* elevation_times');
 
-bits_sent_ACM = sum(time_modcod_tab.Bits_Sent);
-bits_sent_fixed = time_modcod_tab(time_modcod_tab.Elevation == lowest_elevation,"Optimal_Bitrate_bps").Optimal_Bitrate_bps .* sum(time_modcod_tab.Elevation_Time);
+% Get bitrate assuming lowest elevation at all times
+sim_lowest_elev_rates = datarate( ...
+                            lowest_elevation, ...
+                            altitude_sat(end) ...
+                            );
+sim_bits_sent_fixed = sim_lowest_elev_rates .* sum(elevation_times);
+
 
 %% Analysing MODCOD Benefit with IST orbit
 % pass_elevations(time(s),altitude (km), pass_flag (bool), elevation (degrees),
@@ -174,15 +186,23 @@ ist_pass_elevations = ist_passes(:,4);          % degrees
 % Bin into 5 degree angle bins
 ist_pass_elevations_binned = floor(ist_pass_elevations/5)*5;
 % Get capacity for each timestep
-ist_pass_capacities = datarate(ist_pass_elevations,ist_pass_altitudes);
-% Time in each modcod at high altitude
+[ist_pass_bitrates,ist_pass_modcods] = datarate( ...
+                                        ist_pass_elevations, ...
+                                        ist_pass_altitudes, ...
+                                        bandwidth ...
+                                        );
+% Sum of bitrate * time at bitrate
+ist_bits_sent_ACM = sum(ist_pass_bitrates .* ist_timestep);
 
-ist_time_modcod_tab = opt_modcod_tab(opt_modcod_tab.Altitude == altitude_sat(end),:);
-ist_time_modcod_tab.("Elevation_Time") = elevation_times';
-ist_time_modcod_tab.("Bits_Sent") = time_modcod_tab.Optimal_Bitrate_bps .* time_modcod_tab.Elevation_Time;
-
-ist_bits_sent_ACM = sum(ist_time_modcod_tab.Bits_Sent);
-bits_sent_fixed = time_modcod_tab(time_modcod_tab.Elevation == lowest_elevation,"Optimal_Bitrate_bps").Optimal_Bitrate_bps .* sum(time_modcod_tab.Elevation_Time);
+% Get bitrate assuming lowest elevation at all times
+% Underestimation, as this includes extra atmo losses!
+ist_lowest_elev_rates = datarate( ...
+                            repelem( ...
+                                lowest_elevation, ...
+                                length(ist_pass_altitudes) ...
+                                ), ...
+                            ist_pass_altitudes);
+ist_bits_sent_fixed = ist_lowest_elev_rates .* length(ist_pass_times) .* ist_timestep;
 
 
 
@@ -190,14 +210,24 @@ bits_sent_fixed = time_modcod_tab(time_modcod_tab.Elevation == lowest_elevation,
 figure
 hold on
 for alt_it = 1:length(altitude_sat)
-    CNR_vals = opt_modcod_tab(opt_modcod_tab.Altitude == altitude_sat(alt_it),:);
-
+    [Elev_vs_modcod_alt_rates,Elev_vs_modcod_alt_modcods] = datarate( ...
+                                                                elevation_angles, ...
+                                                                repelem( ... 
+                                                                    altitude_sat(alt_it), ...
+                                                                    length(elevation_angles) ...
+                                                                    ) ...
+                                                                );
+    % get modcod values from struct.
+    % Get ordering from mdvs
+    Elev_vs_modcod_alt_modcod_mat = [Elev_vs_modcod_alt_modcods.modcod];
     yyaxis left
-    plot(CNR_vals.Elevation,CNR_vals.Optimal_MODCOD, ...
+    plot( ...
+        elevation_angles, ...
+        Elev_vs_modcod_alt_modcod_mat, ...
         "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
 
     yyaxis right
-    plot(CNR_vals.Elevation,CNR_vals.Optimal_Bitrate_bps/1e3, ...
+    plot(elevation_angles,Elev_vs_modcod_alt_rates/1e3, ...
         "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
 end
 
@@ -220,14 +250,14 @@ sgtitle("Adaptive vs Fixed Coding and Modulation - 409km Fixed Orbit")
 % Elevation to MODCOD and bitrate
 subplot(2,2,[1,3])
 for alt_it = 1:length(altitude_sat)
-    CNR_vals = opt_modcod_tab(opt_modcod_tab.Altitude == altitude_sat(alt_it),:);
-
+    [ACM_vs_Single_rates,ACM_vs_Single_modcods] = datarate(elevation_angles,altitude_sat(alt_it));
+    
     yyaxis left
-    plot(CNR_vals.Elevation,CNR_vals.Optimal_MODCOD, ...
+    plot(elevation_angles,ACM_vs_Single_modcods.modcod, ...
         "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
 
     yyaxis right
-    plot(CNR_vals.Elevation,CNR_vals.Optimal_Bitrate_bps/1e3, ...
+    plot(elevation_angles,ACM_vs_Single_rates/1e3, ...
         "DisplayName",sprintf('%.3g',altitude_sat(alt_it),'m'));
 end
 
@@ -247,7 +277,7 @@ xlabel("Elevation (degrees)")
 ylabel("Time spent at Elevation (s)")
 
 subplot(2,2,4)
-bar(["Adaptive","Fixed"],[bits_sent_ACM,bits_sent_fixed])
+bar(["Adaptive","Fixed"],[sim_bits_sent_ACM,sim_bits_sent_fixed])
 title("Adaptive vs Fixed Throughput")
 xlabel("Strategy")
 ylabel("Throughput (bits)")
@@ -287,7 +317,7 @@ hold off
 
 figure 
 hold on 
-bar(["Adaptive","Fixed"],[bits_sent_ACM,bits_sent_fixed])
+bar(["Adaptive","Fixed"],[sim_bits_sent_ACM,sim_bits_sent_fixed])
 title("Adaptive vs Fixed Throughput")
 xlabel("Strategy")
 ylabel("Throughput (bits)")

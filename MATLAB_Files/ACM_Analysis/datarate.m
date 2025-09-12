@@ -1,15 +1,19 @@
-function [rates] = datarate(elevation,altitude,bandwidth,margin,verbose, link_parameters)
+function [rates,modcods] = datarate(elevation,altitude,bandwidth,margin,verbose, link_parameters)
 %DATARATE Calculates datarate for each elevation and altitude pair
 % Returns:
-%   rates:              Datarates for each      bits/sec,   array size = length(elevation)                                            
-%                       elevation & altitude                
+%   rates:              Datarates for each      bits/sec,       array size = length(elevation)                                            
+%                       elevation & altitude    
+%   modcods:            MODulation & CODing     struct          array size = length(elevation)
+%                       rates for each.         (mod,cod,modcod)
+%                                               (cat,cat,cat)
+%                       
 %                       
 % Parameters:
-%   elevation:          Satellite Elevation     degrees,    can be array
-%   altitude:           Satellite Altitude      meters,     can be array (must be same length as elevation)
-%   bandwidth:          Link Bandwidth          Hz          Optional
-%   margin:             Link Margin Required    dB          Optional
-%   link_parameters:    Static link values      struct      Optional
+%   elevation:          Satellite Elevation     degrees,        can be array
+%   altitude:           Satellite Altitude      meters,         can be array (must be same length as elevation)
+%   bandwidth:          Link Bandwidth          Hz              Optional
+%   margin:             Link Margin Required    dB              Optional
+%   link_parameters:    Static link values      struct          Optional
 %
 % Requires modcod_to_CNR.mat to be in same directory. This contains
 % spectral efficiency values for each MODCOD
@@ -17,7 +21,7 @@ function [rates] = datarate(elevation,altitude,bandwidth,margin,verbose, link_pa
 arguments
     elevation   (1,:)
     altitude    (1,:)
-    bandwidth   (1,1) = 158.5*1000
+    bandwidth   (1,1) = 25*1000
     margin      (1,1) = 10
     verbose     (1,1) = false
     link_parameters struct = struct( ...
@@ -40,15 +44,15 @@ end
     APL = zeros(1,length(elevation));
     for elevation_it = 1:length(elevation)
         % Acubesat absorption values
-        if elevation(elevation_it) < 2.5 || elevation(elevation_it) > 180 - 2.5
+        if elevation(elevation_it)      < 2.5   || elevation(elevation_it) > 180 - 2.5
             Atmo_Absorption_Loss = 10.2;
-        elseif elevation(elevation_it) < 5 || elevation(elevation_it) > 180 - 5
+        elseif elevation(elevation_it)  < 5     || elevation(elevation_it) > 180 - 5
             Atmo_Absorption_Loss = 4.6;
-        elseif elevation(elevation_it) < 10 || elevation(elevation_it) > 180 - 10
+        elseif elevation(elevation_it)  < 10    || elevation(elevation_it) > 180 - 10
             Atmo_Absorption_Loss = 2.1;
-        elseif elevation(elevation_it) < 30 || elevation(elevation_it) > 180 - 30
+        elseif elevation(elevation_it)  < 30    || elevation(elevation_it) > 180 - 30
             Atmo_Absorption_Loss = 1.1;
-        elseif elevation(elevation_it) < 45 || elevation(elevation_it) > 180 - 45
+        elseif elevation(elevation_it)  < 45    || elevation(elevation_it) > 180 - 45
             Atmo_Absorption_Loss = 0.4;
         else
             Atmo_Absorption_Loss = 0.0;
@@ -80,6 +84,13 @@ end
     modcodvalues.("CNR_min") = modcodvalues.("EbN0_min") + 10*log10(modcodvalues.("dataratebps")) - 10*log10(bandwidth);
     
     rates = zeros(1,length(CNR));
+    
+    % Initialise modcod array only if requested
+    if nargout == 2
+        modcods.mod = "";
+        modcods.cod = "";
+    end 
+
     for cnr_it = 1:length(CNR)
         modcod_row = modcodvalues(find(modcodvalues.CNR_min < (CNR(cnr_it) - margin),1,"last"),:);
         if verbose
@@ -90,6 +101,25 @@ end
             rates(cnr_it) = 0;
         else
             rates(cnr_it) = modcod_row.dataratebps;
+            modcods(cnr_it).mod = modcod_row.Modulation;
+            modcods(cnr_it).cod = modcod_row.CodingRate;
+
+            % Place modcod into ordinal categorical
+            % Order from mdvals table
+            modcods(cnr_it).modcod = ...
+                categorical( ...
+                    strcat( ...
+                        string(modcod_row.Modulation), ...
+                        " ", ...
+                        string(modcod_row.CodingRate) ...
+                    ), ...
+                    strcat( ...
+                        string(modcodvalues.Modulation), ...
+                        " ", ...
+                        string(modcodvalues.CodingRate) ...
+                    ), ...
+                    Ordinal=true ...
+                );
         end
         
     end
@@ -98,6 +128,8 @@ end
         free_space_path_loss
         CNR
     end   
+
+
 end
 
 

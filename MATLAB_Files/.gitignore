@@ -32,3 +32,5 @@ octave-workspace
 
 # Generated HDL Projects
 hdl_prj/
+vivado.jou
+vivado.log

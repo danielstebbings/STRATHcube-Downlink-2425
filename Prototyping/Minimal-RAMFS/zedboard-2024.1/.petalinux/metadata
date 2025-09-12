@@ -1,0 +1,5 @@
+PETALINUX_VER=2024.1
+VALIDATE_HW_CHKSUM=1
+HARDWARE_PATH=/home/daniel/github/STRATHCube-Downlink-2425/Prototyping/Minimal-RAMFS/zed2024_out_sdt/system-top.dts
+HDF_EXT=sdt
+YOCTO_SDK=1b0c32bd8a8d211b3a00c58318f5ad0aec670445a641911ef5efad38cee55433
