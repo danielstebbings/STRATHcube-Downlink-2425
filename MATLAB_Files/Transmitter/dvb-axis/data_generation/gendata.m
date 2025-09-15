@@ -73,7 +73,7 @@ function [data_Out,TSorGS_Out,DFL_Out,UPL_Out,SYNC_Out,MODCOD_Out,FECFRAME_Out] 
 
     for axi_it = 0:length(axiDataArray)-1
         axi_pkt = uint32(0);
-        payload = uint32(0);
+        payload = uint32(0); 
         flags   = uint32(0);
         UPL_it  = UPL_In; % TODO: change for UPL_In matrix
         DFL_it  = DFL_In; % TODO: change for DFL_In matrix
