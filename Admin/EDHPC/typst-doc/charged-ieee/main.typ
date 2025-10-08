@@ -176,9 +176,9 @@ The scope was limited to exclude the uplink design, with deployment onto hardwar
 
 = Adaptive Coding and Modulation Analysis
 
-=== Link Budget Analysis
+== Link Budget Analysis
 
-Proof-of-concept analysis was conducted to assess if the performance gains offered by #acr("ACM") justify the increased complexity. A simulation of the orbit was used to identify the elevation angle and satellite altitude during pass opportunities over the #acr("STAC") for the full duration of the mission. A new link budget was created to identify the received #acr("SNR") at each time step during the pass. Parameters were divided into static, those that would not change during a pass, and dynamic, those that would, as shown by @tab:static_link_params and @tab:dynamic_link_params
+A new link budget was created to identify the received #acr("SNR") at each time step during the pass. Parameters were divided into static, those that would not change during a pass, and dynamic, those that would, as shown by @tab:static_link_params and @tab:dynamic_link_params.
 
 #figure(
   table(
@@ -300,40 +300,47 @@ $ "Data Rate" = #sym.eta times B ["bps"] $ <eq:spect_eff_2_cap>
   caption: "Link Budget" 
 ) <tab:budget>
 
+== Adaptive vs Constant 
 
+Proof-of-concept analysis was conducted to assess if the performance gains offered by #acr("ACM") justify the increased complexity. A simulation of the orbit was used to identify the elevation angle and satellite altitude during pass opportunities over the #acr("STAC") for the full duration of the mission. 
 
-//$ a + b = gamma $ <eq:gamma>
+Due to the location of the ground station, the observed elevations did not rise above 40#sym.degree, greatly reducing the overall data throughput, as the higher order modulations were seldom reached. 
 
+#figure(
+  image("FIgures/Altitude_vs_time.svg"),
+  caption:"STRATHcube altitude from deployment to mode transition."
+)<img:alt_vs_time>
 
-//#figure(
-//  placement: none,
-//  circle(radius: 15pt),
-//  caption: [A circle representing the Sun.]
-//) <fig:sun>
+#figure(
+  image("FIgures/Elevation_Time.svg"),
+  caption:"STRATHcube pass elevation histogram."
+)<img:elev_times>
 
+#figure(
+  image("FIgures/elevation_vs_modcod.svg"),
+  caption: "Optimal MODulation and CODing rate by elevation and altitude."
 
+)<img:elev2modcod>
 
+@tab:total_data shows the total data downlinked by each strategy. The adaptive system was able 3.19#sym.times the amount of data versus the constant system, indicating that the increased system complexity is outweighed by the improved performance.  
 
-//#figure(
-//  caption: [The Planets of the Solar System and Their Average Distance from the Sun],
-//  placement: top,
-//  table(
-//    // Table styling is not mandated by the IEEE. Feel free to adjust these
-//    // settings and potentially move them into a set rule.
-//    columns: (6em, auto),
-//    align: (left, right),
-//    inset: (x: 8pt, y: 4pt),
-//    stroke: (x, y) => if y <= 1 { (top: 0.5pt) },
-//    fill: (x, y) => if y > 0 and calc.rem(y, 2) == 0  { rgb("#efefef") },
-//
-//    table.header[Planet][Distance (million km)],
-//    [Mercury], [57.9],
-//    [Venus], [108.2],
-//    [Earth], [149.6],
-//    [Mars], [227.9],
-//    [Jupiter], [778.6],
-//    [Saturn], [1,433.5],
-//    [Uranus], [2,872.5],
-//    [Neptune], [4,495.1],
-//  )
-//) <tab:planets>
+#figure(
+  table(
+    columns: 2,
+    inset: 6pt,
+    align: (horizon,horizon), 
+    table.header(
+      [*Strategy*],[*Total Data Downlinked (Gb) *]
+    ),
+    [Constant],[1.88],
+    [Adaptive],[6.01]
+  ),
+  caption: "Total Data Downlinked by Strategy"
+) <tab:total_data>
+
+== Areas for Further Investigation
+
+// TODO: ROLLOFF
+The link budget presented was developed to show viability of an adaptive DVB-S2 system, as such there was comparatively less investigation of the ground station receiver system. The implementation of the receiver will be challenging, and require further investigation of the in band interference present at the site. Additionally, the bandwidth calculations did not account for filter roll-off, this is discussed further in.
+
+= Transmitter Design and Implementation
