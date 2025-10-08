@@ -1,4 +1,4 @@
-#import "@local/opinionated-eng-strath:0.1.0": *
+#import "@local/opinionated-eng-strath:0.2.0": *
 #import "@preview/codelst:2.0.2": sourcecode
 #import "@preview/acrostiche:0.5.1": *
 #import "@preview/wordometer:0.1.4" : word-count, total-words
@@ -109,18 +109,18 @@
 
     Initial performance analysis was conducted in comparison to a baseline system which uses Constant Coding and Modulation (CCM) and optimises for maximum availability and showed a significant uplift in data throughput over the course of the mission. Additionally, resource analysis of the target FPGA SoC and the synthesised design show that the implementation is feasible in hardware.
   ],
-  acknowledgements: [
-
-    // 
-
-    // template acknowledgement 
-
-    // Rephrase, taken from paper acks
-    Thanks are given to the sponsors of the STRATHcube, without whom this project would not be possible: The University of Strathclyde Alumni Fund,
-    the Institute of Mechanical Engineers, the Royal Aeronautical Society, the University
-    of Strathclyde Mechanical and Aerospace Engineering Department, and the University
-    of Strathclyde Aerospace Centre of Excellence.
-  ],
+//  acknowledgements: [
+//
+//    // 
+//
+//    // template acknowledgement 
+//
+//    // Rephrase, taken from paper acks
+//    Thanks are given to the sponsors of the STRATHcube, without whom this project would not be possible: The University of Strathclyde Alumni Fund,
+//    the Institute of Mechanical Engineers, the Royal Aeronautical Society, the University
+//    of Strathclyde Mechanical and Aerospace Engineering Department, and the University
+//    of Strathclyde Aerospace Centre of Excellence.
+//  ],
   
   subtitle: [
   Supervisor: Louise Crockett \
