@@ -1,7 +1,7 @@
 %--------------------------------------------------------------------------
 % Host Interface Script
 % 
-% Generated with MATLAB 24.2 (R2024b) at 16:10:24 on 01/04/2025.
+% Generated with MATLAB 25.1 (R2025a) at 15:24:58 on 09/10/2025.
 % This script was created for the IP Core generated from design 'dvbs2_stream'.
 % 
 % Use this script to access DUT ports in the design that were mapped to compatible IP core interfaces.
@@ -14,7 +14,7 @@
 %% Program FPGA
 % Uncomment the lines below to program FPGA hardware with the designated bitstream and configure the processor with the corresponding devicetree.
 % MATLAB will connect to the board with an SSH connection to program the FPGA.
-% If you need to change login parameters for your board, using the following syntax:
+% If you need to change login parameters for your board, use the following syntax:
 % hProcessor = xilinxsoc(ipAddress, username, password);
 hProcessor = xilinxsoc();
 % programFPGA(hProcessor, "hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1/system_top.bit", "devicetree_fmcomms2_axis.dtb");

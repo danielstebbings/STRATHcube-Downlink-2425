@@ -2,7 +2,7 @@ function gs_dvbs2_stream_setup(hFPGA)
 %--------------------------------------------------------------------------
 % Host Interface Script Setup
 % 
-% Generated with MATLAB 24.2 (R2024b) at 16:10:23 on 01/04/2025.
+% Generated with MATLAB 25.1 (R2025a) at 15:24:58 on 09/10/2025.
 % This function was created for the IP Core generated from design 'dvbs2_stream'.
 % 
 % Run this function on an "fpga" object to configure it with the same interfaces as the generated IP core.

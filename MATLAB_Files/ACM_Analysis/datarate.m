@@ -21,16 +21,22 @@ function [rates,modcods] = datarate(elevation,altitude,bandwidth,margin,verbose,
 arguments
     elevation   (1,:)
     altitude    (1,:)
-    bandwidth   (1,1) = 25*1000
-    margin      (1,1) = 10
+    bandwidth   (1,1) = 5*1000
+    margin      (1,1) = 3
     verbose     (1,1) = false
     link_parameters struct = struct( ...
-                                "Frequency",437e6, ...                      % Hz
-                                "GS_Altitude", 41, ...                      % m
-                                "EIRP", 0, ...                              % dBW
-                                "Receiver_Gain",14.15-2.39, ...             % dB
-                                "Receiver_Noise_Temperature",1000, ...  % K 282.6592
-                                "Atmo_Effect_Path_Loss",3.56 ...            % dB
+                                "Frequency",            437e6, ...         % Hz
+                                "GS_Altitude",          70, ...            % m
+                                "EIRP",                 -1.26, ...         % dBW
+                                "Antenna_Gain",         14.15, ...         % dB 
+                                "Preamp_Gain",          20, ...            % dB SP7000
+                                "Preamp_Noise_Figure",  0.9, ...           % dB  
+                                "GS_Cable_Losses",      3,...              % dB 36m RG213
+                                "Polarisation_Loss",    3, ...             % dB Linear -> Circular   
+                                "Pointing_Loss",        1, ...             % dB
+                                "Receiver_Noise_Figure",8, ...             % dB
+                                "Terrestrial_Noise_Figure",    6, ...      % dB
+                                "Antenna_3dB_Beamwidth", 15 ...            % Degrees, single sided
                                 );
     
     
@@ -40,28 +46,36 @@ end
         error("Elevation and Altitude must have same length")
     end
     
+    % DVB-S2 Modulation and Coding rate to spectral efficiency and CNR
+    persistent modcodvalues
+    if isempty(modcodvalues)
+        modcodvalues = load("modcod_to_CNR.mat","mdvals").mdvals;      
+    end
+    
+    % Atmospheric Absorption Values
+    persistent atmoatt
+    if isempty(atmoatt)
+        atmoatt = load("Atmospheric_Attenuation.mat","Atmospheric_Attenuation").Atmospheric_Attenuation;        
+    end
+    atmoatt_minelev = min(atmoatt.Angle_deg);
+    atmoatt_delev   = atmoatt(2,:).Angle_deg - atmoatt(1,:).Angle_deg;
+
+
     % Atmospheric losses
     APL = zeros(1,length(elevation));
     for elevation_it = 1:length(elevation)
-        % Acubesat absorption values
-        if elevation(elevation_it)      < 2.5   || elevation(elevation_it) > 180 - 2.5
-            Atmo_Absorption_Loss = 10.2;
-        elseif elevation(elevation_it)  < 5     || elevation(elevation_it) > 180 - 5
-            Atmo_Absorption_Loss = 4.6;
-        elseif elevation(elevation_it)  < 10    || elevation(elevation_it) > 180 - 10
-            Atmo_Absorption_Loss = 2.1;
-        elseif elevation(elevation_it)  < 30    || elevation(elevation_it) > 180 - 30
-            Atmo_Absorption_Loss = 1.1;
-        elseif elevation(elevation_it)  < 45    || elevation(elevation_it) > 180 - 45
-            Atmo_Absorption_Loss = 0.4;
-        else
-            Atmo_Absorption_Loss = 0.0;
+        norm_elev = elevation(elevation_it);
+        if (norm_elev > 90) 
+            norm_elev = 180 - norm_elev;
         end
+        if (norm_elev < atmoatt_minelev)
+            norm_elev = atmoatt_minelev;
+        end
+        norm_elev = round(norm_elev/atmoatt_delev)*atmoatt_delev;
 
-        APL(elevation_it) = Atmo_Absorption_Loss + link_parameters.Atmo_Effect_Path_Loss;
-
-        
+        APL(elevation_it) = atmoatt(find(atmoatt.Angle_deg==norm_elev,1),:).Total_dB;
     end
+
     slant_ranges = zeros(1,length(altitude));
     for slant_it = 1:length(altitude)
         slant_ranges(slant_it) =  slantRangeCircularOrbit(elevation(slant_it),  ...
@@ -70,14 +84,26 @@ end
                                                           );
     end
     free_space_path_loss = 20*log10(4*pi*slant_ranges*link_parameters.Frequency/299792458); % dB
-    CNR =  link_parameters.EIRP - free_space_path_loss - APL + ...
-            link_parameters.Receiver_Gain + 228.6 - 10*log10(link_parameters.Receiver_Noise_Temperature) ...
-            - 10*log10(bandwidth);
+
+    Signal_Power = link_parameters.EIRP ...
+                    - free_space_path_loss ...
+                    - APL ...
+                    - link_parameters.Pointing_Loss ...
+                    - link_parameters.Polarisation_Loss ...
+                    + link_parameters.Antenna_Gain ...
+                    + link_parameters.Preamp_Gain ...
+                    - link_parameters.GS_Cable_Losses;
     
-    persistent modcodvalues
-    if isempty(modcodvalues)
-        modcodvalues = load("modcod_to_CNR.mat","mdvals").mdvals;      
-    end
+    Terrestrial_Noise = link_parameters.Terrestrial_Noise_Figure + 10*log10(1.38e-23 * 290 * bandwidth);
+    
+    Noise_Power = Terrestrial_Noise ...
+                    + link_parameters.Preamp_Gain ...
+                    + link_parameters.Preamp_Noise_Figure ...
+                    + link_parameters.Receiver_Noise_Figure;
+
+    CNR =  Signal_Power - Noise_Power;
+    
+    
     modcodvalues.("dataratebps") = modcodvalues.("SpectralEfficiency") * bandwidth;
     
 
@@ -124,6 +150,8 @@ end
         
     end
     if verbose
+        Signal_Power
+        Noise_Power
         slant_ranges
         free_space_path_loss
         CNR

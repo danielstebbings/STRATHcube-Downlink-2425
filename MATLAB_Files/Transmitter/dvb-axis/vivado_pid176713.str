@@ -1,0 +1,1583 @@
+/*
+
+AMD Vivado v2024.1 (64-bit) [Major: 2024, Minor: 1]
+SW Build: 5076996 on Wed May 22 18:36:09 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+
+Process ID (PID): 176713
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Oct 09 14:38:20 BST 2025
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Ubuntu
+OS Version: 6.14.0-33-generic
+OS Architecture: amd64
+Available processors (cores): 16
+LSB Release Description: Ubuntu 24.04.2 LTS
+
+Display: 0
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 32, width = 1920, height = 990
+Screen resolution (DPI): 100
+Available screens: 3
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+JavaFX version: 21.0.1
+Java home: 	/tools/Xilinx/Vivado/2024.1/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.1/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	daniel
+User home directory: /home/daniel
+User working directory: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2024.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.1/bin
+
+Vivado preferences file: /home/daniel/.Xilinx/Vivado/2024.1/vivado.xml
+Vivado preferences directory: /home/daniel/.Xilinx/Vivado/2024.1/
+Vivado layouts directory: /home/daniel/.Xilinx/Vivado/2024.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/vivado.log
+Vivado journal file: 	/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-176713-Sure-Hope-It-Does
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.1
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.1/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/Vivado/2024.1/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.1
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.1/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2024.1/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2024.1/bin:/tools/Xilinx/Vivado/2024.1/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis:Sure-Hope-It-Does_1760017086_176643
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.1/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.1/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/Vivado/2024.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@xilinx.license.eee.strath.ac.uk
+XILINX_DSP: /tools/Xilinx/Vivado/2024.1/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2024.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.1
+XILINX_SDK: /tools/Xilinx/Vitis/2024.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2024.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2024.1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,506 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // t (PAResourceEtoH.GettingStartedView_OPEN_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,540 MB. GUI used memory: 72 MB. Current time: 10/9/25, 2:38:21 PM BST
+setFileChooser("/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.xpr");
+// Opening Vivado Project: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.xpr. Version: Vivado v2024.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 151 MB (+155854kb) [00:00:17]
+// [Engine Memory]: 1,642 MB (+1570187kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  1571 ms.
+// Tcl Message: open_project /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.1/data/ip'. 
+// Project name: prj_ip; location: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bj (Open Project Progress)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // am (PAResourceItoN.MainMenuMgr_PROJECT, Project)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ap (PAResourceCommand.PACommandNames_OPEN_PROJECT, open_project_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// [Engine Memory]: 1,725 MB (+1131kb) [00:00:35]
+dismissFileChooser();
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IP-XACT]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// [GUI Memory]: 163 MB (+5011kb) [00:00:48]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 6, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_reset_sync_inst : DVBS2_Stream_ip_v0_1_reset_sync(rtl) (DVBS2_Stream_ip_v0_1_reset_sync.vhd)]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,734 MB. GUI used memory: 76 MB. Current time: 10/9/25, 2:39:06 PM BST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_axi4_stream_write_master_inst : DVBS2_Stream_ip_v0_1_axi4_stream_write_master(rtl) (DVBS2_Stream_ip_v0_1_axi4_stream_write_master.vhd)]", 4, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_axi4_stream_read_slave_inst : DVBS2_Stream_ip_v0_1_axi4_stream_read_slave(rtl) (DVBS2_Stream_ip_v0_1_axi4_stream_read_slave.vhd)]", 5, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_dut_inst : DVBS2_Stream_ip_v0_1_dut(rtl) (DVBS2_Stream_ip_v0_1_dut.vhd)]", 6, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // am (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // am (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // am (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 6, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 7, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create Block Design"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create Block Design"); // az (design_1)
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: create_bd_design "design_1" 
+// Tcl Message: Wrote  : </home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.srcs/sources_1/bd/design_1/design_1.bd>  
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+dismissDialog("Create Block Design"); // bj (Create Block Design Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,768 MB. GUI used memory: 81 MB. Current time: 10/9/25, 2:39:56 PM BST
+// Elapsed Time for: 'L.f': 01m:28s
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, false); // a (PAResourceQtoS.SystemTreeView_SYSTEM_TREE)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 256, 91, 1218, 472, false, false, false, true, false); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01m:30s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 250, 120, 1218, 472, false, false, false, true, false); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ap (PAResourceQtoS.SystemBuilderMenu_ADD_IP, Add IP...)
+// Elapsed Time for: 'L.f': 01m:32s
+// Elapsed Time for: 'L.f': 01m:34s
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "dvb"); // OverlayTextField (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DVBS2_Stream_ip_v0_1", 0, "DVBS2_Stream_ip_v0_1", 0, false); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DVBS2_Stream_ip_v0_1", 0); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "DVBS2_Stream_ip_v0_1", 0, "DVBS2_Stream_ip_v0_1", 0, false, false, false, false, false, true); // z (PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE) - Double Click
+// TclEventType: LOAD_FEATURE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv user.org:ip:DVBS2_Stream_ip_v0_1:0.1 DVBS2_Stream_ip_v0_1_0 
+// Tcl Message: endgroup 
+// [Engine Memory]: 1,816 MB (+4830kb) [00:01:55]
+// Elapsed Time for: 'L.f': 01m:38s
+// Elapsed Time for: 'L.f': 01m:40s
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /DVBS2_Stream_ip_v0_1_0]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /DVBS2_Stream_ip_v0_1_0]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 634, 108, 1218, 472, false, false, false, true, false); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem) - Popup Trigger
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /DVBS2_Stream_ip_v0_1_0]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // am (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // am (PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, IP Documentation)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // am (PAResourceQtoS.SelectMenu_HIGHLIGHT, Highlight)
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Block Properties..."); // ap (RDIResourceCommand.RDICommands_PROPERTIES, edit_properties_menu)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 19, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "OK", "Missing Synthesis Results"); // JButton (OptionPane.button)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save", "Save Project"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+dismissDialog("Save Project"); // Z.d (dialog2)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Save Constraints"); // bj (Save Constraints Progress)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,851 MB. GUI used memory: 84 MB. Current time: 10/9/25, 2:40:36 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,835 MB. GUI used memory: 85 MB. Current time: 10/9/25, 2:40:58 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,835 MB. GUI used memory: 85 MB. Current time: 10/9/25, 2:41:28 PM BST
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Oct  9 14:41:28 2025] Launched synth_1... Run output will be captured here: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.runs/synth_1/runme.log [Thu Oct  9 14:41:28 2025] Launched impl_1... Run output will be captured here: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:01:00 . Memory (MB): peak = 7923.238 ; gain = 24.020 ; free physical = 2900 ; free virtual = 13779 
+// Elapsed Time for: 'C.c': 01m:00s
+// 'a' command handler elapsed time: 63 seconds
+// Elapsed time: 60 seconds
+dismissDialog("Starting Design Runs"); // bj (Starting Design Runs Progress)
+// Elapsed Time for: 'L.f': 03m:02s
+// Elapsed Time for: 'L.f': 03m:04s
+// Elapsed time: 18 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 669, 75); // cC (RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aa
+// Elapsed time: 91 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // g (PAResourceQtoS.SyntheticaStateMonitor_CANCEL, Cancel)
+selectButton("OptionPane.button", "Cancel Process", "Cancel Synthesis"); // JButton (OptionPane.button)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1160] Copying file /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.runs/synth_1/DVBS2_Stream_ip_v0_1.dcp to /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/ipcore/DVBS2_Stream_ip_v0_1_v0_1/prj_ip/prj_ip.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bj (Resetting Runs Progress)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// WARNING: HEventQueue.dispatchEvent() is taking  1667165 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,846 MB. GUI used memory: 88 MB. Current time: 10/9/25, 3:11:32 PM BST
+// Elapsed time: 3110 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // am (PAResourceItoN.MainMenuMgr_PROJECT, Project)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // am (PAResourceItoN.MainMenuMgr_PROJECT, Project)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ap (PAResourceCommand.PACommandNames_OPEN_PROJECT, open_project_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.xpr");
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,753 MB. GUI used memory: 82 MB. Current time: 10/9/25, 3:35:34 PM BST
+// Opening Vivado Project: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.xpr. Version: Vivado v2024.1 
+selectButton("OptionPane.button", "Yes", "Open Project"); // JButton (OptionPane.button)
+// Tcl Message: close_project 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 185 MB (+14284kb) [00:57:27]
+// Tcl Message: open_project /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/ipcore'. 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.1/data/ip'. 
+// Project name: vivado_prj; location: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bj (Open Project Progress)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "3 errors"); // g (PAResourceQtoS.RunGadget_SHOW_ERROR)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 1,920 MB (+13966kb) [00:57:35]
+// Elapsed time: 28 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Elaborate Design"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Elaborate Design"); // t (dialog4)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 19); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Utilization]", 29, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg484-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,382 MB. GUI used memory: 99 MB. Current time: 10/9/25, 3:36:32 PM BST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// [Engine Memory]: 2,659 MB (+673709kb) [00:58:27]
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,263 MB. GUI used memory: 95 MB. Current time: 10/9/25, 3:36:45 PM BST
+// [Engine Memory]: 3,263 MB (+493857kb) [00:58:34]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/./.Xil/Vivado-176713-Sure-Hope-It-Does/xc7z020_detail.xgd_5F20750C elapsed time: 0.6s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.6s
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg484-1 INFO: [Device 21-9227] Part: xc7z020clg484-1 does not have CEAM library. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.8 ; elapsed = 00:00:00.56 . Memory (MB): peak = 8571.500 ; gain = 0.000 ; free physical = 10419 ; free virtual = 15507 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 4039 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VirtClk_system_util_mw_clkconstr_0' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_util_mw_clkconstr_0/system_util_mw_clkconstr_0_constr.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_util_mw_clkconstr_0/system_util_mw_clkconstr_0_constr.xdc] for cell 'i_system_wrapper/system_i/util_mw_clkconstr/inst' Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/smartconnect.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst' 
+// Tcl Message: Finished Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/smartconnect.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst' Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_7/bd_c0fd_srn_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_r_node/inst' 
+// Tcl Message: Finished Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_7/bd_c0fd_srn_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_r_node/inst' Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_6/bd_c0fd_sarn_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hp2_interconnect/inst/s00_nodes/s00_ar_node/inst' 
+// Tcl Message: INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_hp2_interconnect_0/bd_0/ip/ip_6/bd_c0fd_sarn_0_clocks.xdc:167] 
+// Tcl Message: INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_hp1_interconnect_0/smartconnect.xdc:4] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/ipcore/mw/projects/ad9361/common/mw_gpio_timing.xdc:2] INFO: [Timing 38-2] Deriving generated clocks [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/ipcore/mw/projects/ad9361/common/mw_gpio_timing.xdc:2] 
+// Tcl Message: Finished Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_cpu_interconnect/m01_couplers/auto_cc/inst' Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_cpu_interconnect/m11_couplers/auto_cc/inst' 
+// Tcl Message: Finished Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_cpu_interconnect/m11_couplers/auto_cc/inst' Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_cpu_interconnect/m12_couplers/auto_cc/inst' 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc:4] 
+// Tcl Message: Finished Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_ad9361_adc_dma_0/system_axi_ad9361_adc_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_adc_dma/inst' Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_ad9361_dac_dma_0/system_axi_ad9361_dac_dma_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_ad9361_dac_dma/inst' 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_ad9361_dac_dma_0/system_axi_ad9361_dac_dma_0_constr.xdc:3] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_dma_mm2s_0/system_axi_dma_mm2s_0_constr.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_dma_mm2s_0/system_axi_dma_mm2s_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_dma_mm2s/inst' Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_dma_s2mm_0/system_axi_dma_s2mm_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_dma_s2mm/inst' 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_dma_s2mm_0/system_axi_dma_s2mm_0_constr.xdc:4] 
+// Tcl Message: Finished Parsing XDC File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_axi_dma_s2mm_0/system_axi_dma_s2mm_0_constr.xdc] for cell 'i_system_wrapper/system_i/axi_dma_s2mm/inst' Sourcing Tcl File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/ipcore/mw/projects/ad9361/common/mw_clk_constr.tcl] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/ipcore/mw/projects/ad9361/common/mw_clk_constr.tcl:3] 
+// Tcl Message: Finished Sourcing Tcl File [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/ipcore/mw/projects/ad9361/common/mw_clk_constr.tcl] 
+// Tcl Message: INFO: [Project 1-1714] 121 XPM XDC files have been applied to the design. INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-1687] 441 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9326.246 ; gain = 0.000 ; free physical = 9707 ; free virtual = 14804 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1175 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 54 instances   OBUFDS => OBUFDS: 8 instances   RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 721 instances   RAM16X1D => RAM32X1D (RAMD32(x2)): 209 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 170 instances   RAM32X1D => RAM32X1D (RAMD32(x2)): 13 instances  
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 9472.172 ; gain = 900.672 ; free physical = 9593 ; free virtual = 14713 
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Report Utilization"); // a (RDIResource.BaseDialog_OK)
+// 'cD' command handler elapsed time: 3 seconds
+dismissDialog("Report Utilization"); // a (dialog5)
+// Tcl Message: report_utilization -name utilization_1 
+// [GUI Memory]: 198 MB (+3763kb) [00:58:40]
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [GUI Memory]: 209 MB (+866kb) [00:58:41]
+// [GUI Memory]: 219 MB (+31kb) [00:58:41]
+// [GUI Memory]: 230 MB (+172kb) [00:58:41]
+// [GUI Memory]: 243 MB (+879kb) [00:58:42]
+// [GUI Memory]: 255 MB (+159kb) [00:58:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,403 MB. GUI used memory: 182 MB. Current time: 10/9/25, 3:36:54 PM BST
+dismissDialog("Report Utilization"); // bj (Report Utilization Progress)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // J (dialog6)
+// [Engine Memory]: 4,437 MB (+1060512kb) [00:58:50]
+// Elapsed time: 10 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ah (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ah (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // am (PAResourceItoN.MainMenuMgr_FLOORPLANNING, Floorplanning)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // am (PAResourceItoN.MainMenuMgr_IO_PLANNING, I/O Planning)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // am (PAResourceItoN.MainMenuMgr_TIMING, Timing)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // am (RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, Custom Commands)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ap (RDIResourceCommand.RDICommands_SETTINGS, settings_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  1099 ms.
+// [GUI Memory]: 274 MB (+6784kb) [00:59:06]
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store]", 2, true); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree) - Node
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store]", 2); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+// Elapsed time: 10 seconds
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Example Project Repository]", 4, false); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Vivado Store, Board Repository]", 3, false); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+selectButton(PAResourceItoN.MultiFileChooser_ADD_DIRECTORIES, "Add Directories", "Settings"); // B (PAResourceItoN.MultiFileChooser_ADD_DIRECTORIES, Add Directories)
+// Elapsed time: 20 seconds
+setFolderChooser("/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/Board-Repo");
+selectButton(RDIResource.BaseDialog_APPLY, "Apply", "Settings"); // a (RDIResource.BaseDialog_APPLY)
+// Tcl Message: set_param board.repoPaths {/home/daniel/.Xilinx/Vivado/2024.1/xhub/board_store/xilinx_board_store /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/Board-Repo} 
+dismissDialog("Set Example Project Repository Paths"); // bj (Set Example Project Repository Paths Progress)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Settings"); // a (RDIResource.BaseDialog_OK)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,444 MB. GUI used memory: 174 MB. Current time: 10/9/25, 3:38:00 PM BST
+dismissDialog("Settings"); // d (dialog8)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // am (PAResourceItoN.MainMenuMgr_PROJECT, Project)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ap (PAResourceCommand.PACommandNames_ADD_SOURCES, add_sources_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ah (PAResourceItoN.MainMenuMgr_FILE, File)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("CANCEL", "Cancel", "Add Sources"); // JButton (CANCEL)
+// 'f' command handler elapsed time: 3 seconds
+dismissDialog("Add Sources"); // c (dialog9)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ah (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // ah (RDIResource.MainWinMenuMgr_LAYOUT, Layout)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ah (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ah (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ah (PAResourceItoN.MainMenuMgr_REPORTS, Reports)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ah (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ah (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ah (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // am (PAResourceItoN.MainMenuMgr_SETTINGS, Settings)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ah (PAResourceItoN.MainMenuMgr_FLOW, Flow)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Elapsed time: 16 seconds
+selectButton(PAResourceCommand.PACommandNames_IMPL_SETTINGS, "Vivado Implementation Default Reports"); // g (PAResourceCommand.PACommandNames_IMPL_SETTINGS)
+// Run Command: PAResourceCommand.PACommandNames_IMPL_SETTINGS
+dismissDialog("Settings"); // d (dialog8)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Power]", 30, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_POWER_ESTIMATION
+// Elapsed time: 14 seconds
+selectComboBox(PAResourceOtoP.PowerApi_HEAT_SINK_SELECTION_FROM_STANDARD_PROFILES, "medium (Medium Profile)", 2); // d (PAResourceOtoP.PowerApi_HEAT_SINK_SELECTION_FROM_STANDARD_PROFILES)
+// Elapsed time: 15 seconds
+selectTab(PAResourceTtoZ.XPowerSettingsDialog_TABBED_PANE, PAResourceTtoZ.XPowerSettingsDialog_POWER_SUPPLY, "Power Supply", 1); // g (PAResourceTtoZ.XPowerSettingsDialog_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPowerSettingsDialog_TABBED_PANE, PAResourceTtoZ.XPowerSettingsDialog_SWITCHING, "Switching", 2); // g (PAResourceTtoZ.XPowerSettingsDialog_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPowerSettingsDialog_TABBED_PANE, PAResourceTtoZ.XPowerSettingsDialog_OUTPUT, "Output", 3); // g (PAResourceTtoZ.XPowerSettingsDialog_TABBED_PANE)
+selectTab(PAResourceTtoZ.XPowerSettingsDialog_TABBED_PANE, PAResourceTtoZ.XPowerSettingsDialog_ENVIRONMENT, "Environment", 0); // g (PAResourceTtoZ.XPowerSettingsDialog_TABBED_PANE)
+selectButton(PAResourceTtoZ.XPowerSettingsDialog_SAVE_THESE_SETTINGS_AND_RUN, "OK", "Report Power"); // a (PAResourceTtoZ.XPowerSettingsDialog_SAVE_THESE_SETTINGS_AND_RUN)
+// Run Command: PAResourceCommand.PACommandNames_RUN_POWER_ESTIMATION
+// 'dn' command handler elapsed time: 42 seconds
+dismissDialog("Report Power"); // a (dialog10)
+// TclEventType: POWER_CNS_UPDATED
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// Tcl Message: set_operating_conditions -heatsink medium 
+// Tcl Message: report_power -name {power_1} 
+// Tcl Message: Command: report_power -name power_1 
+// Tcl Message: INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VirtClk_system_util_mw_clkconstr_0' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system/ip/system_util_mw_clkconstr_0/system_util_mw_clkconstr_0_constr.xdc:3] INFO: [Timing 38-35] Done setting XDC timing constraints. 
+// Tcl Message: Running Vector-less Activity Propagation... 
+// TclEventType: TIMING_RESULTS_STALE
+// Tcl Message:  Finished Running Vector-less Activity Propagation 
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 290 MB (+2171kb) [01:01:38]
+// [GUI Memory]: 305 MB (+174kb) [01:01:39]
+// WARNING: HEventQueue.dispatchEvent() is taking  1322 ms.
+// Tcl Message: 2 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered. report_power completed successfully 
+// Tcl Message: report_power: Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 9823.121 ; gain = 350.949 ; free physical = 8894 ; free virtual = 14029 
+dismissDialog("Power Estimation"); // bj (Power Estimation Progress)
+// Device view-level: 0.0
+// [GUI Memory]: 321 MB (+419kb) [01:01:44]
+// Elapsed time: 48 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "system_top ; 34634 ; 41456 ; 1827 ; 99 ; 130.5 ; 70 ; 103 ; 130 ; 1 ; 8 ; 7 ; 7 ; 10 ; 5 ; 1 ; 2", 0, "system_top", 0, true); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "system_top ; 34634 ; 41456 ; 1827 ; 99 ; 130.5 ; 70 ; 103 ; 130 ; 1 ; 8 ; 7 ; 7 ; 10 ; 5 ; 1 ; 2", 0, "system_top", 0, true, false, false, false, true, false); // w (PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)) - Popup Trigger - Node
+selectMenuItem(RDIResource.AbstractSelectableTablePanel_EXPORT_TO_SPREADSHEET, "Export to Spreadsheet..."); // ap (RDIResource.AbstractSelectableTablePanel_EXPORT_TO_SPREADSHEET)
+// Elapsed time: 18 seconds
+setText(RDIResource.ExportToSpreadsheetDialog_CHOOSE_MICROSOFT_EXCEL_FILE_TO_EXPORT, "/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/Util.xlsx", true); // aj (RDIResource.ExportToSpreadsheetDialog_CHOOSE_MICROSOFT_EXCEL_FILE_TO_EXPORT)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Export Table to Spreadsheet"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Export Table to Spreadsheet"); // u (dialog11)
+// [GUI Memory]: 337 MB (+82kb) [01:02:50]
+dismissDialog("Export to Spreadsheet"); // bj (Export to Spreadsheet Progress)
+// Elapsed time: 705 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system/system.bd} 
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_OPEN_DIAGRAM
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // u (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// 'bJ' command handler elapsed time: 3 seconds
+dismissDialog("Open Block Design"); // bj (Open Block Design Progress)
+// WARNING: HTimer (Open addressing views timer) is taking 307ms to process. Increasing delay to 1300 ms.
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 12 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /bypass_rx]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed time: 51 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /util_ad9361_adc_pack]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /util_ad9361_adc_pack]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "select_objects [get_bd_cells /util_ad9361_adc_pack]"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// [GUI Memory]: 359 MB (+5929kb) [01:15:50]
+dismissDialog("Re-customize IP"); // m (dialog12)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,131 MB. GUI used memory: 212 MB. Current time: 10/9/25, 4:08:03 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,133 MB. GUI used memory: 195 MB. Current time: 10/9/25, 4:38:03 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,082 MB. GUI used memory: 195 MB. Current time: 10/9/25, 5:08:06 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,080 MB. GUI used memory: 186 MB. Current time: 10/9/25, 5:38:06 PM BST
+// WARNING: HEventQueue.dispatchEvent() is taking  1114 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,045 MB. GUI used memory: 186 MB. Current time: 10/9/25, 6:08:07 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 4,053 MB. GUI used memory: 185 MB. Current time: 10/9/25, 6:38:07 PM BST
+// Elapsed time: 10022 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click
+// Elapsed time: 13 seconds
+expandTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[system, DVBS2_Stream_ip_v0_1_0]", 24); // a (PAResourceQtoS.SystemTreeView_SYSTEM_TREE)
+// Elapsed time: 15 seconds
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[system, DVBS2_Stream_ip_v0_1_0]", 24, true); // a (PAResourceQtoS.SystemTreeView_SYSTEM_TREE) - Node
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[system, DVBS2_Stream_ip_v0_1_0]", 24, true, false, false, false, false, true); // a (PAResourceQtoS.SystemTreeView_SYSTEM_TREE) - Double Click - Node
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v)]", 5, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v)]", 5, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v)]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), axi_cpu_interconnect : system_axi_cpu_interconnect_0 (system.v)]", 14, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system_wrapper.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 620 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click
+// Elapsed time: 48 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true, false, false, false, true, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Popup Trigger - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// Elapsed time: 125 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci)]", 8); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Show IP Hierarchy"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // t (dialog13)
+// Elapsed Time for: 'L.f': 03h:19m:47s
+// Elapsed Time for: 'L.f': 03h:19m:49s
+// Elapsed time: 251 seconds
+runTclCommand (PAResourceOtoP.PAViews_SYSTEM, "unselect_objects"); // fU (PAResourceOtoP.PAViews_SYSTEM, PlanAheadTabSystem)
+// Elapsed time: 21 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd)]", 9); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd)]", 10); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 88 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_axi_lite_inst : DVBS2_Stream_ip_v0_1_axi_lite(rtl) (DVBS2_Stream_ip_v0_1_axi_lite.vhd)]", 12); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,176 MB. GUI used memory: 199 MB. Current time: 10/9/25, 7:08:07 PM BST
+// Elapsed time: 1091 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click - Node
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_dut_inst : DVBS2_Stream_ip_v0_1_dut(rtl) (DVBS2_Stream_ip_v0_1_dut.vhd)]", 17); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_dut_inst : DVBS2_Stream_ip_v0_1_dut(rtl) (DVBS2_Stream_ip_v0_1_dut.vhd), u_DVBS2_Stream_ip_v0_1_src_HDL_DUT : DVBS2_Stream_ip_v0_1_src_HDL_DUT(rtl) (DVBS2_Stream_ip_v0_1_src_HDL_DUT.vhd)]", 18); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_axi4_stream_write_master_inst : DVBS2_Stream_ip_v0_1_axi4_stream_write_master(rtl) (DVBS2_Stream_ip_v0_1_axi4_stream_write_master.vhd)]", 15); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_axi4_stream_read_slave_inst : DVBS2_Stream_ip_v0_1_axi4_stream_read_slave(rtl) (DVBS2_Stream_ip_v0_1_axi4_stream_read_slave.vhd)]", 18); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_axi4_stream_write_master_inst : DVBS2_Stream_ip_v0_1_axi4_stream_write_master(rtl) (DVBS2_Stream_ip_v0_1_axi4_stream_write_master.vhd), u_DVBS2_Stream_ip_v0_1_fifo_data_OUT_inst : DVBS2_Stream_ip_v0_1_fifo_data_OUT(rtl) (DVBS2_Stream_ip_v0_1_fifo_data_OUT.vhd)]", 16); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_dut_inst : DVBS2_Stream_ip_v0_1_dut(rtl) (DVBS2_Stream_ip_v0_1_dut.vhd), u_DVBS2_Stream_ip_v0_1_src_HDL_DUT : DVBS2_Stream_ip_v0_1_src_HDL_DUT(rtl) (DVBS2_Stream_ip_v0_1_src_HDL_DUT.vhd), u_Tx : DVBS2_Stream_ip_v0_1_src_Tx(rtl) (DVBS2_Stream_ip_v0_1_src_Tx.vhd)]", 25); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_dut_inst : DVBS2_Stream_ip_v0_1_dut(rtl) (DVBS2_Stream_ip_v0_1_dut.vhd), u_DVBS2_Stream_ip_v0_1_src_HDL_DUT : DVBS2_Stream_ip_v0_1_src_HDL_DUT(rtl) (DVBS2_Stream_ip_v0_1_src_HDL_DUT.vhd), u_Tx : DVBS2_Stream_ip_v0_1_src_Tx(rtl) (DVBS2_Stream_ip_v0_1_src_Tx.vhd), u_DVB_S2_Tx : DVBS2_Stream_ip_v0_1_src_DVB_S2_Tx(rtl) (DVBS2_Stream_ip_v0_1_src_DVB_S2_Tx.vhd)]", 26); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_dut_inst : DVBS2_Stream_ip_v0_1_dut(rtl) (DVBS2_Stream_ip_v0_1_dut.vhd), u_DVBS2_Stream_ip_v0_1_src_HDL_DUT : DVBS2_Stream_ip_v0_1_src_HDL_DUT(rtl) (DVBS2_Stream_ip_v0_1_src_HDL_DUT.vhd), u_Tx : DVBS2_Stream_ip_v0_1_src_Tx(rtl) (DVBS2_Stream_ip_v0_1_src_Tx.vhd), u_DVB_S2_Tx : DVBS2_Stream_ip_v0_1_src_DVB_S2_Tx(rtl) (DVBS2_Stream_ip_v0_1_src_DVB_S2_Tx.vhd), u_PL_Frame_Generator : DVBS2_Stream_ip_v0_1_src_PL_Frame_Generator(rtl) (DVBS2_Stream_ip_v0_1_src_PL_Frame_Generator.vhd)]", 32); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 37); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 140 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 37, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 36, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, system_top (system_top.v), i_system_wrapper : system_wrapper (system_wrapper.v), system_i : system (system.bd), system (system.v), DVBS2_Stream_ip_v0_1_0 : system_DVBS2_Stream_ip_v0_1_0_0 (system_DVBS2_Stream_ip_v0_1_0_0.xci), system_DVBS2_Stream_ip_v0_1_0_0(system_DVBS2_Stream_ip_v0_1_0_0_arch) (system_DVBS2_Stream_ip_v0_1_0_0.vhd), U0 : DVBS2_Stream_ip_v0_1(rtl) (DVBS2_Stream_ip_v0_1.vhd), u_DVBS2_Stream_ip_v0_1_dut_inst : DVBS2_Stream_ip_v0_1_dut(rtl) (DVBS2_Stream_ip_v0_1_dut.vhd), u_DVBS2_Stream_ip_v0_1_src_HDL_DUT : DVBS2_Stream_ip_v0_1_src_HDL_DUT(rtl) (DVBS2_Stream_ip_v0_1_src_HDL_DUT.vhd), u_Tx : DVBS2_Stream_ip_v0_1_src_Tx(rtl) (DVBS2_Stream_ip_v0_1_src_Tx.vhd), u_DVB_S2_Tx : DVBS2_Stream_ip_v0_1_src_DVB_S2_Tx(rtl) (DVBS2_Stream_ip_v0_1_src_DVB_S2_Tx.vhd), u_PL_Frame_Generator : DVBS2_Stream_ip_v0_1_src_PL_Frame_Generator(rtl) (DVBS2_Stream_ip_v0_1_src_PL_Frame_Generator.vhd)]", 32, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 37); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 37, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 37); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 38, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 39, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 39); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 40, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 42, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 42, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, (String) null, 42, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 73 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false, false, false, false, true, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // am (PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, Message Severity)
+// Elapsed time: 89 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 0); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 0, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation]", 0, true, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.. ]", 8, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 7, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false, false, false, false, false, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Double Click
+// Elapsed time: 18 seconds
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Name", 0); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 34634 ; 41456 ; 130.5 ; 0 ; 70 ; Thu Oct 09 15:25:28 BST 2025 ; 00:04:34 ; Vivado Synthesis Defaults (Vivado Synthesis 2024) ; Vivado Synthesis Default Reports (Vivado Synthesis 2024) ; xc7z020clg484-1 ; Sure-Hope-It-Does ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE) - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 34634 ; 41456 ; 130.5 ; 0 ; 70 ; Thu Oct 09 15:25:28 BST 2025 ; 00:04:34 ; Vivado Synthesis Defaults (Vivado Synthesis 2024) ; Vivado Synthesis Default Reports (Vivado Synthesis 2024) ; xc7z020clg484-1 ; Sure-Hope-It-Does ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, true, false); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RESET_RUNS, "Reset Runs"); // ap (PAResourceCommand.PACommandNames_RESET_RUNS, reset_runs_menu)
+selectButton(RDIResource.BaseDialog_OK, "Reset", "Reset Runs"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1160] Copying file /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1/system_top.dcp to /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+dismissDialog("Resetting Runs"); // bj (Resetting Runs Progress)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 30, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "OK", "Missing Synthesis Results"); // JButton (OptionPane.button)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save", "Save Project"); // a (PAResourceQtoS.SaveProjectUtils_SAVE)
+dismissDialog("Save Project"); // Z.d (dialog15)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Out of Date Design"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Out of Date Design"); // t (dialog16)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Save Constraints"); // a (RDIResource.BaseDialog_CANCEL)
+// 'a' command handler elapsed time: 11 seconds
+dismissDialog("Save Constraints"); // a (dialog17)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 30, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton("OptionPane.button", "OK", "Missing Synthesis Results"); // JButton (OptionPane.button)
+selectButton(PAResourceQtoS.SaveProjectUtils_DONT_SAVE, "Don't Save", "Save Project"); // a (PAResourceQtoS.SaveProjectUtils_DONT_SAVE)
+dismissDialog("Save Project"); // Z.d (dialog18)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Thu Oct  9 19:27:25 2025] Launched synth_1... Run output will be captured here: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1/runme.log [Thu Oct  9 19:27:25 2025] Launched impl_1... Run output will be captured here: /home/daniel/github/STRATHCube-Downlink-2425/MATLAB_Files/Transmitter/dvb-axis/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1/runme.log 
+// 'a' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bj (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1618 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1457 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2233 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 324ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1327 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2393 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1328 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1926 ms. Increasing delay to 5778 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2766 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4828 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8190 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3181 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1171ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1448 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 533ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 18312 ms. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5860 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 530ms to process. Increasing delay to 3000 ms.
