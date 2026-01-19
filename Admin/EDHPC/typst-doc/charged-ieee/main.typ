@@ -79,16 +79,9 @@
   "VSWR": "Voltage Standing Wave Ratio",
 ))
 
-
-
-// Combine names
-// Remove titles
-// Email carmine
-// Keep my email
 #show: ieee.with(
   title: [Analysis and Implementation of DVB-S2 in the UHF Band for STRATHcube Downlink Communications ],
   abstract: [
-    // clarity on the CCM system also being DVB-S2
     This paper outlines the downlink system design for STRATHcube, a student-led CubeSat project at the University of Strathclyde. Performance and link analyses were conducted, analysing communication windows over the course of the mission and expected theoretical performance. The design was implemented in hardware using MathWorks HDL Coder and initial code developed for packet handling in software.
 
     Initial performance analysis was conducted in comparison to a reference implementation which uses Constant Coding and Modulation (CCM) and optimises for maximum availability. Our CubeSat downlink design showed a significant uplift in performance over the course of the mission compared to the reference, achieving 3.19#sym.times the data throughput. Additionally, resource analysis of the target FPGA SoC and the implemented design, as well as timing analysis, show that the system will be implementable in hardware.
@@ -126,17 +119,19 @@ There are several dynamic factors inherent in satellite to ground communications
 #acr("DVB-S2") is one such #acr("ACM") system, with near Shannon limit performance and a modular standard allowing it to be matched to the usecase. Despite this, it has not seen common use in the #acr("UHF") band for CubeSats as it typically requires complex and expensive #acr("SDR") based hardware with higher power draw. However, STRATHcube will already include such hardware for its primary payload, presenting an opportunity for increased downlink capability for minimal added cost.
 
 A similar system is described in @grayver_software_2015, which details a Zynq 7020 #acr("FPGA") #acr("SoC") SDR-based communication platform operating in the 915 MHz UHF band and utilising ACM. The system used similar modulation to DVB-S2 but with a different
-coding method, turbo coding instead of the concatenated #acr("BCH") and #acr("LDPC") codes used in DVB-S2. Their analysis showed an almost doubling in throughput compared to CCM. This proved that ACM systems
+coding method, turbo coding instead of the concatenated #acr("BCH") and #acr("LDPC") codes used in DVB-S2. Their analysis showed a near doubling in throughput compared to CCM. This proved that ACM systems
 for CubeSats are feasible and could offer large performance benefits. 
 
 // TODO: Comparison between them and strathcube
-The system presented in @grayver_software_2015 was found to have a notably high power consumption during transmission of 8.8 W, however it was argued that this was offset by the short length of ground station passes in their 800 km orbit. 
+The system presented in @grayver_software_2015 was found to have a notably high power consumption during transmission of 8.8 W, however it was argued that this was offset by the short length of ground station passes. 
+
+The system presented in @grayver_software_2015 used a bandwidth of 1 MHz and analysed an orbit of 800 km, substantially higher than the 25 kHz and 425 km of STRATHcube. However, the reported #acr("SNR") range of -1 dB to 13 dB is very similar to the #acr("SNR") range expected for STRATHcube of -1.24 dB to 14.28 dB identified in @sec:acm_anal, which indicates that the comparison is valid despite the differences in system parameters.
 
 == The STRATHcube Mission
 
-STRATHcube is a 2U CubeSat in development at the University of Strathclyde and part of the _ESA Fly Your Satellite! Design Booster_ program @esa_fly_nodate. It has two payloads, each targeting a key area of space sustainability.
+STRATHcube is a 2U CubeSat in development at the University of Strathclyde and part of the _ESA Fly Your Satellite! Design Booster_ program @european_space_agency_fly_nodate. It has two payloads, each targeting a key area of space sustainability.
 
-The primary payload is a technology demonstrator of a Passive Bistatic Radar (PBR) for the detection of space debris using an SDR. The satellite will record IQ data for analysis on the ground. Although compressed, this will be a considerable data volume therefore the downlink data rate will be one of the primary bottlenecks for its operation. Consequently, there will already be a powerful #acr("FPGA") based SDR included on the mission, the Alén Space TOTEM SDR, which would allow a DVB-S2 transmitter to be implemented as a "piggy-back" on the primary payload using spare resources.
+The primary payload is a technology demonstrator of a Passive Bistatic Radar (PBR) for the detection of space debris using an SDR as discussed in @persico_cubesat-based_2019. The satellite will record IQ data for analysis on the ground. Although compressed, this will be a considerable data volume therefore the downlink data rate will be one of the primary bottlenecks for its operation. Consequently, there will already be a powerful #acr("FPGA") based SDR included on the mission, the Alén Space TOTEM SDR, which would allow a DVB-S2 transmitter to be implemented as a "piggy-back" on the primary payload using spare resources.
 
 The secondary payload aims to measure the aerothermal effects leading to solar panel fragmentation  by recording and transmitting sensor data during the moments up to re-entry. This is unlikely to occur near a ground station and instead a secondary transceiver is to be used that communicates via the Iridium network.
 
@@ -156,15 +151,15 @@ The #acr("UHF") downlink communications will occur during the first three phases
 == Objectives
 // TODO: Improve objectives
 This work focused on the development of STRATHcube's downlink communications system design, with objectives to:
-+ Develop a comprehensive link budget for the STRATHcube space to Earth link.
-+ Develop a detailed system design allocating data processing to the
-+ Develop an engineering model targeting development boards that were representative of flight hardware
++ Develop a comprehensive link budget for the STRATHcube downlink communications to identify relevant design parameters.
++ Develop a detailed system architecture leveraging both the processing system and programmable logic of the target Zynq device.
++ Develop an engineering model targeting development boards that were representative of planned flight hardware.
 
 The scope was limited to exclude the uplink design, with deployment onto hardware as an optional goal. Due to this, the system was designed to be modular to facilitate future development.
 
 = Adaptive Coding and Modulation Analysis <sec:acm_anal>
 
-== Link Budget Analysis
+== Link Budget Analysis <sec:link_budget>
 
 A new link budget was created to identify the received #acr("SNR") at each time step during the pass. Parameters were divided into _static_, those that would not change during a pass, and _dynamic_, those that would, as shown by @tab:static_link_params and @tab:dynamic_link_params.
 
@@ -271,7 +266,7 @@ $ "SNR" = P_"Rx,dB" - P_"N,dB" ["dB"] $
 
 The minimum #acr("SNR") required was taken from @etsi_en_2014[Tab. 13] which assumed a normal frame length, no pilots, 50 #acr("LDPC") decoding iterations, perfect carrier and synchronisation recovery, no phase noise, and #acr("AWGN").
 
-Interference is likely to be present in this band due to amateur radio users, spurious emissions and other sources. Further,  phase noise will likely be induced due to multipath and atmospheric effects. The calculated margin will therefore be optimistic compared to the practical system. To offset this, when calculating data rate the spectral efficiency for a system with pilots was used from @ccsds_ccsds_2023.
+Interference is likely to be present in this band due to amateur radio users, spurious emissions and other sources. Further,  phase noise will likely be induced due to multipath and atmospheric effects. The calculated margin will therefore be optimistic compared to the practical system. To offset this, when calculating data rate the reduced spectral efficiency for a system with pilots was used from @ccsds_ccsds_2023.
 
 The link budget and margin for an adverse and a favourable scenario is shown in @tab:budget, with the optimal modulation and coding rate selected to meet the 3dB margin requirement. The data rate was calculated directly from the spectral efficiency and bandwidth using @eq:spect_eff_2_cap.
 
@@ -386,6 +381,17 @@ A reference DVB-S2 HDL Coder implementation by MathWorks @mathworks_dvb-s2_2024 
 
 The implementation of packet handling is yet to be completed, although relevant libraries have been identified and work begun on a C++ implementation of GSE. Further, the packet handling system shall be designed to work with schemas for packet definition to reduce the difficulty of modification as the satellite design is updated. 
 
+#place(
+    top+center,
+    float: true,
+    scope: "parent"
+    )[
+#figure(
+  image("FIgures/Annotated-Tx.drawio.png"),
+  caption: "Block diagram of HDL Coder implementation. Highlighted in cyan is the transmitter block created by MathWorks. Highlighted in green are the implemented blocks for communication with the processing system.",
+) <img:hdlcoder-imp>
+    ]
+    
 == Results & Discussion
 
 MATLAB code was created to generate synthetic AXI packets to test the system in Simulink. The resulting output spectrum was shown to pass against the #acr("ITU") out-of-band emissions mask for the amateur and amateur satellite service @noauthor_unwanted_2024[Fig. 43] as shown in @img:spectrum. 
@@ -430,7 +436,6 @@ The Vivado power analysis tool was used to estimate the efficiency of the final 
     scope: "parent"
     )[
 #figure(
-  
   table(
     columns: (auto,auto,auto,auto,auto,auto,auto,auto),
     align: (center, center, center, center, center, center, center),
@@ -448,16 +453,7 @@ The Vivado power analysis tool was used to estimate the efficiency of the final 
 ) <tab:util>]
 
 
-#place(
-    top+center,
-    float: true,
-    scope: "parent"
-    )[
-#figure(
-  image("FIgures/Annotated-Tx.drawio.png"),
-  caption: "Block diagram of HDL Coder implementation. Highlighted in cyan is the transmitter block created by MathWorks. Highlighted in green are the implemented blocks for communication with the processing system.",
-) <img:hdlcoder-imp>
-    ]
+
 
 
 = Conclusions and Further Work
@@ -466,3 +462,10 @@ The performance of a DVB-S2 #acr("ACM") system was analysed for the STRATHcube m
 A transmitter was developed and simulated building upon a MathWorks HDL Coder implementation. This design was then synthesised using Vivado and found to meet timing constraints.
 
 The system is still to be tested in hardware and the packet handling software is still under development. The link calculations were made using several assumptions about the ground station receiver and will be revised when measurements can be made which may impact the transmitter design requirements. Investigation into interference and the development of the receiver is of particular importance.
+
+= Acknowledgements
+
+Thanks are given to the sponsors of the STRATHcube, without whom this project would not be possible: ESA Academy, The University of Strathclyde Alumni Fund,
+the Institute of Mechanical Engineers, the Royal Aeronautical Society, the University
+of Strathclyde Mechanical and Aerospace Engineering Department, and the University
+of Strathclyde Aerospace Centre of Excellence.
